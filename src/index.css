@@ -5,27 +5,28 @@
 /* Paprika */
 @import url("https://fonts.googleapis.com/css2?family=Paprika&display=swap");
 
-body{
+body {
   margin:0;
   padding:0;
-  background-color: #F8F8F8;
-  font-family: 'Poppins', sans-serif;
+  background: white !important;
+  font-family: 'Poppins', sans-serif !important;
 }
 * {
-  font-family: 'Poppins', sans-serif;
+  
+  font-family: 'Poppins', sans-serif !important;
 }
 
 p {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif !important; 
   font-size: 0.95rem;
 }
 
 button {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif !important;
 }
 
 input, textarea {
-  background-color: transparent;
+  /* background-color: transparent; */
   outline: none;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif !important;
 }

@@ -6,7 +6,7 @@ const {  Content } = Layout;
 
 function ComingSoon() {
     return (
-        <Content style={{ display: 'flex', background: '#F8F8F8',alignItems: 'center', justifyContent: 'center' }}>
+        <Content style={{ display: 'flex', background: '#fff',alignItems: 'center', justifyContent: 'center' }}>
             <Space.Compact style={{ display: 'flex', flexDirection: 'column',  }}>
             <Row gutter={[32, 32]} align="middle" style={{ width: "100%", height: "100vh" }}>
                 <Col xs={24} md={12}>
