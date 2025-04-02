@@ -97,8 +97,8 @@ const ServicesSectionUI = () => {
 
     return (
         <Space style={{
-            margin: '100px',
             display: 'flex',
+            justifyContent: 'center',
             padding: '24px',
             backgroundColor: '#f5f7f9',
         }}>

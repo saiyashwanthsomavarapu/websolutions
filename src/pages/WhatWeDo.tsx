@@ -18,7 +18,8 @@ const ServiceCard = (props: any) => {
                 borderRadius: '8px',
                 transition: 'all 0.3s ease',
                 height: '100%',
-                // maxWidth: '50px',
+                padding: '24px',
+                // maxWidth: '500px',
             }}
             hoverable
         >
@@ -54,9 +55,9 @@ const ServicesSectionUI = () => {
 
     return (
         <Space style={{
-            margin: '100px',
             display: 'flex',
-            padding: '24px',
+            justifyContent: 'center',
+            padding: '100px',
             backgroundColor: '#f5f7f9',
         }}>
             <Row gutter={[48, 48]}>

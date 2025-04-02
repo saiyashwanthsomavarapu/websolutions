@@ -28,7 +28,7 @@ const CaseStudySection = () => {
                                 bottom: '20px',
                                 right: '20px',
                                 width: '250px',
-                                // padding: '24px',
+                                padding: '24px',
                                 boxShadow: '0 8px 16px rgba(0,0,0,0.1)',
                                 border: 'none',
                                 zIndex: 2
@@ -47,25 +47,20 @@ const CaseStudySection = () => {
                 <Col xs={24} md={12} lg={14} style={{ padding: '60px 40px' }}>
                     <div>
                         <Text style={{
-                            color: '#333',
-                            textTransform: 'uppercase',
-                            fontWeight: '300',
-                            marginBottom: '16px',
-                            display: 'block',
-                            fontSize: '14px',
-                            letterSpacing: '1px',
-                            textDecoration: 'underline',
-                            textUnderlineOffset: '10px'
+                           color: '#000',
+                           textTransform: 'uppercase',
+                           fontWeight: '300',
+                           display: 'block',
+                           textDecoration: 'underline', 
+                           textUnderlineOffset: '10px'
                         }}>
                             CASE STUDY
                         </Text>
 
-                        <Title level={1} style={{
-                            fontWeight: 'bold',
-                            fontSize: '36px',
+                        <Title level={2} style={{
+                            fontSize: '40px',
+                            marginTop:10, 
                             lineHeight: '1.2',
-                            marginBottom: '24px',
-                            fontFamily: 'serif'
                         }}>
                             Transforming Challenges into Opportunities
                         </Title>
@@ -80,7 +75,7 @@ const CaseStudySection = () => {
                             global enterprises, we've partnered with businesses to overcome challenges and
                             achieve extraordinary results
                         </Paragraph>
-
+                        
                         <Space direction="vertical" size={16} style={{ marginBottom: '40px' }}>
                             <div style={{ display: 'flex', alignItems: 'flex-start' }}>
                                 <CheckOutlined style={{

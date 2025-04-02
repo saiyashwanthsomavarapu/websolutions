@@ -4,7 +4,7 @@ const { Title, Paragraph, Text } = Typography;
 
 const BusinessSolutionsUI = () => {
     return (
-        <Space style={{ margin: '100px', display: 'flex',padding:24, backgroundColor: '#fff' }}>
+        <Space style={{ display: 'flex',padding: '100px 0', justifyContent: 'center', backgroundColor: '#fff' }}>
             <Row gutter={[48, 48]}>
                 <Col xs={24} md={12} lg={16}>
                     <div style={{ paddingTop: '24px' }}>
