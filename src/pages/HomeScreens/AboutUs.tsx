@@ -12,9 +12,10 @@ const BusinessSolutionsUI = () => {
                             ABOUT US
                         </Text>
                         <Title level={2} style={{ fontSize: '40px', fontWeight:500, lineHeight: '1.2',marginTop: 10, marginBottom: '32px', whiteSpace: 'pre-line' }}>
-                            {`Unlock success with 
-                              professional 
-                              business solutions`
+                            {
+                              `Unlock success with 
+                               professional 
+                               business solutions`
                             }
                         </Title>
                         <Row style={{ marginTop: '48px' }} gutter={[24, 24]}>
@@ -22,7 +23,6 @@ const BusinessSolutionsUI = () => {
                                 <Paragraph style={{ fontSize: '16px', fontWeight: '400',color: '#5c5c5c', marginBottom: '32px' }}>
                                     At Casho, we are committed to delivering exceptional services that help our clients thrive in a dynamic and ever-changing world.
                                 </Paragraph>
-
                                 <Button type="primary" style={{ backgroundColor: '#1a1a1a', border: 'none', borderRadius: '4px', height: '48px', padding: '0 24px' }}>
                                     About Us
                                 </Button>

@@ -168,15 +168,15 @@ const ModernHeader: React.FC<ModernHeaderProps> = ({
           
           {/* Action buttons */}
           <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
-            <Search
+            {/* <Search
               placeholder="Search"
               style={{ width: 200, marginRight: '8px' }}
               bordered={false}
               className="header-search"
               onSearch={onSearch}
-            />
+            /> */}
             
-            <Dropdown
+            {/* <Dropdown
               menu={{
                 items: languageOptions.map(lang => ({
                   key: lang.key,
@@ -186,9 +186,9 @@ const ModernHeader: React.FC<ModernHeaderProps> = ({
               }}
             >
               <Button type="text" icon={<GlobalOutlined />} />
-            </Dropdown>
+            </Dropdown> */}
             
-            <Badge count={notificationCount} size="small">
+            {/* <Badge count={notificationCount} size="small">
               <Button type="text" icon={<BellOutlined />} />
             </Badge>
             
@@ -196,7 +196,7 @@ const ModernHeader: React.FC<ModernHeaderProps> = ({
               <Button type="text" icon={<ShoppingCartOutlined />} onClick={onCartClick} />
             </Badge>
             
-            <Avatar icon={<UserOutlined />} onClick={onProfileClick} style={{ cursor: 'pointer' }} />
+            <Avatar icon={<UserOutlined />} onClick={onProfileClick} style={{ cursor: 'pointer' }} /> */}
             
             {/* Mobile menu button */}
             <Button

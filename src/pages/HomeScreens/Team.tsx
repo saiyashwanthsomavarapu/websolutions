@@ -45,32 +45,7 @@ const TeamMember = ({ name, title, imageSrc }) => {
     );
 };
 
-const ServiceCard = (props: any) => {
-    const { icon, title, description } = props;
-    return (
-        <Card
-            className="service-card"
-            style={{
-                marginBottom: '24px',
-                borderRadius: '8px',
-                transition: 'all 0.3s ease',
-                height: '100%',
-                // maxWidth: '50px',
-            }}
-            hoverable
-        >
-            <div style={{ fontSize: '32px', marginBottom: '16px' }}>
-                {icon}
-            </div>
-            <Title level={4} style={{ marginBottom: '12px', }}>{title}</Title>
-            <Paragraph style={{ color: '#555', marginBottom: 0 }}>
-                {description}
-            </Paragraph>
-        </Card>
-    );
-};
-
-const ServicesSectionUI = () => {
+const TeamSection = () => {
     const teamMembers = [
         {
             name: 'John Doe',
@@ -187,4 +162,4 @@ const ServicesSectionUI = () => {
     );
 };
 
-export default ServicesSectionUI;
+export default TeamSection;
