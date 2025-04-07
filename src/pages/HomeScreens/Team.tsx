@@ -1,14 +1,10 @@
-import React from 'react';
-import { Row, Col, Typography, Button, Card, Space, Divider, Grid } from 'antd';
-import {
-    AimOutlined,
-    FileTextOutlined,
-    LineChartOutlined
-} from '@ant-design/icons';
+import { Row, Col, Typography, Button, Space, Grid } from 'antd';
 
-const { Title, Paragraph, Text } = Typography;
 
-const TeamMember = ({ name, title, imageSrc }) => {
+const { Title, Text } = Typography;
+
+const TeamMember = (props: any) => {
+    const { name, title, imageSrc } = props;
     return (
         <div style={{ marginBottom: '24px' }}>
             <div
@@ -152,7 +148,7 @@ const TeamSection = () => {
             </Row>
 
             {/* CSS for hover effect */}
-            <style jsx>{`
+            <style>{`
         .service-card:hover {
           background-color: #f0f5ff;
           box-shadow: 0 8px 16px rgba(0,0,0,0.1);

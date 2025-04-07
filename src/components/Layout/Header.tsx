@@ -167,7 +167,6 @@ const ModernHeader: React.FC<ModernHeaderProps> = ({
             children: item.children?.map(child => ({
               key: child.key,
               label: <Link to={child.path ?? '/'}>{child.label}</Link>,
-              path: child.path
             }))
           }))}
         />

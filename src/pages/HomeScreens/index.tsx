@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react'
+import { Fragment } from 'react'
 import Intro from './Intro'
 import AboutUs from './AboutUs'
 import ServicesSectionUI from './WhatWeDo'

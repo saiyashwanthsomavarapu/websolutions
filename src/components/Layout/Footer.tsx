@@ -1,5 +1,4 @@
-import React from 'react';
-import { Layout, Row, Col, Input, Button, Typography, Space, Divider } from 'antd';
+import { Layout, Row, Col, Input, Button, Typography, Space, Divider, Grid } from 'antd';
 import {
   FacebookFilled,
   InstagramFilled,
@@ -12,10 +11,10 @@ import { Link as RouterLink } from 'react-router-dom';
 const { Footer } = Layout;
 const { Title, Text, Link } = Typography;
 
+
 const footerStyle = {
   backgroundColor: '#000',
-  color: '#fff',
-  padding: '50px 250px'
+  color: '#fff'
 };
 
 const headingStyle = {
@@ -67,8 +66,9 @@ const textBlockStyle = {
 };
 
 const FooterComponent = () => {
+  const screen = Grid.useBreakpoint();
   return (
-    <Footer style={footerStyle}>
+    <Footer style={{ ...footerStyle, padding: screen.lg ? '50px 250px' : '50px' }}>
       <Row gutter={[24, 48]}>
         {/* Left column with company tagline */}
         <Col xs={24} md={8} lg={8}>

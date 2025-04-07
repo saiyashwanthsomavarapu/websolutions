@@ -1,6 +1,5 @@
-import React, { use, useState } from 'react';
+// import { useState } from 'react';
 import { Row, Col, Typography, Collapse, Space, Grid } from 'antd';
-import { RightOutlined } from '@ant-design/icons';
 
 const { Title, Text } = Typography;
 const { Panel } = Collapse;
@@ -8,7 +7,7 @@ const { Panel } = Collapse;
 const FaqSection = () => {
     const { useBreakpoint } = Grid
     const screens = useBreakpoint();;
-    const [activeKey, setActiveKey] = useState(null);
+    // const [activeKey, setActiveKey] = useState(null);
 
     const faqItems = [
         {
@@ -34,12 +33,12 @@ const FaqSection = () => {
     ];
 
     // Custom expand icon component
-    const expandIcon = ({ isActive, panelKey }) => (
-        <RightOutlined
-            rotate={isActive ? 90 : 0}
-            style={{ fontSize: '16px', transition: 'all 0.3s' }}
-        />
-    );
+    // const expandIcon = ({ isActive, panelKey }) => (
+    //     <RightOutlined
+    //         rotate={isActive ? 90 : 0}
+    //         style={{ fontSize: '16px', transition: 'all 0.3s' }}
+    //     />
+    // );
 
     return (
         <div className="faq-container" style={{ margin: '0', padding: '0' }}>
@@ -95,10 +94,7 @@ const FaqSection = () => {
                         <Collapse
                             accordion
                             bordered={false}
-                            expandIcon={expandIcon}
                             expandIconPosition="end"
-                            activeKey={activeKey}
-                            onChange={setActiveKey}
                             style={{
                                 background: 'transparent'
                             }}
@@ -111,11 +107,6 @@ const FaqSection = () => {
                                         marginBottom: '0',
                                         borderBottom: '1px solid rgba(0, 0, 0, 0.1)',
                                         padding: '16px 0',
-                                    }}
-                                    headerStyle={{
-                                        fontSize: '16px',
-                                        fontWeight: '500',
-                                        color: '#000',
                                     }}
                                 >
                                     <div style={{ paddingLeft: '0', paddingRight: '24px' }}>

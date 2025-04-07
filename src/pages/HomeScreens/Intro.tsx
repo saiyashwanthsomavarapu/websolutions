@@ -3,34 +3,11 @@ import { ArrowRightOutlined } from '@ant-design/icons';
 import './Intro.css';
 const { Title, Paragraph } = Typography;
 
-const heroSectionStyle = {
-    position: 'relative',
-    height: '100vh',
-    minHeight: '500px',
-    width: '100%',
-    overflow: 'hidden',
-};
+// const heroSectionStyle = ;
 
-const backgroundImageStyle = {
-    position: 'absolute',
-    top: 0,
-    left: 0,
-    width: '100%',
-    height: '100%',
-    backgroundImage: 'url(../src/assets/bg.png)',
-    backgroundSize: 'cover',
-    backgroundPosition: 'center',
-    filter: 'brightness(0.5)',
-};
+// const backgroundImageStyle = ;
 
-const contentContainerStyle = {
-    position: 'relative',
-    display: 'flex',
-    alignItem: "bottom",
-    zIndex: 1,
-    height: '100%',
-    padding: '0 24px',
-};
+// const contentContainerStyle =;
 
 const headingStyle = {
     color: '#fff',
@@ -65,10 +42,33 @@ const statsCardStyle = {
 
 const Intro = () => {
     return (
-        <div style={heroSectionStyle}>
-            <div style={backgroundImageStyle}></div>
+        <div style={{
+            position: 'relative',
+            height: '100vh',
+            minHeight: '500px',
+            width: '100%',
+            overflow: 'hidden',
+        }}>
+            <div style={{
+                position: 'absolute',
+                top: 0,
+                left: 0,
+                width: '100%',
+                height: '100%',
+                backgroundImage: 'url(../src/assets/bg.png)',
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                filter: 'brightness(0.5)',
+            }}></div>
 
-            <Space.Compact style={contentContainerStyle}>
+            <Space.Compact style={{
+                position: 'relative',
+                display: 'flex',
+
+                zIndex: 1,
+                height: '100%',
+                padding: '0 24px',
+            }}>
                 <Row align="middle" justify={'center'} style={{ height: '100%', }}>
                     <Col xs={24} md={12} lg={10} style={{ marginBottom: '40px' }}>
                         <Title level={1} style={{ ...headingStyle, fontSize: '48px', lineHeight: '1.2' }}>

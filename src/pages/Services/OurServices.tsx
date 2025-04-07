@@ -1,8 +1,8 @@
-import { Row, Col, Typography, Card, Space, Grid } from 'antd';
+import { Row, Col, Typography, Space, Grid } from 'antd';
 import { services } from '../../Utils/appContants';
 import ServiceCard from '../../components/ServiceCard';
 
-const { Title, Text, Paragraph } = Typography;
+const { Title, Text } = Typography;
 
 const OurServices = () => {
     const { useBreakpoint } = Grid;

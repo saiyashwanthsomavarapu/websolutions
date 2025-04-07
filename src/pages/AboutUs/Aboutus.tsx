@@ -1,9 +1,9 @@
-import React, { Fragment, useState } from 'react';
+import React, { Fragment } from 'react';
 import { Row, Col, Typography, Tabs, Space, TabsProps, Card } from 'antd';
 import { AimOutlined, ShakeOutlined } from '@ant-design/icons';
 
 const { Title, Text, Paragraph } = Typography;
-const { TabPane } = Tabs;
+// const { TabPane } = Tabs;
 
 const Tab1 = () => {
 
@@ -58,7 +58,8 @@ const Tab1 = () => {
 }
 
 function Aboutus() {
-    const [alignValue, setAlignValue] = React.useState<Align>('center');
+    type Align = 'end' | 'start' | 'center' | undefined;
+    const [alignValue, _] = React.useState<Align>('center');
     const onChange = (key: string) => {
         console.log(key);
     };

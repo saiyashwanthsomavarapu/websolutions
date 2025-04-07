@@ -81,7 +81,7 @@ const ServicesSectionUI = () => {
             </Row>
 
             {/* CSS for hover effect */}
-            <style jsx>{`
+            <style>{`
         .service-card:hover {
           background-color: #f0f5ff;
           box-shadow: 0 8px 16px rgba(0,0,0,0.1);

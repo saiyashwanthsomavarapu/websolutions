@@ -1,5 +1,4 @@
-import React from 'react'
-import { Row, Col, Typography, Button, Card, Statistic, Space, Divider, Grid } from 'antd';
+import { Row, Col, Typography, Button, Card, Space, Grid } from 'antd';
 
 const { Title, Text, Paragraph } = Typography;
 
