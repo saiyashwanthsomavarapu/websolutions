@@ -73,7 +73,8 @@ function Aboutus() {
             display: 'flex',
             flexDirection: 'column',
             overflow: 'hidden',
-            paddingBottom: '100px'
+            paddingBottom: '100px',
+            backgroundColor: '#fff'
         }}>
             <Row >
                 <Col xs={24} md={24} style={{ display: 'flex', alignItems: 'center', flexDirection: 'column' }} >

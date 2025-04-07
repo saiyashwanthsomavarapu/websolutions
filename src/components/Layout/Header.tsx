@@ -4,74 +4,58 @@ import {
   Menu,
   Button,
   Drawer,
-  Divider,
-  Avatar,
-  Badge,
-  Input,
   Dropdown,
   Space,
-  MenuProps
+  MenuProps,
+  Grid
 } from 'antd';
 import {
   MenuOutlined,
-  SearchOutlined,
-  BellOutlined,
-  UserOutlined,
-  ShoppingCartOutlined,
   DownOutlined,
-  GlobalOutlined
 } from '@ant-design/icons';
+import { Link } from 'react-router-dom';
 
 const { Header } = Layout;
-const { Search } = Input;
 
 // Define types for navigation items
 interface NavItem {
   key: string;
   label: string;
   children?: NavItem[];
+  path?: string;
 }
 
 // Define props for the header component
 interface ModernHeaderProps {
   logo?: React.ReactNode;
-  onSearch?: (value: string) => void;
-  onLanguageChange?: (language: string) => void;
-  onProfileClick?: () => void;
-  onCartClick?: () => void;
-  cartCount?: number;
-  notificationCount?: number;
 }
+
+const { useBreakpoint } = Grid
 
 const ModernHeader: React.FC<ModernHeaderProps> = ({
   logo = 'LOGO',
-  onSearch,
-  onLanguageChange,
-  onProfileClick,
-  onCartClick,
-  cartCount = 0,
-  notificationCount = 0
 }) => {
+  const screens = useBreakpoint();
   const [visible, setVisible] = useState<boolean>(false);
   const [scrolled, setScrolled] = useState<boolean>(false);
-  
+
   // Navigation items
   const navItems: NavItem[] = [
-    { key: 'home', label: 'Home' },
-    { 
-      key: 'products', 
-      label: 'Products', 
-      children: [
-        { key: 'new', label: 'New Arrivals' },
-        { key: 'best', label: 'Best Sellers' },
-        { key: 'sale', label: 'On Sale' }
-      ]
-    },
-    { key: 'about', label: 'About Us' },
-    { key: 'contact', label: 'Contact' },
-    { key: 'blog', label: 'Blog' }
+    { key: 'home', label: 'Home', path: '/' },
+    // {
+    //   key: 'products',
+    //   label: 'Products',
+    //   children: [
+    //     { key: 'new', label: 'New Arrivals', path: '/' },
+    //     { key: 'best', label: 'Best Sellers', path: '/' },
+    //     { key: 'sale', label: 'On Sale', path: '/' }
+    //   ]
+    // },
+    { key: 'services', label: 'Services', path: '/services' },
+    { key: 'about', label: 'About Us', path: '/aboutus' },
+    { key: 'contact', label: 'Contact', path: '/contact' },
   ];
-  
+
   // Handle scroll effect
   useEffect(() => {
     const handleScroll = (): void => {
@@ -81,11 +65,11 @@ const ModernHeader: React.FC<ModernHeaderProps> = ({
         setScrolled(false);
       }
     };
-    
+
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
-  
+
   // Generate menu items for desktop navigation
   const getNavItems = (): MenuProps['items'] => {
     return navItems.map(item => {
@@ -101,34 +85,20 @@ const ModernHeader: React.FC<ModernHeaderProps> = ({
                 }))
               }}
             >
-              <a onClick={e => e.preventDefault()}>
-                <Space>
-                  {item.label}
-                  <DownOutlined style={{ fontSize: '12px' }} />
-                </Space>
-              </a>
+              <Space>
+                <Link to={item.path ?? '/'} >{item.label}</Link>
+                <DownOutlined style={{ fontSize: '12px' }} />
+              </Space>
+
             </Dropdown>
           )
         };
       }
-      return { key: item.key, label: item.label };
+      return { key: item.key, label: <Link to={item.path ?? '/'}>{item.label}</Link> };
     });
   };
-  
-  // Language options
-  const languageOptions = [
-    { key: 'en', label: 'English' },
-    { key: 'fr', label: 'Français' },
-    { key: 'es', label: 'Español' }
-  ];
-  
-  // Handle language selection
-  const handleLanguageSelect = (key: string): void => {
-    if (onLanguageChange) {
-      onLanguageChange(key);
-    }
-  };
-  
+
+
   return (
     <>
       <Header
@@ -138,7 +108,7 @@ const ModernHeader: React.FC<ModernHeaderProps> = ({
           zIndex: 1000,
           width: '100%',
           padding: '0 24px',
-          backgroundColor: scrolled ? 'white' : 'transparent',
+          backgroundColor: 'white',
           transition: 'all 0.3s ease',
           boxShadow: scrolled ? '0 2px 8px rgba(0,0,0,0.06)' : 'none',
           display: 'flex',
@@ -151,64 +121,35 @@ const ModernHeader: React.FC<ModernHeaderProps> = ({
         <div className="logo" style={{ fontSize: '24px', fontWeight: 'bold', color: '#1890ff' }}>
           {logo}
         </div>
-        
+
         {/* Desktop Navigation */}
         <div style={{ display: 'flex', alignItems: 'center' }}>
-          <div style={{ display: { xs: 'none', md: 'block' } }}>
+          <div style={{ display: screens.xs ? 'none' : 'block' }}>
             <Menu
               mode="horizontal"
-              style={{ 
-                border: 'none', 
-                backgroundColor: 'transparent',
-                minWidth: '400px'
+              style={{
+                border: 'none',
+                backgroundColor: 'transparent'
               }}
               items={getNavItems()}
             />
           </div>
-          
+
           {/* Action buttons */}
           <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
-            {/* <Search
-              placeholder="Search"
-              style={{ width: 200, marginRight: '8px' }}
-              bordered={false}
-              className="header-search"
-              onSearch={onSearch}
-            /> */}
-            
-            {/* <Dropdown
-              menu={{
-                items: languageOptions.map(lang => ({
-                  key: lang.key,
-                  label: lang.label,
-                  onClick: () => handleLanguageSelect(lang.key)
-                }))
-              }}
-            >
-              <Button type="text" icon={<GlobalOutlined />} />
-            </Dropdown> */}
-            
-            {/* <Badge count={notificationCount} size="small">
-              <Button type="text" icon={<BellOutlined />} />
-            </Badge>
-            
-            <Badge count={cartCount} size="small">
-              <Button type="text" icon={<ShoppingCartOutlined />} onClick={onCartClick} />
-            </Badge>
-            
-            <Avatar icon={<UserOutlined />} onClick={onProfileClick} style={{ cursor: 'pointer' }} /> */}
-            
+
+
             {/* Mobile menu button */}
             <Button
               type="text"
               icon={<MenuOutlined />}
               onClick={() => setVisible(true)}
-              style={{ display: { md: 'none' } }}
+              style={{ display: screens.md ? 'none' : '' }}
             />
           </div>
         </div>
       </Header>
-      
+
       {/* Mobile drawer */}
       <Drawer
         title="Menu"
@@ -225,22 +166,11 @@ const ModernHeader: React.FC<ModernHeaderProps> = ({
             label: item.label,
             children: item.children?.map(child => ({
               key: child.key,
-              label: child.label
+              label: <Link to={child.path ?? '/'}>{child.label}</Link>,
+              path: child.path
             }))
           }))}
         />
-        <Divider />
-        <div style={{ padding: '0 16px' }}>
-          <Search 
-            placeholder="Search" 
-            style={{ marginBottom: '16px' }} 
-            onSearch={onSearch}
-          />
-          <div style={{ display: 'flex', justifyContent: 'space-between', margin: '16px 0' }}>
-            <Button icon={<GlobalOutlined />}>Language</Button>
-            <Button icon={<UserOutlined />} onClick={onProfileClick}>Account</Button>
-          </div>
-        </div>
       </Drawer>
     </>
   );

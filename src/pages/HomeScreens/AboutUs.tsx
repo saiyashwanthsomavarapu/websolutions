@@ -1,53 +1,62 @@
-import { Row, Col, Typography, Button, Progress, Card, Space } from 'antd';
+import { Row, Col, Typography, Button, Progress, Card, Space, Grid } from 'antd';
 
 const { Title, Paragraph, Text } = Typography;
 
 const BusinessSolutionsUI = () => {
+    const screens = Grid.useBreakpoint();;
     return (
-        <Space style={{ display: 'flex',padding: '100px 0', justifyContent: 'center', backgroundColor: '#fff' }}>
+        <Space style={{
+            display: 'flex',
+            padding: screens.lg ? '100px 250px' : '100px',
+            justifyContent: 'center',
+            backgroundColor: '#fff'
+        }}>
             <Row gutter={[48, 48]}>
                 <Col xs={24} md={12} lg={16}>
-                    <div style={{ paddingTop: '24px' }}>
-                        <Text style={{ color: '#000', textTransform: 'uppercase', fontWeight: '300', marginBottom: '1px', display: 'block' , textDecoration: 'underline', textUnderlineOffset: '10px'}}>
-                            ABOUT US
-                        </Text>
-                        <Title level={2} style={{ fontSize: '40px', fontWeight:500, lineHeight: '1.2',marginTop: 10, marginBottom: '32px', whiteSpace: 'pre-line' }}>
-                            {
-                              `Unlock success with 
+                    <Text style={{
+                        color: '#000',
+                        textTransform: 'uppercase',
+                        fontWeight: '300',
+                        display: 'block',
+                        textDecoration: 'underline',
+                        textUnderlineOffset: '10px'
+                    }}>
+                        ABOUT US
+                    </Text>
+                    <Title level={2} style={{ fontSize: '40px', fontWeight: 500, lineHeight: '1.2', marginTop: 10, marginBottom: '32px', whiteSpace: 'pre-line' }}>
+                        {
+                            `Unlock success with 
                                professional 
                                business solutions`
-                            }
-                        </Title>
-                        <Row style={{ marginTop: '48px' }} gutter={[24, 24]}>
-                            <Col xs={24} md={12}>
-                                <Paragraph style={{ fontSize: '16px', fontWeight: '400',color: '#5c5c5c', marginBottom: '32px' }}>
-                                    At Casho, we are committed to delivering exceptional services that help our clients thrive in a dynamic and ever-changing world.
-                                </Paragraph>
-                                <Button type="primary" style={{ backgroundColor: '#1a1a1a', border: 'none', borderRadius: '4px', height: '48px', padding: '0 24px' }}>
-                                    About Us
-                                </Button>
-                            </Col>
-                            <Col xs={24} md={12}>
-                                <div style={{ marginBottom: '24px' }}>
-                                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '8px' }}>
-                                        <Text strong>Business Analysis</Text>
-                                        <Text>80%</Text>
-                                    </div>
-                                    <Progress percent={80} showInfo={false} strokeColor="#555" />
+                        }
+                    </Title>
+                    <Row style={{ marginTop: '48px' }} gutter={[24, 24]}>
+                        <Col xs={24} md={12}>
+                            <Paragraph style={{ fontSize: '16px', fontWeight: '400', color: '#5c5c5c', marginBottom: '32px' }}>
+                                At Casho, we are committed to delivering exceptional services that help our clients thrive in a dynamic and ever-changing world.
+                            </Paragraph>
+                            <Button type="primary" style={{ backgroundColor: '#1a1a1a', border: 'none', borderRadius: '4px', height: '48px', padding: '0 24px' }}>
+                                About Us
+                            </Button>
+                        </Col>
+                        <Col xs={24} md={12}>
+                            <div style={{ marginBottom: '24px' }}>
+                                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '8px' }}>
+                                    <Text strong>Business Analysis</Text>
+                                    <Text>80%</Text>
                                 </div>
+                                <Progress percent={80} showInfo={false} strokeColor="#555" />
+                            </div>
 
-                                <div>
-                                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '8px' }}>
-                                        <Text strong>Achievement</Text>
-                                        <Text>90%</Text>
-                                    </div>
-                                    <Progress percent={90} showInfo={false} strokeColor="#555" />
+                            <div>
+                                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '8px' }}>
+                                    <Text strong>Achievement</Text>
+                                    <Text>90%</Text>
                                 </div>
-                            </Col>
-                        </Row>
-
-
-                    </div>
+                                <Progress percent={90} showInfo={false} strokeColor="#555" />
+                            </div>
+                        </Col>
+                    </Row>
                 </Col>
 
                 <Col xs={24} md={12} lg={8}>

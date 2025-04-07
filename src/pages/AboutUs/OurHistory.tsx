@@ -1,4 +1,4 @@
-import { Row, Col, Typography, Button, Card, Statistic, Space } from 'antd';
+import { Row, Col, Typography, Button, Card, Statistic, Space, Divider } from 'antd';
 
 // const { Title, Paragraph, Text } = Typography;
 
@@ -11,6 +11,7 @@ function OurHistory() {
             display: 'flex',
             flexDirection: 'column',
             overflow: 'hidden',
+            backgroundColor: '#fff',
             paddingBottom: '100px'
         }}>
             <Row gutter={[48, 48]} style={{ justifyContent: 'center' }}>
@@ -45,27 +46,27 @@ function OurHistory() {
                     >
                         Contact Us
                     </Button>
-
-                    <div style={{ padding: '20px 0', borderTop: '1px solid #e8e8e8', marginTop: '20px' }}>
+                    <Divider type="horizontal" style={{ margin: '60px 0px' }} />
+                    <div >
                         <Row gutter={[16, 16]}>
                             <Col xs={24} sm={8}>
                                 <Card
                                     style={{
                                         backgroundColor: '#f5f7f9',
-                                        borderRadius: '4px',
+                                        borderRadius: '8px',
+                                        padding: 20,
+                                        background: '#f1f6f6',
+
                                         border: 'none',
                                         height: '100%'
                                     }}
                                 >
-                                    <Statistic
-                                        title="Customer Satisfaction"
-                                        value="95%"
-                                        valueStyle={{
-                                            fontSize: '36px',
-                                            fontWeight: 'bold',
-                                            color: '#000'
-                                        }}
-                                    />
+
+                                    <Title level={3} style={{ fontWeight: 500 }}>95%</Title>
+                                    <Divider type='horizontal' />
+                                    <Text style={{ fontWeight: 400 }}>
+                                        Customer Satisfaction
+                                    </Text>
                                 </Card>
                             </Col>
 
@@ -73,20 +74,19 @@ function OurHistory() {
                                 <Card
                                     style={{
                                         backgroundColor: '#f5f7f9',
-                                        borderRadius: '4px',
+                                        borderRadius: '8px',
+                                        padding: 20,
+                                        background: '#f1f6f6',
+
                                         border: 'none',
                                         height: '100%'
                                     }}
                                 >
-                                    <Statistic
-                                        title="Global Clients Served"
-                                        value="50+"
-                                        valueStyle={{
-                                            fontSize: '36px',
-                                            fontWeight: 'bold',
-                                            color: '#000'
-                                        }}
-                                    />
+                                    <Title level={3} style={{ fontWeight: 500 }}>50%</Title>
+                                    <Divider type='horizontal' />
+                                    <Text style={{ fontWeight: 400 }}>
+                                        Global Clients Served
+                                    </Text>
                                 </Card>
                             </Col>
 
@@ -94,20 +94,19 @@ function OurHistory() {
                                 <Card
                                     style={{
                                         backgroundColor: '#f5f7f9',
-                                        borderRadius: '4px',
+                                        borderRadius: '8px',
+                                        padding: 20,
+                                        background: '#f1f6f6',
+
                                         border: 'none',
                                         height: '100%'
                                     }}
                                 >
-                                    <Statistic
-                                        title="Retention Rate"
-                                        value="90%"
-                                        valueStyle={{
-                                            fontSize: '36px',
-                                            fontWeight: 'bold',
-                                            color: '#000'
-                                        }}
-                                    />
+                                    <Title level={3} style={{ fontWeight: 500 }}>90%</Title>
+                                    <Divider type='horizontal' />
+                                    <Text style={{ fontWeight: 400 }}>
+                                        Retention Rate
+                                    </Text>
                                 </Card>
                             </Col>
                         </Row>

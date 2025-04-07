@@ -1,5 +1,5 @@
 import React from 'react';
-import { Row, Col, Typography, Button, Card, Space, Divider } from 'antd';
+import { Row, Col, Typography, Button, Card, Space, Divider, Grid } from 'antd';
 import {
     AimOutlined,
     FileTextOutlined,
@@ -46,6 +46,8 @@ const TeamMember = ({ name, title, imageSrc }) => {
 };
 
 const TeamSection = () => {
+    const { useBreakpoint } = Grid;
+    const screens = useBreakpoint();
     const teamMembers = [
         {
             name: 'John Doe',
@@ -73,8 +75,8 @@ const TeamSection = () => {
     return (
         <Space style={{
             display: 'flex',
+            padding: screens.lg ? '100px 250px' : '100px',
             justifyContent: 'center',
-            padding: '24px',
             backgroundColor: '#f5f7f9',
         }}>
             <Row gutter={[48, 48]}>
@@ -84,8 +86,7 @@ const TeamSection = () => {
                     lg={24}
                     style={{
                         display: 'flex',
-                        justifyContent:'space-between',
-                        top: '48px',
+                        justifyContent: 'space-between',
                         height: '100%'
                     }}
                 >
@@ -127,17 +128,17 @@ const TeamSection = () => {
 
                 {/* Right Side - Cards with Hover Effect */}
                 {/* <Col xs={24} md={12} lg={24}> */}
-                    
-                    {teamMembers.map((member, index) => (
-                        <Col xs={24} sm={12} md={6} key={index}>
-                            <TeamMember
-                                name={member.name}
-                                title={member.title}
-                                imageSrc={member.imageSrc}
-                            />
-                        </Col>
-                    ))}
-                    {/* <Space direction="vertical" size={24} style={{ width: '100%' }}>
+
+                {teamMembers.map((member, index) => (
+                    <Col xs={24} sm={12} md={6} key={index}>
+                        <TeamMember
+                            name={member.name}
+                            title={member.title}
+                            imageSrc={member.imageSrc}
+                        />
+                    </Col>
+                ))}
+                {/* <Space direction="vertical" size={24} style={{ width: '100%' }}>
                         {services.map((service, index) => (
                             <ServiceCard
                                 key={index}

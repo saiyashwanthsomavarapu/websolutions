@@ -4,6 +4,8 @@ import HomeScreen from './pages/HomeScreens';
 import { Layout } from 'antd';
 import { Routes, Route, BrowserRouter } from 'react-router-dom';
 import AboutUsSection from './pages/AboutUs';
+import Contact from './pages/Contact';
+import Services from './pages/Services';
 
 const { Content } = Layout;
 
@@ -16,6 +18,8 @@ const App = () => {
           <Routes>
             <Route path="/" element={<HomeScreen />} />
             <Route path="/aboutus" element={<AboutUsSection />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/contact" element={<Contact />} />
           </Routes>
         </Content>
         <FooterComponent />

@@ -1,6 +1,7 @@
 import { Fragment } from 'react';
 import OurHistory from './OurHistory';
 import Aboutus from './Aboutus';
+// import TrustedClients from './Client';
 
 const AboutUsSection = () => {
     // const tabStyle = {
@@ -15,6 +16,7 @@ const AboutUsSection = () => {
     return (
         <Fragment>
             <Aboutus />
+            {/* <TrustedClients /> */}
             <OurHistory />
         </Fragment>
     );
