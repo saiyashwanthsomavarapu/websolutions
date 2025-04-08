@@ -12,7 +12,7 @@ const ContactUs = () => {
             flexDirection: 'column',
             overflow: 'hidden',
             backgroundColor: '#fff',
-            padding: screen.lg ? '100px 250px' : '100px'
+            padding: screen.lg ? '100px 250px' : '50px'
         }}>
             <Row gutter={[48, 48]} style={{ justifyContent: 'center' }}>
                 <Col xs={24} md={12} lg={12}>

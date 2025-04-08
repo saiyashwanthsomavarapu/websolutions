@@ -9,7 +9,7 @@ const ServicesSectionUI = () => {
     return (
         <Space style={{
             display: 'flex',
-            padding: screens.lg ? '100px 250px' : '100px',
+            padding: screens.lg ? '100px 250px' : '50px',
             justifyContent: 'center',
             backgroundColor: '#f5f7f9',
         }}>
@@ -19,9 +19,10 @@ const ServicesSectionUI = () => {
                     md={12}
                     lg={12}
                     style={{
-                        position: 'sticky',
+                        position: screens.lg ? 'sticky' : 'relative',
                         top: '48px',
-                        height: '100%'
+                        height: '100%',
+                        marginBottom: screens.xs || screens.sm ? '48px' : 0
                     }}
                 >
                     <Text style={{
@@ -79,15 +80,6 @@ const ServicesSectionUI = () => {
                     </Space>
                 </Col>
             </Row>
-
-            {/* CSS for hover effect */}
-            <style>{`
-        .service-card:hover {
-          background-color: #f0f5ff;
-          box-shadow: 0 8px 16px rgba(0,0,0,0.1);
-          transform: translateY(-4px);
-        }
-      `}</style>
         </Space >
     );
 };

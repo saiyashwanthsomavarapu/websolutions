@@ -70,7 +70,7 @@ const Intro = () => {
                 padding: '0 24px',
             }}>
                 <Row align="middle" justify={'center'} style={{ height: '100%', }}>
-                    <Col xs={24} md={12} lg={10} style={{ marginBottom: '40px' }}>
+                    <Col xs={24} md={12} lg={10} >
                         <Title level={1} style={{ ...headingStyle, fontSize: '48px', lineHeight: '1.2' }}>
                             INNOVATING SOLUTIONS, DRIVING SUCCESS
                         </Title>

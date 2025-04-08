@@ -1,9 +1,10 @@
-import { Row, Col, Typography, Button, Card, Space } from 'antd';
+import { Row, Col, Typography, Button, Card, Space, Grid } from 'antd';
 import { CheckOutlined } from '@ant-design/icons';
 
 const { Title, Paragraph, Text } = Typography;
 
 const CaseStudySection = () => {
+    const screens = Grid.useBreakpoint();
     return (
         <Space style={{
             display: 'flex',
@@ -44,7 +45,7 @@ const CaseStudySection = () => {
                     </div>
                 </Col>
                 {/* Right side - Content */}
-                <Col xs={24} md={12} lg={14} style={{ padding: '60px 40px' }}>
+                <Col xs={24} md={12} lg={14} style={{ padding: screens.lg ? '60px 40px' : '40px 80px' }}>
                     <Text style={{
                         color: '#000',
                         textTransform: 'uppercase',

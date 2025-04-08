@@ -68,7 +68,7 @@ const FaqSection = () => {
                     md={12}
                     style={{
                         backgroundColor: '#f0f0e4',
-                        padding: screens.xs ? '32px 24px' : '48px 40px'
+                        padding: screens.lg ? '60px 40px' : '40px 50px'
                     }}
                 >
                     <Space direction="vertical" size={32} style={{ width: '100%' }}>

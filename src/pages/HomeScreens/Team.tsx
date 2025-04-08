@@ -71,7 +71,7 @@ const TeamSection = () => {
     return (
         <Space style={{
             display: 'flex',
-            padding: screens.lg ? '100px 250px' : '100px',
+            padding: screens.lg ? '100px 250px' : '50px',
             justifyContent: 'center',
             backgroundColor: '#f5f7f9',
         }}>
@@ -148,13 +148,7 @@ const TeamSection = () => {
             </Row>
 
             {/* CSS for hover effect */}
-            <style>{`
-        .service-card:hover {
-          background-color: #f0f5ff;
-          box-shadow: 0 8px 16px rgba(0,0,0,0.1);
-          transform: translateY(-4px);
-        }
-      `}</style>
+
         </Space >
     );
 };

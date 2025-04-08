@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import { Row, Col, Typography, Tabs, Space, TabsProps, Card } from 'antd';
+import { Row, Col, Typography, Tabs, Space, TabsProps, Card, Grid } from 'antd';
 import { AimOutlined, ShakeOutlined } from '@ant-design/icons';
 
 const { Title, Text, Paragraph } = Typography;
@@ -58,6 +58,7 @@ const Tab1 = () => {
 }
 
 function Aboutus() {
+    const screens = Grid.useBreakpoint();
     type Align = 'end' | 'start' | 'center' | undefined;
     const [alignValue, _] = React.useState<Align>('center');
     const onChange = (key: string) => {
@@ -74,7 +75,7 @@ function Aboutus() {
             display: 'flex',
             flexDirection: 'column',
             overflow: 'hidden',
-            paddingBottom: '100px',
+            padding: screens.lg ? '100px 250px' : '50px',
             backgroundColor: '#fff'
         }}>
             <Row >

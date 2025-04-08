@@ -4,8 +4,6 @@ import {
   Menu,
   Button,
   Drawer,
-  Dropdown,
-  Space,
   MenuProps,
   Grid
 } from 'antd';
@@ -30,7 +28,7 @@ interface ModernHeaderProps {
   logo?: React.ReactNode;
 }
 
-const { useBreakpoint } = Grid
+const { useBreakpoint } = Grid;
 
 const ModernHeader: React.FC<ModernHeaderProps> = ({
   logo = 'LOGO',
@@ -38,6 +36,7 @@ const ModernHeader: React.FC<ModernHeaderProps> = ({
   const screens = useBreakpoint();
   const [visible, setVisible] = useState<boolean>(false);
   const [scrolled, setScrolled] = useState<boolean>(false);
+  const isMobile = !screens.md;
 
   // Navigation items
   const navItems: NavItem[] = [
@@ -46,9 +45,9 @@ const ModernHeader: React.FC<ModernHeaderProps> = ({
     //   key: 'products',
     //   label: 'Products',
     //   children: [
-    //     { key: 'new', label: 'New Arrivals', path: '/' },
-    //     { key: 'best', label: 'Best Sellers', path: '/' },
-    //     { key: 'sale', label: 'On Sale', path: '/' }
+    //     { key: 'new', label: 'New Arrivals', path: '/products/new' },
+    //     { key: 'best', label: 'Best Sellers', path: '/products/best' },
+    //     { key: 'sale', label: 'On Sale', path: '/products/sale' }
     //   ]
     // },
     { key: 'services', label: 'Services', path: '/services' },
@@ -70,34 +69,39 @@ const ModernHeader: React.FC<ModernHeaderProps> = ({
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  // Close drawer when switching to desktop view
+  useEffect(() => {
+    if (!isMobile) {
+      setVisible(false);
+    }
+  }, [isMobile]);
+
   // Generate menu items for desktop navigation
   const getNavItems = (): MenuProps['items'] => {
     return navItems.map(item => {
       if (item.children) {
+        // For dropdown menus
         return {
           key: item.key,
           label: (
-            <Dropdown
-              menu={{
-                items: item.children.map(child => ({
-                  key: child.key,
-                  label: child.label
-                }))
-              }}
-            >
-              <Space>
-                <Link to={item.path ?? '/'} >{item.label}</Link>
-                <DownOutlined style={{ fontSize: '12px' }} />
-              </Space>
-
-            </Dropdown>
-          )
+            <span>
+              {item.label}
+              <DownOutlined style={{ fontSize: '12px', marginLeft: '5px' }} />
+            </span>
+          ),
+          children: item.children.map(child => ({
+            key: child.key,
+            label: <Link to={child.path || '/'}>{child.label}</Link>
+          }))
         };
       }
-      return { key: item.key, label: <Link to={item.path ?? '/'}>{item.label}</Link> };
+      // For regular menu items
+      return {
+        key: item.key,
+        label: <Link to={item.path || '/'}>{item.label}</Link>
+      };
     });
   };
-
 
   return (
     <>
@@ -119,12 +123,12 @@ const ModernHeader: React.FC<ModernHeaderProps> = ({
       >
         {/* Logo */}
         <div className="logo" style={{ fontSize: '24px', fontWeight: 'bold', color: '#1890ff' }}>
-          {logo}
+          <Link to="/" style={{ color: 'inherit', textDecoration: 'none' }}>{logo}</Link>
         </div>
 
         {/* Desktop Navigation */}
         <div style={{ display: 'flex', alignItems: 'center' }}>
-          <div style={{ display: screens.xs ? 'none' : 'block' }}>
+          {!isMobile && (
             <Menu
               mode="horizontal"
               style={{
@@ -133,20 +137,16 @@ const ModernHeader: React.FC<ModernHeaderProps> = ({
               }}
               items={getNavItems()}
             />
-          </div>
+          )}
 
-          {/* Action buttons */}
-          <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
-
-
-            {/* Mobile menu button */}
+          {/* Mobile menu button */}
+          {isMobile && (
             <Button
               type="text"
               icon={<MenuOutlined />}
               onClick={() => setVisible(true)}
-              style={{ display: screens.md ? 'none' : '' }}
             />
-          </div>
+          )}
         </div>
       </Header>
 
@@ -157,16 +157,17 @@ const ModernHeader: React.FC<ModernHeaderProps> = ({
         onClose={() => setVisible(false)}
         open={visible}
         width={280}
+        bodyStyle={{ padding: 0 }}
       >
         <Menu
           mode="vertical"
           style={{ border: 'none' }}
           items={navItems.map(item => ({
             key: item.key,
-            label: item.label,
+            label: item.path ? <Link to={item.path}>{item.label}</Link> : item.label,
             children: item.children?.map(child => ({
               key: child.key,
-              label: <Link to={child.path ?? '/'}>{child.label}</Link>,
+              label: <Link to={child.path || '/'}>{child.label}</Link>,
             }))
           }))}
         />

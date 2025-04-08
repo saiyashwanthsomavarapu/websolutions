@@ -11,7 +11,7 @@ const GetInTouch = () => {
             flexDirection: 'column',
             overflow: 'hidden',
             backgroundColor: '#f1f6f6',
-            padding: screen.lg ? '100px 250px' : '100px'
+            padding: screen.lg ? '100px 250px' : '50px'
         }}>
             <Row gutter={[48, 48]} style={{ justifyItems: 'start' }}>
                 <Col xs={24} md={24} lg={24}>

@@ -1,10 +1,11 @@
-import { Row, Col, Typography, Button, Card, Space, Divider } from 'antd';
+import { Row, Col, Typography, Button, Card, Space, Divider, Grid } from 'antd';
 
 // const { Title, Paragraph, Text } = Typography;
 
 const { Title, Text, Paragraph } = Typography;
 
 function OurHistory() {
+    const screens = Grid.useBreakpoint();
 
     return (
         <Space style={{
@@ -12,7 +13,7 @@ function OurHistory() {
             flexDirection: 'column',
             overflow: 'hidden',
             backgroundColor: '#fff',
-            paddingBottom: '100px'
+            padding: screens.lg ? '100px 250px' : '50px',
         }}>
             <Row gutter={[48, 48]} style={{ justifyContent: 'center' }}>
                 <Col xs={24} md={12}>

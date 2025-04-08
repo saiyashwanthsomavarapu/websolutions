@@ -7,7 +7,7 @@ const BusinessSolutionsUI = () => {
     return (
         <Space style={{
             display: 'flex',
-            padding: screens.lg ? '100px 250px' : '100px',
+            padding: screens.lg ? '100px 250px' : '50px',
             justifyContent: 'center',
             backgroundColor: '#fff'
         }}>
