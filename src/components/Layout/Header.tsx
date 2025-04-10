@@ -11,7 +11,7 @@ import {
   MenuOutlined,
   DownOutlined,
 } from '@ant-design/icons';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 const { Header } = Layout;
 
@@ -37,6 +37,8 @@ const ModernHeader: React.FC<ModernHeaderProps> = ({
   const [visible, setVisible] = useState<boolean>(false);
   const [scrolled, setScrolled] = useState<boolean>(false);
   const isMobile = !screens.md;
+  const location = useLocation();
+  const isHome = location.pathname === '/';
 
   // Navigation items
   const navItems: NavItem[] = [
@@ -76,6 +78,13 @@ const ModernHeader: React.FC<ModernHeaderProps> = ({
     }
   }, [isMobile]);
 
+  const getTextColor = () => {
+    if (isHome) {
+      return scrolled ? 'black' : 'white';
+    }
+    return 'black';; // Default for transparent header
+  };
+
   // Generate menu items for desktop navigation
   const getNavItems = (): MenuProps['items'] => {
     return navItems.map(item => {
@@ -91,14 +100,14 @@ const ModernHeader: React.FC<ModernHeaderProps> = ({
           ),
           children: item.children.map(child => ({
             key: child.key,
-            label: <Link to={child.path || '/'}>{child.label}</Link>
+            label: <Link style={{ color: getTextColor(), }} to={child.path || '/'}>{child.label}</Link>
           }))
         };
       }
       // For regular menu items
       return {
         key: item.key,
-        label: <Link to={item.path || '/'}>{item.label}</Link>
+        label: <Link style={{ color: getTextColor(), textDecoration: 'none' }} to={item.path || '/'}>{item.label}</Link>
       };
     });
   };
@@ -107,12 +116,12 @@ const ModernHeader: React.FC<ModernHeaderProps> = ({
     <>
       <Header
         style={{
-          position: 'sticky',
+          position: 'fixed',
           top: 0,
           zIndex: 1000,
           width: '100%',
           padding: '0 24px',
-          backgroundColor: 'white',
+          backgroundColor: scrolled ? 'white' : 'transparent',
           transition: 'all 0.3s ease',
           boxShadow: scrolled ? '0 2px 8px rgba(0,0,0,0.06)' : 'none',
           display: 'flex',
@@ -133,7 +142,8 @@ const ModernHeader: React.FC<ModernHeaderProps> = ({
               mode="horizontal"
               style={{
                 border: 'none',
-                backgroundColor: 'transparent'
+                backgroundColor: 'transparent',
+                color: getTextColor()
               }}
               items={getNavItems()}
             />
@@ -164,10 +174,10 @@ const ModernHeader: React.FC<ModernHeaderProps> = ({
           style={{ border: 'none' }}
           items={navItems.map(item => ({
             key: item.key,
-            label: item.path ? <Link to={item.path}>{item.label}</Link> : item.label,
+            label: item.path ? <Link style={{ color: getTextColor(), }} to={item.path}>{item.label}</Link> : item.label,
             children: item.children?.map(child => ({
               key: child.key,
-              label: <Link to={child.path || '/'}>{child.label}</Link>,
+              label: <Link style={{ color: getTextColor(), }} to={child.path || '/'}>{child.label}</Link>,
             }))
           }))}
         />
