@@ -12,8 +12,9 @@ const ContactUs = () => {
             flexDirection: 'column',
             overflow: 'hidden',
             backgroundColor: '#fff',
-            padding: screen.lg ? '100px 250px' : '50px'
+            padding: (screen.lg || screen.md) ? '120px' : '100px 50px'
         }}>
+
             <Row gutter={[48, 48]} style={{ justifyContent: 'center' }}>
                 <Col xs={24} md={12} lg={12}>
                     <Text style={{
@@ -24,7 +25,7 @@ const ContactUs = () => {
                         marginBottom: '1px',
                         display: 'block', textDecoration: 'underline', textUnderlineOffset: '10px'
                     }}>
-                        Contact Us
+                        Contact Us  {screen.lg ? 'true' : 'false'} {screen.md ? 'true' : 'false'}
                     </Text>
                     <Title level={1} style={{ marginTop: '8px', marginBottom: '40px', fontSize: '50px', fontWeight: 500, color: '#121212' }}>
                         Get in touch with our team

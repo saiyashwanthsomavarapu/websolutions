@@ -3,16 +3,16 @@ import { Row, Col, Typography, Button, Progress, Card, Space, Grid } from 'antd'
 const { Title, Paragraph, Text } = Typography;
 
 const BusinessSolutionsUI = () => {
-    const screens = Grid.useBreakpoint();;
+    const screen = Grid.useBreakpoint();;
     return (
         <Space style={{
             display: 'flex',
-            padding: screens.lg ? '100px 250px' : '50px',
+            padding: (screen.lg || screen.md) ? '120px' : '50px',
             justifyContent: 'center',
             backgroundColor: '#fff'
         }}>
             <Row gutter={[48, 48]}>
-                <Col xs={24} md={12} lg={16}>
+                <Col xs={24} sm={24} md={12} lg={16}>
                     <Text style={{
                         color: '#000',
                         textTransform: 'uppercase',
@@ -23,7 +23,7 @@ const BusinessSolutionsUI = () => {
                     }}>
                         ABOUT US
                     </Text>
-                    <Title level={2} style={{ fontSize: '40px', fontWeight: 500, lineHeight: '1.2', marginTop: 10, marginBottom: '32px', whiteSpace: 'pre-line' }}>
+                    <Title level={2} style={{ fontSize: screen.lg ? '2.5em' : '2em', fontWeight: 500, lineHeight: '1.2', marginTop: 10, marginBottom: '32px', whiteSpace: 'pre-line' }}>
                         {
                             `Unlock success with 
                                professional 
@@ -31,15 +31,15 @@ const BusinessSolutionsUI = () => {
                         }
                     </Title>
                     <Row style={{ marginTop: '48px' }} gutter={[24, 24]}>
-                        <Col xs={24} md={12}>
+                        <Col xs={24} md={24} lg={12}>
                             <Paragraph style={{ fontSize: '16px', fontWeight: '400', color: '#5c5c5c', marginBottom: '32px' }}>
                                 At Casho, we are committed to delivering exceptional services that help our clients thrive in a dynamic and ever-changing world.
                             </Paragraph>
-                            <Button type="primary" style={{ backgroundColor: '#1a1a1a', border: 'none', borderRadius: '4px', height: '48px', padding: '0 24px' }}>
+                            <Button type="primary" style={{ display: screen.lg ? 'block' : 'none', backgroundColor: '#1a1a1a', border: 'none', borderRadius: '4px', height: '48px', padding: '0 24px' }}>
                                 About Us
                             </Button>
                         </Col>
-                        <Col xs={24} md={12}>
+                        <Col xs={24} md={24} lg={12}>
                             <div style={{ marginBottom: '24px' }}>
                                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '8px' }}>
                                     <Text strong>Business Analysis</Text>
@@ -55,7 +55,11 @@ const BusinessSolutionsUI = () => {
                                 </div>
                                 <Progress percent={90} showInfo={false} strokeColor="#555" />
                             </div>
+                            <Button type="primary" style={{ display: screen.lg ? 'none' : 'block', backgroundColor: '#1a1a1a', border: 'none', borderRadius: '4px', height: '48px', padding: '0 24px' }}>
+                                About Us
+                            </Button>
                         </Col>
+
                     </Row>
                 </Col>
 

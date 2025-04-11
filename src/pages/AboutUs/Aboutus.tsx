@@ -58,7 +58,7 @@ const Tab1 = () => {
 }
 
 function Aboutus() {
-    const screens = Grid.useBreakpoint();
+    const screen = Grid.useBreakpoint();
     type Align = 'end' | 'start' | 'center' | undefined;
     const [alignValue, _] = React.useState<Align>('center');
     const onChange = (key: string) => {
@@ -75,7 +75,7 @@ function Aboutus() {
             display: 'flex',
             flexDirection: 'column',
             overflow: 'hidden',
-            padding: screens.lg ? '100px 250px' : '50px',
+            padding: (screen.lg || screen.md) ? '120px' : '100px 50px',
             backgroundColor: '#fff'
         }}>
             <Row >

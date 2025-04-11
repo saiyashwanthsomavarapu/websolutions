@@ -174,10 +174,10 @@ const ModernHeader: React.FC<ModernHeaderProps> = ({
           style={{ border: 'none' }}
           items={navItems.map(item => ({
             key: item.key,
-            label: item.path ? <Link style={{ color: getTextColor(), }} to={item.path}>{item.label}</Link> : item.label,
+            label: item.path ? <Link style={{ color: 'black', }} to={item.path}>{item.label}</Link> : item.label,
             children: item.children?.map(child => ({
               key: child.key,
-              label: <Link style={{ color: getTextColor(), }} to={child.path || '/'}>{child.label}</Link>,
+              label: <Link style={{ color: 'black', }} to={child.path || '/'}>{child.label}</Link>,
             }))
           }))}
         />

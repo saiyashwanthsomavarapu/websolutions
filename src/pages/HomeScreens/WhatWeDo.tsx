@@ -9,7 +9,7 @@ const ServicesSectionUI = () => {
     return (
         <Space style={{
             display: 'flex',
-            padding: screens.lg ? '100px 250px' : '50px',
+            padding: (screens.lg || screens.md) ? '120px' : '50px',
             justifyContent: 'center',
             backgroundColor: '#f5f7f9',
         }}>
@@ -25,33 +25,34 @@ const ServicesSectionUI = () => {
                         marginBottom: screens.xs || screens.sm ? '48px' : 0
                     }}
                 >
-                    <Text style={{
-                        color: '#000',
-                        textTransform: 'uppercase',
-                        fontWeight: '300',
-                        display: 'block',
-                        textDecoration: 'underline',
-                        textUnderlineOffset: '10px'
-                    }}>
-                        WHAT WE DO
-                    </Text>
-                    <Title level={2} style={{
-                        fontSize: '40px',
-                        marginTop: 10,
-                        lineHeight: '1.2',
-                    }}>
-                        Our Services
-                    </Title>
-                    <Paragraph style={{
-                        fontSize: '16px',
-                        fontWeight: '400',
-                        color: '#5c5c5c',
-                        marginBottom: '32px'
-                    }}>
-                        Our range of services is crafted to deliver strategic insights, and foster
-                        sustainable growth for businesses across various industries.
-                    </Paragraph>
-
+                    <div>
+                        <Text style={{
+                            color: '#000',
+                            textTransform: 'uppercase',
+                            fontWeight: '300',
+                            display: 'block',
+                            textDecoration: 'underline',
+                            textUnderlineOffset: '10px'
+                        }}>
+                            WHAT WE DO
+                        </Text>
+                        <Title level={2} style={{
+                            fontSize: screens.lg ? '2.5em' : '2em',
+                            marginTop: 10,
+                            lineHeight: '1.2',
+                        }}>
+                            Our Services
+                        </Title>
+                        <Paragraph style={{
+                            fontSize: '16px',
+                            fontWeight: '400',
+                            color: '#5c5c5c',
+                            marginBottom: '32px'
+                        }}>
+                            Our range of services is crafted to deliver strategic insights, and foster
+                            sustainable growth for businesses across various industries.
+                        </Paragraph>
+                    </div>
                     <Button
                         type="primary"
                         style={{

@@ -43,7 +43,7 @@ const TeamMember = (props: any) => {
 
 const TeamSection = () => {
     const { useBreakpoint } = Grid;
-    const screens = useBreakpoint();
+    const screen = useBreakpoint();
     const teamMembers = [
         {
             name: 'John Doe',
@@ -71,18 +71,19 @@ const TeamSection = () => {
     return (
         <Space style={{
             display: 'flex',
-            padding: screens.lg ? '100px 250px' : '50px',
+            padding: (screen.lg || screen.md) ? '120px' : '50px',
             justifyContent: 'center',
             backgroundColor: '#f5f7f9',
         }}>
             <Row gutter={[48, 48]}>
                 <Col
                     xs={24}
-                    md={12}
+                    md={24}
                     lg={24}
                     style={{
                         display: 'flex',
                         justifyContent: 'space-between',
+                        flexDirection: (screen.md || screen.lg) ? 'row' : 'column',
                         height: '100%'
                     }}
                 >
@@ -98,7 +99,7 @@ const TeamSection = () => {
                             OUR VALUES
                         </Text>
                         <Title level={2} style={{
-                            fontSize: '40px',
+                            fontSize: '2.5em',
                             marginTop: 10,
                             lineHeight: '1.2',
                         }}>

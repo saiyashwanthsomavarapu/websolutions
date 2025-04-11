@@ -11,7 +11,7 @@ const GetInTouch = () => {
             flexDirection: 'column',
             overflow: 'hidden',
             backgroundColor: '#f1f6f6',
-            padding: screen.lg ? '100px 250px' : '50px'
+            padding: (screen.lg || screen.md) ? '120px' : '100px 50px'
         }}>
             <Row gutter={[48, 48]} style={{ justifyItems: 'start' }}>
                 <Col xs={24} md={24} lg={24}>
@@ -32,7 +32,7 @@ const GetInTouch = () => {
                         We’re here to help! Whether you have questions about our services, need support, or want to explore how we can collaborate, feel free to reach out to us through any of the following channels:
                     </Paragraph>
                 </Col>
-                <Col xs={24} md={6} lg={6}>
+                <Col xs={24} sm={12} md={12} lg={6}>
                     <Card
                         style={{
                             backgroundColor: '#f5f7f9',
@@ -52,7 +52,7 @@ const GetInTouch = () => {
                         </Text>
                     </Card>
                 </Col>
-                <Col xs={24} md={6} lg={6} >
+                <Col xs={24} sm={12} md={12} lg={6} >
                     <Card
                         style={{
                             backgroundColor: '#f5f7f9',

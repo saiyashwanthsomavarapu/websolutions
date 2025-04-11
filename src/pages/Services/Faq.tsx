@@ -83,7 +83,7 @@ const FaqSection = () => {
                                     display: 'block', textDecoration: 'underline', textUnderlineOffset: '10px'
                                 }}
                             >
-                                OUR HISTORY
+                                FAQ's
                             </Text>
 
                             <Title level={2} style={{ marginTop: '8px', marginBottom: '40px', fontSize: '50px', fontWeight: 500, color: '#121212' }}>

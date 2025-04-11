@@ -58,7 +58,7 @@ const CaseStudySection = () => {
                     </Text>
 
                     <Title level={2} style={{
-                        fontSize: '40px',
+                        fontSize: screens.lg ? '2.5em' : '2em',
                         marginTop: 10,
                         lineHeight: '1.2',
                     }}>

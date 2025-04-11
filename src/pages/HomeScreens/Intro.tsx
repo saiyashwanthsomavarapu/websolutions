@@ -1,4 +1,4 @@
-import { Row, Col, Typography, Button, Card, Divider, Space } from 'antd';
+import { Row, Col, Typography, Button, Card, Divider, Space, Grid } from 'antd';
 import { ArrowRightOutlined } from '@ant-design/icons';
 import './Intro.css';
 const { Title, Paragraph } = Typography;
@@ -40,7 +40,19 @@ const statsCardStyle = {
     height: '100%',
 };
 
+/*************  ✨ Codeium Command ⭐  *************/
+/**
+ * Intro component renders the homepage's hero section.
+ * It includes a full-screen background image and a content overlay with a headline and action buttons.
+ * The content is centered vertically and horizontally, featuring a title and buttons for navigation.
+ * Additionally, it displays statistics about the company's success and industry expertise in a card format.
+ */
+
+
+/******  60dfc4bb-3627-4c38-b9c8-945d1ea34b38  *******/
+
 const Intro = () => {
+    const screens = Grid.useBreakpoint();
     return (
         <div style={{
             position: 'relative',
@@ -71,7 +83,7 @@ const Intro = () => {
             }}>
                 <Row align="middle" justify={'center'} style={{ height: '100%', }}>
                     <Col xs={24} md={12} lg={10} >
-                        <Title level={1} style={{ ...headingStyle, fontSize: '48px', lineHeight: '1.2' }}>
+                        <Title level={1} style={{ ...headingStyle, fontSize: screens.lg ? '2.5em' : '2em', lineHeight: '1.2' }}>
                             INNOVATING SOLUTIONS, DRIVING SUCCESS
                         </Title>
 

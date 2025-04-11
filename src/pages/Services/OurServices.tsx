@@ -13,7 +13,7 @@ const OurServices = () => {
             flexDirection: 'column',
             overflow: 'hidden',
             backgroundColor: '#fff',
-            padding: screen.lg ? '100px 250px' : '50px'
+            padding: (screen.lg || screen.md) ? '120px' : '100px 50px',
         }}>
             <Row gutter={[48, 48]} style={{ justifyItems: 'start' }}>
                 <Col xs={24} md={24} lg={24}>

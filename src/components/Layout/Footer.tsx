@@ -68,7 +68,7 @@ const textBlockStyle = {
 const FooterComponent = () => {
   const screen = Grid.useBreakpoint();
   return (
-    <Footer style={{ ...footerStyle, padding: screen.lg ? '50px 250px' : '50px' }}>
+    <Footer style={{ ...footerStyle, padding: (screen.lg || screen.md) ? '50px 120px' : '50px' }}>
       <Row gutter={[24, 48]}>
         {/* Left column with company tagline */}
         <Col xs={24} md={8} lg={8}>

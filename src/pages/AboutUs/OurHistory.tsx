@@ -5,7 +5,7 @@ import { Row, Col, Typography, Button, Card, Space, Divider, Grid } from 'antd';
 const { Title, Text, Paragraph } = Typography;
 
 function OurHistory() {
-    const screens = Grid.useBreakpoint();
+    const screen = Grid.useBreakpoint();
 
     return (
         <Space style={{
@@ -13,7 +13,7 @@ function OurHistory() {
             flexDirection: 'column',
             overflow: 'hidden',
             backgroundColor: '#fff',
-            padding: screens.lg ? '100px 250px' : '50px',
+            padding: (screen.lg || screen.md) ? '120px' : '100px 50px',
         }}>
             <Row gutter={[48, 48]} style={{ justifyContent: 'center' }}>
                 <Col xs={24} md={12}>
