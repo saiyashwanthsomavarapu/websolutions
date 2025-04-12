@@ -1,0 +1,22 @@
+.custom-carousel .slick-dots li {
+  margin: 0 8px; /* Optional spacing between dots */
+}
+
+.custom-carousel .slick-dots li button {
+  width: 180px; /* Increase width */
+  height: 10px; /* Increase height */
+  border-radius: 4px; /* Rounded corners */
+  background: #000 !important; /* Always black */
+  opacity: 1 !important; /* Make sure color shows */
+  /* transition: transform 0.3s ease; */
+  transform: scale(1.2);
+}
+
+.custom-carousel .slick-dots li.slick-active button {
+  transform: scale(1.2); /* Slight enlargement on active */
+  background: #d61212 !important; /* Still black */
+}
+
+.custom-carousel .slick-dots {
+  bottom: 20px; /* Adjust vertical spacing from carousel */
+}
