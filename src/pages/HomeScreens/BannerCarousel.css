@@ -1,22 +1,74 @@
-.custom-carousel .slick-dots li {
-  margin: 0 8px; /* Optional spacing between dots */
+/* Base carousel styles */
+.custom-carousel {
+  position: relative;
+  margin-bottom: 40px;
 }
 
+/* Improved indicator position and spacing */
+.custom-carousel .slick-dots {
+  bottom: -30px;
+}
+
+/* Make all indicators have the same fixed width */
+.custom-carousel .slick-dots li {
+  margin: 0 8px;
+  width: auto; /* Override any default width */
+}
+
+/* Style for all indicators - inactive (pure black) */
 .custom-carousel .slick-dots li button {
-  width: 180px; /* Increase width */
-  height: 10px; /* Increase height */
-  border-radius: 4px; /* Rounded corners */
-  background: #000 !important; /* Always black */
-  opacity: 1 !important; /* Make sure color shows */
-  /* transition: transform 0.3s ease; */
-  transform: scale(1.2);
+  background: #000000; /* Pure black for inactive */
+  width: 25px; /* Fixed width for all indicators */
+  height: 3px; /* Thin line height */
+  padding: 0;
+  opacity: 1; /* Full opacity for inactive */
+  transition: none !important;
 }
 
 .custom-carousel .slick-dots li.slick-active button {
-  transform: scale(1.2); /* Slight enlargement on active */
-  background: #d61212 !important; /* Still black */
+  background: #1890ff !important;
+  transition: none !important;
 }
 
-.custom-carousel .slick-dots {
-  bottom: 20px; /* Adjust vertical spacing from carousel */
+/* Removing default styling for buttons */
+.custom-carousel .slick-dots li button:before {
+  content: "";
+  display: none;
+}
+
+/* Make sure content is always centered */
+.custom-carousel .slick-slide {
+  text-align: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .custom-carousel .slick-dots {
+    bottom: -20px;
+  }
+
+  .custom-carousel .slick-dots li {
+    margin: 0 6px;
+  }
+
+  .custom-carousel .slick-dots li button,
+  .custom-carousel .slick-dots li.slick-active button {
+    width: 20px; /* Slightly smaller on mobile but still the same width */
+  }
+}
+
+.custom-carousel .slick-prev,
+.custom-carousel .slick-next {
+  z-index: 1;
+  width: 48px;
+  height: 48px;
+  top: 50%;
+  color: #000000;
+}
+
+@media (max-width: 992px) {
+  .custom-carousel .slick-prev,
+  .custom-carousel .slick-next {
+    display: none !important;
+  }
 }
