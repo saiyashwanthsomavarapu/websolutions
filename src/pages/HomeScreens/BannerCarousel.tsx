@@ -1,6 +1,8 @@
-import { Grid, Space, Carousel } from "antd";
+import { Grid, Space, Carousel, Typography, Row, Col, Avatar } from "antd";
 import "./BannerCarousel.css";
+import { AntDesignOutlined } from "@ant-design/icons";
 
+const { Title, Paragraph, Text } = Typography;
 const BannersCarousel = () => {
   const screens = Grid.useBreakpoint();
 
@@ -10,48 +12,30 @@ const BannersCarousel = () => {
         "The system has been really easy to operate and is one of our most popular attractions. We have already ordered more systems.",
       name: "Grady Hinchman",
       designation: "Operating Partner Altitude Trampoline Park Kissimmee",
-      img: "src/assets/bg.png",
+      img: "src/assets/person.jpg",
     },
     {
       descriptions:
         "Nowhere in the industry have I experienced the kind of support Valo Motion offers. No matter what the issue is, we get help immediately.",
       name: "Steffen Brunckhorst",
       designation: "CEO & Co-Founder of Abenteuerland",
-      img: "src/assets/bg.png",
+      img: "src/assets/person1.jpg",
     },
     {
       descriptions:
         "Valo Motion is clear about what's next, they are proactive about their roadmap. They are focused on being the best.",
       name: "Grady Hinchman",
       designation: "Operating Partner Altitude Trampoline Park Kissimmee",
-      img: "src/assets/bg.png",
+      img: "src/assets/person.jpg",
     },
     {
       descriptions:
         "We LOVE the product. I love the new games and new modes that come out. There's a cool variety of games and having multiple levels make it fun.",
       name: "Dustin Pelletier",
       designation: "Franchise Owner Big Air Trampoline Park Spartanburg",
-      img: "src/assets/bg.png",
+      img: "src/assets/person1.jpg",
     },
   ];
-
-  // Get responsive styles based on screen size
-  const getFontSize = (xl, lg, md, sm, xs) => {
-    return screens.xl
-      ? xl
-      : screens.lg
-      ? lg
-      : screens.md
-      ? md
-      : screens.sm
-      ? sm
-      : screens.xs
-      ? xs
-      : sm;
-  };
-
-  // Container padding based on screen size
-  const containerPadding = screens.lg || screens.md ? "100px" : "50px";
 
   // Max width for responsive container
   const getMaxWidth = () => {
@@ -77,133 +61,148 @@ const BannersCarousel = () => {
     <Space
       style={{
         display: "flex",
-        justifyContent: "center",
-        padding: containerPadding,
+        padding: screens.lg || screens.md ? "120px" : "50px",
         backgroundColor: "#f5f7f9",
         width: "100%",
       }}
     >
-      <div
-        style={{
-          position: "relative",
-          width: "100%",
-          maxWidth: getMaxWidth(),
-          margin: "0 auto",
-          overflow: "hidden",
-        }}
-      >
-        <h1
-          style={{
-            textAlign: "center",
-            fontSize: getFontSize(
-              "2.5rem",
-              "2.5rem",
-              "2rem",
-              "1.5rem",
-              "1.5rem"
-            ),
-            marginBottom: "30px",
-          }}
-        >
-          Don't take our word for it. Take theirs
-        </h1>
-        <Carousel
-          autoplay
-          autoplaySpeed={3000}
-          className="custom-carousel"
-          style={{
-            marginBottom: "40px",
-          }}
-          arrows
-        >
-          {testimonialData.map((item, index) => (
-            <div
-              key={index}
+      <Row gutter={[48, 48]}>
+        <Col xs={24} md={24} lg={24}>
+          <Text
+            style={{
+              color: "#000",
+              textTransform: "uppercase",
+              fontWeight: "300",
+              display: "block",
+              textDecoration: "underline",
+              textUnderlineOffset: "10px",
+            }}
+          >
+            TESTIMONIALS
+          </Text>
+          <Title
+            level={2}
+            style={{
+              fontSize: screens.lg ? "2.5em" : "2em",
+              marginTop: 10,
+              lineHeight: "1.2",
+            }}
+          >
+            Don't take our word for it. Take theirs
+          </Title>
+        </Col>
+        <Col lg={24}>
+          <div
+            style={{
+              position: "relative",
+              width: "100%",
+              maxWidth: getMaxWidth(),
+              margin: "0 auto",
+              overflow: "hidden",
+            }}
+          >
+            <Carousel
+              autoplay
+              autoplaySpeed={3000}
+              className="custom-carousel"
               style={{
-                height: getContentHeight(),
-                display: "flex",
-                flexDirection: "column",
-                alignItems: "center",
-                justifyContent: "center",
-                padding: "30px 20px 60px",
-                textAlign: "center",
-                backgroundColor: "#000",
+                marginBottom: "40px",
               }}
             >
-              {/* Centered Image */}
-              <div
-                style={{
-                  width: "100%",
-                  display: "flex",
-                  justifyContent: "center",
-                  marginBottom: "20px",
-                  placeContent: "center",
-                }}
-              >
-                <img
-                  src={item.img}
-                  alt="Background"
+              {testimonialData.map((item, index) => (
+                <div
+                  key={index}
                   style={{
-                    maxWidth: "400px",
-                    height: "auto",
-                  }}
-                />
-              </div>
-
-              {/* Centered Quote - Fixed to ensure centering */}
-              <div
-                style={{
-                  width: "100%",
-                  maxWidth: "800px",
-                  margin: "0 auto 20px",
-                  textAlign: "center",
-                }}
-              >
-                <h3
-                  style={{
-                    color: "#5c5c5c",
-                    fontSize: getFontSize(
-                      "1.8rem",
-                      "1.6rem",
-                      "1.4rem",
-                      "1.2rem",
-                      "1rem"
-                    ),
-                    fontWeight: 400,
-                    lineHeight: 1.5,
+                    height: getContentHeight(),
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    padding: "30px 20px 60px",
+                    textAlign: "center",
+                    backgroundColor: "#000",
                   }}
                 >
-                  "{item.descriptions}"
-                </h3>
-              </div>
+                  {/* Centered Image */}
+                  <div
+                    style={{
+                      width: "100%",
+                      display: "flex",
+                      justifyContent: "center",
+                      marginBottom: "20px",
+                      placeContent: "center",
+                    }}
+                  >
+                    <Avatar
+                      style={{ height: 200, width: 200, boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)" }}
+                      size={{ xs: 24, sm: 32, md: 40, lg: 64, xl: 80, xxl: 100 }}
+                      icon={<AntDesignOutlined />}
+                      src={item.img}
 
-              {/* Author Name */}
-              <h4
-                style={{
-                  fontSize: screens.md ? "1.5rem" : "1.2rem",
-                  fontWeight: 600,
-                  marginBottom: "8px",
-                  textAlign: "center",
-                }}
-              >
-                {item.name}
-              </h4>
+                    />
+                    {/* <img
+                      src={item.img}
+                      alt="Background"
+                      style={{
+                        maxWidth: "400px",
+                        height: "auto",
+                        borderRadius: '60%'
+                      }}
+                    /> */}
+                  </div>
 
-              {/* Role */}
-              <h4
-                style={{
-                  color: "#5c5c5c",
-                  fontSize: screens.md ? "1.2rem" : "1rem",
-                  fontWeight: 400,
-                  textAlign: "center",
-                }}
-              >
-                {item.designation}
-              </h4>
-            </div>
-          ))}
-        </Carousel>
-      </div>
+                  {/* Centered Quote - Fixed to ensure centering */}
+                  <div
+                    style={{
+                      width: "100%",
+                      maxWidth: "800px",
+                      margin: "0 auto 20px",
+                      textAlign: "center",
+                    }}
+                  >
+                    <Paragraph
+                      style={{
+                        fontSize: screens.lg ? "1.5em" : "1.2em",
+                        color: '#555',
+                        marginBottom: '32px',
+                        lineHeight: '1.6'
+                      }}
+                    >
+                      "{item.descriptions}"
+                    </Paragraph>
+                  </div>
+
+                  {/* Author Name */}
+                  <Title level={2}
+                    style={{
+                      fontSize: screens.md ? "1.5rem" : "1.2rem",
+                      fontWeight: 600,
+                      marginBottom: "15xpx",
+                      textAlign: "center",
+                    }}
+                  >
+                    {item.name}
+                  </Title>
+
+                  {/* Role */}
+                  <Text
+                    style={{
+                      color: "#5c5c5c",
+                      fontSize: "1rem",
+                      fontWeight: 400,
+                      textAlign: "center",
+                    }}
+                  >
+                    {item.designation}
+                  </Text>
+                </div>
+              ))}
+            </Carousel>
+          </div>
+        </Col>
+      </Row>
+
+
     </Space>
   );
 };
