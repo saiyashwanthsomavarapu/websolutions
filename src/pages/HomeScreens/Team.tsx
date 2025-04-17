@@ -2,6 +2,8 @@ import { Row, Col, Typography, Button, Space, Grid } from 'antd';
 
 import person from "../../assets/person.jpeg";
 
+import { useNavigate } from "react-router-dom";
+
 const { Title, Text } = Typography;
 
 const TeamMember = (props: any) => {
@@ -45,6 +47,8 @@ const TeamMember = (props: any) => {
 const TeamSection = () => {
     const { useBreakpoint } = Grid;
     const screen = useBreakpoint();
+    const navigateTo = useNavigate();
+
     const teamMembers = [
         {
             name: 'John Doe',
@@ -117,6 +121,7 @@ const TeamSection = () => {
                                 height: '48px',
                                 padding: '0 24px'
                             }}
+                            onClick={() => navigateTo("/services")}
                         >
                             View All Services
                         </Button>
