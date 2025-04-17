@@ -1,5 +1,6 @@
 import { Row, Col, Typography, Button, Card, Divider, Space, Grid } from 'antd';
 import { ArrowRightOutlined } from '@ant-design/icons';
+import BG from '../../assets/bg.png';
 import './Intro.css';
 const { Title, Paragraph } = Typography;
 
@@ -67,7 +68,7 @@ const Intro = () => {
                 left: 0,
                 width: '100%',
                 height: '100%',
-                backgroundImage: 'url(../../assets/pg.jpg)',
+                backgroundImage: `url(${BG})`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 filter: 'brightness(0.5)',

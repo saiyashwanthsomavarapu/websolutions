@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
-import { Row, Col, Typography, Tabs, Space, TabsProps, Card, Grid } from 'antd';
+import { Row, Col, Typography, Tabs, Space, TabsProps, Card, Grid, Image } from 'antd';
 import { AimOutlined, ShakeOutlined } from '@ant-design/icons';
-
+import './styles.css';
 const { Title, Text, Paragraph } = Typography;
 // const { TabPane } = Tabs;
 
@@ -78,7 +78,7 @@ function Aboutus() {
             padding: (screen.lg || screen.md) ? '120px' : '100px 50px',
             backgroundColor: '#fff'
         }}>
-            <Row >
+            <Row gutter={[48, 48]} >
                 <Col xs={24} md={24} style={{ display: 'flex', alignItems: 'center', flexDirection: 'column' }} >
                     <Text style={{
                         color: '#121212',
@@ -94,36 +94,35 @@ function Aboutus() {
                         Our Story
                     </Title>
                 </Col>
-            </Row>
-            <Row gutter={[48, 48]} style={{ justifyContent: 'center' }}>
-
-                <Col xs={24} md={12} style={{ overflow: 'hidden', width: '100%', maxWidth: '557px', aspectRatio: 557 / 641, borderRadius: '10px' }}>
-                    <img
+                <Col xs={24} md={12} lg={12} style={{ overflow: 'hidden', width: '100%', maxWidth: '557px', aspectRatio: 557 / 641, borderRadius: '10px' }}>
+                    <Image
                         src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
                         alt="Team working together"
+                        height={'100%'}
+                        width={'100%'}
+                        preview={false}
                         style={{
                             overflow: 'hidden',
-                            width: '100%',
-                            height: '100%',
                             objectFit: 'cover',
                             borderRadius: '10px'
                         }}
                     />
                 </Col>
 
-                <Col xs={24} md={12}>
+                <Col xs={24} md={12} >
                     <Title level={3} style={{ marginBottom: '24px', fontSize: '32px', lineHeight: '120%', color: '#121212', fontWeight: 400 }}>
                         A thribing Business With Genuine Professiobal
                     </Title>
-
-                    <Tabs
-                        defaultActiveKey="1"
-                        items={items}
-                        onChange={onChange}
-                        indicator={{ size: (origin) => origin - 20, align: alignValue }}
-                    />
-
-
+                    <div className="responsive-tabs-container">
+                        <Tabs
+                            defaultActiveKey="1"
+                            // tabBarGutter={0}
+                            tabBarStyle={{ overflowX: 'auto' }}
+                            items={items}
+                            onChange={onChange}
+                            indicator={{ size: (origin) => origin - 20, align: alignValue }}
+                        />
+                    </div>
                 </Col>
             </Row>
         </Space >

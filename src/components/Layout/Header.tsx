@@ -12,6 +12,8 @@ import {
   DownOutlined,
 } from '@ant-design/icons';
 import { Link, useLocation } from 'react-router-dom';
+import logoImage from '../../assets/logo.png';
+
 
 const { Header } = Layout;
 
@@ -23,16 +25,9 @@ interface NavItem {
   path?: string;
 }
 
-// Define props for the header component
-interface ModernHeaderProps {
-  logo?: React.ReactNode;
-}
-
 const { useBreakpoint } = Grid;
 
-const ModernHeader: React.FC<ModernHeaderProps> = ({
-  logo = 'LOGO',
-}) => {
+const ModernHeader: React.FC = () => {
   const screens = useBreakpoint();
   const [visible, setVisible] = useState<boolean>(false);
   const [scrolled, setScrolled] = useState<boolean>(false);
@@ -131,8 +126,8 @@ const ModernHeader: React.FC<ModernHeaderProps> = ({
         }}
       >
         {/* Logo */}
-        <div className="logo" style={{ fontSize: '24px', fontWeight: 'bold', color: '#1890ff' , backgroundImage: 'url(../src/assets/logo.jpeg)',}}>
-          <Link to="/" style={{ color: 'inherit', textDecoration: 'none' }}>{logo}</Link>
+        <div className="logo" style={{ fontSize: '24px', fontWeight: 'bold', color: '#1890ff' }}>
+          <Link className="responsive-logo" to="/">{<img style={{ height: '180px', marginTop: "20px" }} src={logoImage} alt="Logo" />}</Link>
         </div>
 
         {/* Desktop Navigation */}

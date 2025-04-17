@@ -6,12 +6,14 @@ import { Routes, Route, BrowserRouter } from 'react-router-dom';
 import AboutUsSection from './pages/AboutUs';
 import Contact from './pages/Contact';
 import Services from './pages/Services';
+import ScrollToTop from './components/ScrollToTop';
 
 const { Content } = Layout;
 
 const App = () => {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Layout>
         <ModernHeader />
         <Content >

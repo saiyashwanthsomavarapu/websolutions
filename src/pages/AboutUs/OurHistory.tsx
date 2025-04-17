@@ -15,7 +15,7 @@ function OurHistory() {
             backgroundColor: '#fff',
             padding: (screen.lg || screen.md) ? '120px' : '100px 50px',
         }}>
-            <Row gutter={[48, 48]} style={{ justifyContent: 'center' }}>
+            <Row gutter={[48, 48]} >
                 <Col xs={24} md={12}>
                     <Text style={{
                         color: '#121212',
@@ -114,7 +114,7 @@ function OurHistory() {
                     </div>
 
                 </Col>
-                <Col xs={24} md={12} style={{ overflow: 'hidden', width: '100%', maxWidth: '557px', aspectRatio: 557 / 641, borderRadius: '10px' }}>
+                <Col xs={24} md={12} lg={12} style={{ display: 'flex', justifyContent: 'center', overflow: 'hidden', width: '100%', maxWidth: '557px', aspectRatio: 557 / 641, borderRadius: '10px' }}>
                     <img
                         src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
                         alt="Team working together"

@@ -1,0 +1,30 @@
+/* In your CSS file or as a styled component */
+.responsive-logo {
+    height: 180px;
+    margin-top: 20px;
+    max-width: 100%;
+    /* Ensures the logo never overflows its container */
+    object-fit: contain;
+    /* Maintains aspect ratio */
+}
+
+/* Media queries for responsive behavior */
+@media (max-width: 992px) {
+    .responsive-logo {
+        height: 150px;
+    }
+}
+
+@media (max-width: 768px) {
+    .responsive-logo {
+        height: 120px;
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .responsive-logo {
+        height: 90px;
+        margin-top: 10px;
+    }
+}
