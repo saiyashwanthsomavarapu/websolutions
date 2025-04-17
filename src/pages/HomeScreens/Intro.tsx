@@ -22,12 +22,12 @@ const buttonStyle = {
     fontWeight: '500',
 };
 
-const darkButtonStyle = {
-    ...buttonStyle,
-    background: '#222',
-    color: '#fff',
-    border: 'none',
-};
+// const darkButtonStyle = {
+//     ...buttonStyle,
+//     background: '#222',
+//     color: '#fff',
+//     border: 'none',
+// };
 
 const lightButtonStyle = {
     ...buttonStyle,

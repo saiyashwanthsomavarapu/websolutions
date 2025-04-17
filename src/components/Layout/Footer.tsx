@@ -1,10 +1,10 @@
-import { Layout, Row, Col, Input, Button, Typography, Space, Divider, Grid } from 'antd';
+import { Layout, Row, Col, Button, Typography, Space, Divider, Grid } from 'antd';
 import {
   FacebookFilled,
   InstagramFilled,
-  SendOutlined,
+  // SendOutlined,
   WhatsAppOutlined,
-  RightOutlined,
+  // RightOutlined,
   LinkedinFilled
 } from '@ant-design/icons';
 import { Link as RouterLink } from 'react-router-dom';
@@ -32,21 +32,21 @@ const linkStyle = {
   color: '#fff'
 };
 
-const companyTaglineStyle = {
-  fontSize: '18px',
-  color: '#fff',
-  marginBottom: '32px'
-};
+// const companyTaglineStyle = {
+//   fontSize: '18px',
+//   color: '#fff',
+//   marginBottom: '32px'
+// };
 
-const newsletterInputStyle = {
-  color: '#fff',
-  backgroundColor: 'transparent',
-  borderWidth: '0 0 1px 0',
-  borderColor: '#333',
-  borderRadius: 0,
-  paddingBottom: '8px',
-  marginBottom: '16px'
-};
+// const newsletterInputStyle = {
+//   color: '#fff',
+//   backgroundColor: 'transparent',
+//   borderWidth: '0 0 1px 0',
+//   borderColor: '#333',
+//   borderRadius: 0,
+//   paddingBottom: '8px',
+//   marginBottom: '16px'
+// };
 
 const socialButtonStyle = {
   backgroundColor: '#222',
