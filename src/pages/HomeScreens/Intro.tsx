@@ -89,9 +89,9 @@ const Intro = () => {
                         </Title>
 
                         <Space size="middle">
-                            <Button size="large" style={darkButtonStyle}>
+                            {/* <Button size="large" style={darkButtonStyle}>
                                 Read More <ArrowRightOutlined />
-                            </Button>
+                            </Button> */}
                             <Button size="large" style={lightButtonStyle}>
                                 Our Services <ArrowRightOutlined />
                             </Button>
