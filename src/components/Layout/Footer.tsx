@@ -7,7 +7,7 @@ import {
   // RightOutlined,
   LinkedinFilled
 } from '@ant-design/icons';
-import { Link as RouterLink, useNavigate } from 'react-router-dom';
+import { Link as RouterLink } from 'react-router-dom';
 
 const { Footer } = Layout;
 const { Title, Text, Link } = Typography;
