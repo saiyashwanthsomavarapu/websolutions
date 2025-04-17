@@ -4,7 +4,8 @@ import {
   InstagramFilled,
   SendOutlined,
   WhatsAppOutlined,
-  RightOutlined
+  RightOutlined,
+  LinkedinFilled
 } from '@ant-design/icons';
 import { Link as RouterLink } from 'react-router-dom';
 
@@ -71,7 +72,7 @@ const FooterComponent = () => {
     <Footer style={{ ...footerStyle, padding: (screen.lg || screen.md) ? '50px 120px' : '50px' }}>
       <Row gutter={[24, 48]}>
         {/* Left column with company tagline */}
-        <Col xs={24} md={8} lg={8}>
+        {/* <Col xs={24} md={8} lg={8}>
           <div style={{ marginBottom: '32px' }}>
             <Text style={companyTaglineStyle}>
               Whether it's optimizing operations, expanding markets, or redefining strategy, Casho is your partner for success.
@@ -86,7 +87,7 @@ const FooterComponent = () => {
               style={newsletterInputStyle}
             />
           </div>
-        </Col>
+        </Col> */}
 
         {/* Middle columns for navigation */}
         <Col xs={24} md={16} lg={16}>
@@ -114,6 +115,10 @@ const FooterComponent = () => {
               <Title level={5} style={headingStyle}>Location</Title>
               <Text style={{ ...whiteTextStyle, ...textBlockStyle }}>ABCD Street, Suite 456</Text>
               <Text style={{ ...whiteTextStyle, marginBottom: '24px', display: 'block' }}>New York, NY, USA</Text>
+              <Text style={{ ...whiteTextStyle, ...textBlockStyle }}>ABCD Street, Suite 456</Text>
+              <Text style={{ ...whiteTextStyle, marginBottom: '24px', display: 'block' }}>Hyd, India</Text>
+              <Text style={{ ...whiteTextStyle, ...textBlockStyle }}>ABCD Street, Suite 456</Text>
+              <Text style={{ ...whiteTextStyle, marginBottom: '24px', display: 'block' }}>Lucknow, India</Text>
 
               <Title level={5} style={headingStyle}>Follow Us</Title>
               <Space size="middle" style={{ marginBottom: '24px' }}>
@@ -124,7 +129,7 @@ const FooterComponent = () => {
                   <InstagramFilled />
                 </Button>
                 <Button type="text" shape="circle" style={socialButtonStyle}>
-                  <SendOutlined />
+                  <LinkedinFilled />
                 </Button>
                 <Button type="text" shape="circle" style={socialButtonStyle}>
                   <WhatsAppOutlined />
@@ -133,7 +138,7 @@ const FooterComponent = () => {
 
               <Title level={5} style={headingStyle}>Contact us</Title>
               <Text style={{ ...whiteTextStyle, ...textBlockStyle }}>+1 (123) 456-7890</Text>
-              <Text style={whiteTextStyle}>hello@example.com</Text>
+              <Text style={whiteTextStyle}>support@aadhyawebsolution.com</Text>
             </Col>
           </Row>
         </Col>

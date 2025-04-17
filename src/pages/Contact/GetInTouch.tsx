@@ -69,7 +69,7 @@ const GetInTouch = () => {
 
                         </Title>
                         <Text style={{ fontWeight: 400 }}>
-                            hello@example.com
+                            support@aadhyawebsolution.com
                         </Text>
                     </Card>
                 </Col>
