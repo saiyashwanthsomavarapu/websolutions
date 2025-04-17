@@ -2,7 +2,7 @@ import { Row, Col, Typography, Button, Card, Divider, Space, Grid } from 'antd';
 import { ArrowRightOutlined } from '@ant-design/icons';
 import BG from '../../assets/bg.png';
 import './Intro.css';
-import { useNavigation, useNavigate } from 'react-router-dom';
+import {  useNavigate } from 'react-router-dom';
 const { Title, Paragraph } = Typography;
 
 // const heroSectionStyle = ;

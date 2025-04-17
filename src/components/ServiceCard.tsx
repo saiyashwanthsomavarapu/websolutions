@@ -3,7 +3,7 @@ import { Card, Typography } from "antd";
 const { Title, Paragraph } = Typography;
 
 const ServiceCard = (props: any) => {
-    const { icon, img, title, description, color } = props;
+    const { img, title, description, color } = props;
     return (
         <Card
             className="service-card"
