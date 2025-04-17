@@ -76,7 +76,7 @@ const BusinessSolutionsUI = () => {
                   height: "48px",
                   padding: "0 24px",
                 }}
-                onClick={() => navigateTo("/about-us")}
+                onClick={() => navigateTo("/aboutus")}
               >
                 About Us
               </Button>
