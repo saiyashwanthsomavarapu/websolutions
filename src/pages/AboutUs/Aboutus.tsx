@@ -117,7 +117,7 @@ function Aboutus() {
                         <Tabs
                             defaultActiveKey="1"
                             // tabBarGutter={0}
-                            tabBarStyle={{ overflowX: 'auto' }}
+                            // tabBarStyle={{ overflowX: 'auto' }}
                             items={items}
                             onChange={onChange}
                             indicator={{ size: (origin) => origin - 20, align: alignValue }}

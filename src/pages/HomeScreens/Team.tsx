@@ -1,5 +1,6 @@
 import { Row, Col, Typography, Button, Space, Grid } from 'antd';
 
+import person from "../../assets/person.jpeg";
 
 const { Title, Text } = Typography;
 
@@ -48,22 +49,22 @@ const TeamSection = () => {
         {
             name: 'John Doe',
             title: 'Chief Executive Officer',
-            imageSrc: '/api/placeholder/400/400'  // Using placeholder as instructed
+            imageSrc:person  // Using placeholder as instructed
         },
         {
             name: 'Jane Smith',
             title: 'Chief Financial Officer',
-            imageSrc: '/api/placeholder/400/400'
+            imageSrc:person
         },
         {
             name: 'Michael Johnson',
             title: 'Head of Risk Management',
-            imageSrc: '/api/placeholder/400/400'
+            imageSrc:person
         },
         {
             name: 'Emily Carter',
             title: 'Acquisitions Advisor',
-            imageSrc: '/api/placeholder/400/400'
+            imageSrc:person
         }
     ];
 

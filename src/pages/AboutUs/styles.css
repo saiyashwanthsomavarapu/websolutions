@@ -1,3 +1,4 @@
 .ant-tabs-nav-wrap {
     white-space: normal !important;
+    overflow:  hidden;
 }
