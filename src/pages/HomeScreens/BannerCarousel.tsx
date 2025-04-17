@@ -1,7 +1,8 @@
 import { Grid, Space, Carousel, Typography, Row, Col, Avatar } from "antd";
 import "./BannerCarousel.css";
 import { AntDesignOutlined } from "@ant-design/icons";
-import person from "../../assets/person.jpeg"
+import Person from '../../assets/person.jpeg';
+import Person1 from '../../assets/person1.jpg';
 
 const { Title, Paragraph, Text } = Typography;
 const BannersCarousel = () => {
@@ -13,28 +14,28 @@ const BannersCarousel = () => {
         "The system has been really easy to operate and is one of our most popular attractions. We have already ordered more systems.",
       name: "Grady Hinchman",
       designation: "Operating Partner Altitude Trampoline Park Kissimmee",
-      img: person,
+      img: Person,
     },
     {
       descriptions:
         "Nowhere in the industry have I experienced the kind of support Valo Motion offers. No matter what the issue is, we get help immediately.",
       name: "Steffen Brunckhorst",
       designation: "CEO & Co-Founder of Abenteuerland",
-      img: person,
+      img: Person1,
     },
     {
       descriptions:
         "Valo Motion is clear about what's next, they are proactive about their roadmap. They are focused on being the best.",
       name: "Grady Hinchman",
       designation: "Operating Partner Altitude Trampoline Park Kissimmee",
-      img: person,
+      img: Person,
     },
     {
       descriptions:
         "We LOVE the product. I love the new games and new modes that come out. There's a cool variety of games and having multiple levels make it fun.",
       name: "Dustin Pelletier",
       designation: "Franchise Owner Big Air Trampoline Park Spartanburg",
-      img: person,
+      img: Person1,
     },
   ];
 

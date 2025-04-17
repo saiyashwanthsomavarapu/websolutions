@@ -90,7 +90,7 @@ function Aboutus() {
                     }}>
                         ABOUT US
                     </Text>
-                    <Title level={2} style={{ marginTop: '8px', marginBottom: '40px', fontSize: '50px', fontWeight: 500, color: '#121212' }}>
+                    <Title level={2} style={{ marginTop: '8px', fontSize: screen.lg ? '2.5em' : '2em', fontWeight: 500, color: '#121212' }}>
                         Our Story
                     </Title>
                 </Col>
@@ -108,7 +108,6 @@ function Aboutus() {
                         }}
                     />
                 </Col>
-
                 <Col xs={24} md={12} >
                     <Title level={3} style={{ marginBottom: '24px', fontSize: '32px', lineHeight: '120%', color: '#121212', fontWeight: 400 }}>
                         A thribing Business With Genuine Professiobal

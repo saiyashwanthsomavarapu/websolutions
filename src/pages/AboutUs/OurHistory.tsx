@@ -27,7 +27,7 @@ function OurHistory() {
                     }}>
                         OUR HISTORY
                     </Text>
-                    <Title level={1} style={{ marginTop: '8px', marginBottom: '40px', fontSize: '50px', fontWeight: 500, color: '#121212' }}>
+                    <Title level={1} style={{ marginTop: '8px', marginBottom: '40px', fontSize: screen.lg ? '2.5em' : '2em', fontWeight: 500, color: '#121212' }}>
                         Empowering businesses with innovation
                     </Title>
                     <Paragraph style={{ fontSize: '16px', lineHeight: '1.6', color: '#555' }}>

@@ -2,6 +2,7 @@ import { Row, Col, Typography, Button, Card, Divider, Space, Grid } from 'antd';
 import { ArrowRightOutlined } from '@ant-design/icons';
 import BG from '../../assets/bg.png';
 import './Intro.css';
+import { useNavigation, useNavigate } from 'react-router-dom';
 const { Title, Paragraph } = Typography;
 
 // const heroSectionStyle = ;
@@ -41,19 +42,9 @@ const statsCardStyle = {
     height: '100%',
 };
 
-/*************  ✨ Codeium Command ⭐  *************/
-/**
- * Intro component renders the homepage's hero section.
- * It includes a full-screen background image and a content overlay with a headline and action buttons.
- * The content is centered vertically and horizontally, featuring a title and buttons for navigation.
- * Additionally, it displays statistics about the company's success and industry expertise in a card format.
- */
-
-
-/******  60dfc4bb-3627-4c38-b9c8-945d1ea34b38  *******/
-
 const Intro = () => {
     const screens = Grid.useBreakpoint();
+    const navigateTo = useNavigate();
     return (
         <div style={{
             position: 'relative',
@@ -92,7 +83,7 @@ const Intro = () => {
                             {/* <Button size="large" style={darkButtonStyle}>
                                 Read More <ArrowRightOutlined />
                             </Button> */}
-                            <Button size="large" style={lightButtonStyle}>
+                            <Button size="large" style={lightButtonStyle} onClick={() => navigateTo('/services')}>
                                 Our Services <ArrowRightOutlined />
                             </Button>
                         </Space>

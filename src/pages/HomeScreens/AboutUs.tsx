@@ -8,11 +8,13 @@ import {
   Space,
   Grid,
 } from "antd";
+import { useNavigate } from "react-router-dom";
 
 const { Title, Paragraph, Text } = Typography;
 
 const BusinessSolutionsUI = () => {
   const screen = Grid.useBreakpoint();
+  const navigateTo = useNavigate();
   return (
     <Space
       style={{
@@ -74,6 +76,7 @@ const BusinessSolutionsUI = () => {
                   height: "48px",
                   padding: "0 24px",
                 }}
+                onClick={() => navigateTo("/about-us")}
               >
                 About Us
               </Button>

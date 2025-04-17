@@ -3,7 +3,7 @@ import { Card, Typography } from "antd";
 const { Title, Paragraph } = Typography;
 
 const ServiceCard = (props: any) => {
-    const { icon, title, description, color } = props;
+    const { icon, img, title, description, color } = props;
     return (
         <Card
             className="service-card"
@@ -18,8 +18,8 @@ const ServiceCard = (props: any) => {
             }}
             hoverable
         >
-            <div style={{ fontSize: '32px', marginBottom: '16px' }}>
-                {icon}
+            <div style={{ fontSize: '32px', marginBottom: '10px' }}>
+                <img src={img} style={{ width: '50px', height: '50px' }} />
             </div>
             <Title level={4} style={{ marginBottom: '12px', }}>{title}</Title>
             <Paragraph style={{ color: '#555', marginBottom: 0 }}>

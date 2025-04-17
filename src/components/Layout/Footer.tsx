@@ -7,7 +7,7 @@ import {
   // RightOutlined,
   LinkedinFilled
 } from '@ant-design/icons';
-import { Link as RouterLink } from 'react-router-dom';
+import { Link as RouterLink, useNavigate } from 'react-router-dom';
 
 const { Footer } = Layout;
 const { Title, Text, Link } = Typography;
@@ -68,6 +68,7 @@ const textBlockStyle = {
 
 const FooterComponent = () => {
   const screen = Grid.useBreakpoint();
+
   return (
     <Footer style={{ ...footerStyle, padding: (screen.lg || screen.md) ? '50px 120px' : '50px' }}>
       <Row gutter={[24, 48]}>
@@ -90,9 +91,9 @@ const FooterComponent = () => {
         </Col> */}
 
         {/* Middle columns for navigation */}
-        <Col xs={24} md={16} lg={16}>
+        <Col xs={24} md={24} lg={24}>
           <Row gutter={[24, 24]}>
-            <Col xs={12} sm={12}>
+            <Col xs={12} sm={12} lg={12}>
               <Title level={5} style={headingStyle}>Pages</Title>
               <Space direction="vertical" style={{ display: 'flex', flexDirection: 'column' }}>
                 <Link style={linkStyle}><RouterLink to="/aboutus">About Us</RouterLink></Link>
@@ -111,15 +112,22 @@ const FooterComponent = () => {
               </Space>
             </Col> */}
 
-            <Col xs={24} sm={12}>
+            <Col xs={24} sm={12} lg={12}>
               <Title level={5} style={headingStyle}>Location</Title>
-              <Text style={{ ...whiteTextStyle, ...textBlockStyle }}>ABCD Street, Suite 456</Text>
-              <Text style={{ ...whiteTextStyle, marginBottom: '24px', display: 'block' }}>New York, NY, USA</Text>
-              <Text style={{ ...whiteTextStyle, ...textBlockStyle }}>ABCD Street, Suite 456</Text>
-              <Text style={{ ...whiteTextStyle, marginBottom: '24px', display: 'block' }}>Hyd, India</Text>
-              <Text style={{ ...whiteTextStyle, ...textBlockStyle }}>ABCD Street, Suite 456</Text>
-              <Text style={{ ...whiteTextStyle, marginBottom: '24px', display: 'block' }}>Lucknow, India</Text>
-
+              <Row gutter={[24, 24]}>
+                <Col>
+                  <Text style={{ ...whiteTextStyle, ...textBlockStyle }}>ABCD Street, Suite 456</Text>
+                  <Text style={{ ...whiteTextStyle, marginBottom: '24px', display: 'block' }}>New York, NY, USA</Text>
+                </Col>
+                <Col>
+                  <Text style={{ ...whiteTextStyle, ...textBlockStyle }}>ABCD Street, Suite 456</Text>
+                  <Text style={{ ...whiteTextStyle, marginBottom: '24px', display: 'block' }}>Hyd, India</Text>
+                </Col>
+                <Col>
+                  <Text style={{ ...whiteTextStyle, ...textBlockStyle }}>ABCD Street, Suite 456</Text>
+                  <Text style={{ ...whiteTextStyle, marginBottom: '24px', display: 'block' }}>Lucknow, India</Text>
+                </Col>
+              </Row>
               <Title level={5} style={headingStyle}>Follow Us</Title>
               <Space size="middle" style={{ marginBottom: '24px' }}>
                 <Button type="text" shape="circle" style={socialButtonStyle}>

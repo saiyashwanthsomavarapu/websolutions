@@ -7,6 +7,7 @@ import AboutUsSection from './pages/AboutUs';
 import Contact from './pages/Contact';
 import Services from './pages/Services';
 import ScrollToTop from './components/ScrollToTop';
+import NotFound from './pages/Unknown/NotFound';
 
 const { Content } = Layout;
 
@@ -22,6 +23,7 @@ const App = () => {
             <Route path="/aboutus" element={<AboutUsSection />} />
             <Route path="/services" element={<Services />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </Content>
         <FooterComponent />

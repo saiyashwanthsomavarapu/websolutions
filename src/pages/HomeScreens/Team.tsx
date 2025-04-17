@@ -49,22 +49,22 @@ const TeamSection = () => {
         {
             name: 'John Doe',
             title: 'Chief Executive Officer',
-            imageSrc:person  // Using placeholder as instructed
+            imageSrc: person  // Using placeholder as instructed
         },
         {
             name: 'Jane Smith',
             title: 'Chief Financial Officer',
-            imageSrc:person
+            imageSrc: person
         },
         {
             name: 'Michael Johnson',
             title: 'Head of Risk Management',
-            imageSrc:person
+            imageSrc: person
         },
         {
             name: 'Emily Carter',
             title: 'Acquisitions Advisor',
-            imageSrc:person
+            imageSrc: person
         }
     ];
 
@@ -100,7 +100,7 @@ const TeamSection = () => {
                             OUR VALUES
                         </Text>
                         <Title level={2} style={{
-                            fontSize: '2.5em',
+                            fontSize: screen.lg ? '2.5em' : '2em',
                             marginTop: 10,
                             lineHeight: '1.2',
                         }}>
