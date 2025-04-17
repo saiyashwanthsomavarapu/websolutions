@@ -86,7 +86,7 @@ const FaqSection = () => {
                                 FAQ's
                             </Text>
 
-                            <Title level={2} style={{ marginTop: '8px', marginBottom: '40px', fontSize: '50px', fontWeight: 500, color: '#121212' }}>
+                            <Title level={2} style={{ marginTop: '8px', fontSize: screens.lg ? "2.5em" : "2em", fontWeight: 500, color: '#121212' }}>
                                 Frequently Asked Questions
                             </Title>
                         </div>

@@ -93,7 +93,7 @@ const FooterComponent = () => {
         {/* Middle columns for navigation */}
         <Col xs={24} md={24} lg={24}>
           <Row gutter={[24, 24]}>
-            <Col xs={12} sm={12} lg={12}>
+            <Col xs={12} sm={12} lg={8}>
               <Title level={5} style={headingStyle}>Pages</Title>
               <Space direction="vertical" style={{ display: 'flex', flexDirection: 'column' }}>
                 <Link style={linkStyle}><RouterLink to="/aboutus">About Us</RouterLink></Link>
@@ -112,41 +112,49 @@ const FooterComponent = () => {
               </Space>
             </Col> */}
 
-            <Col xs={24} sm={12} lg={12}>
+            <Col xs={24} sm={24} lg={16}>
               <Title level={5} style={headingStyle}>Location</Title>
               <Row gutter={[24, 24]}>
-                <Col>
+                <Col lg={8}>
                   <Text style={{ ...whiteTextStyle, ...textBlockStyle }}>ABCD Street, Suite 456</Text>
                   <Text style={{ ...whiteTextStyle, marginBottom: '24px', display: 'block' }}>New York, NY, USA</Text>
                 </Col>
-                <Col>
+                <Col lg={8}>
                   <Text style={{ ...whiteTextStyle, ...textBlockStyle }}>ABCD Street, Suite 456</Text>
                   <Text style={{ ...whiteTextStyle, marginBottom: '24px', display: 'block' }}>Hyd, India</Text>
                 </Col>
-                <Col>
+                <Col lg={8}>
                   <Text style={{ ...whiteTextStyle, ...textBlockStyle }}>ABCD Street, Suite 456</Text>
                   <Text style={{ ...whiteTextStyle, marginBottom: '24px', display: 'block' }}>Lucknow, India</Text>
                 </Col>
               </Row>
-              <Title level={5} style={headingStyle}>Follow Us</Title>
-              <Space size="middle" style={{ marginBottom: '24px' }}>
-                <Button type="text" shape="circle" style={socialButtonStyle}>
-                  <FacebookFilled />
-                </Button>
-                <Button type="text" shape="circle" style={socialButtonStyle}>
-                  <InstagramFilled />
-                </Button>
-                <Button type="text" shape="circle" style={socialButtonStyle}>
-                  <LinkedinFilled />
-                </Button>
-                <Button type="text" shape="circle" style={socialButtonStyle}>
-                  <WhatsAppOutlined />
-                </Button>
-              </Space>
+              <Row gutter={[48, 48]}>
+                <Col lg={12}>
+                  <Title level={5} style={headingStyle}>Follow Us</Title>
+                  <Space size="middle" style={{ marginBottom: '24px' }}>
+                    <Button type="text" shape="circle" style={socialButtonStyle}>
+                      <FacebookFilled />
+                    </Button>
+                    <Button type="text" shape="circle" style={socialButtonStyle}>
+                      <InstagramFilled />
+                    </Button>
+                    <Button type="text" shape="circle" style={socialButtonStyle}>
+                      <LinkedinFilled />
+                    </Button>
+                    <Button type="text" shape="circle" style={socialButtonStyle}>
+                      <WhatsAppOutlined />
+                    </Button>
+                  </Space>
+                </Col>
+                <Col lg={12}>
+                  <Title level={5} style={headingStyle}>Contact us</Title>
+                  <Text style={{ ...whiteTextStyle, ...textBlockStyle }}>+1 (123) 456-7890</Text>
+                  <Text style={whiteTextStyle}>support@aadhyawebsolution.com</Text>
+                </Col>
+              </Row>
 
-              <Title level={5} style={headingStyle}>Contact us</Title>
-              <Text style={{ ...whiteTextStyle, ...textBlockStyle }}>+1 (123) 456-7890</Text>
-              <Text style={whiteTextStyle}>support@aadhyawebsolution.com</Text>
+
+
             </Col>
           </Row>
         </Col>
@@ -159,7 +167,7 @@ const FooterComponent = () => {
 
         <Col xs={24} md={12} style={{ textAlign: 'left', marginTop: '16px' }}>
           <Space align="center" style={{ display: 'flex', flexDirection: 'row', justifyContent: 'flex-start' }}>
-            <Text style={{ color: '#999' }}>© 2025 </Text>
+            <Text style={{ color: '#999' }}> Aadhya Web Solution © 2025 </Text>
           </Space>
         </Col>
       </Row>

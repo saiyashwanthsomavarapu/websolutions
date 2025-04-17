@@ -68,7 +68,7 @@ const BannersCarousel = () => {
         width: "100%",
       }}
     >
-      <Row gutter={[48, 48]}>
+      <Row gutter={[48, 48]} justify={"center"}>
         <Col xs={24} md={24} lg={24}>
           <Text
             style={{

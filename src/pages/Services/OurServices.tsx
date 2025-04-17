@@ -27,15 +27,16 @@ const OurServices = () => {
                     }}>
                         What We Do
                     </Text>
-                    <Title level={1} style={{ marginTop: '8px', marginBottom: '40px', fontSize: '50px', fontWeight: 500, color: '#121212' }}>
+                    <Title level={1} style={{ marginTop: '8px', marginBottom: '40px', fontSize: screen.lg ? "2.5em" : "2em", fontWeight: 500, color: '#121212' }}>
                         Our Services
                     </Title>
 
                 </Col>
-                {services.map(({ title, description, Icon }, index) => (
+                {services.map(({ title, description, img, Icon }, index) => (
                     <Col xs={24} md={12} lg={12} >
                         <ServiceCard
                             key={index}
+                            img={img}
                             icon={<Icon />}
                             title={title}
                             color="#f1f6f6"
