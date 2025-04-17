@@ -131,7 +131,7 @@ const ModernHeader: React.FC<ModernHeaderProps> = ({
         }}
       >
         {/* Logo */}
-        <div className="logo" style={{ fontSize: '24px', fontWeight: 'bold', color: '#1890ff' }}>
+        <div className="logo" style={{ fontSize: '24px', fontWeight: 'bold', color: '#1890ff' , backgroundImage: 'url(../src/assets/logo.jpeg)',}}>
           <Link to="/" style={{ color: 'inherit', textDecoration: 'none' }}>{logo}</Link>
         </div>
 
