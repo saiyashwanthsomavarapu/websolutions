@@ -12,21 +12,21 @@ const BannersCarousel = () => {
         "The system has been really easy to operate and is one of our most popular attractions. We have already ordered more systems.",
       name: "Grady Hinchman",
       designation: "Operating Partner Altitude Trampoline Park Kissimmee",
-      img: "src/assets/person.jpg",
+      img: "../assets/person.jpeg",
     },
     {
       descriptions:
         "Nowhere in the industry have I experienced the kind of support Valo Motion offers. No matter what the issue is, we get help immediately.",
       name: "Steffen Brunckhorst",
       designation: "CEO & Co-Founder of Abenteuerland",
-      img: "src/assets/person1.jpg",
+      img: "../../src/assets/person.jpeg",
     },
     {
       descriptions:
         "Valo Motion is clear about what's next, they are proactive about their roadmap. They are focused on being the best.",
       name: "Grady Hinchman",
       designation: "Operating Partner Altitude Trampoline Park Kissimmee",
-      img: "src/assets/person.jpg",
+      img: "src/assets/person.jpeg",
     },
     {
       descriptions:

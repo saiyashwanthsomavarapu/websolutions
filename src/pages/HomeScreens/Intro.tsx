@@ -67,7 +67,7 @@ const Intro = () => {
                 left: 0,
                 width: '100%',
                 height: '100%',
-                backgroundImage: 'url(../src/assets/pg.jpg)',
+                backgroundImage: 'url(../../assets/pg.jpg)',
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 filter: 'brightness(0.5)',
