@@ -32,8 +32,8 @@ const buttonStyle = {
 
 const lightButtonStyle = {
     ...buttonStyle,
-    background: '#fff',
-    color: '#222',
+    background: '#0d2a4b',
+    color: 'white',
     border: 'none',
 };
 
@@ -68,7 +68,6 @@ const Intro = () => {
             <Space.Compact style={{
                 position: 'relative',
                 display: 'flex',
-
                 zIndex: 1,
                 height: '100%',
                 padding: '0 24px',
@@ -93,15 +92,15 @@ const Intro = () => {
                             <Row >
                                 <Col xs={12} md={12} lg={12} style={{ border: '1px solid #f0f0f0', padding: 20 }}>
                                     <Title level={1} style={{ margin: 0, fontSize: '48px' }}>500+</Title>
-                                    <Divider />
+                                    <Divider  style={{margin: 0}}/>
                                     <Paragraph style={{ margin: 0 }}>
                                         Clients successfully partnered with businesses worldwide.
                                     </Paragraph>
                                 </Col>
                                 <Col xs={12} md={12} lg={12} style={{ padding: 20, background: '#d7ddcb' }}>
                                     <Title level={1} style={{ margin: 0, fontSize: '48px' }}>100+</Title>
-                                    <Divider />
-                                    <Paragraph style={{ margin: 0 }}>
+                                    <Divider style={{margin: 0}}/>
+                                    <Paragraph style={{ margin: 0, background:"#95d11f" }}>
                                         Industries: Expertise across diverse sectors.
                                     </Paragraph>
                                 </Col>
