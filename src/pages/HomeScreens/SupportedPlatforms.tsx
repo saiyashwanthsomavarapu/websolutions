@@ -14,20 +14,39 @@ export const SupportedPlatforms = () => {
     const platforms = [
         {
             icon: shopify,
-            name: 'Shopify'
+            name: 'Shopify',
+            link: {
+                href: 'https://www.shopify.com',
+                target: '_blank',
+                rel: 'noopener noreferrer'
+            }
         },
-
         {
             icon: bigCommerce,
-            name: 'BigCommerce'
+            name: 'BigCommerce',
+            link: {
+                href: 'https://www.bigcommerce.com',
+                target: '_blank',
+                rel: 'noopener noreferrer'
+            }
         },
         {
             icon: woo,
-            name: 'WooCommerce'
+            name: 'WooCommerce',
+            link: {
+                href: 'https://woocommerce.com',
+                target: '_blank',
+                rel: 'noopener noreferrer'
+            }
         },
         {
             icon: wordPress,
-            name: 'WordPress'
+            name: 'WordPress',
+            link: {
+                href: 'https://wordpress.org',
+                target: '_blank',
+                rel: 'noopener noreferrer'
+            }
         }
     ];
 
@@ -78,9 +97,9 @@ export const SupportedPlatforms = () => {
                                         cursor: 'pointer'
                                     }}
                                 >
-                                    <div style={{ fontSize: '32px', }}>
-                                        <img src={platform.icon} style={{ width: '50px', height: '50px' }} />
-                                    </div>
+                                        <a href={platform.link.href} target={platform.link.target} rel={platform.link.rel}>
+                                            <img src={platform.icon} style={{ width: '50px', height: '50px' }} />
+                                        </a>
                                 </Card>
                             </Col>
                         ))}
