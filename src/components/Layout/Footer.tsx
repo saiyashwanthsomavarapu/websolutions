@@ -139,20 +139,48 @@ const FooterComponent = () => {
               <Row gutter={[48, 48]}>
                 <Col lg={12}>
                   <Title level={5} style={headingStyle}>Follow Us</Title>
-                  <Space size="middle" style={{ marginBottom: '24px' }}>
-                    <Button type="text" shape="circle" style={socialButtonStyle}>
+                    <Space size="middle" style={{ marginBottom: '24px' }}>
+                    <Button
+                      type="text"
+                      shape="circle"
+                      style={socialButtonStyle}
+                      href="https://www.facebook.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <FacebookFilled />
                     </Button>
-                    <Button type="text" shape="circle" style={socialButtonStyle}>
+                    <Button
+                      type="text"
+                      shape="circle"
+                      style={socialButtonStyle}
+                      href="https://www.instagram.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <InstagramFilled />
                     </Button>
-                    <Button type="text" shape="circle" style={socialButtonStyle}>
+                    <Button
+                      type="text"
+                      shape="circle"
+                      style={socialButtonStyle}
+                      href="https://www.linkedin.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <LinkedinFilled />
                     </Button>
-                    <Button type="text" shape="circle" style={socialButtonStyle}>
+                    <Button
+                      type="text"
+                      shape="circle"
+                      style={socialButtonStyle}
+                      href="https://www.whatsapp.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <WhatsAppOutlined />
                     </Button>
-                  </Space>
+                    </Space>
                 </Col>
                 <Col lg={12}>
                   <Title level={5} style={headingStyle}>Contact us</Title>
