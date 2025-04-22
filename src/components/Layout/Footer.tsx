@@ -10,7 +10,7 @@ import {
 import { Link as RouterLink } from 'react-router-dom';
 
 const { Footer } = Layout;
-const { Title, Text, Link } = Typography;
+const { Title, Text } = Typography;
 
 
 const footerStyle = {
