@@ -1,6 +1,7 @@
 import { Grid, Space, Carousel, Typography, Row, Col, Avatar } from "antd";
 import "./BannerCarousel.css";
 import { AntDesignOutlined } from "@ant-design/icons";
+import Logo from '../../assets/qtq_95.webp' 
 import Person from '../../assets/person.jpeg';
 import Person1 from '../../assets/person1.jpg';
 
@@ -14,7 +15,7 @@ const BannersCarousel = () => {
         "The system has been really easy to operate and is one of our most popular attractions. We have already ordered more systems.",
       name: "Grady Hinchman",
       designation: "Operating Partner Altitude Trampoline Park Kissimmee",
-      img: Person,
+      img:  Logo,
     },
     {
       descriptions:

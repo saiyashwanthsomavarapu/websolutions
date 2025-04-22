@@ -1,6 +1,6 @@
 import { Row, Col, Typography, Button, Card, Divider, Space, Grid } from 'antd';
 import { ArrowRightOutlined } from '@ant-design/icons';
-import BG from '../../assets/bg.png';
+import BG from '../../assets/0_Digital Art_Futuristic_3840x2160.mp4';
 import './Intro.css';
 import {  useNavigate } from 'react-router-dom';
 const { Title, Paragraph } = Typography;
@@ -53,18 +53,23 @@ const Intro = () => {
             width: '100%',
             overflow: 'hidden',
         }}>
-            <div style={{
-                position: 'absolute',
-                top: 0,
-                left: 0,
-                width: '100%',
-                height: '100%',
-                backgroundImage: `url(${BG})`,
-                backgroundSize: 'cover',
-                backgroundPosition: 'center',
-                filter: 'brightness(0.5)',
-            }}></div>
-
+            <video
+                autoPlay
+                loop
+                muted
+                style={{
+                    position: 'absolute',
+                    top: 0,
+                    left: 0,
+                    width: '100%',
+                    height: '100%',
+                    objectFit: 'cover',
+                    filter: 'brightness(0.5)',
+                }}
+                >
+                <source src={BG} type="video/mp4" />
+                Your browser does not support the video tag.
+            </video>
             <Space.Compact style={{
                 position: 'relative',
                 display: 'flex',
