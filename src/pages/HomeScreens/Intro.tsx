@@ -98,15 +98,15 @@ const Intro = () => {
                                 <Col xs={12} md={12} lg={12} style={{ border: '1px solid #f0f0f0', padding: 20 }}>
                                     <Title level={1} style={{ margin: 0, fontSize: '48px' }}>500+</Title>
                                     <Divider  style={{margin: 0}}/>
-                                    <Paragraph style={{ margin: 0 }}>
+                                    <Paragraph style={{ marginTop: '15px', margin: 0 }}>
                                         Clients successfully partnered with businesses worldwide.
                                     </Paragraph>
                                 </Col>
                                 <Col xs={12} md={12} lg={12} style={{ padding: 20, background: '#d7ddcb' }}>
                                     <Title level={1} style={{ margin: 0, fontSize: '48px' }}>100+</Title>
                                     <Divider style={{margin: 0}}/>
-                                    <Paragraph style={{ margin: 0, background:"#95d11f" }}>
-                                        Industries: Expertise across diverse sectors.
+                                    <Paragraph style={{ marginTop: '15px', margin: 0 }}>
+                                        Projects delivered with excellence and precision.
                                     </Paragraph>
                                 </Col>
                             </Row>
