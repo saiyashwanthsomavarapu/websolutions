@@ -38,3 +38,10 @@ textarea {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
   transform: translateY(-4px);
 }
+
+.platform-card:hover {
+  background-color: #f0f5ff;
+  border: 1px solid #fff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transform: translateY(-4px);
+}

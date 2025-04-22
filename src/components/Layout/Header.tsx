@@ -12,7 +12,8 @@ import {
   DownOutlined,
 } from '@ant-design/icons';
 import { Link, useLocation } from 'react-router-dom';
-import logoImage from '../../assets/logo.png';
+import logoImage from '../../assets/logo-removebg.png';
+import logoWhite from '../../assets/logo-white.png';
 
 
 const { Header } = Layout;
@@ -80,6 +81,13 @@ const ModernHeader: React.FC = () => {
     return 'black';; // Default for transparent header
   };
 
+  const getLogo = () => {
+    if (isHome) {
+      return scrolled ? logoImage : logoWhite;
+    }
+    return logoImage;; // Default for transparent header
+  };
+
   // Generate menu items for desktop navigation
   const getNavItems = (): MenuProps['items'] => {
     return navItems.map(item => {
@@ -127,7 +135,7 @@ const ModernHeader: React.FC = () => {
       >
         {/* Logo */}
         <div className="logo" style={{ fontSize: '24px', fontWeight: 'bold', color: '#1890ff' }}>
-          <Link className="responsive-logo" to="/">{<img style={{ height: '180px', marginTop: "20px" }} src={logoImage} alt="Logo" />}</Link>
+          <Link className="responsive-logo" to="/">{<img style={{ height: '180px', marginTop: "20px" }} src={getLogo()} alt="Logo" />}</Link>
         </div>
 
         {/* Desktop Navigation */}

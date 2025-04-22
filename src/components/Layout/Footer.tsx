@@ -1,4 +1,4 @@
-import { Layout, Row, Col, Button, Typography, Space, Divider, Grid } from 'antd';
+import { Layout, Row, Col, Button, Typography, Space, Grid } from 'antd';
 import {
   FacebookFilled,
   InstagramFilled,
@@ -56,10 +56,10 @@ const socialButtonStyle = {
   justifyContent: 'center'
 };
 
-const dividerStyle = {
-  backgroundColor: '#333',
-  margin: '32px 0'
-};
+// const dividerStyle = {
+//   backgroundColor: '#333',
+//   margin: '32px 0'
+// };
 
 const textBlockStyle = {
   display: 'block',
@@ -95,12 +95,20 @@ const FooterComponent = () => {
           <Row gutter={[24, 24]}>
             <Col xs={12} sm={12} lg={8}>
               <Title level={5} style={headingStyle}>Pages</Title>
-              <Space direction="vertical" style={{ display: 'flex', flexDirection: 'column' }}>
+              <Space direction="vertical" style={{ display: 'flex', flexDirection: 'column', marginBottom: '24px' }}>
                 <Link style={linkStyle}><RouterLink to="/aboutus">About Us</RouterLink></Link>
                 <Link style={linkStyle}><RouterLink to="/services">Services</RouterLink></Link>
                 {/* <Link style={linkStyle}><RouterLink to="/casestudy">Case Study</RouterLink></Link>
                 <Link style={linkStyle}><RouterLink to="/team">Team</RouterLink></Link> */}
               </Space>
+              <Row justify="space-between" align="middle" style={{ marginTop: '16px' }}>
+
+                <Col xs={24} md={12} style={{ textAlign: 'left', marginTop: '16px' }}>
+                  <Space align="center" style={{ display: 'flex', flexDirection: 'row', justifyContent: 'flex-start' }}>
+                    <Text style={{ color: '#999' }}> Aadhya Web Solution © 2025 </Text>
+                  </Space>
+                </Col>
+              </Row>
             </Col>
 
             {/* <Col xs={12} sm={6}>
@@ -161,16 +169,7 @@ const FooterComponent = () => {
       </Row>
 
       {/* Bottom links and copyright */}
-      <Divider style={dividerStyle} />
-
-      <Row justify="space-between" align="middle" style={{ marginTop: '16px' }}>
-
-        <Col xs={24} md={12} style={{ textAlign: 'left', marginTop: '16px' }}>
-          <Space align="center" style={{ display: 'flex', flexDirection: 'row', justifyContent: 'flex-start' }}>
-            <Text style={{ color: '#999' }}> Aadhya Web Solution © 2025 </Text>
-          </Space>
-        </Col>
-      </Row>
+      {/* <Divider style={dividerStyle} /> */}
     </Footer>
   );
 };

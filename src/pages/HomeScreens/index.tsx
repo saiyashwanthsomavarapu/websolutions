@@ -2,8 +2,10 @@ import { Fragment } from "react";
 import Intro from "./Intro";
 import AboutUs from "./AboutUs";
 import ServicesSectionUI from "./WhatWeDo";
-import CaseStudySection from "./CaseStudy";
+// import CaseStudySection from "./CaseStudy";
 import BannersCarousel from "./BannerCarousel";
+import { SupportedPlatforms } from "./SupportedPlatforms";
+import WhyChooseUs from "./WhyChooseUs";
 
 function HomeScreen() {
   return (
@@ -11,8 +13,10 @@ function HomeScreen() {
       <Intro />
       <AboutUs />
       <ServicesSectionUI />
-      <CaseStudySection />
+      <SupportedPlatforms />
+      {/* <CaseStudySection /> */}
       <BannersCarousel />
+      <WhyChooseUs />
     </Fragment>
   );
 }
