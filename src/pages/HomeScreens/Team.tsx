@@ -135,6 +135,7 @@ const TeamSection = () => {
                 {teamMembers.map((member, index) => (
                     <Col xs={24} sm={12} md={6} key={index}>
                         <TeamMember
+                            key={index}
                             name={member.name}
                             title={member.title}
                             imageSrc={member.imageSrc}

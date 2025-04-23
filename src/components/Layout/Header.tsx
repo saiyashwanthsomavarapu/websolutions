@@ -170,36 +170,35 @@ const ModernHeader: React.FC = () => {
         onClose={() => setVisible(false)}
         open={visible}
         width={280}
-        styles={{ body: { padding: 0 } }}
       >
         <Menu
           mode="vertical"
           style={{ border: 'none' }}
           items={navItems.map(item => ({
-        key: item.key,
-        label: item.path ? (
-          <Link
-            style={{ color: 'black' }}
-            to={item.path}
-            onClick={() => setVisible(false)} // Close drawer on click
-          >
-            {item.label}
-          </Link>
-        ) : (
-          item.label
-        ),
-        children: item.children?.map(child => ({
-          key: child.key,
-          label: (
-            <Link
-          style={{ color: 'black' }}
-          to={child.path || '/'}
-          onClick={() => setVisible(false)} // Close drawer on click
-            >
-          {child.label}
-            </Link>
-          ),
-        })),
+            key: item.key,
+            label: item.path ? (
+              <Link
+                style={{ color: 'black' }}
+                to={item.path}
+                onClick={() => setVisible(false)} // Close drawer on click
+              >
+                {item.label}
+              </Link>
+            ) : (
+              item.label
+            ),
+            children: item.children?.map(child => ({
+              key: child.key,
+              label: (
+                <Link
+                  style={{ color: 'black' }}
+                  to={child.path || '/'}
+                  onClick={() => setVisible(false)} // Close drawer on click
+                >
+                  {child.label}
+                </Link>
+              ),
+            })),
           }))}
         />
       </Drawer>

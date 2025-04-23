@@ -6,6 +6,7 @@ import ServicesSectionUI from "./WhatWeDo";
 import BannersCarousel from "./BannerCarousel";
 import { SupportedPlatforms } from "./SupportedPlatforms";
 import WhyChooseUs from "./WhyChooseUs";
+import CustomComponent from "./CustomComponent";
 
 function HomeScreen() {
   return (
@@ -17,6 +18,7 @@ function HomeScreen() {
       {/* <CaseStudySection /> */}
       <BannersCarousel />
       <WhyChooseUs />
+      <CustomComponent />
     </Fragment>
   );
 }

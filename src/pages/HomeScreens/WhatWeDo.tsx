@@ -84,7 +84,7 @@ const ServicesSectionUI = () => {
                 {/* Right Side - Cards with Hover Effect */}
                 <Col xs={24} md={12} lg={12}>
                     <Space direction="vertical" size={24} style={{ width: "100%" }}>
-                        {services.map(({ title, img, description, Icon }, index) => (
+                        {services.slice(0, 3).map(({ title, img, description, Icon }, index) => (
                             <ServiceCard
                                 key={index}
                                 img={img}

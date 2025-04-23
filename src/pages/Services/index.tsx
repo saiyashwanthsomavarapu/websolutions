@@ -1,12 +1,12 @@
 import { Fragment } from 'react'
 import OurServices from './OurServices'
-import FaqSection from './Faq'
+// import FaqSection from './Faq'
 
 const Services = () => {
     return (
         <Fragment>
             <OurServices />
-            <FaqSection />
+            {/* <FaqSection /> */}
         </Fragment>
     )
 }
