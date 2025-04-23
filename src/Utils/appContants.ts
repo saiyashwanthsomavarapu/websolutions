@@ -29,4 +29,11 @@ export const services = [
     description:
       "Optimize your financial performance with expert insights and planning. From budgeting to investment strategies, we ensure your business remains financially healthy.",
   },
+  {
+    img: Saas,
+    Icon: LineChartOutlined,
+    title: "Lucky Advisory",
+    description:
+      "Optimize your financial performance with expert insights and planning. From budgeting to investment strategies, we ensure your business remains financially healthy.",
+  },
 ];

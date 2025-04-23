@@ -12,22 +12,22 @@ const CustomComponent = () => {
     const screens = Grid.useBreakpoint();;
     const services = [
         {
-            icon: <AppstoreOutlined style={{ fontSize: '32px', color: '#fff' }} />,
+            icon: <AppstoreOutlined style={{ fontSize: '32px', color: '#000' }} />,
             title: 'Custom Software',
             description: 'We help digital companies to volume their self-interest.'
         },
         {
-            icon: <DatabaseOutlined style={{ fontSize: '32px', color: '#fff' }} />,
+            icon: <DatabaseOutlined style={{ fontSize: '32px', color: '#000' }} />,
             title: 'ERP Solutions',
             description: 'Strategy is a forward-looking plan for your brand\'s behavior.'
         },
         {
-            icon: <PlusCircleOutlined style={{ fontSize: '32px', color: '#fff' }} />,
+            icon: <PlusCircleOutlined style={{ fontSize: '32px', color: '#000' }} />,
             title: 'SEO SMO',
             description: 'Audits help your company to have the unique plan for your brand.'
         },
         {
-            icon: <GlobalOutlined style={{ fontSize: '32px', color: '#fff' }} />,
+            icon: <GlobalOutlined style={{ fontSize: '32px', color: '#000' }} />,
             title: 'Website/App Design',
             description: 'UI/UX design gives the appearance above your brand\'s behavior.'
         }
@@ -38,14 +38,14 @@ const CustomComponent = () => {
             display: "flex",
             padding: screens.lg || screens.md ? "120px" : "50px",
             justifyContent: "center",
-            backgroundColor: "#0d2a4b",
+            backgroundColor: "#fff",
         }}>
             <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 24px' }}>
                 <Row gutter={[48, 48]}>
                     <Col xs={24} md={24} lg={12}>
                         <Space direction="vertical" size="small">
                             <Text style={{
-                                color: '#fff',
+                                color: '#000',
                                 textTransform: 'uppercase',
                                 fontSize: '14px',
                                 marginBottom: '8px',
@@ -54,7 +54,7 @@ const CustomComponent = () => {
                                 WHAT WE DO
                             </Text>
                             <Title level={1} style={{
-                                color: '#fff',
+                                color: '#000',
                                 fontSize: '48px',
                                 fontWeight: 'bold',
                                 lineHeight: '1.1',
@@ -68,7 +68,7 @@ const CustomComponent = () => {
                     <Col xs={24} md={24} lg={12} >
                         <div style={{ marginBottom: '24px' }}>
                             <Paragraph style={{
-                                color: '#fff',
+                                color: '#000',
                                 fontSize: '16px',
                                 marginBottom: '48px'
                             }}>
@@ -83,7 +83,7 @@ const CustomComponent = () => {
                                         {service.icon}
                                     </div>
                                     <Title level={4} style={{
-                                        color: '#fff',
+                                        color: '#000',
                                         marginTop: '16px',
                                         marginBottom: '8px',
                                         fontSize: '20px'
