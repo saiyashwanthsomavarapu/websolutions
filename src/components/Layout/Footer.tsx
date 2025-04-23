@@ -96,8 +96,8 @@ const FooterComponent = () => {
             <Col xs={12} sm={12} lg={8}>
               <Title level={5} style={headingStyle}>Pages</Title>
               <Space direction="vertical" style={{ display: 'flex', flexDirection: 'column', marginBottom: '24px' }}>
-                <RouterLink to="/aboutus" style={linkStyle}>About Us</RouterLink>
-                <RouterLink to="/services" style={linkStyle}>Services</RouterLink>
+                <RouterLink to="/aboutus" style={{ ...linkStyle, color: 'white' }}>About Us</RouterLink>
+                <RouterLink to="/services" style={{ ...linkStyle, color: 'white' }}>Services</RouterLink>
                 {/* <Link style={linkStyle}><RouterLink to="/casestudy">Case Study</RouterLink></Link>
                 <Link style={linkStyle}><RouterLink to="/team">Team</RouterLink></Link> */}
               </Space>
@@ -124,17 +124,17 @@ const FooterComponent = () => {
               <Title level={5} style={headingStyle}>Location</Title>
               <Row gutter={[24, 24]}>
                 <Col lg={8}>
-                  <Text style={{ ...whiteTextStyle, ...textBlockStyle }}>ABCD Street, Suite 456</Text>
-                  <Text style={{ ...whiteTextStyle, marginBottom: '24px', display: 'block' }}>New York, NY, USA</Text>
+                  <Text style={{ ...whiteTextStyle, ...textBlockStyle }}>1034 Collier Run RD</Text>
+                  <Text style={{ ...whiteTextStyle, marginBottom: '24px', display: 'block' }}>Middle River, MD, USA</Text>
                 </Col>
                 <Col lg={8}>
                   <Text style={{ ...whiteTextStyle, ...textBlockStyle }}>ABCD Street, Suite 456</Text>
                   <Text style={{ ...whiteTextStyle, marginBottom: '24px', display: 'block' }}>Hyd, India</Text>
                 </Col>
-                <Col lg={8}>
+                {/* <Col lg={8}>
                   <Text style={{ ...whiteTextStyle, ...textBlockStyle }}>ABCD Street, Suite 456</Text>
                   <Text style={{ ...whiteTextStyle, marginBottom: '24px', display: 'block' }}>Lucknow, India</Text>
-                </Col>
+                </Col> */}
               </Row>
               <Row gutter={[48, 48]}>
                 <Col lg={12}>
