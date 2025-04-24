@@ -66,10 +66,32 @@ const GetInTouch = () => {
                 <Col xs={24} sm={12} md={12} lg={12}>
 
                     <form ref={form} onSubmit={sendEmail}>
-                        <Input size='large' id="get-in-touch-name" placeholder="Name" style={{ marginBottom: '16px' }} />
-                        <Input size='large' placeholder="Email" style={{ marginBottom: '16px' }} />
-                        <TextArea size='large' rows={4} placeholder="message" maxLength={6} style={{ marginBottom: '16px' }} />
-
+                        <Input
+                            size='large'
+                            id="get-in-touch-name"
+                            placeholder="Name"
+                            style={{ marginBottom: '16px' }}
+                            required
+                            pattern="[a-zA-Z]*"
+                            title="Name should only contain letters and spaces"
+                        />
+                        <Input
+                            size='large'
+                            type="email"
+                            placeholder="Email"
+                            style={{ marginBottom: '16px' }}
+                            required
+                            pattern="[a-zA-Z._%+-]+@[a-zA-Z.-]+\.[a-zA-Z]{2,}$"
+                            title="Please enter a valid email address"
+                        />
+                        <TextArea
+                            size='large'
+                            rows={4}
+                            placeholder="Message"
+                            maxLength={500}
+                            style={{ marginBottom: '16px' }}
+                            required
+                        />
                         <Button
                             type="primary"
                             size="large"
@@ -84,6 +106,7 @@ const GetInTouch = () => {
                         >
                             Submit
                         </Button>
+                        <div style={{ marginTop: '16px', color: 'red', fontSize: '14px' }} id="error-message"></div>
                     </form>
 
                 </Col>

@@ -119,7 +119,7 @@ export const SupportedPlatforms = () => {
                 <Col xs={24} md={12} lg={12} style={{ display: 'flex', justifyContent: 'center' }}>
                     <Row gutter={[48, 16]}>
                         {platforms.map((platform, index) => (
-                            <Col xs={24} sm={8} md={8} lg={8} key={index}>
+                            <Col xs={12} sm={8} md={8} lg={8} key={index}>
                                 <Card
                                     className="platform-card"
                                     style={{
