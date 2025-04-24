@@ -13,7 +13,7 @@ import {
 } from '@ant-design/icons';
 import { Link, useLocation } from 'react-router-dom';
 import logoImage from '../../assets/logo-removebg.png';
-import logoWhite from '../../assets/logo-white.png';
+import logoWhite from '../../assets/New_project.png';
 
 
 const { Header } = Layout;

@@ -4,6 +4,8 @@ import wordPress from '../../assets/wordpress.svg';
 import shopify from '../../assets/shopify.svg';
 import woo from '../../assets/woo.svg';
 import bigCommerce from '../../assets/bigcommerce.svg';
+import react from "../../assets/react.svg";
+import angular from "../../assets/angular-icon-logo-svgrepo-com.svg";
 
 const { Title, Paragraph } = Typography;
 
@@ -44,6 +46,24 @@ export const SupportedPlatforms = () => {
             name: 'WordPress',
             link: {
                 href: 'https://wordpress.org',
+                target: '_blank',
+                rel: 'noopener noreferrer'
+            }
+        },
+        {
+            icon: react,
+            name: 'React',
+            link: {
+                href: 'https://reactjs.org',
+                target: '_blank',
+                rel: 'noopener noreferrer'
+            }
+        },
+        {
+            icon: angular,
+            name: 'Angular',
+            link: {
+                href: 'https://Angular.io',
                 target: '_blank',
                 rel: 'noopener noreferrer'
             }
