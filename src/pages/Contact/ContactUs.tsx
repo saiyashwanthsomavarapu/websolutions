@@ -62,6 +62,12 @@ const ContactUs = () => {
                                 height: '48px',
                                 padding: '0 24px'
                             }}
+                            onClick={() => {
+                                const inputElement = document.getElementById('get-in-touch-name');
+                                if (inputElement) {
+                                    inputElement.focus();
+                                }
+                            }}
                         >
                             Get in touch
                         </Button>

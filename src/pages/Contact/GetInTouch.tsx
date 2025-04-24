@@ -66,7 +66,7 @@ const GetInTouch = () => {
                 <Col xs={24} sm={12} md={12} lg={12}>
 
                     <form ref={form} onSubmit={sendEmail}>
-                        <Input size='large' placeholder="Name" style={{ marginBottom: '16px' }} />
+                        <Input size='large' id="get-in-touch-name" placeholder="Name" style={{ marginBottom: '16px' }} />
                         <Input size='large' placeholder="Email" style={{ marginBottom: '16px' }} />
                         <TextArea size='large' rows={4} placeholder="message" maxLength={6} style={{ marginBottom: '16px' }} />
 

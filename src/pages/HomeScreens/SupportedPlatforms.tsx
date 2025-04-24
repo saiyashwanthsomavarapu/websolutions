@@ -67,6 +67,24 @@ export const SupportedPlatforms = () => {
                 target: '_blank',
                 rel: 'noopener noreferrer'
             }
+        },
+        {
+            icon: react,
+            name: 'React',
+            link: {
+                href: 'https://reactjs.org',
+                target: '_blank',
+                rel: 'noopener noreferrer'
+            }
+        },
+        {
+            icon: angular,
+            name: 'Angular',
+            link: {
+                href: 'https://Angular.io',
+                target: '_blank',
+                rel: 'noopener noreferrer'
+            }
         }
     ];
 
@@ -99,9 +117,9 @@ export const SupportedPlatforms = () => {
                     </Paragraph>
                 </Col>
                 <Col xs={24} md={12} lg={12} style={{ display: 'flex', justifyContent: 'center' }}>
-                    <Row gutter={[48, 16]} >
+                    <Row gutter={[48, 16]}>
                         {platforms.map((platform, index) => (
-                            <Col xs={12} sm={10} md={10} key={index}>
+                            <Col xs={24} sm={8} md={8} lg={8} key={index}>
                                 <Card
                                     className="platform-card"
                                     style={{
@@ -117,9 +135,9 @@ export const SupportedPlatforms = () => {
                                         cursor: 'pointer'
                                     }}
                                 >
-                                        <a href={platform.link.href} target={platform.link.target} rel={platform.link.rel}>
-                                            <img src={platform.icon} style={{ width: '50px', height: '50px' }} />
-                                        </a>
+                                    <a href={platform.link.href} target={platform.link.target} rel={platform.link.rel}>
+                                        <img src={platform.icon} style={{ width: '50px', height: '50px' }} />
+                                    </a>
                                 </Card>
                             </Col>
                         ))}
