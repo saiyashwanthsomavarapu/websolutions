@@ -7,6 +7,7 @@ import BannersCarousel from "./BannerCarousel";
 import { SupportedPlatforms } from "./SupportedPlatforms";
 import WhyChooseUs from "./WhyChooseUs";
 import CustomComponent from "./CustomComponent";
+import ClientLogos from "./ClientLogos";
 
 function HomeScreen() {
   return (
@@ -19,6 +20,7 @@ function HomeScreen() {
       <BannersCarousel />
       <WhyChooseUs />
       <CustomComponent />
+      <ClientLogos />
     </Fragment>
   );
 }

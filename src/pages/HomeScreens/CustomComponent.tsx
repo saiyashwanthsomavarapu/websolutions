@@ -40,68 +40,67 @@ const CustomComponent = () => {
             justifyContent: "center",
             backgroundColor: "#fff",
         }}>
-            <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 24px' }}>
-                <Row gutter={[48, 48]}>
-                    <Col xs={24} md={24} lg={12}>
-                        <Space direction="vertical" size="small">
-                            <Text style={{
-                                color: '#000',
-                                textTransform: 'uppercase',
-                                fontSize: '14px',
-                                marginBottom: '8px',
-                                display: 'block'
+            <Row gutter={[48, 48]}>
+                <Col xs={24} md={12} lg={12}>
+                    <Space direction="vertical" size="small">
+                        <Text style={{
+                            color: "#000",
+                            textTransform: "uppercase",
+                            fontWeight: "300",
+                            display: "block",
+                            textDecoration: "underline",
+                            textUnderlineOffset: "10px",
+                        }}>
+                            WHAT WE DO
+                        </Text>
+                        <Title level={2}
+                            style={{
+                                fontSize: screens.lg ? "2.5em" : "2em",
+                                marginTop: 10,
+                                lineHeight: "1.2",
                             }}>
-                                WHAT WE DO
-                            </Text>
-                            <Title level={1} style={{
-                                color: '#000',
-                                fontSize: '48px',
-                                fontWeight: 'bold',
-                                lineHeight: '1.1',
-                                margin: '16px 0 0 0'
-                            }}>
-                                We provide more than ever services to achieve business goal
-                            </Title>
-                        </Space>
-                    </Col>
+                            We provide more than ever services to achieve business goal
+                        </Title>
+                    </Space>
+                </Col>
 
-                    <Col xs={24} md={24} lg={12} >
-                        <div style={{ marginBottom: '24px' }}>
-                            <Paragraph style={{
-                                color: '#000',
-                                fontSize: '16px',
-                                marginBottom: '48px'
-                            }}>
-                                Our clients describe us as a product team which <span style={{ fontWeight: 'bold' }}>creates amazing UI/UX</span> experiences, by crafting top-notch user experience.
-                            </Paragraph>
-                        </div>
+                <Col xs={24} md={12} lg={12} >
+                    <div style={{ marginBottom: '24px' }}>
+                        <Paragraph style={{
+                            fontSize: "16px",
+                            fontWeight: "400",
+                            color: "#5c5c5c",
+                            marginBottom: "32px",
+                        }}>
+                            Our clients describe us as a product team which <span style={{ fontWeight: 'bold' }}>creates amazing UI/UX</span> experiences, by crafting top-notch user experience.
+                        </Paragraph>
+                    </div>
 
-                        <Row gutter={[32, 40]}>
-                            {services.map((service, index) => (
-                                <Col xs={24} sm={12} key={index}>
-                                    <div style={{ marginBottom: '16px' }}>
-                                        {service.icon}
-                                    </div>
-                                    <Title level={4} style={{
-                                        color: '#000',
-                                        marginTop: '16px',
-                                        marginBottom: '8px',
-                                        fontSize: '20px'
-                                    }}>
-                                        {service.title}
-                                    </Title>
-                                    <Paragraph style={{
-                                        color: '#999',
-                                        fontSize: '14px'
-                                    }}>
-                                        {service.description}
-                                    </Paragraph>
-                                </Col>
-                            ))}
-                        </Row>
-                    </Col>
-                </Row>
-            </div>
+                    <Row gutter={[32, 40]}>
+                        {services.map((service, index) => (
+                            <Col xs={24} sm={12} key={index}>
+                                <div style={{ marginBottom: '16px' }}>
+                                    {service.icon}
+                                </div>
+                                <Title level={4} style={{
+                                    color: '#000',
+                                    marginTop: '16px',
+                                    marginBottom: '8px',
+                                    fontSize: '20px'
+                                }}>
+                                    {service.title}
+                                </Title>
+                                <Paragraph style={{
+                                    color: '#999',
+                                    fontSize: '14px'
+                                }}>
+                                    {service.description}
+                                </Paragraph>
+                            </Col>
+                        ))}
+                    </Row>
+                </Col>
+            </Row>
         </Space >
     );
 };
