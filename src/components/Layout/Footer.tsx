@@ -99,6 +99,9 @@ const FooterComponent = () => {
                 <RouterLink to="/aboutus" style={{ ...linkStyle, color: 'white' }}>About Us</RouterLink>
                 <RouterLink to="/services" style={{ ...linkStyle, color: 'white' }}>Services</RouterLink>
                 <RouterLink to="/terms" style={{ ...linkStyle, color: 'white' }}>TermsConditions</RouterLink>
+                <RouterLink to="/privacy" style={{ ...linkStyle, color: 'white' }}>Privacy Policy</RouterLink>
+                <RouterLink to="/refund" style={{ ...linkStyle, color: 'white' }}>Cancellation & Refund Policy</RouterLink>
+                <RouterLink to="/delivery_process"  style={{ ...linkStyle, color: 'white' }}> Delivery Process </RouterLink>
                 {/* <Link style={linkStyle}><RouterLink to="/casestudy">Case Study</RouterLink></Link>
                 <Link style={linkStyle}><RouterLink to="/team">Team</RouterLink></Link> */}
               </Space>
