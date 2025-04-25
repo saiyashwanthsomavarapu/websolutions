@@ -8,7 +8,6 @@ import { SupportedPlatforms } from "./SupportedPlatforms";
 import WhyChooseUs from "./WhyChooseUs";
 import CustomComponent from "./CustomComponent";
 import ClientLogos from "./ClientLogos";
-import TermsConditions from "../../components/Layout/TermsConditions";
 
 function HomeScreen() {
   return (
@@ -21,7 +20,6 @@ function HomeScreen() {
       <BannersCarousel />
       <WhyChooseUs />
       <CustomComponent />
-      <TermsConditions/>
       <ClientLogos />
     </Fragment>
   );
