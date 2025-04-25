@@ -66,20 +66,20 @@ const BusinessSolutionsUI = () => {
                 that help our clients thrive in a dynamic and ever-changing
                 world.
               </Paragraph>
-              <Button
+                <Button
                 type="primary"
                 style={{
-                  display: screen.lg ? "block" : "none",
                   backgroundColor: "#1a1a1a",
                   border: "none",
                   borderRadius: "4px",
                   height: "48px",
                   padding: "0 24px",
+                  cursor: "pointer",
                 }}
                 onClick={() => navigateTo("/aboutus")}
-              >
+                >
                 About Us
-              </Button>
+                </Button>
             </Col>
             <Col xs={24} md={24} lg={12}>
               <div style={{ marginBottom: "24px" }}>
@@ -111,19 +111,6 @@ const BusinessSolutionsUI = () => {
                 </div>
                 <Progress percent={90} showInfo={false} strokeColor="#555" />
               </div>
-              <Button
-                type="primary"
-                style={{
-                  display: screen.lg ? "none" : "block",
-                  backgroundColor: "#1a1a1a",
-                  border: "none",
-                  borderRadius: "4px",
-                  height: "48px",
-                  padding: "0 24px",
-                }}
-              >
-                About Us
-              </Button>
             </Col>
           </Row>
         </Col>

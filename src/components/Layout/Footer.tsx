@@ -98,6 +98,7 @@ const FooterComponent = () => {
               <Space direction="vertical" style={{ display: 'flex', flexDirection: 'column', marginBottom: '24px' }}>
                 <RouterLink to="/aboutus" style={{ ...linkStyle, color: 'white' }}>About Us</RouterLink>
                 <RouterLink to="/services" style={{ ...linkStyle, color: 'white' }}>Services</RouterLink>
+                <RouterLink to="/terms" style={{ ...linkStyle, color: 'white' }}>TermsConditions</RouterLink>
                 {/* <Link style={linkStyle}><RouterLink to="/casestudy">Case Study</RouterLink></Link>
                 <Link style={linkStyle}><RouterLink to="/team">Team</RouterLink></Link> */}
               </Space>
