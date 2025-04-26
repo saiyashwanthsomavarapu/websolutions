@@ -1,7 +1,6 @@
 import React from 'react';
 import { Button, Typography, Layout } from 'antd';
-import { ArrowRightOutlined } from '@ant-design/icons';
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
 
 const { Content } = Layout;
@@ -39,43 +38,40 @@ const OutlinedText = styled.span`
   font-weight: 500;
 `;
 
-const StyledButton = styled(Button)`
-  margin-top: 30px;
-  height: 44px;
-  border-radius: 4px;
-  display: flex;
-  align-items: center;
-  padding: 0 20px;
-  
-  &:hover {
-    border-color: #000;
-    color: #000;
-  }
-`;
-
 const NotFound: React.FC = () => {
-    return (
-        <NotFoundContainer>
+  const navigateTo = useNavigate();
 
-            <ErrorCode>
-                <OutlinedText>404</OutlinedText>
-            </ErrorCode>
+  return (
+    <NotFoundContainer>
 
-            <Title level={2} style={{ margin: '10px 0', fontWeight: 500 }}>
-                Ooops! Page Not Found..
-            </Title>
+      <ErrorCode>
+        <OutlinedText>404</OutlinedText>
+      </ErrorCode>
 
-            <Text style={{ fontSize: 16, color: '#666' }}>
-                Unfortunately, page you are looking for does not exitst
-            </Text>
+      <Title level={2} style={{ margin: '10px 0', fontWeight: 500 }}>
+        Ooops! Page Not Found..
+      </Title>
 
-            <Link to="/">
-                <StyledButton type="primary" size="large">
-                    Back To Home <ArrowRightOutlined style={{ marginLeft: 8 }} />
-                </StyledButton>
-            </Link>
-        </NotFoundContainer>
-    );
+      <Text style={{ fontSize: 16, color: '#666' }}>
+        Unfortunately, page you are looking for does not exitst
+      </Text>
+
+      <Button
+        type="primary"
+        style={{
+          backgroundColor: '#1a1a1a',
+          border: 'none',
+          borderRadius: '4px',
+          height: '48px',
+          padding: '0 24px',
+          marginTop: '2em'
+        }}
+        onClick={() => navigateTo("/services")}
+      >
+        Back To Home
+      </Button>
+    </NotFoundContainer>
+  );
 };
 
 export default NotFound;
