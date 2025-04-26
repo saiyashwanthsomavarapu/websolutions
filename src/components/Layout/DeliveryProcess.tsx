@@ -18,18 +18,6 @@ const DeliveryProcess = () => {
         >
             <Row gutter={[48, 48]} >
                 <Col xs={24} md={24} lg={24}>
-                    <Text
-                        style={{
-                            color: "#000",
-                            textTransform: "uppercase",
-                            fontWeight: "300",
-                            display: "block",
-                            textDecoration: "underline",
-                            textUnderlineOffset: "10px",
-                        }}
-                    >
-                        Delivery Process
-                    </Text>
                     <Title
                         level={2}
                         style={{
@@ -38,9 +26,9 @@ const DeliveryProcess = () => {
                             lineHeight: "1.2",
                         }}
                     >
-                        Terms and Conditions
+                        Delivery Process
                     </Title>
-                    <Paragraph
+                    {/* <Paragraph
                         style={{
                             fontSize: screen.lg || screen.md ? '16px' : '14px',
                             lineHeight: '1.6',
@@ -56,8 +44,8 @@ const DeliveryProcess = () => {
                             color: '#555',
                         }}
                     >
-                        The following Terms of Use apply to ALL Web Indore customers:
-                    </Paragraph>
+                        The following Terms of Use apply to ALL Aadhya Web Solution customers:
+                    </Paragraph> */}
                     <Paragraph
                         style={{
                             fontSize: screen.lg || screen.md ? '16px' : '14px',
@@ -65,7 +53,9 @@ const DeliveryProcess = () => {
                             color: '#555',
                         }}
                     >
-                        <strong>Illegal Use:</strong> Web Indore services may be used for lawful purposes only. Transmission, storage or distribution of any information, data or material in violation of any applicable law or regulation or that may directly facilitate the violation of any particular law or regulation is prohibited. This includes, but is not limited to: copyrighted material; trademarks; trade secrets or other intellectual property rights used without proper authorization; material that is obscene, defamatory, constitutes an illegal threat, or violates export control laws.
+                        <strong>Delivery Process:</strong> 
+                            We discuss the delivery of project at the time of discussion over project,it totally depends upon the pages required by the client and we decide the timeline accordingly
+                            use the services already purchased until the end of your prepaid term.  
                     </Paragraph>
                 </Col>
             </Row>

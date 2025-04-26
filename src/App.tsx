@@ -12,6 +12,7 @@ import TermsConditions from './components/Layout/TermsConditions';
 import PrivacyPolicy from './components/Layout/PrivacyPolicy';
 import CancellationRefundPolicy from './components/Layout/CancellationRefundPolicy';
 import DeliveryProcess from './components/Layout/DeliveryProcess';
+import TermCondition from './components/Layout/TermCondition';
 
 
 const { Content } = Layout;
@@ -32,6 +33,7 @@ const App = () => {
             <Route path="/privacy" element={<PrivacyPolicy />} />
             <Route path="/refund" element={<CancellationRefundPolicy />} />
             <Route path="/delivery_process" element={<DeliveryProcess />} />
+            <Route path="/terms_condition" element={<TermCondition />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Content>

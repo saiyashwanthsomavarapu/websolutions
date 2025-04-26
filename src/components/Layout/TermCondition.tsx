@@ -1,9 +1,11 @@
 import { Row, Col, Typography, Space, Grid } from "antd";
-import { privacyPolicyData } from "../../Utils/appContants";
+
+import { TermConditionData } from "../../Utils/appContants";
+
 
 const { Title, Paragraph } = Typography;
 
-const PrivacyPolicy = () => {
+const TermCondition = () => {
     const { useBreakpoint } = Grid;
     const screen = useBreakpoint();
 
@@ -27,8 +29,21 @@ const PrivacyPolicy = () => {
                             lineHeight: "1.2",
                         }}
                     >
-                        Privacy Policy
+                        Terms and Conditions
                     </Title>
+                    <Paragraph
+                        style={{
+                            fontSize: screen.lg || screen.md ? "16px" : "14px",
+                            lineHeight: "1.6",
+                            color: "#555",
+                            textAlign: 'justify'
+                        }}
+                    >
+                        Please read these terms and conditions carefully before using our
+                        website. By accessing or using our services, you agree to be bound
+                        by these terms. If you disagree with any part of the terms, you may
+                        not access the service.
+                    </Paragraph>
                     <Paragraph
                         style={{
                             fontSize: screen.lg || screen.md ? "16px" : "14px",
@@ -36,18 +51,9 @@ const PrivacyPolicy = () => {
                             color: "#555",
                         }}
                     >
-                        This privacy policy has been compiled to better serve those who are concerned with how their ‘Personally Identifiable Information’ (PII) is being used online. PII, as described in US privacy law and information security, is information that can be used on its own or with other information to identify, contact, or locate a single person, or to identify an individual in context. Please read our privacy policy carefully to get a clear understanding of how we collect, use, protect or otherwise handle your Personally Identifiable Information in accordance with our website.
+                        The following Terms of Use apply to ALL Aadhya Web Solution customers:
                     </Paragraph>
-                    <p
-                        style={{
-                            fontSize: screen.lg || screen.md ? "16px" : "14px",
-                            lineHeight: "1.6",
-                            color: "#555",
-                        }}
-                    >
-                        The following Privacy Policy of Use apply to ALL Aadhya Web Solution customers:
-                    </p>
-                    {privacyPolicyData.map((item, index) => (
+                    {TermConditionData.map((item, index) => (
                         <Paragraph
                             key={index}
                             style={{
@@ -57,7 +63,7 @@ const PrivacyPolicy = () => {
                                 textAlign: 'justify'
                             }}
                         >
-                            {item.subtitle && <strong> {item.subtitle}</strong>} {item.content}
+                            {item.subtitle && <strong> {item.subtitle}</strong>}  {item.content}
                         </Paragraph>
                     ))}
                 </Col>
@@ -66,4 +72,4 @@ const PrivacyPolicy = () => {
     );
 };
 
-export default PrivacyPolicy;
+export default TermCondition;

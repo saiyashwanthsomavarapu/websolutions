@@ -2,9 +2,7 @@ import { Layout, Row, Col, Button, Typography, Space, Grid, Image, Divider } fro
 import {
   FacebookFilled,
   InstagramFilled,
-  // SendOutlined,
   WhatsAppOutlined,
-  // RightOutlined,
   LinkedinFilled
 } from '@ant-design/icons';
 import { Link as RouterLink, useNavigate } from 'react-router-dom';
@@ -109,6 +107,7 @@ const FooterComponent = () => {
                 <RouterLink to="/privacy" style={{ ...linkStyle, color: 'white' }}>Privacy Policy</RouterLink>
                 <RouterLink to="/refund" style={{ ...linkStyle, color: 'white' }}>Cancellation & Refund Policy</RouterLink>
                 <RouterLink to="/delivery_process" style={{ ...linkStyle, color: 'white' }}> Delivery Process </RouterLink>
+                <RouterLink to="/terms_condition" style={{ ...linkStyle, color: 'white' }}>Term Condition test</RouterLink>
               </Space>
             </Col>
             <Col xs={12} sm={12} lg={6}>
@@ -192,7 +191,7 @@ const FooterComponent = () => {
 
         <Col xs={24} md={12} >
           <Space align="center" style={{ display: 'flex', flexDirection: 'row', justifyContent: 'flex-start' }}>
-            <Text style={{ color: '#999' }}> All Rights Reserved © Aadhya Web Solution | 2025 </Text>
+            <Text style={{ color: '#999' }}> All Rights Reserved © Aadhya Web Solution  | 2025 </Text>
           </Space>
         </Col>
         <Col xs={24} md={12} style={{ display: 'flex', justifyContent: 'flex-end' }}>
