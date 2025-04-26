@@ -107,7 +107,7 @@ export const privacyPolicyData = [
   },
 ];
 
-export const TermConditionData = [
+export const TermsConditionsData = [
   {
     subtitle: "Illegal Use:",
     content: `Web Indore services may be used for lawful purposes only. Transmission, storage or distribution of any

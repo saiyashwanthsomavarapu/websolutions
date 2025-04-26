@@ -103,11 +103,10 @@ const FooterComponent = () => {
               <Space direction="vertical" style={{ display: 'flex', flexDirection: 'column', marginBottom: '24px' }}>
                 <RouterLink to="/aboutus" style={{ ...linkStyle, color: 'white' }}>About Us</RouterLink>
                 <RouterLink to="/services" style={{ ...linkStyle, color: 'white' }}>Services</RouterLink>
-                <RouterLink to="/terms" style={{ ...linkStyle, color: 'white' }}>Terms Conditions</RouterLink>
                 <RouterLink to="/privacy" style={{ ...linkStyle, color: 'white' }}>Privacy Policy</RouterLink>
                 <RouterLink to="/refund" style={{ ...linkStyle, color: 'white' }}>Cancellation & Refund Policy</RouterLink>
                 <RouterLink to="/delivery_process" style={{ ...linkStyle, color: 'white' }}> Delivery Process </RouterLink>
-                <RouterLink to="/terms_condition" style={{ ...linkStyle, color: 'white' }}>Term Condition test</RouterLink>
+                <RouterLink to="/terms_conditions" style={{ ...linkStyle, color: 'white' }}>Terms Conditions</RouterLink>
               </Space>
             </Col>
             <Col xs={12} sm={12} lg={6}>
