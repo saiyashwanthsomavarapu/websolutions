@@ -8,6 +8,7 @@ import { SupportedPlatforms } from "./SupportedPlatforms";
 import WhyChooseUs from "./WhyChooseUs";
 import CustomComponent from "./CustomComponent";
 import ClientLogos from "./ClientLogos";
+// import OurWork from "./OurWork";
 
 function HomeScreen() {
   return (
@@ -21,6 +22,7 @@ function HomeScreen() {
       <WhyChooseUs />
       <CustomComponent />
       <ClientLogos />
+      {/* <OurWork /> */}
     </Fragment>
   );
 }
