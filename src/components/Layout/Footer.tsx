@@ -185,7 +185,7 @@ const FooterComponent = () => {
       <Col xs={24} md={12} style={{ display: 'flex', justifyContent: 'flex-end' }}>
         <Space align="center" style={{ display: 'flex', flexDirection: 'row', justifyContent: 'flex-start' }}>
         <Text style={{ color: '#999', fontSize: screen.lg ? '16px' : '14px' }}>
-          <RouterLink to="/terms" style={{ ...linkStyle, color: 'white', fontSize: screen.lg ? '16px' : '14px' }}>Terms Conditions</RouterLink> |
+          <RouterLink to="/terms_conditions" style={{ ...linkStyle, color: 'white', fontSize: screen.lg ? '16px' : '14px' }}>Terms Conditions</RouterLink> |
           <RouterLink to="/privacy" style={{ ...linkStyle, color: 'white', fontSize: screen.lg ? '16px' : '14px' }}>Privacy Policy</RouterLink> |
           <RouterLink to="/blogd" style={{ ...linkStyle, color: 'white', fontSize: screen.lg ? '16px' : '14px' }}>Blogs</RouterLink> |
           <RouterLink to="/sitemaps" style={{ ...linkStyle, color: 'white', fontSize: screen.lg ? '16px' : '14px' }}> Sitemaps </RouterLink>
