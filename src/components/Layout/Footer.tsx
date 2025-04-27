@@ -16,56 +16,47 @@ const { Title, Text } = Typography;
 
 const footerStyle = {
   backgroundColor: '#000',
-  color: '#fff'
+  color: '#fff',
+  fontFamily: "Poppins', sans-serif !important"
 };
 
 const headingStyle = {
   color: '#fff',
   marginBottom: '16px',
-  fontSize: '2em'
+  fontSize: '2em',
+  fontFamily: "Poppins', sans-serif !important"
 };
 
 const whiteTextStyle = {
-  color: '#fff'
+  color: '#fff',
+  fontFamily: "Poppins', sans-serif !important"
 };
 
 const linkStyle = {
   color: '#fff',
-  margin: '.5em .5em'
+  margin: '.5em .5em',
+  fontFamily: "Poppins', sans-serif !important"
 };
-
-// const companyTaglineStyle = {
-//   fontSize: '18px',
-//   color: '#fff',
-//   marginBottom: '32px'
-// };
-
-// const newsletterInputStyle = {
-//   color: '#fff',
-//   backgroundColor: 'transparent',
-//   borderWidth: '0 0 1px 0',
-//   borderColor: '#333',
-//   borderRadius: 0,
-//   paddingBottom: '8px',
-//   marginBottom: '16px'
-// };
 
 const socialButtonStyle = {
   backgroundColor: '#222',
   color: '#fff',
   display: 'flex',
   alignItems: 'center',
-  justifyContent: 'center'
+  justifyContent: 'center',
+  fontFamily: "Poppins', sans-serif !important"
 };
 
 const dividerStyle = {
   backgroundColor: '#333',
-  margin: '32px 0'
+  margin: '32px 0',
+  fontFamily: "Poppins', sans-serif !important"
 };
 
 const textBlockStyle = {
   display: 'block',
-  marginBottom: '4px'
+  marginBottom: '4px',
+  fontFamily: "Poppins', sans-serif !important"
 };
 
 const FooterComponent = () => {
