@@ -1,11 +1,11 @@
 import { Row, Col, Typography, Space, Grid } from "antd";
 
-import { TermConditionData } from "../../Utils/appContants";
+import { TermsConditionsData } from "../../Utils/appContants";
 
 
 const { Title, Paragraph } = Typography;
 
-const TermCondition = () => {
+const TermsConditions = () => {
     const { useBreakpoint } = Grid;
     const screen = useBreakpoint();
 
@@ -53,7 +53,7 @@ const TermCondition = () => {
                     >
                         The following Terms of Use apply to ALL Aadhya Web Solution customers:
                     </Paragraph>
-                    {TermConditionData.map((item, index) => (
+                    {TermsConditionsData.map((item, index) => (
                         <Paragraph
                             key={index}
                             style={{
@@ -72,4 +72,4 @@ const TermCondition = () => {
     );
 };
 
-export default TermCondition;
+export default TermsConditions;
