@@ -1,6 +1,14 @@
 import { Typography, Row, Col, Space, Grid } from 'antd';
-import logo1 from '../../assets/logo-removebg.png';
-import logo2 from '../../assets/GoDaddy.png';
+import BabyStep from '../../assets/Brand/Baby-Step-Products.jpg';
+import BasicHealth from '../../assets/Brand/Basic-Health-Care-Supplies.jpg';
+import FlightRisen from '../../assets/Brand/Flight_risen_travels.png';
+import NaidvarTrust from '../../assets/Brand/Naidvar_Trust.png';
+import Sadhvi from '../../assets/Brand/Sadhvi.png';
+import Suger from '../../assets/Brand/Suger.png';
+import Alekhya from '../../assets/Brand/Alekhya.png';
+import AmantroAgro from '../../assets/Brand/AmantroAgro.jpg';
+import Lifewonderful from '../../assets/Brand/Lifewonderful.png';
+import cropped from '../../assets/Brand/cropped-Logo-Main.png';
 import './ClientLogos.css';
 
 const { Title, Text, Paragraph } = Typography;
@@ -8,18 +16,18 @@ const { Title, Text, Paragraph } = Typography;
 const ClientLogos = () => {
     const screens = Grid.useBreakpoint();
     const clientRows = [
-        { name: 'Aciom Consulting', logo: logo1 },
-        { name: 'RB Group', logo: logo2 },
-        { name: 'Logistics Park', logo: logo1 },
-        { name: 'Beacon', logo: logo2 },
-        { name: 'A Softech', logo: logo2 },
-        { name: 'Bandejia', logo: logo1 },
-        { name: 'Anubhav', logo: logo2 },
-        { name: 'TPT', logo: logo1 },
-        { name: 'Penza Group', logo: logo1 },
-        { name: 'Mtandt', logo: logo2 },
-        { name: 'Tirubala Group', logo: logo1 },
-        { name: 'KC', logo: logo2 },
+        { name: 'Baby Step Products', logo: BabyStep },
+        { name: 'Basic Health Care Supplies', logo: BasicHealth },
+        { name: 'Flight risen travels', logo: FlightRisen },
+        { name: 'Naidvar Trust', logo: NaidvarTrust },
+        { name: 'Sadhvi', logo: Sadhvi },
+        { name: 'Suger', logo: Suger },
+        { name: 'Alekhya', logo: Alekhya },
+        { name: 'Amantro Agro', logo: AmantroAgro },
+        { name: 'Life wonderful', logo: Lifewonderful },
+        { name: 'cropped', logo: cropped },
+        // { name: 'Tirubala Group', logo: logo1 },
+        // { name: 'KC', logo: logo2 },
     ];
 
     return (

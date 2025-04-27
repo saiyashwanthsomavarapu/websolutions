@@ -12,8 +12,8 @@ import {
   DownOutlined,
 } from '@ant-design/icons';
 import { Link, useLocation } from 'react-router-dom';
-import logoImage from '../../assets/logo-removebg.png';
-import logoWhite from '../../assets/New_project.png';
+import logoImage from '../../assets/logo/Aadhya_web_logo.svg';
+import logoWhite from '../../assets/logo/White.svg';
 
 
 const { Header } = Layout;
@@ -135,7 +135,7 @@ const ModernHeader: React.FC = () => {
       >
         {/* Logo */}
         <div className="logo" style={{ fontSize: '24px', fontWeight: 'bold', color: '#1890ff' }}>
-          <Link className="responsive-logo" to="/">{<img style={{ height: '180px', marginTop: "20px" }} src={getLogo()} alt="Logo" />}</Link>
+          <Link className="responsive-logo" to="/">{<img style={{ height: '80px', marginTop: "40px", marginBottom:"40px" }} src={getLogo()} alt="Logo" />}</Link>
         </div>
 
         {/* Desktop Navigation */}
