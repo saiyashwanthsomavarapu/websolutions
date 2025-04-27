@@ -105,7 +105,7 @@ const FooterComponent = () => {
               <Space direction="vertical" style={{ display: 'flex', flexDirection: 'column', marginBottom: '24px' }}>
                 <RouterLink to="/aboutus" style={{ ...linkStyle, color: 'white' }}>About Us</RouterLink>
                 <RouterLink to="/services" style={{ ...linkStyle, color: 'white' }}>Services</RouterLink>
-                <RouterLink to="/terms" style={{ ...linkStyle, color: 'white' }}>Terms Conditions</RouterLink>
+                <RouterLink to="/terms_conditions" style={{ ...linkStyle, color: 'white' }}>Terms Conditions</RouterLink>
                 <RouterLink to="/privacy" style={{ ...linkStyle, color: 'white' }}>Privacy Policy</RouterLink>
                 <RouterLink to="/refund" style={{ ...linkStyle, color: 'white' }}>Cancellation & Refund Policy</RouterLink>
                 <RouterLink to="/delivery_process" style={{ ...linkStyle, color: 'white' }}> Delivery Process </RouterLink>
@@ -198,7 +198,7 @@ const FooterComponent = () => {
         <Col xs={24} md={12} style={{ display: 'flex', justifyContent: 'flex-end' }}>
           <Space align="center" style={{ display: 'flex', flexDirection: 'row', justifyContent: 'flex-start' }}>
             <Text style={{ color: '#999' }}>
-              <RouterLink to="/terms" style={{ ...linkStyle, color: 'white' }}>TermsConditions</RouterLink> |
+              <RouterLink to="/terms_conditions" style={{ ...linkStyle, color: 'white' }}>TermsConditions</RouterLink> |
               <RouterLink to="/privacy" style={{ ...linkStyle, color: 'white' }}>Privacy Policy</RouterLink> |
               <RouterLink to="/blogd" style={{ ...linkStyle, color: 'white' }}>Blogs</RouterLink> |
               <RouterLink to="/sitemaps" style={{ ...linkStyle, color: 'white' }}> Sitemaps </RouterLink>
