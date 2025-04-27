@@ -81,7 +81,7 @@ const FooterComponent = () => {
         {/* Middle columns for navigation */}
         <Col xs={24} md={24} lg={24}>
           <Row gutter={[48, 48]}>
-            <Col xs={12} sm={12} lg={6}>
+            <Col xs={24} md={12} lg={6}>
               <Image src={Logo} width={200} preview={false} />
               <Typography.Paragraph style={{ color: 'white', marginTop: '16px' }}>
                 We transform businessof most major sectors with powerful and adapable digital solutions that satisfy the needs of today and the future.
@@ -100,7 +100,7 @@ const FooterComponent = () => {
                 Book a call
               </Button>
             </Col>
-            <Col xs={12} sm={12} lg={6}>
+            <Col xs={24} md={12} lg={6}>
               <Title level={1} style={headingStyle}>Discover</Title>
               <Space direction="vertical" style={{ display: 'flex', flexDirection: 'column', marginBottom: '24px' }}>
                 <RouterLink to="/aboutus" style={{ ...linkStyle, color: 'white' }}>About Us</RouterLink>
@@ -111,7 +111,7 @@ const FooterComponent = () => {
                 <RouterLink to="/delivery_process" style={{ ...linkStyle, color: 'white' }}> Delivery Process </RouterLink>
               </Space>
             </Col>
-            <Col xs={12} sm={12} lg={6}>
+            <Col xs={24} md={12} lg={6}>
               <Title level={1} style={headingStyle}>Services</Title>
               <Space direction="vertical" style={{ display: 'flex', flexDirection: 'column', marginBottom: '24px' }}>
                 <Text style={{ ...linkStyle, color: 'white' }}>IOS Developement</Text>
@@ -120,7 +120,7 @@ const FooterComponent = () => {
                 <Text style={{ ...linkStyle, color: 'white' }}>Logo desiging</Text>
               </Space>
             </Col>
-            <Col xs={12} sm={12} lg={6}>
+            <Col xs={24} md={12} lg={6}>
               <Title level={1} style={headingStyle}>Contact</Title>
               <Row gutter={[48, 10]}>
                 <Col lg={12}>
