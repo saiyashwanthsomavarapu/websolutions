@@ -2,6 +2,12 @@ import { Row, Col, Typography, Space, Grid } from "antd";
 
 import { TermsConditionsData } from "../../Utils/appContants";
 
+// Ensure TermsConditionsData is properly imported and defined as an array
+// addeed this code to fix the error on the console
+if (!Array.isArray(TermsConditionsData)) {
+    throw new Error("TermsConditionsData must be an array.");
+}
+
 
 const { Title, Paragraph } = Typography;
 
