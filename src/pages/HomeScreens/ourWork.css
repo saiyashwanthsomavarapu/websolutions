@@ -1,0 +1,37 @@
+.scroller {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.scroller__inner {
+    display: flex;
+    animation: scroll 20s linear infinite;
+    gap: 1rem;
+    box-sizing: border-box;
+}
+
+.scroller__inner img {
+    height: 300px;
+    width: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* Optional: Mobile Styling */
+@media (max-width: 768px) {
+    .scroller__inner img {
+        height: 200px;
+    }
+}

@@ -39,7 +39,7 @@ const PrivacyPolicy = () => {
                             lineHeight: "1.2",
                         }}
                     >
-                        Terms and Conditions
+                        Privacy Policy
                     </Title>
                     {/* <Title
                         level={1}
@@ -58,14 +58,12 @@ const PrivacyPolicy = () => {
                             fontSize: screen.lg || screen.md ? "16px" : "14px",
                             lineHeight: "1.6",
                             color: "#555",
+                            fontFamily: "Poppins', sans-serif !important",
                         }}
                     >
-                        Please read these terms and conditions carefully before using our
-                        website. By accessing or using our services, you agree to be bound
-                        by these terms. If you disagree with any part of the terms, you may
-                        not access the service.
+                        This privacy policy has been compiled to better serve those who are concerned with how their ‘Personally Identifiable Information’ (PII) is being used online. PII, as described in US privacy law and information security, is information that can be used on its own or with other information to identify, contact, or locate a single person, or to identify an individual in context. Please read our privacy policy carefully to get a clear understanding of how we collect, use, protect or otherwise handle your Personally Identifiable Information in accordance with our website.
                     </Paragraph>
-                    <p
+                    <Paragraph
                         style={{
                             fontSize: screen.lg || screen.md ? "16px" : "14px",
                             lineHeight: "1.6",
@@ -73,7 +71,7 @@ const PrivacyPolicy = () => {
                         }}
                     >
                         The following Terms of Use apply to ALL Web Indore customers:
-                    </p>
+                    </Paragraph>
                     {privacyPolicyData.map((item, index) => (
                         <Paragraph
                             key={index}
