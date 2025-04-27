@@ -151,7 +151,7 @@ const FooterComponent = () => {
               type="text"
               shape="circle"
               style={socialButtonStyle}
-              href="https://www.instagram.com"
+              href="https://www.instagram.com/aadhyawebsol/"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -161,7 +161,7 @@ const FooterComponent = () => {
               type="text"
               shape="circle"
               style={socialButtonStyle}
-              href="https://www.linkedin.com"
+              href="https://www.linkedin.com/company/aadhyawebsolution/"
               target="_blank"
               rel="noopener noreferrer"
             >
