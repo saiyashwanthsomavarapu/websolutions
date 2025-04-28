@@ -73,7 +73,7 @@ const CancellationRefundPolicy = () => {
                                 textAlign: 'justify'
                             }}
                         >
-                            {item.subtitle && <strong> {item.subtitle}</strong>}  {item.content}
+                            {item.subtitle && <strong style={{color: 'black'}}> {item.subtitle}</strong>}  {item.content}
                         </Paragraph>
                     ))}
                 </Col>

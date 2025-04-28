@@ -5,8 +5,7 @@ import ServiceCard from '../../components/ServiceCard';
 const { Title, Text } = Typography;
 
 const OurServices = () => {
-    const { useBreakpoint } = Grid;
-    const screen = useBreakpoint();
+    const screen = Grid.useBreakpoint();
     return (
         <Space style={{
             display: 'flex',
@@ -23,19 +22,19 @@ const OurServices = () => {
                         textTransform: 'uppercase',
                         fontWeight: '300',
                         marginBottom: '1px',
-                        display: 'block', textDecoration: 'underline', textUnderlineOffset: '10px'
+                        display: 'block',
+                        textDecoration: 'underline',
+                        textUnderlineOffset: '10px'
                     }}>
                         What We Do
                     </Text>
                     <Title level={1} style={{ marginTop: '8px', marginBottom: '40px', fontSize: screen.lg ? "2.5em" : "2em", fontWeight: 500, color: '#121212' }}>
                         Our Services
                     </Title>
-
                 </Col>
                 {services.map(({ title, description, img, Icon }, index) => (
-                    <Col xs={24} md={12} lg={12} >
+                    <Col xs={24} md={12} lg={12} key={index} >
                         <ServiceCard
-                            key={index}
                             img={img}
                             icon={<Icon />}
                             title={title}

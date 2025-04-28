@@ -130,7 +130,7 @@ const ModernHeader: React.FC = () => {
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'space-between',
-          height: '64px',
+          height: '100px',
         }}
       >
         {/* Logo */}
