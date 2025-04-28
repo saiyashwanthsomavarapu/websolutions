@@ -39,9 +39,9 @@ const DeliveryProcess = () => {
                             lineHeight: "1.2",
                         }}
                     >
-                        Terms and Conditions
+                        Delivery Process
                     </Title>
-                    <Paragraph
+                    {/* <Paragraph
                         style={{
                             fontSize: screen.lg || screen.md ? '16px' : '14px',
                             lineHeight: '1.6',
@@ -58,7 +58,7 @@ const DeliveryProcess = () => {
                         }}
                     >
                         The following Terms of Use apply to ALL Web Indore customers:
-                    </Paragraph>
+                    </Paragraph> */}
                     <Paragraph
                         style={{
                             fontSize: screen.lg || screen.md ? '16px' : '14px',

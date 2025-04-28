@@ -1,6 +1,6 @@
 import { Row, Col, Typography, Card, Space, Grid, Input, Button } from 'antd';
 import TextArea from 'antd/es/input/TextArea';
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import toast, { Toaster } from "react-hot-toast";
 
@@ -11,7 +11,17 @@ const { Title, Text, Paragraph } = Typography;
 const GetInTouch = () => {
     const { useBreakpoint } = Grid;
     const form = useRef<HTMLFormElement | null>(null);
+    const [isValid, setIsValid] = useState(true);
     const screen = useBreakpoint();
+
+    const handleChange = () => {
+        const formElement = form.current;
+        if (formElement && formElement.checkValidity()) {
+            setIsValid(true);
+        } else {
+            setIsValid(false);
+        }
+    };
 
     const sendEmail = async (e: { preventDefault: () => void; }) => {
         e.preventDefault();
@@ -65,7 +75,7 @@ const GetInTouch = () => {
                 </Col>
                 <Col xs={24} sm={12} md={12} lg={12}>
 
-                    <form ref={form} onSubmit={sendEmail}>
+                    <form ref={form} onSubmit={sendEmail} onChange={handleChange}>
                         <Input
                             size='large'
                             id="get-in-touch-name"
@@ -97,12 +107,14 @@ const GetInTouch = () => {
                             size="large"
                             style={{
                                 marginTop: '24px',
-                                backgroundColor: '#000',
-                                borderColor: '#000',
                                 borderRadius: '4px',
                                 height: '48px',
-                                padding: '0 24px'
+                                padding: '0 24px',
+                                color: '#fff',
                             }}
+                            variant="solid"
+                            color='default'
+                            disabled={true}
                         >
                             Submit
                         </Button>
