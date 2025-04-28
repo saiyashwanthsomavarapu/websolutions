@@ -41,18 +41,6 @@ const PrivacyPolicy = () => {
                     >
                         Privacy Policy
                     </Title>
-                    {/* <Title
-                        level={1}
-                        style={{
-                            marginTop: '8px',
-                            marginBottom: '40px',
-                            fontSize: screen.lg || screen.md ? '50px' : '30px',
-                            fontWeight: 500,
-                            color: '#121212',
-                        }}
-                    >
-                        Terms and Conditions
-                    </Title> */}
                     <Paragraph
                         style={{
                             fontSize: screen.lg || screen.md ? "16px" : "14px",
@@ -82,7 +70,7 @@ const PrivacyPolicy = () => {
                                 textAlign: 'justify'
                             }}
                         >
-                            {item.subtitle && <strong> {item.subtitle}</strong>} {item.content}
+                            {item.subtitle && <strong style={{color: 'black'}}> {item.subtitle}</strong>} {item.content}
                         </Paragraph>
                     ))}
                 </Col>

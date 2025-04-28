@@ -9,7 +9,7 @@ if (!Array.isArray(TermsConditionsData)) {
 }
 
 
-const { Title, Paragraph } = Typography;
+const { Title, Text, Paragraph } = Typography;
 
 const TermsConditions = () => {
     const { useBreakpoint } = Grid;
@@ -27,6 +27,18 @@ const TermsConditions = () => {
         >
             <Row gutter={[48, 48]}>
                 <Col xs={24} md={24} lg={24}>
+                <Text
+                        style={{
+                            color: "#000",
+                            textTransform: "uppercase",
+                            fontWeight: "300",
+                            display: "block",
+                            textDecoration: "underline",
+                            textUnderlineOffset: "10px",
+                        }}
+                    >
+                        Terms and Conditions
+                    </Text>
                     <Title
                         level={2}
                         style={{
@@ -69,7 +81,7 @@ const TermsConditions = () => {
                                 textAlign: 'justify'
                             }}
                         >
-                            {item.subtitle && <strong> {item.subtitle}</strong>}  {item.content}
+                            {item.subtitle && <strong style={{color: 'black'}}> {item.subtitle}</strong>}  {item.content}
                         </Paragraph>
                     ))}
                 </Col>

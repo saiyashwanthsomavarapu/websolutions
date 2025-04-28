@@ -114,7 +114,7 @@ const GetInTouch = () => {
                             }}
                             variant="solid"
                             color='default'
-                            disabled={true}
+                            disabled={isValid}
                         >
                             Submit
                         </Button>

@@ -40,15 +40,6 @@ const DeliveryProcess = () => {
                     >
                         Delivery Process
                     </Title>
-                    {/* <Paragraph
-                        style={{
-                            fontSize: screen.lg || screen.md ? '16px' : '14px',
-                            lineHeight: '1.6',
-                            color: '#555',
-                        }}
-                    >
-                        Please read these terms and conditions carefully before using our website. By accessing or using our services, you agree to be bound by these terms. If you disagree with any part of the terms, you may not access the service.
-                    </Paragraph>
                     <Paragraph
                         style={{
                             fontSize: screen.lg || screen.md ? '16px' : '14px',
@@ -56,16 +47,7 @@ const DeliveryProcess = () => {
                             color: '#555',
                         }}
                     >
-                        The following Terms of Use apply to ALL Web Indore customers:
-                    </Paragraph> */}
-                    <Paragraph
-                        style={{
-                            fontSize: screen.lg || screen.md ? '16px' : '14px',
-                            lineHeight: '1.6',
-                            color: '#555',
-                        }}
-                    >
-                        <strong>Delivery Process:</strong>
+                        <strong style={{color: 'black'}}>Delivery Process: </strong>
                         We discuss the delivery of project at the time of discussion over project,it totally depends upon the pages required by the client and we decide the timeline accordingly
                         use the services already purchased until the end of your prepaid term.
                     </Paragraph>

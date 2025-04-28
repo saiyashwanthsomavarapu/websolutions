@@ -1,10 +1,10 @@
-import { Col, Grid, List, Row, Slider, Space } from "antd";
+import { Grid, Space } from "antd";
 import sliderImage from "../../assets/11.jpg";
 import "./ourWork.css";
 
 function OurWork() {
     const screen = Grid.useBreakpoint();
-    const images = [sliderImage, sliderImage, sliderImage, sliderImage];
+    // const images = [sliderImage, sliderImage, sliderImage, sliderImage];
     return <Space
         style={{
             display: "flex",
