@@ -4,7 +4,7 @@ import "./ourWork.css";
 
 function OurWork() {
     const screen = Grid.useBreakpoint();
-    // const images = [sliderImage, sliderImage, sliderImage, sliderImage];
+    const images = [sliderImage, sliderImage, sliderImage, sliderImage];
     return <Space
         style={{
             display: "flex",
@@ -16,12 +16,9 @@ function OurWork() {
             <h1 style={{ color: "white" }}>OUR WORK</h1>
             <div className="scroller" data-direction="right" data-speed="fast">
                 <div className="scroller__inner">
-                    <img src={sliderImage} alt="" />
-                    <img src={sliderImage} alt="" />
-                    <img src={sliderImage} alt="" />
-                    <img src={sliderImage} alt="" />
-                    <img src={sliderImage} alt="" />
-                    <img src={sliderImage} alt="" />
+                    {images.map((image, index) => (
+                        <img key={index} src={image} alt="" />
+                    ))}
                 </div>
             </div>
         </div>

@@ -130,12 +130,12 @@ const ModernHeader: React.FC = () => {
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'space-between',
-          height: '64px',
+          height: '100px',
         }}
       >
         {/* Logo */}
-        <div className="logo" style={{ fontSize: '24px', fontWeight: 'bold', color: '#1890ff' }}>
-          <Link className="responsive-logo" to="/">{<img style={{ height: '180px', marginTop: "20px" }} src={getLogo()} alt="Logo" />}</Link>
+        <div className="logo" style={{ fontSize: '24px', fontWeight: 'bold', color: '#1890ff', marginTop: '30px' }}>
+          <Link className="responsive-logo" to="/">{<img style={{ height: '180px', margin: "20px" }} src={getLogo()} alt="Logo" />}</Link>
         </div>
 
         {/* Desktop Navigation */}
