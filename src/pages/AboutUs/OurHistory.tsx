@@ -1,8 +1,6 @@
 import { Row, Col, Typography, Button, Card, Space, Divider, Grid } from 'antd';
 import { useNavigate } from "react-router-dom";
 
-// const { Title, Paragraph, Text } = Typography;
-
 const { Title, Text, Paragraph } = Typography;
 
 function OurHistory() {

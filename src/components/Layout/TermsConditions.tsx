@@ -1,113 +1,93 @@
-import { Row, Col, Typography, Space, Grid } from 'antd';
-import Card from 'antd/es/card/Card';
+import { Row, Col, Typography, Space, Grid } from "antd";
 
-const { Title, Paragraph } = Typography;
+import { TermsConditionsData } from "../../Utils/appContants";
 
-
-const styleProps = {
-    color: '#121212',
-    letterSpacing: '2px',
-    textTransform: 'uppercase' as 'uppercase',
-    fontWeight: '300',
-    textDecoration: 'underline',
-    textUnderlineOffset: '10px'
+// Ensure TermsConditionsData is properly imported and defined as an array
+// addeed this code to fix the error on the console
+if (!Array.isArray(TermsConditionsData)) {
+    throw new Error("TermsConditionsData must be an array.");
 }
+
+
+const { Title, Text, Paragraph } = Typography;
+
 const TermsConditions = () => {
     const { useBreakpoint } = Grid;
     const screen = useBreakpoint();
 
     return (
-        <Space style={{
-            display: 'flex',
-            flexDirection: 'column',
-            overflow: 'hidden',
-            padding: (screen.lg || screen.md) ? '120px' : '100px 50px',
-            backgroundColor: '#fff'
-        }}>
-            <Row gutter={[48, 48]} >
-                <Col xs={24} md={24} style={{ display: 'flex', flexDirection: 'column' }} >
-
-                    <Typography.Text style={styleProps}>
+        <Space
+            style={{
+                display: "flex",
+                flexDirection: "column",
+                overflow: "hidden",
+                backgroundColor: "#fff",
+                padding: screen.lg || screen.md ? "120px" : "100px 50px",
+            }}
+        >
+            <Row gutter={[48, 48]}>
+                <Col xs={24} md={24} lg={24}>
+                <Text
+                        style={{
+                            color: "#000",
+                            textTransform: "uppercase",
+                            fontWeight: "300",
+                            display: "block",
+                            textDecoration: "underline",
+                            textUnderlineOffset: "10px",
+                        }}
+                    >
                         Terms and Conditions
-                    </Typography.Text>
-                </Col>
-                <Col xs={24} md={24} lg={8}>
-
-                    <Card
-                        className="service-card"
+                    </Text>
+                    <Title
+                        level={2}
                         style={{
-                            marginBottom: '24px',
-                            borderRadius: '8px',
-                            transition: 'all 0.3s ease',
-                            height: '100%',
-                            padding: '24px',
-                            backgroundColor: 'rgb(241, 246, 246)',
-                            // maxWidth: '500px',
+                            fontSize: screen.lg ? "2.5em" : "2em",
+                            marginTop: 10,
+                            lineHeight: "1.2",
                         }}
-                        hoverable
                     >
-                        <div style={{ fontSize: '32px', marginBottom: '10px' }}>
-                            {/* <img src={img} style={{ width: '50px', height: '50px' }} /> */}
-                        </div>
-                        <Title level={4} style={{ marginBottom: '12px', }}>Illegal Use</Title>
-                        <Paragraph style={{ color: '#555', marginBottom: 0 }}>
-                            Please read these terms and conditions carefully before using our website. By accessing or using our services, you agree to be bound by these terms. If you disagree with any part of the terms, you may not access the service.
-                            Please read these terms and conditions carefully before using our website. By accessing or using our services, you agree to be bound by these terms. If you disagree with any part of the terms, you may not access the service.
-
-                        </Paragraph>
-                    </Card>
-                </Col>
-                <Col xs={24} md={24} lg={8}>
-
-                    <Card
-                        className="service-card"
+                        Terms and Conditions
+                    </Title>
+                    <Paragraph
                         style={{
-                            marginBottom: '24px',
-                            borderRadius: '8px',
-                            transition: 'all 0.3s ease',
-                            height: '100%',
-                            padding: '24px',
-                            backgroundColor: 'rgb(241, 246, 246)'
-                            // maxWidth: '500px',
+                            fontSize: screen.lg || screen.md ? "16px" : "14px",
+                            lineHeight: "1.6",
+                            color: "#555",
+                            textAlign: 'justify'
                         }}
-                        hoverable
                     >
-                        <div style={{ fontSize: '32px', marginBottom: '10px' }}>
-                            {/* <img src={img} style={{ width: '50px', height: '50px' }} /> */}
-                        </div>
-                        <Title level={4} style={{ marginBottom: '12px', }}>Spamming</Title>
-                        <Paragraph style={{ color: '#555', marginBottom: 0 }}>
-                            Please read these terms and conditions carefully before using our website. By accessing or using our services, you agree to be bound by these terms. If you disagree with any part of the terms, you may not access the service.
-                        </Paragraph>
-                    </Card>
-                </Col>
-                <Col xs={24} md={24} lg={8}>
-
-                    <Card
-                        className="service-card"
+                        Please read these terms and conditions carefully before using our
+                        website. By accessing or using our services, you agree to be bound
+                        by these terms. If you disagree with any part of the terms, you may
+                        not access the service.
+                    </Paragraph>
+                    <Paragraph
                         style={{
-                            marginBottom: '24px',
-                            borderRadius: '8px',
-                            transition: 'all 0.3s ease',
-                            height: '100%',
-                            padding: '24px',
-                            backgroundColor: 'rgb(241, 246, 246)'
-                            // maxWidth: '500px',
+                            fontSize: screen.lg || screen.md ? "16px" : "14px",
+                            lineHeight: "1.6",
+                            color: "#555",
                         }}
-                        hoverable
                     >
-                        <div style={{ fontSize: '32px', marginBottom: '10px' }}>
-                            {/* <img src={img} style={{ width: '50px', height: '50px' }} /> */}
-                        </div>
-                        <Title level={4} style={{ marginBottom: '12px', }}>Actions Taken by Aadhya Web</Title>
-                        <Paragraph style={{ color: '#555', marginBottom: 0 }}>
-                            Please read these terms and conditions carefully before using our website. By accessing or using our services, you agree to be bound by these terms. If you disagree with any part of the terms, you may not access the service.
+                        The following Terms of Use apply to ALL Aadhya Web Solution customers:
+                    </Paragraph>
+                    {TermsConditionsData.map((item, index) => (
+                        <Paragraph
+                            key={index}
+                            style={{
+                                fontSize: screen.lg || screen.md ? "16px" : "14px",
+                                lineHeight: "1.6",
+                                color: "#555",
+                                textAlign: 'justify'
+                            }}
+                        >
+                            {item.subtitle && <strong style={{color: 'black'}}> {item.subtitle}</strong>}  {item.content}
                         </Paragraph>
-                    </Card>
+                    ))}
                 </Col>
             </Row>
-        </Space >
+        </Space>
     );
-}
+};
 
-export default TermsConditions
+export default TermsConditions;

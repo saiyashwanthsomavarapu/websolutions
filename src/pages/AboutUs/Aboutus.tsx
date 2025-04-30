@@ -3,7 +3,6 @@ import { Row, Col, Typography, Tabs, Space, TabsProps, Card, Grid, Image } from 
 import { AimOutlined, ShakeOutlined } from '@ant-design/icons';
 import './styles.css';
 const { Title, Text, Paragraph } = Typography;
-// const { TabPane } = Tabs;
 
 const Tab1 = () => {
 

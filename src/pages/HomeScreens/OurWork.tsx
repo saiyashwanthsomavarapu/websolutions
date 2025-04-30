@@ -1,4 +1,4 @@
-import { Col, Grid, List, Row, Slider, Space } from "antd";
+import { Grid, Space } from "antd";
 import sliderImage from "../../assets/11.jpg";
 import "./ourWork.css";
 
@@ -16,12 +16,9 @@ function OurWork() {
             <h1 style={{ color: "white" }}>OUR WORK</h1>
             <div className="scroller" data-direction="right" data-speed="fast">
                 <div className="scroller__inner">
-                    <img src={sliderImage} alt="" />
-                    <img src={sliderImage} alt="" />
-                    <img src={sliderImage} alt="" />
-                    <img src={sliderImage} alt="" />
-                    <img src={sliderImage} alt="" />
-                    <img src={sliderImage} alt="" />
+                    {images.map((image, index) => (
+                        <img key={index} src={image} alt="" />
+                    ))}
                 </div>
             </div>
         </div>
