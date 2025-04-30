@@ -10,22 +10,22 @@ function WhyChooseUs() {
 
     const list = [
         {
-            icon: <BarChartOutlined style={{ fontSize: '42px', color: 'white' }} />,
+            icon: <BarChartOutlined style={{ fontSize: '42px', color: 'black' }} />,
             title: 'Outstanding Services',
             description: 'Providing exceptional customer services is our main strength and we take pride in providing outstanding services to customers.'
         },
         {
-            icon: <PieChartOutlined style={{ fontSize: '48px', color: 'white' }} />,
+            icon: <PieChartOutlined style={{ fontSize: '48px', color: 'black' }} />,
             title: 'Experience Team',
             description: 'We have great skills and expertise that makes our company a more trusted one.'
         },
         {
-            icon: <SendOutlined style={{ fontSize: '48px', color: 'white' }} />,
+            icon: <SendOutlined style={{ fontSize: '48px', color: 'black' }} />,
             title: 'Best Price',
             description: 'we offer the best solution for your business at an honest price & best price.'
         },
         {
-            icon: <FieldTimeOutlined style={{ fontSize: '48px', color: 'white' }} />,
+            icon: <FieldTimeOutlined style={{ fontSize: '48px', color: 'black' }} />,
             title: 'Deliverd On Time',
             description: 'We care about our clients and can often be found working out of hours to get everything"just right".'
         }
@@ -35,14 +35,14 @@ function WhyChooseUs() {
             style={{
                 display: "flex",
                 padding: screen.lg || screen.md ? "120px" : "50px",
-                backgroundColor: "#000",
+                backgroundColor: "#f5f5f5",
             }}
         >
             <Row gutter={[48, 48]}>
                 <Col xs={24} md={24} lg={24} style={{ position: 'relative' }}>
                     <Text
                         style={{
-                            color: "#fff",
+                            color: "#000",
                             textTransform: "uppercase",
                             fontWeight: "300",
                             display: "block",
@@ -60,7 +60,7 @@ function WhyChooseUs() {
                                     style={{
                                         border: 'none',
                                         minHeight: 300,
-                                        background: 'rgba(48, 48, 79, 0.7)',
+                                        background: '#fff',
                                         display: 'flex',
                                         flexDirection: 'column',
                                         alignItems: 'center',
@@ -81,7 +81,7 @@ function WhyChooseUs() {
                                             marginTop: 10,
                                             marginBottom: '16px',
                                             lineHeight: '1.2',
-                                            color: '#fff',
+                                            color: '#000',
                                             textAlign: 'center'
                                         }}
                                     >
@@ -90,7 +90,7 @@ function WhyChooseUs() {
                                     <Paragraph
                                         style={{
                                             fontSize: '16px',
-                                            color: '#fff',
+                                            color: '#000',
                                             textAlign: 'center',
                                             marginBottom: '0',
                                             lineHeight: '1.6'

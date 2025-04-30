@@ -38,7 +38,7 @@ const CustomComponent = () => {
             display: "flex",
             padding: screens.lg || screens.md ? "120px" : "50px",
             justifyContent: "center",
-            backgroundColor: "#f5f5f5",
+            backgroundColor: "#fff",
         }}>
             <Row gutter={[48, 48]}>
                 <Col xs={24} md={12} lg={12}>
@@ -69,7 +69,7 @@ const CustomComponent = () => {
                         <Paragraph style={{
                             fontSize: "16px",
                             fontWeight: "400",
-                            color: "#5c5c5c",
+                            color: "#000",
                             marginBottom: "32px",
                         }}>
                             Our clients describe us as a product team which <span style={{ fontWeight: 'bold' }}>creates amazing UI/UX</span> experiences, by crafting top-notch user experience.

@@ -34,7 +34,7 @@ const ClientLogos = () => {
         <Space style={{
             display: "flex",
             padding: screens.lg || screens.md ? "120px" : "50px",
-            // background: '#0d2a4b',
+            background: '#fff',
         }}>
             <Row gutter={[48, 48]}>
                 <Col xs={24} md={24} lg={24}>
