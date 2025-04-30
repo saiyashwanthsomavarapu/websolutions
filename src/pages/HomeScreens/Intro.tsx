@@ -1,6 +1,6 @@
 import { Row, Col, Typography, Button, Card, Divider, Space, Grid } from 'antd';
 import { ArrowRightOutlined } from '@ant-design/icons';
-import BG from '../../assets/0_Digital Art_Futuristic_3840x2160.mp4';
+import BG from '../../assets/Digital Art_Futuristic.mp4';
 import './Intro.css';
 import { useNavigate } from 'react-router-dom';
 import Typewriter from '../../components/Typewriter';
