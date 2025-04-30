@@ -22,11 +22,12 @@ function HomeScreen() {
       <ServicesSectionUI />
       <SupportedPlatforms />
       {/* <CaseStudySection /> */}
-      <BannersCarousel />
-      <WhyChooseUs />
+      
       <CustomComponent />
+      <BannersCarousel />
       <ClientLogos />
       {/* <OurWork /> */}
+      <WhyChooseUs />
     </Fragment >
   );
 }

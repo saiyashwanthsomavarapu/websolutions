@@ -35,7 +35,7 @@ function WhyChooseUs() {
             style={{
                 display: "flex",
                 padding: screen.lg || screen.md ? "120px" : "50px",
-                backgroundColor: "#0d2a4b",
+                backgroundColor: "#000",
             }}
         >
             <Row gutter={[48, 48]}>

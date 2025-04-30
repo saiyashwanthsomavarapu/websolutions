@@ -13,6 +13,7 @@ type InputStatus = "" | "warning" | "error" | undefined;
 interface FormData {
     name: string;
     email: string;
+    phone?: string;
     message: string;
 }
 
@@ -24,12 +25,14 @@ interface ValidationState {
 interface FormValidation {
     name: ValidationState;
     email: ValidationState;
+    phone?: ValidationState;
     message: ValidationState;
 }
 
 interface TouchedState {
     name: boolean;
     email: boolean;
+    phone: boolean;
     message: boolean;
 }
 
@@ -65,6 +68,7 @@ const GetInTouch: React.FC = () => {
     const [touched, setTouched] = useState<TouchedState>({
         name: false,
         email: false,
+        phone: false,
         message: false
     });
 
@@ -73,7 +77,11 @@ const GetInTouch: React.FC = () => {
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         return emailRegex.test(email);
     };
-
+    // Validate email format with regex
+    const validatePhone = (phone: string): boolean => {
+        const phoneRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return phoneRegex.test(phone);
+    };
     // Handle input change
     const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>): void => {
         const { name, value } = e.target;
@@ -93,7 +101,7 @@ const GetInTouch: React.FC = () => {
             ...prevState,
             [name]: true
         }));
-        validateField(name as keyof FormData, formData[name as keyof FormData]);
+        validateField(name as keyof FormData, formData[name as keyof FormData] || '');
     };
 
     // Validate a specific field
@@ -164,6 +172,7 @@ const GetInTouch: React.FC = () => {
         setTouched({
             name: true,
             email: true,
+            phone: true,
             message: true
         });
 
@@ -204,6 +213,7 @@ const GetInTouch: React.FC = () => {
                         setTouched({
                             name: false,
                             email: false,
+                            phone: false,
                             message: false
                         });
                         // Success toast message
@@ -289,6 +299,25 @@ const GetInTouch: React.FC = () => {
                                         We'll never share your email with anyone else.
                                     </Text>
                                 )
+                            )}
+                        </div>
+                        
+                        <div style={{ marginBottom: '16px' }}>
+                            <Input
+                                size='large'
+                                id="phone"
+                                name="phone"
+                                placeholder="Phone"
+                                prefix={<UserOutlined style={{ color: 'rgba(0,0,0,.25)' }} />}
+                                value={formData.phone || ''}
+                                onChange={handleChange}
+                                onBlur={handleBlur}
+                                status={touched.phone ? validation.phone?.status : undefined}
+                            />
+                            {touched.phone && validation.phone?.message && (
+                                <div style={{ color: '#ff4d4f', fontSize: '12px', marginTop: '4px' }}>
+                                    {validation.phone.message}
+                                </div>
                             )}
                         </div>
 

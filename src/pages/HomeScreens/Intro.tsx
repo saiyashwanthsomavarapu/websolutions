@@ -42,6 +42,7 @@ const Intro = () => {
             width: '100%',
             overflow: 'hidden',
         }}>
+            {/* Background video is not play in moblie we need to check this  */}
             <video
                 autoPlay
                 loop
@@ -56,6 +57,7 @@ const Intro = () => {
                     objectFit: 'cover',
                     filter: 'brightness(0.5)',
                 }}
+                onCanPlay={(e) => e.currentTarget.play()}
             >
                 <source src={BG} type="video/mp4" />
                 Your browser does not support the video tag.

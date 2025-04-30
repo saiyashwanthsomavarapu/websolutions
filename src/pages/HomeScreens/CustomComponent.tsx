@@ -38,7 +38,7 @@ const CustomComponent = () => {
             display: "flex",
             padding: screens.lg || screens.md ? "120px" : "50px",
             justifyContent: "center",
-            backgroundColor: "#fff",
+            backgroundColor: "#f5f5f5",
         }}>
             <Row gutter={[48, 48]}>
                 <Col xs={24} md={12} lg={12}>
