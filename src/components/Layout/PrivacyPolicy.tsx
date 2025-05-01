@@ -49,7 +49,9 @@ const PrivacyPolicy = () => {
                             fontFamily: "Poppins', sans-serif !important",
                         }}
                     >
-                        This privacy policy has been compiled to better serve those who are concerned with how their ‘Personally Identifiable Information’ (PII) is being used online. PII, as described in US privacy law and information security, is information that can be used on its own or with other information to identify, contact, or locate a single person, or to identify an individual in context. Please read our privacy policy carefully to get a clear understanding of how we collect, use, protect or otherwise handle your Personally Identifiable Information in accordance with our website.
+                            At Aadhya Websolution, we respect and protect your privacy. 
+                            This Privacy Policy outlines how we collect, use, and safeguard your personal information when you visit our website or use our services. 
+                            By using our website and services, you agree to the collection and use of information in accordance with this policy.                   
                     </Paragraph>
                     <Paragraph
                         style={{

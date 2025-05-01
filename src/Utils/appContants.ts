@@ -6,6 +6,7 @@ import {
 import AR from "../assets/ar.png";
 import StartUp from "../assets/startup.png";
 import Saas from "../assets/saas.png";
+import { Content } from "antd/es/layout/layout";
 
 export const services = [
   {
@@ -61,49 +62,65 @@ export const privacyPolicyData = [
     content: "",
   },
   {
-    subtitle: "What personal information do we collect from the people that visit our blog, website or app?",
-    content: `When ordering or registering on our site, as appropriate, you may be asked to enter your name, email address, mailing address, phone number or other details to help you with your experience.`,
+    subtitle: "Information Collection:",
+    content: `We collect personal information that you provide directly to us, such as when you fill out a contact form, subscribe to our newsletter, or make a purchase. 
+              This may include your name, email address, phone number, billing details, and any other information necessary to complete a service request.
+              When ordering or registering on our site, as appropriate, you may be asked to enter your name, email address, mailing address, phone number or other details to help you with your experience.
+              
+              We may also collect non-personal information automatically through your use of our website, such as your IP address, browser type, and pages visited.
+              `,
   },
   {
-    subtitle: "When do we collect information?",
-    content: `We collect information from you when you register on our site, place an order, fill out a form, Use Live Chat or enter information on our site.`,
+    subtitle: "Use of Information:",
+    content: `The information we collect is used for the following purposes:
+              1. To process and complete your service requests.
+              2. To improve and personalize your user experience.
+              3. To send you relevant updates, newsletters, and promotional offers (if you’ve opted in).
+              4. To communicate with you regarding your account or services.
+              5. To comply with legal obligations and protect our rights.`,
   },
   {
-    subtitle: "VHow do we use your information? ",
-    content: `We may use the information we collect from you when you register, make a purchase, sign up for our newsletter, respond to a survey or marketing communication, surf the website, or use certain other site features in the following ways:`,
+    subtitle: "Data Protection:",
+    content: `We implement appropriate technical and organizational measures to safeguard your personal information and protect it from unauthorized access, alteration, disclosure, or destruction.
+              However, please be aware that no method of transmission over the Internet or electronic storage is 100% secure. While we strive to use commercially acceptable means to protect your personal information, we cannot guarantee its absolute security.
+            `,
   },
   {
-    subtitle: "How do we protect your information?",
-    content: `Our website is scanned on a regular basis for security holes and known vulnerabilities in order to make your visit to our site as safe as possible.`,
-
+    subtitle: "Sharing Your Information:",
+    content: `We do not sell, trade, or rent your personal information to third parties. 
+              However, we may share your information with trusted service providers who assist in operating our website and providing services, as long as they agree to keep your information confidential.
+              We may also disclose information if required by law or in response to legal processes.
+            `,
   },
   {
-    subtitle: "Do we use ‘cookies’? ",
-    content: `Yes. Cookies are small files that a site or its service provider transfers to your computer’s hard drive through your Web browser (if you allow) that enables the site’s or service provider’s systems to recognize your browser and capture and remember certain information. For instance, we use cookies to help us remember and process the items in your shopping cart. They are also used to help us understand your preferences based on previous or current site activity, which enables us to provide you with improved services. We also use cookies to help us compile aggregate data about site traffic and site interaction so that we can offer better site experiences and tools in the future..`,
+    subtitle: "Cookies:",
+    content: `Our website uses cookies to enhance user experience. Cookies are small data files that are stored on your device. 
+              They help us analyze web traffic and improve your browsing experience. 
+              You can choose to accept or decline cookies through your browser settings.
+              `,
   },
   {
-    subtitle: "If users disable cookies in their browser:",
-    content: `If you turn cookies off, Some of the features that make your site experience more efficient may not function properly.Some of the features that make your site experience more efficient and may not function properly.`,
+    subtitle: "Third-Party Links:",
+    content: `Our website may contain links to other websites. 
+              We are not responsible for the privacy practices of external sites and encourage you to review their privacy policies 
+              before sharing any personal informationWe do not sell, trade, or otherwise transfer to outside parties your Personally Identifiable Information.`,
   },
   {
-    subtitle: "Third-party disclosure",
-    content: `We do not sell, trade, or otherwise transfer to outside parties your Personally Identifiable Information.`,
+    subtitle: "Your Rights:",
+    content: `You have the right to access, update, or delete your personal information at any time. If you wish to exercise these rights or have any concerns about how your data is being used, please contact us at [Your Email Address].`,
   },
   {
-    subtitle: "IRC",
-    content: `Aadhya Web Solution does not allow IRC or IRC bots to be operated by Web Hosting and E-Commerce customers.`,
+    subtitle: "Changes to This Privacy Policy:",
+    content: `We may update this Privacy Policy from time to time. 
+              Any changes will be posted on this page, and the updated date will be indicated at the top. 
+              We encourage you to review this page periodically to stay informed about our privacy practices.`,
   },
   {
-    subtitle: "Third-party links",
-    content: `We do not include or offer third-party products or services on our website.`,
-  },
-  {
-    subtitle: "California Online Privacy Protection Act",
-    content: `CalOPPA is the first state law in the nation to require commercial websites and online services to post a privacy policy. The law’s reach stretches well beyond California to require any person or company in the United States (and conceivably the world) that operates websites collecting Personally Identifiable Information from California consumers to post a conspicuous privacy policy on its website stating exactly the information being collected and those individuals or companies with whom it is being shared. – See more at: http://consumercal.org/california-online-privacy-protection-act-caloppa/#sthash.0FdRbT51.dpuf.`,
-  },
-  {
-    subtitle: "CAN SPAM Act",
-    content: `The CAN-SPAM Act is a law that sets the rules for commercial email, establishes requirements for commercial messages, gives recipients the right to have emails stopped from being sent to them, and spells out tough penalties for violations.`,
+    subtitle: "Contact Us:",
+    content: `If you have any questions about this Privacy Policy or our practices, please contact us at:
+    Email: [Your Email Address]
+    Phone: [Your Phone Number]
+    `,    
   },
 ];
 
