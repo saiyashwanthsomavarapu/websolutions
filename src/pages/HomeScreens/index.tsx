@@ -15,8 +15,13 @@ function HomeScreen() {
   return (
     <Fragment>
       <Intro />
-      <Marquee style={{ backgroundColor: "#fff", color: "#000", fontSize: "1.2em", padding: "10px" }}>
-        I can be a React component, multiple React components, or just some text.
+      <Marquee 
+        // gradient={false} 
+        // style={{ backgroundColor: "#fff", color: "#000", fontSize: "1.1em", padding: "8px" }}
+      >
+        Client-Centric Excellence with 100% Satisfaction. Round-the-Clock Free Support You Can Rely On. 
+        Strategic Solutions to Accelerate Sales Growth. Turn Clicks into Customers with Conversion Optimization. 
+        Empowering Digital Success – Let’s Grow Together.
       </Marquee>
       <AboutUs />
       <ServicesSectionUI />

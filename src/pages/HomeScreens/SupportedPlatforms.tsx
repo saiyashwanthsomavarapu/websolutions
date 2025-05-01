@@ -1,11 +1,13 @@
 
 import { Card, Col, Grid, Row, Space, Typography } from "antd";
-import wordPress from '../../assets/wordpress.svg';
-import shopify from '../../assets/shopify.svg';
-import woo from '../../assets/woo.svg';
-import bigCommerce from '../../assets/bigcommerce.svg';
-import react from "../../assets/react.svg";
-import angular from "../../assets/angular-icon-logo-svgrepo-com.svg";
+import wordPress from '../../assets/service/Wordpress.svg';
+import shopify from '../../assets/service/shopify.svg';
+import woo from '../../assets/service/Woocommerce.svg';
+import flipkart from '../../assets/service/Flipkart.svg';
+import react from "../../assets/service/ui.svg";
+import figam from "../../assets/service/figma.svg";
+import amazon from "../../assets/service/amazon.svg";
+import wix from "../../assets/service/Wix.svg";
 
 const { Title, Paragraph } = Typography;
 
@@ -18,14 +20,14 @@ export const SupportedPlatforms = () => {
             icon: shopify,
             name: 'Shopify',
             link: {
-                href: 'https://www.shopify.com',
+                href: 'https://aadhyawebsolutions.com/shopify/',
                 target: '_blank',
                 rel: 'noopener noreferrer'
             }
         },
         {
-            icon: bigCommerce,
-            name: 'BigCommerce',
+            icon: flipkart,
+            name: 'Flipkart',
             link: {
                 href: 'https://www.bigcommerce.com',
                 target: '_blank',
@@ -45,7 +47,7 @@ export const SupportedPlatforms = () => {
             icon: wordPress,
             name: 'WordPress',
             link: {
-                href: 'https://wordpress.org',
+                href: 'https://aadhyawebsolutions.com/wordpress/',
                 target: '_blank',
                 rel: 'noopener noreferrer'
             }
@@ -60,17 +62,17 @@ export const SupportedPlatforms = () => {
             }
         },
         {
-            icon: angular,
-            name: 'Angular',
+            icon: figam,
+            name: 'figam',
             link: {
-                href: 'https://Angular.io',
+                href: 'https://figam.io',
                 target: '_blank',
                 rel: 'noopener noreferrer'
             }
         },
         {
-            icon: react,
-            name: 'React',
+            icon: amazon,
+            name: 'amazon',
             link: {
                 href: 'https://reactjs.org',
                 target: '_blank',
@@ -78,10 +80,10 @@ export const SupportedPlatforms = () => {
             }
         },
         {
-            icon: angular,
-            name: 'Angular',
+            icon: wix,
+            name: 'wix',
             link: {
-                href: 'https://Angular.io',
+                href: 'https://figam.io',
                 target: '_blank',
                 rel: 'noopener noreferrer'
             }
@@ -105,7 +107,7 @@ export const SupportedPlatforms = () => {
                         lineHeight: '1.2',
                         color: '#fff'
                     }}>
-                        Supported Platforms by us
+                         Expertise That Powers Your Digital Growth
                     </Title>
                     <Paragraph style={{
                         fontSize: '16px',
@@ -113,7 +115,7 @@ export const SupportedPlatforms = () => {
                         marginBottom: '32px',
                         lineHeight: '1.6'
                     }}>
-                        Get customized solutions built for major platforms and accelerate your business growth.
+                        From Shopify store redesign, CRO, and migration from platforms like WordPress, Magento, Wix to Shopify, to listing your products on Amazon, Flipkart, and beyond — we specialize in scalable solutions, custom Android & iOS app development, graphic design, and more to boost your sales and drive business success.
                     </Paragraph>
                 </Col>
                 <Col xs={24} md={12} lg={12} style={{ display: 'flex', justifyContent: 'center' }}>
