@@ -13,7 +13,7 @@ import {
 } from '@ant-design/icons';
 import { Link, useLocation } from 'react-router-dom';
 import logoImage from '../../assets/logo-removebg.png';
-import logoWhite from '../../assets/New_project.png';
+// import logoWhite from '../../assets/New_project.png';
 
 
 const { Header } = Layout;
@@ -33,8 +33,8 @@ const ModernHeader: React.FC = () => {
   const [visible, setVisible] = useState<boolean>(false);
   const [scrolled, setScrolled] = useState<boolean>(false);
   const isMobile = !screens.md;
-  const location = useLocation();
-  const isHome = location.pathname === '/';
+  // const location = useLocation();
+  // const isHome = location.pathname === '/';
 
   // Navigation items
   const navItems: NavItem[] = [
@@ -75,16 +75,16 @@ const ModernHeader: React.FC = () => {
   }, [isMobile]);
 
   const getTextColor = () => {
-    if (isHome) {
-      return scrolled ? 'black' : 'white';
-    }
+    // if (isHome) {
+    //   return scrolled ? 'black' : 'white';
+    // }
     return 'black';; // Default for transparent header
   };
 
   const getLogo = () => {
-    if (isHome) {
-      return scrolled ? logoImage : logoWhite;
-    }
+    // if (isHome) {
+    //   return scrolled ? logoImage : logoWhite;
+    // }
     return logoImage;; // Default for transparent header
   };
 
@@ -124,7 +124,8 @@ const ModernHeader: React.FC = () => {
           zIndex: 1000,
           width: '100%',
           padding: '0 24px',
-          backgroundColor: scrolled ? 'white' : 'transparent',
+          //backgroundColor: scrolled ? 'white' : 'transparent',
+          backgroundColor: 'white',
           transition: 'all 0.3s ease',
           boxShadow: scrolled ? '0 2px 8px rgba(0,0,0,0.06)' : 'none',
           display: 'flex',

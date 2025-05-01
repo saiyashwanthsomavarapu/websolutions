@@ -65,7 +65,7 @@ const BannersCarousel = () => {
       style={{
         display: "flex",
         padding: screens.lg || screens.md ? "120px" : "50px",
-        backgroundColor: "#f5f7f9",
+        backgroundColor: "#f5f5f5",
         width: "100%",
       }}
     >

@@ -1,6 +1,6 @@
 import { Row, Col, Typography, Button, Card, Divider, Space, Grid } from 'antd';
 import { ArrowRightOutlined } from '@ant-design/icons';
-import BG from '../../assets/0_Digital Art_Futuristic_3840x2160.mp4';
+import BG from '../../assets/Digital Art_Futuristic.mp4';
 import './Intro.css';
 import { useNavigate } from 'react-router-dom';
 import Typewriter from '../../components/Typewriter';
@@ -42,6 +42,7 @@ const Intro = () => {
             width: '100%',
             overflow: 'hidden',
         }}>
+            {/* Background video is not play in moblie we need to check this  */}
             <video
                 autoPlay
                 loop
@@ -56,6 +57,7 @@ const Intro = () => {
                     objectFit: 'cover',
                     filter: 'brightness(0.5)',
                 }}
+                onCanPlay={(e) => e.currentTarget.play()}
             >
                 <source src={BG} type="video/mp4" />
                 Your browser does not support the video tag.

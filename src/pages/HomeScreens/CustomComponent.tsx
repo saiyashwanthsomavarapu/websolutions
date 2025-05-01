@@ -69,7 +69,7 @@ const CustomComponent = () => {
                         <Paragraph style={{
                             fontSize: "16px",
                             fontWeight: "400",
-                            color: "#5c5c5c",
+                            color: "#000",
                             marginBottom: "32px",
                         }}>
                             Our clients describe us as a product team which <span style={{ fontWeight: 'bold' }}>creates amazing UI/UX</span> experiences, by crafting top-notch user experience.

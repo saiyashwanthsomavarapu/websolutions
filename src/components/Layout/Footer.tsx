@@ -130,8 +130,8 @@ const FooterComponent = () => {
                   <Image src={US} preview={false} style={{ width: '100%', height: 'auto' }} />
                 </Col>
                 <Col xs={24} style={{ marginTop: '1em' }}>
-                  <Text style={{ ...whiteTextStyle, ...textBlockStyle }}> US: +1 (123) 456-7890</Text>
-                  <Text style={{ ...whiteTextStyle, ...textBlockStyle }}> India: +1 (123) 456-7890</Text>
+                  <Text style={{ ...whiteTextStyle, ...textBlockStyle }}> US: +1 (123) 456-7890 </Text>
+                  <Text style={{ ...whiteTextStyle, ...textBlockStyle }}> India: +91 (639) 373-3749 </Text>
                   <Text style={{ ...whiteTextStyle, }}>Email: support@aadhyawebsolution.com</Text>
                 </Col>
                 <Col xs={24} >
@@ -192,7 +192,7 @@ const FooterComponent = () => {
             <Text style={{ color: '#999' }}>All Rights Reserved © Aadhya Web Solution | 2025</Text>
           </Space>
         </Col>
-        <Col xs={24} sm={24} md={12} style={{ display: 'flex', justifyContent: 'flex-end' }}>
+        {/* <Col xs={24} sm={24} md={12} style={{ display: 'flex', justifyContent: 'flex-end' }}>
           <Space align="center" style={{ display: 'flex', flexDirection: 'row', justifyContent: 'flex-start' }}>
             <Text style={{ color: '#999' }}>
               <RouterLink to="/terms_conditions" style={{ ...linkStyle, color: 'white' }}>Terms Conditions</RouterLink> |
@@ -201,7 +201,7 @@ const FooterComponent = () => {
               <RouterLink to="/sitemaps" style={{ ...linkStyle, color: 'white' }}>Sitemaps</RouterLink>
             </Text>
           </Space>
-        </Col>
+        </Col> */}
       </Row>
     </Footer>
   );

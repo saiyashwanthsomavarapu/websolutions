@@ -1,9 +1,10 @@
 import React, { useRef, useState, ChangeEvent, FormEvent } from 'react';
-import { Row, Col, Typography, Card, Space, Grid, Input, Button } from 'antd';
+import { Row, Col, Typography, Card, Space, Grid, Input, Button, Select } from 'antd';
 import { MailOutlined, UserOutlined } from '@ant-design/icons';
 import TextArea from 'antd/es/input/TextArea';
 import emailjs from '@emailjs/browser';
 import toast, { Toaster } from "react-hot-toast";
+import { countryCodes } from '../../Utils/countryCodes';
 
 const { Title, Text, Paragraph } = Typography;
 
@@ -13,6 +14,8 @@ type InputStatus = "" | "warning" | "error" | undefined;
 interface FormData {
     name: string;
     email: string;
+    phone?: string;
+    countryCode?: string;
     message: string;
 }
 
@@ -24,12 +27,14 @@ interface ValidationState {
 interface FormValidation {
     name: ValidationState;
     email: ValidationState;
+    phone?: ValidationState;
     message: ValidationState;
 }
 
 interface TouchedState {
     name: boolean;
     email: boolean;
+    phone: boolean;
     message: boolean;
 }
 
@@ -42,6 +47,8 @@ const GetInTouch: React.FC = () => {
     const [formData, setFormData] = useState<FormData>({
         name: '',
         email: '',
+        countryCode: '+1',
+        phone: '',
         message: ''
     });
 
@@ -65,6 +72,7 @@ const GetInTouch: React.FC = () => {
     const [touched, setTouched] = useState<TouchedState>({
         name: false,
         email: false,
+        phone: false,
         message: false
     });
 
@@ -73,7 +81,11 @@ const GetInTouch: React.FC = () => {
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         return emailRegex.test(email);
     };
-
+    // Validate email format with regex
+    const validatePhone = (phone: string): boolean => {
+        const phoneRegex = /^\+?\d{1,4}?[-.\s]?\(?\d{1,5}?\)?[-.\s]?\d{1,5}[-.\s]?\d{1,9}$/;
+        return phoneRegex.test(phone);
+    };
     // Handle input change
     const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>): void => {
         const { name, value } = e.target;
@@ -93,7 +105,7 @@ const GetInTouch: React.FC = () => {
             ...prevState,
             [name]: true
         }));
-        validateField(name as keyof FormData, formData[name as keyof FormData]);
+        validateField(name as keyof FormData, formData[name as keyof FormData] || '');
     };
 
     // Validate a specific field
@@ -122,6 +134,16 @@ const GetInTouch: React.FC = () => {
                 } else if (!validateEmail(value)) {
                     status = 'error';
                     message = 'Please enter a valid email address';
+                }
+                break;
+
+            case 'phone':
+                if (!value.trim()) {
+                    status = 'error';
+                    message = 'Phone is required';
+                } else if (!validatePhone(value)) {
+                    status = 'error';
+                    message = 'Please enter a valid phone number';
                 }
                 break;
 
@@ -164,6 +186,7 @@ const GetInTouch: React.FC = () => {
         setTouched({
             name: true,
             email: true,
+            phone: true,
             message: true
         });
 
@@ -204,6 +227,7 @@ const GetInTouch: React.FC = () => {
                         setTouched({
                             name: false,
                             email: false,
+                            phone: false,
                             message: false
                         });
                         // Success toast message
@@ -215,6 +239,14 @@ const GetInTouch: React.FC = () => {
                 );
         }
     };
+
+    const selectBefore = (
+        <Select defaultValue="+1" style={{ width: 70 }} onChange={(value) => setFormData(prevState => ({ ...prevState, countryCode: value }))} placeholder="Select">
+            {Object.entries(countryCodes).map(([_, value]) => (
+                <Select.Option value={value}>{value}</Select.Option>
+            ))}
+        </Select>
+    );
 
     return (
         <Space style={{
@@ -289,6 +321,26 @@ const GetInTouch: React.FC = () => {
                                         We'll never share your email with anyone else.
                                     </Text>
                                 )
+                            )}
+                        </div>
+
+                        <div style={{ marginBottom: '16px' }}>
+                            <Input
+                                size='large'
+                                id="phone"
+                                name="phone"
+                                placeholder="Phone"
+                                addonBefore={selectBefore}
+                                prefix={<UserOutlined style={{ color: 'rgba(0,0,0,.25)' }} />}
+                                value={formData.phone || ''}
+                                onChange={handleChange}
+                                onBlur={handleBlur}
+                                status={touched.phone ? validation.phone?.status : undefined}
+                            />
+                            {touched.phone && validation.phone?.message && (
+                                <div style={{ color: '#ff4d4f', fontSize: '12px', marginTop: '4px' }}>
+                                    {validation.phone.message}
+                                </div>
                             )}
                         </div>
 
