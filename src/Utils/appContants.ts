@@ -109,113 +109,67 @@ export const privacyPolicyData = [
 
 export const TermsConditionsData = [
   {
-    subtitle: "Illegal Use:",
-    content: `Web Indore services may be used for lawful purposes only. Transmission, storage or distribution of any
-                        information, data or material in violation of any applicable law or
-                        regulation or that may directly facilitate the violation of any
-                        particular law or regulation is prohibited. This includes, but is
-                        not limited to: copyrighted material; trademarks; trade secrets or
-                        other intellectual property rights used without proper
-                        authorization; material that is obscene, defamatory, constitutes an
-                        illegal threat, or violates export control laws.`,
+    subtitle: "Client Responsibilities:",
+    content: `You agree to provide accurate and complete information for the services you request. 
+              This includes, but is not limited to, access to your existing platforms, necessary credentials, and other relevant business information. 
+              You are responsible for ensuring all content, data, and intellectual property submitted for development are accurate, legal, and authorized for use.`,
   },
   {
-    subtitle: "Spamming:",
-    content: `Sending unsolicited bulk and/or
-                        commercial messages over the Internet (known as “spamming”) is
-                        prohibited, regardless of whether or not it overloads a server or
-                        disrupts service to Web Indore’s customers. Web Indore reserves the
-                        right to determine, in its sole and absolute discretion, what
-                        constitutes a violation of this provision.`,
+    subtitle: "Payment Terms:",
+    content: `All payments for services must be made in accordance with the pricing outlined on the website or in the project proposal. 
+              Payments may be required upfront or in installments based on the project’s scope. 
+              Payments for additional services or change requests during the course of the project will be invoiced separately.`,
+  },
+  // {
+  //   subtitle: "Viruses and Other Destructive Activities: ",
+  //   content: `Use of Web Indore’s services or equipment for creating or sending Internet
+  //                       viruses, worms or Trojan horses, or for pinging, flooding or mail
+  //                       bombing, or engaging in denial of service attacks is prohibited.`,
+  // },
+  {
+    subtitle: "Delivery and Timeline:",
+    content: `We aim to deliver our services within the timelines provided, but these may vary depending on project complexity, scope, and client responsiveness. 
+              We will communicate any delays or adjustments to deadlines as needed.
+              `,
   },
   {
-    subtitle: "Viruses and Other Destructive Activities: ",
-    content: `Use of Web Indore’s services or equipment for creating or sending Internet
-                        viruses, worms or Trojan horses, or for pinging, flooding or mail
-                        bombing, or engaging in denial of service attacks is prohibited.`,
+    subtitle: "Confidentiality:",
+    content: `Both parties agree to keep confidential any proprietary or confidential information obtained during the course of the project, including but not limited to designs, data, strategies, and business information. 
+            This obligation remains even after the project has concluded.`,
   },
   {
     subtitle: "Intellectual Property:",
-    content: `The use of Web Indore’s services to store, post, display, transmit, advertise
-                        or otherwise make available any type of pornography is prohibited.
-                        Web Indore as required by law, and will, notify law enforcement
-                        agencies when it becomes aware of the presence of pornography on, or
-                        being transmitted through its services.`,
+    content: `Upon full payment for our services, ownership of the final deliverables (designs, code, content) will be transferred to you. 
+              However, we retain the right to use non-sensitive portions of the deliverables for portfolio or promotional purposes.
+        `,
   },
   {
-    subtitle: "Pornography:",
-    content: `The use of Web Indore’s services to
-                        store, post, display, transmit, advertise or otherwise make
-                        available any type of pornography is prohibited. Web Indore as
-                        required by law, and will, notify law enforcement agencies when it
-                        becomes aware of the presence of pornography on, or being
-                        transmitted through its services.`,
+    subtitle: "Website Usage:",
+    content: `You agree not to use our website for any unlawful purpose or in any way that could damage, disable, or impair our services or systems. 
+              You are responsible for ensuring your use complies with all local laws and regulations.`,
   },
   {
-    subtitle: "Payment:",
-    content: `Web Indore reserves the right to suspend the services if the payments are not made by the due date. Web
-                        Indore shall not be held liable for any kind of loss due to
-                        disruption of services.`,
+    subtitle: "Limitations of Liability:",
+    content: `While we strive to provide the best services possible, Adya Websolution is not liable for any indirect, incidental, special, or consequential damages arising out of the use or inability to use our services. 
+              In no event shall our total liability exceed the amount paid for the services rendered.`,
   },
   {
-    subtitle: "Actions Taken by Aadhya Web:",
-    content: `The failure by a
-                        customer to meet or follow any of the TOU is grounds for account
-                        deactivation. Web Indore will be the sole arbiter as to what
-                        constitutes a violation of the TOU. Web Indore reserves the right to
-                        remove any account without prior notice and to refuse service to
-                        anyone at any time. Depending on the severity of the violation, Web
-                        Indore may, at its sole discretion, restrict, suspend or terminate a
-                        customer’s web hosting account and/or pursue other civil remedies.
-                        If such violation is a criminal offense, Web Indore will notify the
-                        appropriate law enforcement authorities of such violation. Web
-                        Indore does not issue credits for outages incurred through service
-                        disablement resulting from TOU violations. Web Indore customers
-                        agree to indemnify and hold harmless Web Indore from any claims
-                        resulting from the use of our services that damages them or any
-                        other party.`,
+    subtitle: "Termination of Services:",
+    content: `Either party may terminate the agreement at any time by providing written notice. 
+              In case of termination, you will be responsible for paying for any work completed up to the date of termination. 
+              Adya Websolution reserves the right to terminate services if there is a breach of these terms or for any other reason deemed necessary.
+            `,
   },
   {
-    subtitle: "IRC:",
-    content: `Web Indore does not allow IRC or IRC bots to be operated by Web Hosting and E-Commerce customers.`,
+    subtitle: "Changes to the Terms & Conditions:",
+    content: `These terms and conditions are governed by the laws of [Your Country/State], and any disputes will be handled in the appropriate jurisdiction within that area.
+`,
   },
   {
-    subtitle: "Anti Piracy:",
-    content: `Web Indore’s Web Hosting and
-                        E-Commerce accounts should not be used to distribute illegal or
-                        pirated software and/or multimedia products. The Web Indore service
-                        is provided on an as is, as available basis without warranties of
-                        any kind, either express or implied, including, but not limited to,
-                        warranties of merchantability, fitness for a particular purpose or
-                        non-infringement. Web Indore and its partners and suppliers will not
-                        be liable for any cost or damage arising either directly or
-                        indirectly from any transaction or use of the service.`,
-  },
-  {
-    subtitle: "Income Disclaimer:",
-    content: `Web Indore strictly prohibits
-                        its Partners from publicly disclosing their own earnings because no
-                        one person’s income is typical but does show what is possible with
-                        time, effort, and dedication. What you earn as an Web Indore
-                        partners is wholly determined by your own individual efforts. Web
-                        Indore does not guarantee that any partners will earn any amount of
-                        income or any income at all from the promotion of our program. The
-                        amount of time and/or money you invest in your business, will
-                        determine your success.`,
-  },
-  {
-    subtitle: "Cancellations and Refunds:",
-    content: `Refundable: Not
-                        withstanding anything to the contrary contained in this policy,
-                        there are no refunds for all products or services of the Company.
-                        Cancellation: You may terminate or cancel the Services from the
-                        control panel at any time. If you cancel the Services, you are
-                        obligated to pay all fees and charges occurred prior to the
-                        effectiveness of such cancellation. If you request to suspend or
-                        cancel your customer account, your access to the control panel will
-                        be suspended and you will not be able to access the billing system
-                        to renew products or services or to update your account information.
-                        However, you will continue to have access to use the services
-                        already purchased until the end of your prepaid term.`,
+    subtitle: "Contact Us:",
+    content: `If you have any questions regarding these Terms & Conditions, please contact us at:
+    Email: [Your Email Address]
+    Phone: [Your Phone Number]
+  `,
   },
 ];

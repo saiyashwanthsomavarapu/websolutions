@@ -57,10 +57,16 @@ const TermsConditions = () => {
                             textAlign: 'justify'
                         }}
                     >
-                        Please read these terms and conditions carefully before using our
-                        website. By accessing or using our services, you agree to be bound
-                        by these terms. If you disagree with any part of the terms, you may
-                        not access the service.
+                        Welcome to Aadhya Websolution! By accessing or using our website, services, or products, you agree to comply with and be bound by the following terms and conditions. 
+                    </Paragraph>
+                    <Paragraph
+                        style={{
+                            fontSize: screen.lg || screen.md ? "16px" : "14px",
+                            lineHeight: "1.6",
+                            color: "#555",
+                        }}
+                    >
+                    Please read them carefully. If you do not agree to these terms, please do not use our services.
                     </Paragraph>
                     <Paragraph
                         style={{
