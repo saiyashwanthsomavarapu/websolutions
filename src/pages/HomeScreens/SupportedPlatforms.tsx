@@ -107,13 +107,14 @@ export const SupportedPlatforms = () => {
                         lineHeight: '1.2',
                         color: '#fff'
                     }}>
-                         Expertise That Powers Your Digital Growth
+                        Expertise That Powers Your Digital Growth
                     </Title>
                     <Paragraph style={{
                         fontSize: '16px',
                         color: '#fff',
                         marginBottom: '32px',
-                        lineHeight: '1.6'
+                        lineHeight: '1.6',
+                        textAlign: 'justify'
                     }}>
                         From Shopify store redesign, CRO, and migration from platforms like WordPress, Magento, Wix to Shopify, to listing your products on Amazon, Flipkart, and beyond — we specialize in scalable solutions, custom Android & iOS app development, graphic design, and more to boost your sales and drive business success.
                     </Paragraph>

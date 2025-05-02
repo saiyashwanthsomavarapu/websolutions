@@ -14,7 +14,7 @@ const Tab1 = () => {
 
     return (
         <Fragment>
-            <Paragraph style={{ fontSize: '16px', marginBottom: '40px', color: '#555' }}>
+            <Paragraph style={{ fontSize: '16px', marginBottom: '40px', color: '#555', textAlign: 'justify' }}>
                 With the rapid growth of e-commerce and the significant advantages it offers, everyone
                 is eager to establish a sales channel online. However, not everyone knows the best
                 Solution.
@@ -27,7 +27,7 @@ const Tab1 = () => {
                         title="Mission Statement"
                         description={
                             <>
-                                <Paragraph style={{ marginBottom: 0, color: '#555' }}>
+                                <Paragraph style={{ marginBottom: 0, color: '#555', textAlign: 'justify' }}>
                                     With the rapid growth of e-commerce and the significant advantages it offers,
                                     everyone is eager to establish a sales channel online. However, not everyone
                                     knows the best Solution.
@@ -42,7 +42,7 @@ const Tab1 = () => {
                         title="Mission Statement"
                         description={
                             <>
-                                <Paragraph style={{ marginBottom: 0, color: '#555' }}>
+                                <Paragraph style={{ marginBottom: 0, color: '#555', textAlign: 'justify' }}>
                                     We're proud to deliver results that matter. Our unwavering commitment to
                                     excellence, innovation, and collaboration ensures every client receives
                                     exceptional service and measurable outcomes.

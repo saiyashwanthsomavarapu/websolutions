@@ -59,6 +59,7 @@ const ServicesSectionUI = () => {
                                 fontWeight: "400",
                                 color: "#5c5c5c",
                                 marginBottom: "32px",
+                                textAlign: "justify",
                             }}
                         >
                             Our range of services is crafted to deliver strategic insights,
