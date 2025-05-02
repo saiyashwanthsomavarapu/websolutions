@@ -29,7 +29,7 @@ const CancellationRefundPolicy = () => {
                             textUnderlineOffset: "10px",
                         }}
                     >
-                        Cancellation Refund
+                        Cancellation and Refund
                     </Text>
                     <Title
                         level={2}
@@ -39,7 +39,7 @@ const CancellationRefundPolicy = () => {
                             lineHeight: "1.2",
                         }}
                     >
-                        Terms and Conditions
+                        Cancellation and Refund Policy
                     </Title>
                     <Paragraph
                         style={{
@@ -49,10 +49,9 @@ const CancellationRefundPolicy = () => {
                             textAlign: 'justify'
                         }}
                     >
-                        Please read these terms and conditions carefully before using our
-                        website. By accessing or using our services, you agree to be bound
-                        by these terms. If you disagree with any part of the terms, you may
-                        not access the service.
+                        At Aadya Websolution, we strive to provide high-quality services to our clients. 
+                        However, if for any reason you are not satisfied with the services we provide, we want to make the cancellation and refund process as clear and easy as possible. 
+                        Please read our Cancellation and Refund Policy below.
                     </Paragraph>
                     <Paragraph
                         style={{
@@ -61,7 +60,7 @@ const CancellationRefundPolicy = () => {
                             color: "#555",
                         }}
                     >
-                        The following Terms of Use apply to ALL Web Indore customers:
+                        
                     </Paragraph>
                     {cancellationRefundPolicyData.map((item, index) => (
                         <Paragraph

@@ -48,13 +48,52 @@ export const services = [
 
 export const cancellationRefundPolicyData = [
   {
-    subtitle: "Refundable:",
-    content: `Not withstanding anything to the contrary contained in this policy, there are no refunds for all products or services of the Company.`,
+    subtitle: "Cancellation Policy:",
+    content: `You may cancel your service request or order at any time before the work is completed or delivered. 
+              Cancellation requests must be submitted in writing via email or through our contact form. 
+              The cancellation will take effect once we have acknowledged your request.
+              For ongoing projects, if work has already begun, a cancellation fee may apply based on the stage of work completed. 
+              In case of cancellation after the project has started, the client will be liable to pay for the services already rendered.
+    `,
   },
   {
-    subtitle: "Cancellation:",
-    content: `You may terminate or cancel the Services from the control panel at any time. If you cancel the Services, you are obligated to pay all fees and charges occurred prior to the effectiveness of such cancellation. If you request to suspend or cancel your customer account, your access to the control panel will be suspended and you will not be able to access the billing system to renew products or services or to update your account information. However, you will continue to have access to use the services already purchased until the end of your prepaid term.`,
+    subtitle: "Refund Policy:",
+    content: `We offer a refund in specific cases under the following conditions:
+              Non-Delivery of Services: If we are unable to deliver the services as agreed upon or fail to meet the project’s milestones within the specified timeframe, you may be eligible for a refund.
+              Service Dissatisfaction: If you are not satisfied with the completed work and we cannot rectify the issue to your satisfaction within a reasonable time, you may be eligible for a refund, depending on the circumstances and the work already completed.
+              Refund requests must be submitted within 7 days after project delivery or service completion. Refunds will only be processed after evaluating the work completed and the reasons for dissatisfaction.
+    `,
   },
+  {
+    subtitle: "Partial Refunds:",
+    content: `If the work is partially completed or milestones have been achieved, a partial refund may be issued. 
+              The refund amount will be determined based on the value of the services already provided. `,
+  },
+  {
+    subtitle: "No Refunds:",
+    content: `Refunds will not be issued in the following cases:
+    Change of Mind: If the client simply changes their mind or decides not to proceed with the project after work has started.
+    Work Delivered as Per Agreement: If the services are completed as per the initial agreement or contract and the client is still unsatisfied after the work has been delivered.
+    Third-Party Services: If the work involves third-party services (e.g., hosting, external tools, etc.) that cannot be refunded.`
+  },
+  {
+    subtitle: "How to Request a Refund or Cancellation:",
+    content: `To request a refund or to cancel a service, please follow these steps:
+      Contact Us: Send an email to [Your Email Address] with the subject line “Cancellation and Refund Request.”
+      Provide Details: Include the reason for cancellation or refund request, your order number, and any relevant details about the project or service.
+      Processing Time: We will respond to your request within [Insert Time Frame], assess the situation, and proceed with your refund or cancellation as per the terms mentioned above.`
+  },
+  {
+    subtitle: "Refund Processing Time:",
+    content: `If your refund is approved, it will be processed within [Insert Time Frame] to the original payment method used during the transaction. Please note that the refund may take additional time depending on your payment provider or financial institution.`
+  },
+  {
+    subtitle: "Contact Us:",
+    content: `If you have any questions about our Cancellation and Refund Policy or need to request a cancellation or refund, please contact us at:
+    Email: [Your Email Address]
+    Phone: [Your Phone Number]`
+  },
+  
 ];
 
 export const privacyPolicyData = [
