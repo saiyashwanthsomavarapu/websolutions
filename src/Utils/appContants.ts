@@ -176,12 +176,6 @@ export const TermsConditionsData = [
               Payments may be required upfront or in installments based on the project’s scope. 
               Payments for additional services or change requests during the course of the project will be invoiced separately.`,
   },
-  // {
-  //   subtitle: "Viruses and Other Destructive Activities: ",
-  //   content: `Use of Web Indore’s services or equipment for creating or sending Internet
-  //                       viruses, worms or Trojan horses, or for pinging, flooding or mail
-  //                       bombing, or engaging in denial of service attacks is prohibited.`,
-  // },
   {
     subtitle: "Delivery and Timeline:",
     content: `We aim to deliver our services within the timelines provided, but these may vary depending on project complexity, scope, and client responsiveness. 
@@ -227,5 +221,66 @@ export const TermsConditionsData = [
     Email: [Your Email Address]
     Phone: [Your Phone Number]
   `,
+  },
+];
+
+export const DeliveryProcessData = [
+  {
+    subtitle: "Initial Consultation & Discovery:",
+    content: `Objective: Understanding your needs and project goals.
+    What happens: We begin with a one-on-one consultation, either via phone, email, or video call. During this stage, we gather all the necessary details about your business, project objectives, and specific requirements.
+    Outcome: You’ll receive a personalized proposal that includes an overview of the project, timelines, and pricing.`,
+  },
+  {
+    subtitle: "Project Agreement & Proposal:",
+    content: `Objective: Finalizing the project scope and confirming terms.
+    What happens: Once you review the proposal and agree on the scope of work, we send over a formal contract and timeline. The contract outlines the deliverables, milestones, payment terms, and any other essential details.
+    Outcome: Upon signing the contract and receiving the initial payment (if applicable), we begin working on your project.`,
+  },
+  {
+    subtitle: "Design & Development:",
+    content: `Objective: Turning your vision into a working product.
+    What happens: Our team starts working on the design and development based on your requirements. We develop mockups and wireframes for approval (for design work) and begin coding (for websites, apps, or other services).
+    Outcome: You’ll receive updates and progress reports at regular intervals. If needed, we can schedule review sessions to ensure we’re on the right track.`,
+  },
+  {
+    subtitle: "Testing & Quality Assurance:",
+    content: `Objective: Ensuring a flawless final product.
+    What happens: Once development is complete, we conduct extensive testing to ensure everything works smoothly. This includes cross-browser testing, mobile responsiveness checks, functionality testing, and performance testing.
+    Outcome: Any bugs or issues discovered during this phase will be fixed, and the project will be ready for final approval.`,
+  },
+  {
+    subtitle: "Final Review & Approval:",
+    content: `Upon full payment for our services, ownership of the final deliverables (designs, code, content) will be transferred to you. 
+              However, we retain the right to use non-sensitive portions of the deliverables for portfolio or promotional purposes.`,
+  },
+  {
+    subtitle: "Website Usage:",
+    content: `Objective: Gaining your final approval before launch.
+    What happens: After testing, we present the completed work to you for final review. You’ll have the opportunity to review the final version, suggest any minor changes, and confirm that everything meets your expectations.
+    Outcome: Once you approve the project, we move on to the final steps.`,
+  },
+  {
+    subtitle: "Launch & Delivery:",
+    content: `While we strive to provide the best services possible, Adya Websolution is not liable for any indirect, incidental, special, or consequential damages arising out of the use or inability to use our services. 
+              In no event shall our total liability exceed the amount paid for the services rendered.`,
+  },
+  {
+    subtitle: "Termination of Services:",
+    content: `Objective: Launching your product to the world.
+    What happens: For website and eCommerce store projects, we migrate everything to the live environment and ensure that it is fully functional. For app development, the app is submitted to the appropriate stores (Google Play, Apple App Store) or delivered to you for distribution.
+    Outcome: Your project goes live and is fully operational. We provide you with all the necessary credentials, documentation, and support.`,
+  },
+  {
+    subtitle: "Post-Launch Support & Maintenance:",
+    content: `Objective: Ensuring continued success.
+    What happens: After launch, we offer ongoing support and maintenance services to resolve any issues, add new features, or update your website/app. Our team is available for troubleshooting, enhancements, and any other assistance you may need.
+    Outcome: You have continuous support to ensure your business runs smoothly and stays updated.`,
+  },
+  {
+    subtitle: "Feedback & Continuous Improvement:",
+    content: `Objective: Learning from your experience and refining our services.
+    What happens: We encourage feedback from all clients to improve our processes and services. Your insights help us grow and ensure that we provide the best possible experience for all future projects.
+    Outcome: We use your feedback to enhance our services and stay aligned with your business needs.`,
   },
 ];
