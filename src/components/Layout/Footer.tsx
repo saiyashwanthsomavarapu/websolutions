@@ -114,10 +114,16 @@ const FooterComponent = () => {
             <Col xs={24} sm={24} md={12} lg={6}>
               <Title level={1} style={{ ...headingStyle, fontSize: screen.lg ? '2em' : '1.5em' }}>Services</Title>
               <Space direction="vertical" style={{ display: 'flex', flexDirection: 'column', marginBottom: '24px' }}>
-                <Text style={{ ...linkStyle, color: 'white' }}>IOS Developement</Text>
-                <Text style={{ ...linkStyle, color: 'white' }}>Android Developement</Text>
+                <Text style={{ ...linkStyle, color: 'white' }}>
+                  <a href="https://aadhyawebsolutions.com/wordpress/" target="_blank" rel="noopener noreferrer" style={{ color: 'white' }}>WordPress</a>
+                </Text>
+                <Text style={{ ...linkStyle, color: 'white' }}>
+                  <a href="https://aadhyawebsolutions.com/shopify/" target="_blank" rel="noopener noreferrer" style={{ color: 'white' }}>Shopify</a>
+                </Text>
                 <Text style={{ ...linkStyle, color: 'white' }}>Web Developement</Text>
                 <Text style={{ ...linkStyle, color: 'white' }}>Logo desiging</Text>
+                <Text style={{ ...linkStyle, color: 'white' }}>IOS Developement</Text>
+                <Text style={{ ...linkStyle, color: 'white' }}>Android Developement</Text>
               </Space>
             </Col>
             <Col xs={24} sm={24} md={12} lg={6}>
@@ -141,7 +147,7 @@ const FooterComponent = () => {
                       type="text"
                       shape="circle"
                       style={socialButtonStyle}
-                      href="https://www.facebook.com"
+                      href="https://www.facebook.com/people/Aadhyawebsolution/61575142748707/"
                       target="_blank"
                       rel="noopener noreferrer"
                     >

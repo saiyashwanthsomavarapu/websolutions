@@ -16,12 +16,12 @@ function HomeScreen() {
     <Fragment>
       <Intro />
       <Marquee 
-        // gradient={false} 
-        // style={{ backgroundColor: "#fff", color: "#000", fontSize: "1.1em", padding: "8px" }}
+    
+        style={{ paddingTop: "20px" , fontSize: "1.2em" }}
       >
         Client-Centric Excellence with 100% Satisfaction. Round-the-Clock Free Support You Can Rely On. 
         Strategic Solutions to Accelerate Sales Growth. Turn Clicks into Customers with Conversion Optimization. 
-        Empowering Digital Success – Let’s Grow Together.
+        Empowering Digital Success – Let’s Grow Together.        
       </Marquee>
       <AboutUs />
       <ServicesSectionUI />

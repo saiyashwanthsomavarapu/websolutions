@@ -1,9 +1,10 @@
 import { Grid, Space, Carousel, Typography, Row, Col, Avatar } from "antd";
 import "./BannerCarousel.css";
 import { AntDesignOutlined } from "@ant-design/icons";
-import Logo from '../../assets/qtq_95.webp' 
-import Person from '../../assets/person.jpeg';
+import lawyer from '../../assets/client/lawyer.webp' 
+import Person from '../../assets/person1.jpg';
 import Person1 from '../../assets/person1.jpg';
+import founder from '../../assets/person.jpeg';
 
 const { Title, Paragraph, Text } = Typography;
 const BannersCarousel = () => {
@@ -12,17 +13,17 @@ const BannersCarousel = () => {
   const testimonialData = [
     {
       descriptions:
-        "The system has been really easy to operate and is one of our most popular attractions. We have already ordered more systems.",
-      name: "Grady Hinchman",
-      designation: "Operating Partner Altitude Trampoline Park Kissimmee",
-      img:  Logo,
+        "Aadhya WebSolution and his team did a fantastic job on my WordPress website UI design. They worked with great care and professionalism, offering valuable insights throughout the project. The post-delivery support was excellent, including two days of dashboard training. I highly recommend Aadhya WebSolution for quality, reliable WordPress development services!",
+      name: "Raghvendra",
+      designation: "Lawyer",
+      img:  lawyer,
     },
     {
       descriptions:
         "Nowhere in the industry have I experienced the kind of support Valo Motion offers. No matter what the issue is, we get help immediately.",
-      name: "Steffen Brunckhorst",
-      designation: "CEO & Co-Founder of Abenteuerland",
-      img: Person1,
+      name: "Ansh Dhawn",
+      designation: "Founder",
+      img: founder,
     },
     {
       descriptions:
