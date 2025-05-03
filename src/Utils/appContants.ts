@@ -59,10 +59,20 @@ export const cancellationRefundPolicyData = [
   {
     subtitle: "Refund Policy:",
     content: `We offer a refund in specific cases under the following conditions:
-              Non-Delivery of Services: If we are unable to deliver the services as agreed upon or fail to meet the project’s milestones within the specified timeframe, you may be eligible for a refund.
-              Service Dissatisfaction: If you are not satisfied with the completed work and we cannot rectify the issue to your satisfaction within a reasonable time, you may be eligible for a refund, depending on the circumstances and the work already completed.
               Refund requests must be submitted within 7 days after project delivery or service completion. Refunds will only be processed after evaluating the work completed and the reasons for dissatisfaction.
     `,
+    bulletPoints: [
+      {
+        bulletTitle: "Non-Delivery of Services:",
+        bulletContent:
+          "If we are unable to deliver the services as agreed upon or fail to meet the project’s milestones within the specified timeframe, you may be eligible for a refund.",
+      },
+      {
+        bulletTitle: "Service Dissatisfaction:",
+        bulletContent: `If you are not satisfied with the completed work and we cannot rectify the issue to your satisfaction within a reasonable time, you may be eligible for a refund, depending on the circumstances and the work already completed.
+          `,
+      },
+    ],
   },
   {
     subtitle: "Partial Refunds:",
@@ -74,26 +84,50 @@ export const cancellationRefundPolicyData = [
     content: `Refunds will not be issued in the following cases:
     Change of Mind: If the client simply changes their mind or decides not to proceed with the project after work has started.
     Work Delivered as Per Agreement: If the services are completed as per the initial agreement or contract and the client is still unsatisfied after the work has been delivered.
-    Third-Party Services: If the work involves third-party services (e.g., hosting, external tools, etc.) that cannot be refunded.`
+    Third-Party Services: If the work involves third-party services (e.g., hosting, external tools, etc.) that cannot be refunded.`,
+    // bulletPoints: [
+    //   {
+    //     bulletTitle: "Change of Mind:",
+    //     bulletContent:
+    //       "If the client simply changes their mind or decides not to proceed with the project after work has started.",
+    //   },
+    //   {
+    //     bulletTitle: "Work Delivered as Per Agreement:",
+    //     bulletContent:
+    //       "If the services are completed as per the initial agreement or contract and the client is still unsatisfied after the work has been delivered.",
+    //   },
+    //   {
+    //     bulletTitle: "Third-Party Services:",
+    //     bulletContent:
+    //       "If the work involves third-party services (e.g., hosting, external tools, etc.) that cannot be refunded.",
+    //   },
+    // ],
   },
   {
     subtitle: "How to Request a Refund or Cancellation:",
     content: `To request a refund or to cancel a service, please follow these steps:
       Contact Us: Send an email to [Your Email Address] with the subject line “Cancellation and Refund Request.”
       Provide Details: Include the reason for cancellation or refund request, your order number, and any relevant details about the project or service.
-      Processing Time: We will respond to your request within [Insert Time Frame], assess the situation, and proceed with your refund or cancellation as per the terms mentioned above.`
+      Processing Time: We will respond to your request within [Insert Time Frame], assess the situation, and proceed with your refund or cancellation as per the terms mentioned above.`,
   },
   {
     subtitle: "Refund Processing Time:",
-    content: `If your refund is approved, it will be processed within [Insert Time Frame] to the original payment method used during the transaction. Please note that the refund may take additional time depending on your payment provider or financial institution.`
+    content: `If your refund is approved, it will be processed within [Insert Time Frame] to the original payment method used during the transaction. Please note that the refund may take additional time depending on your payment provider or financial institution.`,
   },
   {
     subtitle: "Contact Us:",
-    content: `If you have any questions about our Cancellation and Refund Policy or need to request a cancellation or refund, please contact us at:
-    Email: [Your Email Address]
-    Phone: [Your Phone Number]`
+    content: `If you have any questions about our Cancellation and Refund Policy or need to request a cancellation or refund, please contact us at:`,
+    bulletPoints: [
+      {
+        bulletTitle: "Email: ",
+        bulletContent: "[Your Email Address]",
+      },
+      {
+        bulletTitle: "Phone: ",
+        bulletContent: "[Your Phone Number]",
+      },
+    ],
   },
-  
 ];
 
 export const privacyPolicyData = [
@@ -157,9 +191,17 @@ export const privacyPolicyData = [
   {
     subtitle: "Contact Us:",
     content: `If you have any questions about this Privacy Policy or our practices, please contact us at:
-    Email: [Your Email Address]
-    Phone: [Your Phone Number]
-    `,    
+    `,
+    bulletPoints: [
+      {
+        bulletTitle: "Email: ",
+        bulletContent: "[Your Email Address]",
+      },
+      {
+        bulletTitle: "Phone: ",
+        bulletContent: "[Your Phone Number]",
+      },
+    ],
   },
 ];
 
@@ -218,9 +260,17 @@ export const TermsConditionsData = [
   {
     subtitle: "Contact Us:",
     content: `If you have any questions regarding these Terms & Conditions, please contact us at:
-    Email: [Your Email Address]
-    Phone: [Your Phone Number]
   `,
+    bulletPoints: [
+      {
+        bulletTitle: "Email: ",
+        bulletContent: "[Your Email Address]",
+      },
+      {
+        bulletTitle: "Phone: ",
+        bulletContent: "[Your Phone Number]",
+      },
+    ],
   },
 ];
 
