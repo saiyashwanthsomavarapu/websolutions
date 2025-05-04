@@ -48,25 +48,22 @@ const BusinessSolutionsUI = () => {
               whiteSpace: "pre-line",
             }}
           >
-            {`Unlock success with 
-                               professional 
-                               business solutions`}
+            {`Your Trusted Partner for Scalable Digital Growth`}
           </Title>
           <Row style={{ marginTop: "48px" }} gutter={[24, 24]}>
-            <Col xs={24} md={24} lg={12}>
+            <Col xs={24} md={24} lg={24}>
               <Paragraph
                 style={{
                   fontSize: "16px",
                   fontWeight: "400",
                   color: "#5c5c5c",
                   marginBottom: "32px",
+                  textAlign: "justify",
                 }}
               >
-                At Casho, we are committed to delivering exceptional services
-                that help our clients thrive in a dynamic and ever-changing
-                world.
+                Aadhya Websolution, we specialize in crafting high-performance websites and digital solutions that drive real business results. From Shopify and WordPress development to custom design and marketing, our expert team is committed to delivering quality, innovation, and 100% client satisfaction. We don't just build websites — we build long-term partnerships for success.
               </Paragraph>
-                <Button
+              <Button
                 type="primary"
                 style={{
                   backgroundColor: "#1a1a1a",
@@ -77,11 +74,11 @@ const BusinessSolutionsUI = () => {
                   cursor: "pointer",
                 }}
                 onClick={() => navigateTo("/aboutus")}
-                >
+              >
                 About Us
-                </Button>
+              </Button>
             </Col>
-            <Col xs={24} md={24} lg={12}>
+            {/* <Col xs={24} md={24} lg={12}>
               <div style={{ marginBottom: "24px" }}>
                 <div
                   style={{
@@ -111,7 +108,7 @@ const BusinessSolutionsUI = () => {
                 </div>
                 <Progress percent={90} showInfo={false} strokeColor="#555" />
               </div>
-            </Col>
+            </Col> */}
           </Row>
         </Col>
 

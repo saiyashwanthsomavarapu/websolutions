@@ -11,23 +11,23 @@ function WhyChooseUs() {
     const list = [
         {
             icon: <BarChartOutlined style={{ fontSize: '42px', color: 'black' }} />,
-            title: 'Outstanding Services',
-            description: 'Providing exceptional customer services is our main strength and we take pride in providing outstanding services to customers.'
+            title: 'Transparency',
+            description: ' Clear communication at every stage of the process.'
         },
         {
             icon: <PieChartOutlined style={{ fontSize: '48px', color: 'black' }} />,
-            title: 'Experience Team',
-            description: 'We have great skills and expertise that makes our company a more trusted one.'
+            title: 'On-Time Delivery:',
+            description: 'We adhere to the deadlines, ensuring timely completion.'
         },
         {
             icon: <SendOutlined style={{ fontSize: '48px', color: 'black' }} />,
-            title: 'Best Price',
-            description: 'we offer the best solution for your business at an honest price & best price.'
+            title: 'Quality Assurance',
+            description: 'We don’t deliver until everything is perfect.'
         },
         {
             icon: <FieldTimeOutlined style={{ fontSize: '48px', color: 'black' }} />,
-            title: 'Deliverd On Time',
-            description: 'We care about our clients and can often be found working out of hours to get everything"just right".'
+            title: 'Ongoing Support:',
+            description: 'Post-launch services to ensure your project stays successful.'
         }
     ]
     return (

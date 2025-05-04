@@ -6,6 +6,7 @@ import {
 import AR from "../assets/ar.png";
 import StartUp from "../assets/startup.png";
 import Saas from "../assets/saas.png";
+import { Content } from "antd/es/layout/layout";
 
 export const services = [
   {
@@ -47,12 +48,85 @@ export const services = [
 
 export const cancellationRefundPolicyData = [
   {
-    subtitle: "Refundable:",
-    content: `Not withstanding anything to the contrary contained in this policy, there are no refunds for all products or services of the Company.`,
+    subtitle: "Cancellation Policy:",
+    content: `You may cancel your service request or order at any time before the work is completed or delivered. 
+              Cancellation requests must be submitted in writing via email or through our contact form. 
+              The cancellation will take effect once we have acknowledged your request.
+              For ongoing projects, if work has already begun, a cancellation fee may apply based on the stage of work completed. 
+              In case of cancellation after the project has started, the client will be liable to pay for the services already rendered.
+    `,
   },
   {
-    subtitle: "Cancellation:",
-    content: `You may terminate or cancel the Services from the control panel at any time. If you cancel the Services, you are obligated to pay all fees and charges occurred prior to the effectiveness of such cancellation. If you request to suspend or cancel your customer account, your access to the control panel will be suspended and you will not be able to access the billing system to renew products or services or to update your account information. However, you will continue to have access to use the services already purchased until the end of your prepaid term.`,
+    subtitle: "Refund Policy:",
+    content: `We offer a refund in specific cases under the following conditions:
+              Refund requests must be submitted within 7 days after project delivery or service completion. Refunds will only be processed after evaluating the work completed and the reasons for dissatisfaction.
+    `,
+    bulletPoints: [
+      {
+        bulletTitle: "Non-Delivery of Services:",
+        bulletContent:
+          "If we are unable to deliver the services as agreed upon or fail to meet the project’s milestones within the specified timeframe, you may be eligible for a refund.",
+      },
+      {
+        bulletTitle: "Service Dissatisfaction:",
+        bulletContent: `If you are not satisfied with the completed work and we cannot rectify the issue to your satisfaction within a reasonable time, you may be eligible for a refund, depending on the circumstances and the work already completed.
+          `,
+      },
+    ],
+  },
+  {
+    subtitle: "Partial Refunds:",
+    content: `If the work is partially completed or milestones have been achieved, a partial refund may be issued. 
+              The refund amount will be determined based on the value of the services already provided. `,
+  },
+  {
+    subtitle: "No Refunds:",
+    content: `Refunds will not be issued in the following cases:
+    Change of Mind: If the client simply changes their mind or decides not to proceed with the project after work has started.
+    Work Delivered as Per Agreement: If the services are completed as per the initial agreement or contract and the client is still unsatisfied after the work has been delivered.
+    Third-Party Services: If the work involves third-party services (e.g., hosting, external tools, etc.) that cannot be refunded.`,
+    // bulletPoints: [
+    //   {
+    //     bulletTitle: "Change of Mind:",
+    //     bulletContent:
+    //       "If the client simply changes their mind or decides not to proceed with the project after work has started.",
+    //   },
+    //   {
+    //     bulletTitle: "Work Delivered as Per Agreement:",
+    //     bulletContent:
+    //       "If the services are completed as per the initial agreement or contract and the client is still unsatisfied after the work has been delivered.",
+    //   },
+    //   {
+    //     bulletTitle: "Third-Party Services:",
+    //     bulletContent:
+    //       "If the work involves third-party services (e.g., hosting, external tools, etc.) that cannot be refunded.",
+    //   },
+    // ],
+  },
+  {
+    subtitle: "How to Request a Refund or Cancellation:",
+    content: `To request a refund or to cancel a service, please follow these steps:
+      Contact Us: Send an email to [Your Email Address] with the subject line “Cancellation and Refund Request.”
+      Provide Details: Include the reason for cancellation or refund request, your order number, and any relevant details about the project or service.
+      Processing Time: We will respond to your request within [Insert Time Frame], assess the situation, and proceed with your refund or cancellation as per the terms mentioned above.`,
+  },
+  {
+    subtitle: "Refund Processing Time:",
+    content: `If your refund is approved, it will be processed within [Insert Time Frame] to the original payment method used during the transaction. Please note that the refund may take additional time depending on your payment provider or financial institution.`,
+  },
+  {
+    subtitle: "Contact Us:",
+    content: `If you have any questions about our Cancellation and Refund Policy or need to request a cancellation or refund, please contact us at:`,
+    bulletPoints: [
+      {
+        bulletTitle: "Email: ",
+        bulletContent: "[Your Email Address]",
+      },
+      {
+        bulletTitle: "Phone: ",
+        bulletContent: "[Your Phone Number]",
+      },
+    ],
   },
 ];
 
@@ -61,161 +135,202 @@ export const privacyPolicyData = [
     content: "",
   },
   {
-    subtitle: "What personal information do we collect from the people that visit our blog, website or app?",
-    content: `When ordering or registering on our site, as appropriate, you may be asked to enter your name, email address, mailing address, phone number or other details to help you with your experience.`,
+    subtitle: "Information Collection:",
+    content: `We collect personal information that you provide directly to us, such as when you fill out a contact form, subscribe to our newsletter, or make a purchase. 
+              This may include your name, email address, phone number, billing details, and any other information necessary to complete a service request.
+              When ordering or registering on our site, as appropriate, you may be asked to enter your name, email address, mailing address, phone number or other details to help you with your experience.
+              
+              We may also collect non-personal information automatically through your use of our website, such as your IP address, browser type, and pages visited.
+              `,
   },
   {
-    subtitle: "When do we collect information?",
-    content: `We collect information from you when you register on our site, place an order, fill out a form, Use Live Chat or enter information on our site.`,
+    subtitle: "Use of Information:",
+    content: `The information we collect is used for the following purposes:
+              1. To process and complete your service requests.
+              2. To improve and personalize your user experience.
+              3. To send you relevant updates, newsletters, and promotional offers (if you’ve opted in).
+              4. To communicate with you regarding your account or services.
+              5. To comply with legal obligations and protect our rights.`,
   },
   {
-    subtitle: "VHow do we use your information? ",
-    content: `We may use the information we collect from you when you register, make a purchase, sign up for our newsletter, respond to a survey or marketing communication, surf the website, or use certain other site features in the following ways:`,
+    subtitle: "Data Protection:",
+    content: `We implement appropriate technical and organizational measures to safeguard your personal information and protect it from unauthorized access, alteration, disclosure, or destruction.
+              However, please be aware that no method of transmission over the Internet or electronic storage is 100% secure. While we strive to use commercially acceptable means to protect your personal information, we cannot guarantee its absolute security.
+            `,
   },
   {
-    subtitle: "How do we protect your information?",
-    content: `Our website is scanned on a regular basis for security holes and known vulnerabilities in order to make your visit to our site as safe as possible.`,
-
+    subtitle: "Sharing Your Information:",
+    content: `We do not sell, trade, or rent your personal information to third parties. 
+              However, we may share your information with trusted service providers who assist in operating our website and providing services, as long as they agree to keep your information confidential.
+              We may also disclose information if required by law or in response to legal processes.
+            `,
   },
   {
-    subtitle: "Do we use ‘cookies’? ",
-    content: `Yes. Cookies are small files that a site or its service provider transfers to your computer’s hard drive through your Web browser (if you allow) that enables the site’s or service provider’s systems to recognize your browser and capture and remember certain information. For instance, we use cookies to help us remember and process the items in your shopping cart. They are also used to help us understand your preferences based on previous or current site activity, which enables us to provide you with improved services. We also use cookies to help us compile aggregate data about site traffic and site interaction so that we can offer better site experiences and tools in the future..`,
+    subtitle: "Cookies:",
+    content: `Our website uses cookies to enhance user experience. Cookies are small data files that are stored on your device. 
+              They help us analyze web traffic and improve your browsing experience. 
+              You can choose to accept or decline cookies through your browser settings.
+              `,
   },
   {
-    subtitle: "If users disable cookies in their browser:",
-    content: `If you turn cookies off, Some of the features that make your site experience more efficient may not function properly.Some of the features that make your site experience more efficient and may not function properly.`,
+    subtitle: "Third-Party Links:",
+    content: `Our website may contain links to other websites. 
+              We are not responsible for the privacy practices of external sites and encourage you to review their privacy policies 
+              before sharing any personal informationWe do not sell, trade, or otherwise transfer to outside parties your Personally Identifiable Information.`,
   },
   {
-    subtitle: "Third-party disclosure",
-    content: `We do not sell, trade, or otherwise transfer to outside parties your Personally Identifiable Information.`,
+    subtitle: "Your Rights:",
+    content: `You have the right to access, update, or delete your personal information at any time. If you wish to exercise these rights or have any concerns about how your data is being used, please contact us at [Your Email Address].`,
   },
   {
-    subtitle: "IRC",
-    content: `Aadhya Web Solution does not allow IRC or IRC bots to be operated by Web Hosting and E-Commerce customers.`,
+    subtitle: "Changes to This Privacy Policy:",
+    content: `We may update this Privacy Policy from time to time. 
+              Any changes will be posted on this page, and the updated date will be indicated at the top. 
+              We encourage you to review this page periodically to stay informed about our privacy practices.`,
   },
   {
-    subtitle: "Third-party links",
-    content: `We do not include or offer third-party products or services on our website.`,
-  },
-  {
-    subtitle: "California Online Privacy Protection Act",
-    content: `CalOPPA is the first state law in the nation to require commercial websites and online services to post a privacy policy. The law’s reach stretches well beyond California to require any person or company in the United States (and conceivably the world) that operates websites collecting Personally Identifiable Information from California consumers to post a conspicuous privacy policy on its website stating exactly the information being collected and those individuals or companies with whom it is being shared. – See more at: http://consumercal.org/california-online-privacy-protection-act-caloppa/#sthash.0FdRbT51.dpuf.`,
-  },
-  {
-    subtitle: "CAN SPAM Act",
-    content: `The CAN-SPAM Act is a law that sets the rules for commercial email, establishes requirements for commercial messages, gives recipients the right to have emails stopped from being sent to them, and spells out tough penalties for violations.`,
+    subtitle: "Contact Us:",
+    content: `If you have any questions about this Privacy Policy or our practices, please contact us at:
+    `,
+    bulletPoints: [
+      {
+        bulletTitle: "Email: ",
+        bulletContent: "[Your Email Address]",
+      },
+      {
+        bulletTitle: "Phone: ",
+        bulletContent: "[Your Phone Number]",
+      },
+    ],
   },
 ];
 
 export const TermsConditionsData = [
   {
-    subtitle: "Illegal Use:",
-    content: `Web Indore services may be used for lawful purposes only. Transmission, storage or distribution of any
-                        information, data or material in violation of any applicable law or
-                        regulation or that may directly facilitate the violation of any
-                        particular law or regulation is prohibited. This includes, but is
-                        not limited to: copyrighted material; trademarks; trade secrets or
-                        other intellectual property rights used without proper
-                        authorization; material that is obscene, defamatory, constitutes an
-                        illegal threat, or violates export control laws.`,
+    subtitle: "Client Responsibilities:",
+    content: `You agree to provide accurate and complete information for the services you request. 
+              This includes, but is not limited to, access to your existing platforms, necessary credentials, and other relevant business information. 
+              You are responsible for ensuring all content, data, and intellectual property submitted for development are accurate, legal, and authorized for use.`,
   },
   {
-    subtitle: "Spamming:",
-    content: `Sending unsolicited bulk and/or
-                        commercial messages over the Internet (known as “spamming”) is
-                        prohibited, regardless of whether or not it overloads a server or
-                        disrupts service to Web Indore’s customers. Web Indore reserves the
-                        right to determine, in its sole and absolute discretion, what
-                        constitutes a violation of this provision.`,
+    subtitle: "Payment Terms:",
+    content: `All payments for services must be made in accordance with the pricing outlined on the website or in the project proposal. 
+              Payments may be required upfront or in installments based on the project’s scope. 
+              Payments for additional services or change requests during the course of the project will be invoiced separately.`,
   },
   {
-    subtitle: "Viruses and Other Destructive Activities: ",
-    content: `Use of Web Indore’s services or equipment for creating or sending Internet
-                        viruses, worms or Trojan horses, or for pinging, flooding or mail
-                        bombing, or engaging in denial of service attacks is prohibited.`,
+    subtitle: "Delivery and Timeline:",
+    content: `We aim to deliver our services within the timelines provided, but these may vary depending on project complexity, scope, and client responsiveness. 
+              We will communicate any delays or adjustments to deadlines as needed.
+              `,
+  },
+  {
+    subtitle: "Confidentiality:",
+    content: `Both parties agree to keep confidential any proprietary or confidential information obtained during the course of the project, including but not limited to designs, data, strategies, and business information. 
+            This obligation remains even after the project has concluded.`,
   },
   {
     subtitle: "Intellectual Property:",
-    content: `The use of Web Indore’s services to store, post, display, transmit, advertise
-                        or otherwise make available any type of pornography is prohibited.
-                        Web Indore as required by law, and will, notify law enforcement
-                        agencies when it becomes aware of the presence of pornography on, or
-                        being transmitted through its services.`,
+    content: `Upon full payment for our services, ownership of the final deliverables (designs, code, content) will be transferred to you. 
+              However, we retain the right to use non-sensitive portions of the deliverables for portfolio or promotional purposes.
+        `,
   },
   {
-    subtitle: "Pornography:",
-    content: `The use of Web Indore’s services to
-                        store, post, display, transmit, advertise or otherwise make
-                        available any type of pornography is prohibited. Web Indore as
-                        required by law, and will, notify law enforcement agencies when it
-                        becomes aware of the presence of pornography on, or being
-                        transmitted through its services.`,
+    subtitle: "Website Usage:",
+    content: `You agree not to use our website for any unlawful purpose or in any way that could damage, disable, or impair our services or systems. 
+              You are responsible for ensuring your use complies with all local laws and regulations.`,
   },
   {
-    subtitle: "Payment:",
-    content: `Web Indore reserves the right to suspend the services if the payments are not made by the due date. Web
-                        Indore shall not be held liable for any kind of loss due to
-                        disruption of services.`,
+    subtitle: "Limitations of Liability:",
+    content: `While we strive to provide the best services possible, Adya Websolution is not liable for any indirect, incidental, special, or consequential damages arising out of the use or inability to use our services. 
+              In no event shall our total liability exceed the amount paid for the services rendered.`,
   },
   {
-    subtitle: "Actions Taken by Aadhya Web:",
-    content: `The failure by a
-                        customer to meet or follow any of the TOU is grounds for account
-                        deactivation. Web Indore will be the sole arbiter as to what
-                        constitutes a violation of the TOU. Web Indore reserves the right to
-                        remove any account without prior notice and to refuse service to
-                        anyone at any time. Depending on the severity of the violation, Web
-                        Indore may, at its sole discretion, restrict, suspend or terminate a
-                        customer’s web hosting account and/or pursue other civil remedies.
-                        If such violation is a criminal offense, Web Indore will notify the
-                        appropriate law enforcement authorities of such violation. Web
-                        Indore does not issue credits for outages incurred through service
-                        disablement resulting from TOU violations. Web Indore customers
-                        agree to indemnify and hold harmless Web Indore from any claims
-                        resulting from the use of our services that damages them or any
-                        other party.`,
+    subtitle: "Termination of Services:",
+    content: `Either party may terminate the agreement at any time by providing written notice. 
+              In case of termination, you will be responsible for paying for any work completed up to the date of termination. 
+              Adya Websolution reserves the right to terminate services if there is a breach of these terms or for any other reason deemed necessary.
+            `,
   },
   {
-    subtitle: "IRC:",
-    content: `Web Indore does not allow IRC or IRC bots to be operated by Web Hosting and E-Commerce customers.`,
+    subtitle: "Changes to the Terms & Conditions:",
+    content: `These terms and conditions are governed by the laws of [Your Country/State], and any disputes will be handled in the appropriate jurisdiction within that area.
+`,
   },
   {
-    subtitle: "Anti Piracy:",
-    content: `Web Indore’s Web Hosting and
-                        E-Commerce accounts should not be used to distribute illegal or
-                        pirated software and/or multimedia products. The Web Indore service
-                        is provided on an as is, as available basis without warranties of
-                        any kind, either express or implied, including, but not limited to,
-                        warranties of merchantability, fitness for a particular purpose or
-                        non-infringement. Web Indore and its partners and suppliers will not
-                        be liable for any cost or damage arising either directly or
-                        indirectly from any transaction or use of the service.`,
+    subtitle: "Contact Us:",
+    content: `If you have any questions regarding these Terms & Conditions, please contact us at:
+  `,
+    bulletPoints: [
+      {
+        bulletTitle: "Email: ",
+        bulletContent: "[Your Email Address]",
+      },
+      {
+        bulletTitle: "Phone: ",
+        bulletContent: "[Your Phone Number]",
+      },
+    ],
+  },
+];
+
+export const DeliveryProcessData = [
+  {
+    subtitle: "Initial Consultation & Discovery:",
+    content: `Objective: Understanding your needs and project goals.
+    What happens: We begin with a one-on-one consultation, either via phone, email, or video call. During this stage, we gather all the necessary details about your business, project objectives, and specific requirements.
+    Outcome: You’ll receive a personalized proposal that includes an overview of the project, timelines, and pricing.`,
   },
   {
-    subtitle: "Income Disclaimer:",
-    content: `Web Indore strictly prohibits
-                        its Partners from publicly disclosing their own earnings because no
-                        one person’s income is typical but does show what is possible with
-                        time, effort, and dedication. What you earn as an Web Indore
-                        partners is wholly determined by your own individual efforts. Web
-                        Indore does not guarantee that any partners will earn any amount of
-                        income or any income at all from the promotion of our program. The
-                        amount of time and/or money you invest in your business, will
-                        determine your success.`,
+    subtitle: "Project Agreement & Proposal:",
+    content: `Objective: Finalizing the project scope and confirming terms.
+    What happens: Once you review the proposal and agree on the scope of work, we send over a formal contract and timeline. The contract outlines the deliverables, milestones, payment terms, and any other essential details.
+    Outcome: Upon signing the contract and receiving the initial payment (if applicable), we begin working on your project.`,
   },
   {
-    subtitle: "Cancellations and Refunds:",
-    content: `Refundable: Not
-                        withstanding anything to the contrary contained in this policy,
-                        there are no refunds for all products or services of the Company.
-                        Cancellation: You may terminate or cancel the Services from the
-                        control panel at any time. If you cancel the Services, you are
-                        obligated to pay all fees and charges occurred prior to the
-                        effectiveness of such cancellation. If you request to suspend or
-                        cancel your customer account, your access to the control panel will
-                        be suspended and you will not be able to access the billing system
-                        to renew products or services or to update your account information.
-                        However, you will continue to have access to use the services
-                        already purchased until the end of your prepaid term.`,
+    subtitle: "Design & Development:",
+    content: `Objective: Turning your vision into a working product.
+    What happens: Our team starts working on the design and development based on your requirements. We develop mockups and wireframes for approval (for design work) and begin coding (for websites, apps, or other services).
+    Outcome: You’ll receive updates and progress reports at regular intervals. If needed, we can schedule review sessions to ensure we’re on the right track.`,
+  },
+  {
+    subtitle: "Testing & Quality Assurance:",
+    content: `Objective: Ensuring a flawless final product.
+    What happens: Once development is complete, we conduct extensive testing to ensure everything works smoothly. This includes cross-browser testing, mobile responsiveness checks, functionality testing, and performance testing.
+    Outcome: Any bugs or issues discovered during this phase will be fixed, and the project will be ready for final approval.`,
+  },
+  {
+    subtitle: "Final Review & Approval:",
+    content: `Upon full payment for our services, ownership of the final deliverables (designs, code, content) will be transferred to you. 
+              However, we retain the right to use non-sensitive portions of the deliverables for portfolio or promotional purposes.`,
+  },
+  {
+    subtitle: "Website Usage:",
+    content: `Objective: Gaining your final approval before launch.
+    What happens: After testing, we present the completed work to you for final review. You’ll have the opportunity to review the final version, suggest any minor changes, and confirm that everything meets your expectations.
+    Outcome: Once you approve the project, we move on to the final steps.`,
+  },
+  {
+    subtitle: "Launch & Delivery:",
+    content: `While we strive to provide the best services possible, Adya Websolution is not liable for any indirect, incidental, special, or consequential damages arising out of the use or inability to use our services. 
+              In no event shall our total liability exceed the amount paid for the services rendered.`,
+  },
+  {
+    subtitle: "Termination of Services:",
+    content: `Objective: Launching your product to the world.
+    What happens: For website and eCommerce store projects, we migrate everything to the live environment and ensure that it is fully functional. For app development, the app is submitted to the appropriate stores (Google Play, Apple App Store) or delivered to you for distribution.
+    Outcome: Your project goes live and is fully operational. We provide you with all the necessary credentials, documentation, and support.`,
+  },
+  {
+    subtitle: "Post-Launch Support & Maintenance:",
+    content: `Objective: Ensuring continued success.
+    What happens: After launch, we offer ongoing support and maintenance services to resolve any issues, add new features, or update your website/app. Our team is available for troubleshooting, enhancements, and any other assistance you may need.
+    Outcome: You have continuous support to ensure your business runs smoothly and stays updated.`,
+  },
+  {
+    subtitle: "Feedback & Continuous Improvement:",
+    content: `Objective: Learning from your experience and refining our services.
+    What happens: We encourage feedback from all clients to improve our processes and services. Your insights help us grow and ensure that we provide the best possible experience for all future projects.
+    Outcome: We use your feedback to enhance our services and stay aligned with your business needs.`,
   },
 ];

@@ -51,7 +51,7 @@ const CustomComponent = () => {
                             textDecoration: "underline",
                             textUnderlineOffset: "10px",
                         }}>
-                            WHAT WE DO
+                            Marketing 
                         </Text>
                         <Title level={2}
                             style={{
