@@ -86,7 +86,7 @@ const Intro = () => {
                         <Card style={{ ...statsCardStyle, background: '#fff' }}>
                             <Row gutter={0}>
                                 <Col xs={12} md={12} lg={12} style={{ border: '1px solid #f0f0f0', padding: 20 }}>
-                                    <Title level={1} style={{ margin: 0, fontSize: '48px' }}>500+</Title>
+                                    <Title level={1} style={{ margin: 0, fontSize: '48px' }}>50+</Title>
                                     <Divider style={{ margin: 0 }} />
                                     <Paragraph style={{ marginTop: '15px', margin: 0 }}>
                                         Clients successfully partnered with businesses worldwide.

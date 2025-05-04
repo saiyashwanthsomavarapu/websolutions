@@ -11,7 +11,7 @@ import {
   MenuOutlined,
   DownOutlined,
 } from '@ant-design/icons';
-import { Link, useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import logoImage from '../../assets/logo-removebg.png';
 // import logoWhite from '../../assets/New_project.png';
 

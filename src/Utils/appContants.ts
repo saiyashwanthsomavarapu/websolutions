@@ -1,38 +1,41 @@
 import {
   AimOutlined,
-  FileTextOutlined,
+  // FileTextOutlined,
   LineChartOutlined,
 } from "@ant-design/icons";
-import AR from "../assets/ar.png";
-import StartUp from "../assets/startup.png";
+import Marketing from "../assets/service/Marketing.svg";
+// import StartUp from "../assets/startup.png";
+import Seo from "../assets/service/SEO.svg";
+import Optimization from "../assets/service/Optimization.svg";
+import speed from "../assets/service/Speed.svg";
 import Saas from "../assets/saas.png";
-import { Content } from "antd/es/layout/layout";
+// import { Content } from "antd/es/layout/layout";
 
 export const services = [
   {
     Icon: AimOutlined,
-    img: AR,
+    img: Marketing,
     title: "Business Strategy Development",
     description:
       "Achieve clarity and direction with our custom-designed strategies. We analyze your goals, market trends, and competition to create a roadmap for sustained growth.",
   },
   {
-    img: StartUp,
-    Icon: FileTextOutlined,
-    title: "Operational Excellence",
+    img: Seo,
+    Icon: Seo,
+    title: "SEO Optimization",
     description:
       "Streamline your processes, improve efficiency, and reduce costs. Our team helps you implement systems that drive seamless operations and measurable results.",
   },
   {
-    img: Saas,
-    Icon: LineChartOutlined,
-    title: "Financial Advisory",
+    img: Optimization,
+    Icon: Optimization,
+    title: "Optimization",
     description:
       "Optimize your financial performance with expert insights and planning. From budgeting to investment strategies, we ensure your business remains financially healthy.",
   },
   {
-    img: Saas,
-    Icon: LineChartOutlined,
+    img: speed,
+    Icon: speed,
     title: "Lucky Advisory",
     description:
       "Optimize your financial performance with expert insights and planning. From budgeting to investment strategies, we ensure your business remains financially healthy.",
@@ -106,7 +109,7 @@ export const cancellationRefundPolicyData = [
   {
     subtitle: "How to Request a Refund or Cancellation:",
     content: `To request a refund or to cancel a service, please follow these steps:
-      Contact Us: Send an email to [Your Email Address] with the subject line “Cancellation and Refund Request.”
+      Contact Us: Send an email to support@aadhyawebsolution.com with the subject line “Cancellation and Refund Request.”
       Provide Details: Include the reason for cancellation or refund request, your order number, and any relevant details about the project or service.
       Processing Time: We will respond to your request within [Insert Time Frame], assess the situation, and proceed with your refund or cancellation as per the terms mentioned above.`,
   },
@@ -120,7 +123,7 @@ export const cancellationRefundPolicyData = [
     bulletPoints: [
       {
         bulletTitle: "Email: ",
-        bulletContent: "[Your Email Address]",
+        bulletContent: "support@aadhyawebsolution.com",
       },
       {
         bulletTitle: "Phone: ",
@@ -180,7 +183,7 @@ export const privacyPolicyData = [
   },
   {
     subtitle: "Your Rights:",
-    content: `You have the right to access, update, or delete your personal information at any time. If you wish to exercise these rights or have any concerns about how your data is being used, please contact us at [Your Email Address].`,
+    content: `You have the right to access, update, or delete your personal information at any time. If you wish to exercise these rights or have any concerns about how your data is being used, please contact us at support@aadhyawebsolution.com.`,
   },
   {
     subtitle: "Changes to This Privacy Policy:",
@@ -195,7 +198,7 @@ export const privacyPolicyData = [
     bulletPoints: [
       {
         bulletTitle: "Email: ",
-        bulletContent: "[Your Email Address]",
+        bulletContent: "support@aadhyawebsolution.com",
       },
       {
         bulletTitle: "Phone: ",
@@ -264,7 +267,7 @@ export const TermsConditionsData = [
     bulletPoints: [
       {
         bulletTitle: "Email: ",
-        bulletContent: "[Your Email Address]",
+        bulletContent: "support@aadhyawebsolution.com",
       },
       {
         bulletTitle: "Phone: ",

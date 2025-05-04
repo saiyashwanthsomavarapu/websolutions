@@ -3,7 +3,6 @@ import {
   Col,
   Typography,
   Button,
-  Progress,
   Card,
   Space,
   Grid,
