@@ -77,7 +77,45 @@ const DeliveryProcess = () => {
                     >
                         The following Terms of Use apply to ALL Aadhya Web Solution customers:
                     </Paragraph>
-                    {DeliveryProcessData.map((item, index) => (
+                     {DeliveryProcessData.map((item, index) => (
+                                <Paragraph
+                                  key={index}
+                                  style={{
+                                    fontSize: screen.lg || screen.md ? "16px" : "14px",
+                                    lineHeight: "1.6",
+                                    color: "#555",
+                                    textAlign: "justify",
+                                  }}
+                                >
+                                  {item.subtitle && (
+                                    <strong style={{ color: "black" }}> {item.subtitle}</strong>
+                                  )}{" "}
+                                  {item.content}
+                                  {(item.bulletPoints ?? []).length > 1 ? (
+                                    item.bulletPoints?.map((each, idx) => (
+                                      <li
+                                        key={idx}
+                                        style={{
+                                          fontSize: screen.lg || screen.md ? "16px" : "14px",
+                                          lineHeight: "1.6",
+                                          color: "#555",
+                                          textAlign: "justify",
+                                          marginLeft: "20px",
+                                          marginTop: "10px",
+                                        }}
+                                      >
+                                        <strong style={{ color: "black" }}>
+                                          {each.bulletTitle}
+                                        </strong>
+                                        {each.bulletContent}
+                                      </li>
+                                    ))
+                                  ) : (
+                                    <Paragraph></Paragraph>
+                                  )}
+                                </Paragraph>
+                              ))} 
+                    {/* {DeliveryProcessData.map((item, index) => (
                         <Paragraph
                             key={index}
                             style={{
@@ -89,7 +127,7 @@ const DeliveryProcess = () => {
                         >
                             {item.subtitle && <strong style={{color: 'black'}}> {item.subtitle}</strong>}  {item.content}
                         </Paragraph>
-                    ))}
+                    ))} */}
                 </Col>
             </Row>
         </Space>

@@ -85,33 +85,45 @@ export const cancellationRefundPolicyData = [
   {
     subtitle: "No Refunds:",
     content: `Refunds will not be issued in the following cases:
-    Change of Mind: If the client simply changes their mind or decides not to proceed with the project after work has started.
-    Work Delivered as Per Agreement: If the services are completed as per the initial agreement or contract and the client is still unsatisfied after the work has been delivered.
-    Third-Party Services: If the work involves third-party services (e.g., hosting, external tools, etc.) that cannot be refunded.`,
-    // bulletPoints: [
-    //   {
-    //     bulletTitle: "Change of Mind:",
-    //     bulletContent:
-    //       "If the client simply changes their mind or decides not to proceed with the project after work has started.",
-    //   },
-    //   {
-    //     bulletTitle: "Work Delivered as Per Agreement:",
-    //     bulletContent:
-    //       "If the services are completed as per the initial agreement or contract and the client is still unsatisfied after the work has been delivered.",
-    //   },
-    //   {
-    //     bulletTitle: "Third-Party Services:",
-    //     bulletContent:
-    //       "If the work involves third-party services (e.g., hosting, external tools, etc.) that cannot be refunded.",
-    //   },
-    // ],
+    `,
+    bulletPoints: [
+      {
+        bulletTitle: "Change of Mind:",
+        bulletContent:
+          "If the client simply changes their mind or decides not to proceed with the project after work has started.",
+      },
+      {
+        bulletTitle: "Work Delivered as Per Agreement:",
+        bulletContent:
+          "If the services are completed as per the initial agreement or contract and the client is still unsatisfied after the work has been delivered.",
+      },
+      {
+        bulletTitle: "Third-Party Services:",
+        bulletContent:
+          "If the work involves third-party services (e.g., hosting, external tools, etc.) that cannot be refunded.",
+      },
+    ],
   },
   {
     subtitle: "How to Request a Refund or Cancellation:",
-    content: `To request a refund or to cancel a service, please follow these steps:
-      Contact Us: Send an email to support@aadhyawebsolution.com with the subject line “Cancellation and Refund Request.”
-      Provide Details: Include the reason for cancellation or refund request, your order number, and any relevant details about the project or service.
-      Processing Time: We will respond to your request within [Insert Time Frame], assess the situation, and proceed with your refund or cancellation as per the terms mentioned above.`,
+    content: `To request a refund or to cancel a service, please follow these steps:`,
+    bulletPoints: [
+      {
+        bulletTitle: "Contact Us:",
+        bulletContent:
+          "Send an email to support@aadhyawebsolution.com with the subject line “Cancellation and Refund Request” or use our contact form on the website.",
+      },
+      {
+        bulletTitle: "Provide Details:",
+        bulletContent:
+          "Include the reason for cancellation or refund request, your order number, and any relevant details about the project or service.",
+      },
+      {
+        bulletTitle: "Processing Time:",
+        bulletContent:"We will respond to your request within 2-3 business days, assess the situation, and proceed with your refund or cancellation as per the terms mentioned above.",
+
+      },
+    ],
   },
   {
     subtitle: "Refund Processing Time:",
@@ -142,18 +154,36 @@ export const privacyPolicyData = [
     content: `We collect personal information that you provide directly to us, such as when you fill out a contact form, subscribe to our newsletter, or make a purchase. 
               This may include your name, email address, phone number, billing details, and any other information necessary to complete a service request.
               When ordering or registering on our site, as appropriate, you may be asked to enter your name, email address, mailing address, phone number or other details to help you with your experience.
-              
+
               We may also collect non-personal information automatically through your use of our website, such as your IP address, browser type, and pages visited.
               `,
   },
   {
     subtitle: "Use of Information:",
     content: `The information we collect is used for the following purposes:
-              1. To process and complete your service requests.
-              2. To improve and personalize your user experience.
-              3. To send you relevant updates, newsletters, and promotional offers (if you’ve opted in).
-              4. To communicate with you regarding your account or services.
-              5. To comply with legal obligations and protect our rights.`,
+    `,
+    bulletPoints: [
+      {
+        bulletTitle: "",
+        bulletContent: "To process and complete your service requests.",
+      },
+      {
+        bulletTitle:  "",
+        bulletContent: "To improve and personalize your user experience",
+      },
+      {
+        bulletTitle: "",
+        bulletContent: "To send you relevant updates, newsletters, and promotional offers (if you’ve opted in).",
+      },
+      {
+        bulletTitle: "",
+        bulletContent: "To communicate with you regarding your account or services.",
+      },
+      {
+        bulletTitle: "",
+        bulletContent: "To comply with legal obligations and protect our rights.`,",
+      },
+    ],
   },
   {
     subtitle: "Data Protection:",
@@ -257,6 +287,11 @@ export const TermsConditionsData = [
   },
   {
     subtitle: "Changes to the Terms & Conditions:",
+    content: `Adya Websolution reserves the right to update or modify these Terms and Conditions at any time. Any changes will be posted on this page with an updated "Effective Date." We encourage you to review this page periodically for any updates.
+`,
+  },
+  {
+    subtitle: "Governing Law: ",
     content: `These terms and conditions are governed by the laws of [Your Country/State], and any disputes will be handled in the appropriate jurisdiction within that area.
 `,
   },
@@ -336,4 +371,43 @@ export const DeliveryProcessData = [
     What happens: We encourage feedback from all clients to improve our processes and services. Your insights help us grow and ensure that we provide the best possible experience for all future projects.
     Outcome: We use your feedback to enhance our services and stay aligned with your business needs.`,
   },
+  {
+    subtitle: "Why Choose Us?",
+    content: `
+  `,
+    bulletPoints: [
+      {
+        bulletTitle: "Transparency: ",
+        bulletContent: "Clear communication at every stage of the process.",
+      },
+      {
+        bulletTitle: "On-Time Delivery:",
+        bulletContent: "We adhere to the deadlines, ensuring timely completion.",
+      },
+      {
+        bulletTitle: "Quality Assurance:",
+        bulletContent: "We don’t deliver until everything is perfect",
+      },
+      {
+        bulletTitle: "Ongoing Support:",
+        bulletContent: "Post-launch services to ensure your project stays successful.",
+      },
+    ],
+  },
+  {
+    subtitle: "Contact Us:",
+    content: `
+  `,
+    bulletPoints: [
+      {
+        bulletTitle: "Email: ",
+        bulletContent: "support@aadhyawebsolution.com",
+      },
+      {
+        bulletTitle: "Phone: ",
+        bulletContent: "[Your Phone Number]",
+      },
+    ],
+  },
+  // By choosing Adya Websolution, you are partnering with a team dedicated to delivering high-quality solutions that exceed expectations. We look forward to working with you!
 ];

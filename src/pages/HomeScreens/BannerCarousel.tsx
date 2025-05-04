@@ -20,21 +20,21 @@ const BannersCarousel = () => {
     },
     {
       descriptions:
-        "Nowhere in the industry have I experienced the kind of support Valo Motion offers. No matter what the issue is, we get help immediately.",
-      name: "Ansh Dhawn",
-      designation: "Founder",
+        "Aadhya and his team worked delicately on my project and delivered an outstanding, high-quality WordPress website UI design. He is extremely professional, treats the project like his own, and provides valuable suggestions throughout the process. I highly recommend him for WordPress development. His support is excellent — he offered two days of WordPress dashboard training and continued great service even after the delivery. I’m very happy with the results and the overall experience. Truly amazing work!",
+      name: "Deborrah Lee",
+      designation: "Founder of Naidvar Trust",
       img: founder,
     },
     {
       descriptions:
-        "Valo Motion is clear about what's next, they are proactive about their roadmap. They are focused on being the best.",
+        "I recently worked with Aadhya and his team to set up my online store, and I’m extremely pleased with the results. Aadhya demonstrated excellent technical skills and a deep understanding of the Shopify platform. He was easy to collaborate with, communicated clearly throughout the process, and always kept me updated on the progress. His professionalism and dedication ensured that the project was completed on time and exactly how I envisioned. I highly recommend Harsh for anyone looking",
       name: "Grady Hinchman",
       designation: "Operating Partner Altitude Trampoline Park Kissimmee",
       img: Person,
     },
     {
       descriptions:
-        "We LOVE the product. I love the new games and new modes that come out. There's a cool variety of games and having multiple levels make it fun.",
+        "Amazing designer. He created different variants for particular mockups. He was very prompt and quick in completing our requirements. I will surely recommend him for all your design related UI/UX work.",
       name: "Dustin Pelletier",
       designation: "Franchise Owner Big Air Trampoline Park Spartanburg",
       img: Person1,
