@@ -55,6 +55,12 @@ export const cancellationRefundPolicyData = [
     content: `You may cancel your service request or order at any time before the work is completed or delivered. 
               Cancellation requests must be submitted in writing via email or through our contact form. 
               The cancellation will take effect once we have acknowledged your request.
+              
+    `,
+  },
+  {
+    subtitle: "",
+    content: `
               For ongoing projects, if work has already begun, a cancellation fee may apply based on the stage of work completed. 
               In case of cancellation after the project has started, the client will be liable to pay for the services already rendered.
     `,
@@ -62,7 +68,6 @@ export const cancellationRefundPolicyData = [
   {
     subtitle: "Refund Policy:",
     content: `We offer a refund in specific cases under the following conditions:
-              Refund requests must be submitted within 7 days after project delivery or service completion. Refunds will only be processed after evaluating the work completed and the reasons for dissatisfaction.
     `,
     bulletPoints: [
       {
@@ -76,6 +81,13 @@ export const cancellationRefundPolicyData = [
           `,
       },
     ],
+  },
+  {
+    subtitle: "",
+    content: `
+          Refund requests must be submitted within 7 days after project delivery or service completion. Refunds will only be processed after evaluating the work completed and the reasons for dissatisfaction.
+
+    `,
   },
   {
     subtitle: "Partial Refunds:",
@@ -154,7 +166,11 @@ export const privacyPolicyData = [
     content: `We collect personal information that you provide directly to us, such as when you fill out a contact form, subscribe to our newsletter, or make a purchase. 
               This may include your name, email address, phone number, billing details, and any other information necessary to complete a service request.
               When ordering or registering on our site, as appropriate, you may be asked to enter your name, email address, mailing address, phone number or other details to help you with your experience.
-
+              `,
+  },
+  {
+    subtitle: "",
+    content: `
               We may also collect non-personal information automatically through your use of our website, such as your IP address, browser type, and pages visited.
               `,
   },
@@ -188,7 +204,11 @@ export const privacyPolicyData = [
   {
     subtitle: "Data Protection:",
     content: `We implement appropriate technical and organizational measures to safeguard your personal information and protect it from unauthorized access, alteration, disclosure, or destruction.
-              However, please be aware that no method of transmission over the Internet or electronic storage is 100% secure. While we strive to use commercially acceptable means to protect your personal information, we cannot guarantee its absolute security.
+            `,
+  },
+  {
+    subtitle: "",
+    content: `However, please be aware that no method of transmission over the Internet or electronic storage is 100% secure. While we strive to use commercially acceptable means to protect your personal information, we cannot guarantee its absolute security.
             `,
   },
   {
@@ -197,6 +217,10 @@ export const privacyPolicyData = [
               However, we may share your information with trusted service providers who assist in operating our website and providing services, as long as they agree to keep your information confidential.
               We may also disclose information if required by law or in response to legal processes.
             `,
+  },
+  {
+    subtitle: "",
+    content: `We may also disclose information if required by law or in response to legal processes.`,
   },
   {
     subtitle: "Cookies:",
@@ -409,5 +433,9 @@ export const DeliveryProcessData = [
       },
     ],
   },
-  // By choosing Adya Websolution, you are partnering with a team dedicated to delivering high-quality solutions that exceed expectations. We look forward to working with you!
+  {
+    subtitle: "",
+    content: `By choosing Adya Websolution, you are partnering with a team dedicated to delivering high-quality solutions that exceed expectations. We look forward to working with you!`,
+  },
+  
 ];
