@@ -16,25 +16,29 @@ export const services = [
     Icon: AimOutlined,
     img: Marketing,
     title: "Shopify Store Setup, CRO & Speed Optimisation",
-    description:"Our Shopify store setup services are crafted to help you build high-performing eCommerce stores that convert visitors into loyal customers. We go beyond the basics by implementing conversion rate optimisation (CRO) strategies that increase your average order value and streamline the user journey. Combined with Shopify speed optimisation, we ensure fast-loading, mobile-responsive storefronts that offer a seamless shopping experience."
+    description:
+      "Our Shopify store setup services are crafted to help you build high-performing eCommerce stores that convert visitors into loyal customers. We go beyond the basics by implementing conversion rate optimisation (CRO) strategies that increase your average order value and streamline the user journey. Combined with Shopify speed optimisation, we ensure fast-loading, mobile-responsive storefronts that offer a seamless shopping experience.",
   },
   {
     img: Seo,
     Icon: Seo,
     title: "WordPress Development",
-    description:"Whether you need a business website, blog, or custom solution, our WordPress development services offer flexibility, scalability, and full SEO compatibility. We create responsive websites with clean UI/UX, optimised for speed and performance. Our custom WordPress themes and plugins ensure your site reflects your brand and functions exactly as your business demands."
+    description:
+      "Whether you need a business website, blog, or custom solution, our WordPress development services offer flexibility, scalability, and full SEO compatibility. We create responsive websites with clean UI/UX, optimised for speed and performance. Our custom WordPress themes and plugins ensure your site reflects your brand and functions exactly as your business demands.",
   },
   {
     img: Optimization,
     Icon: Optimization,
     title: "Digital Marketing",
-    description: "We deliver data-driven digital marketing services tailored to your business goals. From strategic search engine optimisation (SEO) to high-impact PPC campaigns and content-driven lead generation, we help brands grow their digital footprint. Our team works across multiple platforms to ensure maximum reach, better engagement, and measurable ROI."  
+    description:
+      "We deliver data-driven digital marketing services tailored to your business goals. From strategic search engine optimisation (SEO) to high-impact PPC campaigns and content-driven lead generation, we help brands grow their digital footprint. Our team works across multiple platforms to ensure maximum reach, better engagement, and measurable ROI.",
   },
   {
     img: speed,
     Icon: speed,
     title: "Graphic Design",
-    description: "Great design speaks volumes. Our graphic design services include everything from brand identity creation to digital and print creatives. We design visually appealing logos, marketing materials, and social media graphics that not only look great but also drive audience interaction and brand recognition."
+    description:
+      "Great design speaks volumes. Our graphic design services include everything from brand identity creation to digital and print creatives. We design visually appealing logos, marketing materials, and social media graphics that not only look great but also drive audience interaction and brand recognition.",
   },
   {
     img: Saas,
@@ -128,8 +132,8 @@ export const cancellationRefundPolicyData = [
       },
       {
         bulletTitle: "Processing Time:",
-        bulletContent:"We will respond to your request within 2-3 business days, assess the situation, and proceed with your refund or cancellation as per the terms mentioned above.",
-
+        bulletContent:
+          "We will respond to your request within 2-3 business days, assess the situation, and proceed with your refund or cancellation as per the terms mentioned above.",
       },
     ],
   },
@@ -180,20 +184,23 @@ export const privacyPolicyData = [
         bulletContent: "To process and complete your service requests.",
       },
       {
-        bulletTitle:  "",
+        bulletTitle: "",
         bulletContent: "To improve and personalize your user experience",
       },
       {
         bulletTitle: "",
-        bulletContent: "To send you relevant updates, newsletters, and promotional offers (if you’ve opted in).",
+        bulletContent:
+          "To send you relevant updates, newsletters, and promotional offers (if you’ve opted in).",
       },
       {
         bulletTitle: "",
-        bulletContent: "To communicate with you regarding your account or services.",
+        bulletContent:
+          "To communicate with you regarding your account or services.",
       },
       {
         bulletTitle: "",
-        bulletContent: "To comply with legal obligations and protect our rights.`,",
+        bulletContent:
+          "To comply with legal obligations and protect our rights.`,",
       },
     ],
   },
@@ -335,27 +342,75 @@ export const TermsConditionsData = [
 export const DeliveryProcessData = [
   {
     subtitle: "Initial Consultation & Discovery:",
-    content: `Objective: Understanding your needs and project goals.
-    What happens: We begin with a one-on-one consultation, either via phone, email, or video call. During this stage, we gather all the necessary details about your business, project objectives, and specific requirements.
-    Outcome: You’ll receive a personalized proposal that includes an overview of the project, timelines, and pricing.`,
+    content: "",
+    miniTitle: "Objective: ",
+    miniContent: "Understanding your needs and project goals.",
+    bulletPoints: [
+      {
+        bulletTitle: "What happens: ",
+        bulletContent:
+          "We begin with a one-on-one consultation, either via phone, email, or video call. During this stage, we gather all the necessary details about your business, project objectives, and specific requirements.",
+      },
+      {
+        bulletTitle: "Outcome: ",
+        bulletContent:
+          "You’ll receive a personalized proposal that includes an overview of the project, timelines, and pricing.",
+      },
+    ],
   },
   {
     subtitle: "Project Agreement & Proposal:",
-    content: `Objective: Finalizing the project scope and confirming terms.
-    What happens: Once you review the proposal and agree on the scope of work, we send over a formal contract and timeline. The contract outlines the deliverables, milestones, payment terms, and any other essential details.
-    Outcome: Upon signing the contract and receiving the initial payment (if applicable), we begin working on your project.`,
+    content: "",
+    miniTitle: "Objective: ",
+    miniContent: "Finalizing the project scope and confirming terms.",
+    bulletPoints: [
+      {
+        bulletTitle: "What happens: ",
+        bulletContent:
+          "Once you review the proposal and agree on the scope of work, we send over a formal contract and timeline. The contract outlines the deliverables, milestones, payment terms, and any other essential details.",
+      },
+      {
+        bulletTitle: "Outcome: ",
+        bulletContent:
+          "Upon signing the contract and receiving the initial payment (if applicable), we begin working on your project.",
+      },
+    ],
   },
   {
     subtitle: "Design & Development:",
-    content: `Objective: Turning your vision into a working product.
-    What happens: Our team starts working on the design and development based on your requirements. We develop mockups and wireframes for approval (for design work) and begin coding (for websites, apps, or other services).
-    Outcome: You’ll receive updates and progress reports at regular intervals. If needed, we can schedule review sessions to ensure we’re on the right track.`,
+    content: "",
+    miniTitle: "Objective: ",
+    miniContent: "Turning your vision into a working product.",
+    bulletPoints: [
+      {
+        bulletTitle: "What happens: ",
+        bulletContent:
+          "Our team starts working on the design and development based on your requirements. We develop mockups and wireframes for approval (for design work) and begin coding (for websites, apps, or other services).",
+      },
+      {
+        bulletTitle: "Outcome: ",
+        bulletContent:
+          "You’ll receive updates and progress reports at regular intervals. If needed, we can schedule review sessions to ensure we’re on the right track.",
+      },
+    ],
   },
   {
     subtitle: "Testing & Quality Assurance:",
-    content: `Objective: Ensuring a flawless final product.
-    What happens: Once development is complete, we conduct extensive testing to ensure everything works smoothly. This includes cross-browser testing, mobile responsiveness checks, functionality testing, and performance testing.
-    Outcome: Any bugs or issues discovered during this phase will be fixed, and the project will be ready for final approval.`,
+    content: "",
+    miniTitle: "Objective: ",
+    miniContent: "Ensuring a flawless final product.",
+    bulletPoints: [
+      {
+        bulletTitle: "What happens: ",
+        bulletContent:
+          "Once development is complete, we conduct extensive testing to ensure everything works smoothly. This includes cross-browser testing, mobile responsiveness checks, functionality testing, and performance testing.",
+      },
+      {
+        bulletTitle: "Outcome: ",
+        bulletContent:
+          "Any bugs or issues discovered during this phase will be fixed, and the project will be ready for final approval.",
+      },
+    ],
   },
   {
     subtitle: "Final Review & Approval:",
@@ -364,9 +419,21 @@ export const DeliveryProcessData = [
   },
   {
     subtitle: "Website Usage:",
-    content: `Objective: Gaining your final approval before launch.
-    What happens: After testing, we present the completed work to you for final review. You’ll have the opportunity to review the final version, suggest any minor changes, and confirm that everything meets your expectations.
-    Outcome: Once you approve the project, we move on to the final steps.`,
+    content: "",
+    miniTitle: "Objective: ",
+    miniContent: "Gaining your final approval before launch.",
+    bulletPoints: [
+      {
+        bulletTitle: "What happens: ",
+        bulletContent:
+          "After testing, we present the completed work to you for final review. You’ll have the opportunity to review the final version, suggest any minor changes, and confirm that everything meets your expectations.",
+      },
+      {
+        bulletTitle: "Outcome: ",
+        bulletContent:
+          "Once you approve the project, we move on to the final steps.",
+      },
+    ],
   },
   {
     subtitle: "Launch & Delivery:",
@@ -375,21 +442,57 @@ export const DeliveryProcessData = [
   },
   {
     subtitle: "Termination of Services:",
-    content: `Objective: Launching your product to the world.
-    What happens: For website and eCommerce store projects, we migrate everything to the live environment and ensure that it is fully functional. For app development, the app is submitted to the appropriate stores (Google Play, Apple App Store) or delivered to you for distribution.
-    Outcome: Your project goes live and is fully operational. We provide you with all the necessary credentials, documentation, and support.`,
+    content: "",
+    miniTitle: "Objective: ",
+    miniContent: "Launching your product to the world.",
+    bulletPoints: [
+      {
+        bulletTitle: "What happens: ",
+        bulletContent:
+          "For website and eCommerce store projects, we migrate everything to the live environment and ensure that it is fully functional. For app development, the app is submitted to the appropriate stores (Google Play, Apple App Store) or delivered to you for distribution.",
+      },
+      {
+        bulletTitle: "Outcome: ",
+        bulletContent:
+          "Your project goes live and is fully operational. We provide you with all the necessary credentials, documentation, and support.",
+      },
+    ],
   },
   {
     subtitle: "Post-Launch Support & Maintenance:",
-    content: `Objective: Ensuring continued success.
-    What happens: After launch, we offer ongoing support and maintenance services to resolve any issues, add new features, or update your website/app. Our team is available for troubleshooting, enhancements, and any other assistance you may need.
-    Outcome: You have continuous support to ensure your business runs smoothly and stays updated.`,
+    content: "",
+    miniTitle: "Objective: ",
+    miniContent: "Ensuring continued success.",
+    bulletPoints: [
+      {
+        bulletTitle: "What happens: ",
+        bulletContent:
+          "After launch, we offer ongoing support and maintenance services to resolve any issues, add new features, or update your website/app. Our team is available for troubleshooting, enhancements, and any other assistance you may need.",
+      },
+      {
+        bulletTitle: "Outcome: ",
+        bulletContent:
+          "You have continuous support to ensure your business runs smoothly and stays updated.",
+      },
+    ],
   },
   {
     subtitle: "Feedback & Continuous Improvement:",
-    content: `Objective: Learning from your experience and refining our services.
-    What happens: We encourage feedback from all clients to improve our processes and services. Your insights help us grow and ensure that we provide the best possible experience for all future projects.
-    Outcome: We use your feedback to enhance our services and stay aligned with your business needs.`,
+    content: "",
+    miniTitle: "Objective: ",
+    miniContent: "Learning from your experience and refining our services.",
+    bulletPoints: [
+      {
+        bulletTitle: "What happens: ",
+        bulletContent:
+          "We encourage feedback from all clients to improve our processes and services. Your insights help us grow and ensure that we provide the best possible experience for all future projects.",
+      },
+      {
+        bulletTitle: "Outcome: ",
+        bulletContent:
+          "We use your feedback to enhance our services and stay aligned with your business needs.",
+      },
+    ],
   },
   {
     subtitle: "Why Choose Us?",
@@ -402,7 +505,8 @@ export const DeliveryProcessData = [
       },
       {
         bulletTitle: "On-Time Delivery:",
-        bulletContent: "We adhere to the deadlines, ensuring timely completion.",
+        bulletContent:
+          "We adhere to the deadlines, ensuring timely completion.",
       },
       {
         bulletTitle: "Quality Assurance:",
@@ -410,7 +514,8 @@ export const DeliveryProcessData = [
       },
       {
         bulletTitle: "Ongoing Support:",
-        bulletContent: "Post-launch services to ensure your project stays successful.",
+        bulletContent:
+          "Post-launch services to ensure your project stays successful.",
       },
     ],
   },
@@ -433,5 +538,4 @@ export const DeliveryProcessData = [
     subtitle: "",
     content: `By choosing Adya Websolution, you are partnering with a team dedicated to delivering high-quality solutions that exceed expectations. We look forward to working with you!`,
   },
-  
 ];
