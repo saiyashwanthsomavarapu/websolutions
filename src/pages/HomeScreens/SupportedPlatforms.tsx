@@ -66,16 +66,7 @@ export const SupportedPlatforms = () => {
             icon: woo,
             name: 'WooCommerce',
             link: {
-                href: 'https://woocommerce.com',
-                target: '_blank',
-                rel: 'noopener noreferrer'
-            }
-        },
-        {
-            icon: Framer,
-            name: 'Framer',
-            link: {
-                href: 'https://www.bigcommerce.com',
+                href: 'https://aadhyawebsolutions.com/wordpress/',
                 target: '_blank',
                 rel: 'noopener noreferrer'
             }
@@ -85,6 +76,15 @@ export const SupportedPlatforms = () => {
             name: 'Wix',
             link: {
                 href: 'https://figam.io',
+                target: '_blank',
+                rel: 'noopener noreferrer'
+            }
+        },
+        {
+            icon: Framer,
+            name: 'Framer',
+            link: {
+                href: 'https://www.bigcommerce.com',
                 target: '_blank',
                 rel: 'noopener noreferrer'
             }
