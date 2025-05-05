@@ -17,11 +17,11 @@ function HomeScreen() {
       <Intro />
       <Marquee 
     
-        style={{ paddingTop: "20px" , fontSize: "1.2em" }}
+        style={{ padding: "20px 0" , fontSize: "1.2em", backgroundColor: "#fff", }}
       >
-        Client-Centric Excellence with 100% Satisfaction. Round-the-Clock Free Support You Can Rely On. 
-        Strategic Solutions to Accelerate Sales Growth. Turn Clicks into Customers with Conversion Optimization. 
-        Empowering Digital Success – Let’s Grow Together.        
+        <strong>
+        Client-Centric Excellence with 100% Satisfaction. Round-the-Clock Free Support You Can Rely On.  Strategic Solutions to Accelerate Sales Growth.  Turn Clicks into Customers with Conversion Optimization.   
+        Empowering Digital Success – Let’s Grow Together.</strong>  
       </Marquee>
       <AboutUs />
       <ServicesSectionUI />

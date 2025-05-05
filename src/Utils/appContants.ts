@@ -15,30 +15,26 @@ export const services = [
   {
     Icon: AimOutlined,
     img: Marketing,
-    title: "Business Strategy Development",
-    description:
-      "Achieve clarity and direction with our custom-designed strategies. We analyze your goals, market trends, and competition to create a roadmap for sustained growth.",
+    title: "Shopify Store Setup, CRO & Speed Optimisation",
+    description:"Our Shopify store setup services are crafted to help you build high-performing eCommerce stores that convert visitors into loyal customers. We go beyond the basics by implementing conversion rate optimisation (CRO) strategies that increase your average order value and streamline the user journey. Combined with Shopify speed optimisation, we ensure fast-loading, mobile-responsive storefronts that offer a seamless shopping experience."
   },
   {
     img: Seo,
     Icon: Seo,
-    title: "SEO Optimization",
-    description:
-      "Streamline your processes, improve efficiency, and reduce costs. Our team helps you implement systems that drive seamless operations and measurable results.",
+    title: "WordPress Development",
+    description:"Whether you need a business website, blog, or custom solution, our WordPress development services offer flexibility, scalability, and full SEO compatibility. We create responsive websites with clean UI/UX, optimised for speed and performance. Our custom WordPress themes and plugins ensure your site reflects your brand and functions exactly as your business demands."
   },
   {
     img: Optimization,
     Icon: Optimization,
-    title: "Optimization",
-    description:
-      "Optimize your financial performance with expert insights and planning. From budgeting to investment strategies, we ensure your business remains financially healthy.",
+    title: "Digital Marketing",
+    description: "We deliver data-driven digital marketing services tailored to your business goals. From strategic search engine optimisation (SEO) to high-impact PPC campaigns and content-driven lead generation, we help brands grow their digital footprint. Our team works across multiple platforms to ensure maximum reach, better engagement, and measurable ROI."  
   },
   {
     img: speed,
     Icon: speed,
-    title: "Lucky Advisory",
-    description:
-      "Optimize your financial performance with expert insights and planning. From budgeting to investment strategies, we ensure your business remains financially healthy.",
+    title: "Graphic Design",
+    description: "Great design speaks volumes. Our graphic design services include everything from brand identity creation to digital and print creatives. We design visually appealing logos, marketing materials, and social media graphics that not only look great but also drive audience interaction and brand recognition."
   },
   {
     img: Saas,

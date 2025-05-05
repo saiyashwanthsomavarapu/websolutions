@@ -62,9 +62,7 @@ const ServicesSectionUI = () => {
                                 textAlign: "justify",
                             }}
                         >
-                            Our range of services is crafted to deliver strategic insights,
-                            and foster sustainable growth for businesses across various
-                            industries.
+                        At Aadhya Web Solution, we provide a powerful suite of digital services designed to accelerate growth, enhance brand presence, and deliver long-term business impact.
                         </Paragraph>
                     </div>
                     <Button
@@ -85,7 +83,7 @@ const ServicesSectionUI = () => {
                 {/* Right Side - Cards with Hover Effect */}
                 <Col xs={24} md={12} lg={12}>
                     <Space direction="vertical" size={24} style={{ width: "100%" }}>
-                        {services.slice(0, 3).map(({ title, img, description, Icon }, index) => (
+                        {services.slice(0, 4).map(({ title, img, description, Icon }, index) => (
                             <ServiceCard
                                 key={index}
                                 img={img}

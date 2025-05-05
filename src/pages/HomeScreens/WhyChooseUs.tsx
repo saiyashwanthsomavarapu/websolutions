@@ -11,23 +11,23 @@ function WhyChooseUs() {
     const list = [
         {
             icon: <BarChartOutlined style={{ fontSize: '42px', color: 'black' }} />,
-            title: 'Transparency',
-            description: ' Clear communication at every stage of the process.'
+            title: 'Outstanding Services',
+            description: ' Excellence in WordPress development services and customer support defines our core strength, delivering exceptional value to clients.'
         },
         {
             icon: <PieChartOutlined style={{ fontSize: '48px', color: 'black' }} />,
-            title: 'On-Time Delivery:',
-            description: 'We adhere to the deadlines, ensuring timely completion.'
+            title: 'Experienced Team',
+            description: 'Our skilled professionals bring extensive expertise, making us a trusted SEO services company.'
         },
         {
             icon: <SendOutlined style={{ fontSize: '48px', color: 'black' }} />,
-            title: 'Quality Assurance',
-            description: 'We don’t deliver until everything is perfect.'
+            title: 'Best Price Guarantee',
+            description: 'We deliver cost-effective solutions that maximize your business value.'
         },
         {
             icon: <FieldTimeOutlined style={{ fontSize: '48px', color: 'black' }} />,
-            title: 'Ongoing Support:',
-            description: 'Post-launch services to ensure your project stays successful.'
+            title: 'Delivered On Time',
+            description: 'Our commitment to deadlines ensures timely project completion, often going the extra mile for perfection.'
         }
     ]
     return (

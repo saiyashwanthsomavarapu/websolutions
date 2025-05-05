@@ -73,7 +73,7 @@ const Intro = () => {
                     {/* First column - Always takes full width on xs screens, partial on larger screens */}
                     <Col xs={24} md={12} lg={10} style={{ width: '100%' }}>
                         <Title level={1} style={{ ...headingStyle, fontSize: screens.lg ? '2.5em' : '2em', lineHeight: '1.2' }}>
-                            <Typewriter text="INNOVATING SOLUTIONS, DRIVING SUCCESS" delay={100} infinite />
+                            <Typewriter text="TRANSFORMING VISIONS, DELIVERING EXCELLENCE" delay={100} infinite />
                         </Title>
 
                         <Space size="middle">
@@ -89,14 +89,14 @@ const Intro = () => {
                                     <Title level={1} style={{ margin: 0, fontSize: '48px' }}>50+</Title>
                                     <Divider style={{ margin: 0 }} />
                                     <Paragraph style={{ marginTop: '15px', margin: 0 }}>
-                                        Clients successfully partnered with businesses worldwide.
+                                            Clients empowered worldwide
                                     </Paragraph>
                                 </Col>
                                 <Col xs={12} md={12} lg={12} style={{ padding: 20, background: '#d7ddcb' }}>
                                     <Title level={1} style={{ margin: 0, fontSize: '48px' }}>100+</Title>
                                     <Divider style={{ margin: 0 }} />
                                     <Paragraph style={{ marginTop: '15px', margin: 0 }}>
-                                        Projects delivered with excellence and precision.
+                                        Projects delivered with precision.
                                     </Paragraph>
                                 </Col>
                             </Row>

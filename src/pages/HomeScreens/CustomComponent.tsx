@@ -13,23 +13,23 @@ const CustomComponent = () => {
     const services = [
         {
             icon: <AppstoreOutlined style={{ fontSize: '32px', color: '#000' }} />,
-            title: 'Custom Software',
-            description: 'We help digital companies to volume their self-interest.'
+            title: 'Social Media Optimisation (SMO)',
+            description: 'Enhance your brand\'s online presence by optimising your social media profiles for better visibility and engagement.'
         },
         {
             icon: <DatabaseOutlined style={{ fontSize: '32px', color: '#000' }} />,
-            title: 'ERP Solutions',
-            description: 'Strategy is a forward-looking plan for your brand\'s behavior.'
+            title: 'Social Media Marketing (SMM)',
+            description: 'Engage your audience and drive conversions through strategic social media campaigns'
         },
         {
             icon: <PlusCircleOutlined style={{ fontSize: '32px', color: '#000' }} />,
-            title: 'SEO SMO',
-            description: 'Audits help your company to have the unique plan for your brand.'
+            title: 'Search Engine Optimisation (SEO)',
+            description: 'Improve your website\'s search engine rankings and attract targeted traffic with our proven SEO techniques.'
         },
         {
             icon: <GlobalOutlined style={{ fontSize: '32px', color: '#000' }} />,
-            title: 'Website/App Design',
-            description: 'UI/UX design gives the appearance above your brand\'s behavior.'
+            title: 'Website Speed Optimisation',
+            description: 'Ensure a seamless user experience by enhancing your website\'s loading speed and performance.'
         }
     ];
 
@@ -59,7 +59,8 @@ const CustomComponent = () => {
                                 marginTop: 10,
                                 lineHeight: "1.2",
                             }}>
-                            We provide more than ever services to achieve business goal
+                            We deliver comprehensive solutions to achieve your business objectives.
+                            
                         </Title>
                     </Space>
                 </Col>
@@ -72,7 +73,8 @@ const CustomComponent = () => {
                             color: "#000",
                             marginBottom: "32px",
                         }}>
-                            Our clients describe us as a product team which <span style={{ fontWeight: 'bold' }}>creates amazing UI/UX</span> experiences, by crafting top-notch user experience.
+                            Clients recognise us as innovators creating exceptional <span style={{ fontWeight: 'bold' }}> UI & UX design services and digital experiences</span>.
+                            {/* Our clients describe us as a product team which creates amazing UI/UX</span> experiences, by crafting top-notch user experience. */}
                         </Paragraph>
                     </div>
 
