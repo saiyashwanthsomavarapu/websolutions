@@ -155,7 +155,7 @@ const ModernHeader: React.FC = () => {
 
           {/* Mobile menu button */}
           {isMobile && (
-            <Button
+            <Button size='large'
               type="text"
               icon={<MenuOutlined />}
               onClick={() => setVisible(true)}

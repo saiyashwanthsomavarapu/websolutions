@@ -1,27 +1,24 @@
 import {
   AimOutlined,
-  // FileTextOutlined,
   LineChartOutlined,
 } from "@ant-design/icons";
-import Marketing from "../assets/service/Marketing.svg";
-// import StartUp from "../assets/startup.png";
-import Seo from "../assets/service/SEO.svg";
+import shopify from "../assets/service/shopify.svg";
+import word from "../assets/service/Wordpress.svg";
 import Optimization from "../assets/service/Optimization.svg";
-import speed from "../assets/service/Speed.svg";
+import graphic from "../assets/service/graphic.svg";
 import Saas from "../assets/saas.png";
-// import { Content } from "antd/es/layout/layout";
 
 export const services = [
   {
     Icon: AimOutlined,
-    img: Marketing,
+    img: shopify,
     title: "Shopify Store Setup, CRO & Speed Optimisation",
     description:
       "Our Shopify store setup services are crafted to help you build high-performing eCommerce stores that convert visitors into loyal customers. We go beyond the basics by implementing conversion rate optimisation (CRO) strategies that increase your average order value and streamline the user journey. Combined with Shopify speed optimisation, we ensure fast-loading, mobile-responsive storefronts that offer a seamless shopping experience.",
   },
   {
-    img: Seo,
-    Icon: Seo,
+    img: word,
+    Icon: word,
     title: "WordPress Development",
     description:
       "Whether you need a business website, blog, or custom solution, our WordPress development services offer flexibility, scalability, and full SEO compatibility. We create responsive websites with clean UI/UX, optimised for speed and performance. Our custom WordPress themes and plugins ensure your site reflects your brand and functions exactly as your business demands.",
@@ -34,8 +31,8 @@ export const services = [
       "We deliver data-driven digital marketing services tailored to your business goals. From strategic search engine optimisation (SEO) to high-impact PPC campaigns and content-driven lead generation, we help brands grow their digital footprint. Our team works across multiple platforms to ensure maximum reach, better engagement, and measurable ROI.",
   },
   {
-    img: speed,
-    Icon: speed,
+    img: graphic,
+    Icon: graphic,
     title: "Graphic Design",
     description:
       "Great design speaks volumes. Our graphic design services include everything from brand identity creation to digital and print creatives. We design visually appealing logos, marketing materials, and social media graphics that not only look great but also drive audience interaction and brand recognition.",
@@ -151,7 +148,7 @@ export const cancellationRefundPolicyData = [
       },
       {
         bulletTitle: "Phone: ",
-        bulletContent: "[Your Phone Number]",
+        bulletContent: "+1 (410) -334-3670",
       },
     ],
   },
@@ -259,7 +256,7 @@ export const privacyPolicyData = [
       },
       {
         bulletTitle: "Phone: ",
-        bulletContent: "[Your Phone Number]",
+        bulletContent: "+1 (410) -334-3670",
       },
     ],
   },
@@ -333,7 +330,7 @@ export const TermsConditionsData = [
       },
       {
         bulletTitle: "Phone: ",
-        bulletContent: "[Your Phone Number]",
+        bulletContent: "+1 (410) -334-3670",
       },
     ],
   },
@@ -530,7 +527,7 @@ export const DeliveryProcessData = [
       },
       {
         bulletTitle: "Phone: ",
-        bulletContent: "[Your Phone Number]",
+        bulletContent: "+1 (410) -334-3670",
       },
     ],
   },
