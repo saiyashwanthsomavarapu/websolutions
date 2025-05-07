@@ -7,6 +7,8 @@ import word from "../assets/service/Wordpress.svg";
 import Optimization from "../assets/service/Optimization.svg";
 import graphic from "../assets/service/graphic.svg";
 import Saas from "../assets/saas.png";
+import react from "../assets/service/ui.svg";
+
 
 export const services = [
   {
@@ -38,18 +40,16 @@ export const services = [
       "Great design speaks volumes. Our graphic design services include everything from brand identity creation to digital and print creatives. We design visually appealing logos, marketing materials, and social media graphics that not only look great but also drive audience interaction and brand recognition.",
   },
   {
-    img: Saas,
+    img: react,
     Icon: LineChartOutlined,
     title: "Web Development",
-    description:
-      "Optimize your financial performance with expert insights and planning. From budgeting to investment strategies, we ensure your business remains financially healthy.",
+    description:" Our web development services encompass everything from simple landing pages to complex web applications. We utilise the latest technologies and frameworks to build responsive, user-friendly websites that are optimised for performance and SEO. Whether you need a custom CMS, eCommerce platform, or a SaaS application, our team has the expertise to deliver high-quality solutions tailored to your business needs.",  
   },
   {
     img: Saas,
     Icon: LineChartOutlined,
     title: "Mobile App Development",
-    description:
-      "Optimize your financial performance with expert insights and planning. From budgeting to investment strategies, we ensure your business remains financially healthy.",
+    description: "In today's mobile-first world, having a robust mobile app is essential for business growth. Our mobile app development services cover both iOS and Android platforms, ensuring your app is user-friendly, fast, and secure. We focus on creating intuitive interfaces and seamless user experiences, backed by powerful backend systems to support your app's functionality.",
   },
 ];
 

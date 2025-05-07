@@ -198,13 +198,12 @@ const GetInTouch: React.FC = () => {
         // Only proceed if form is valid
         if (isFormValid()) {
             if (form.current === null) return;
-
             emailjs
                 .sendForm(
-                    'service_97liufv',
-                    'template_e1kdwt5',
+                    'service_o8iogp9',
+                    'template_rimvd5u',
                     form.current,
-                    'qIgm9NLjK5-6Q-qxS'
+                    'We-Bj0G2ktBHGJ6cA'
                 )
                 .then(
                     (result) => {
