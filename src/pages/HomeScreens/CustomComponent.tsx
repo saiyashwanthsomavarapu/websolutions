@@ -5,6 +5,7 @@ import {
     PlusCircleOutlined,
     GlobalOutlined
 } from '@ant-design/icons';
+import smo from '../../assets/service/Magento.svg';
 
 const { Title, Text, Paragraph } = Typography;
 
@@ -14,22 +15,26 @@ const CustomComponent = () => {
         {
             icon: <AppstoreOutlined style={{ fontSize: '32px', color: '#000' }} />,
             title: 'Social Media Optimisation (SMO)',
-            description: 'Enhance your brand\'s online presence by optimising your social media profiles for better visibility and engagement.'
+            description: 'Enhance your brand\'s online presence by optimising your social media profiles for better visibility and engagement.',
+            image: smo
         },
         {
             icon: <DatabaseOutlined style={{ fontSize: '32px', color: '#000' }} />,
             title: 'Social Media Marketing (SMM)',
-            description: 'Engage your audience and drive conversions through strategic social media campaigns'
+            description: 'Engage your audience and drive conversions through strategic social media campaigns',
+            image: '/path/to/smm-image.jpg'
         },
         {
             icon: <PlusCircleOutlined style={{ fontSize: '32px', color: '#000' }} />,
             title: 'Search Engine Optimisation (SEO)',
-            description: 'Improve your website\'s search engine rankings and attract targeted traffic with our proven SEO techniques.'
+            description: 'Improve your website\'s search engine rankings and attract targeted traffic with our proven SEO techniques.',
+            image: '/path/to/seo-image.jpg'
         },
         {
             icon: <GlobalOutlined style={{ fontSize: '32px', color: '#000' }} />,
             title: 'Website Speed Optimisation',
-            description: 'Ensure a seamless user experience by enhancing your website\'s loading speed and performance.'
+            description: 'Ensure a seamless user experience by enhancing your website\'s loading speed and performance.',
+            image: '/path/to/speed-image.jpg'
         }
     ];
 

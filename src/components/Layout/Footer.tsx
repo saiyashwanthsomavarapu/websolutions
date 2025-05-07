@@ -121,7 +121,7 @@ const FooterComponent = () => {
                   <a href="https://aadhyawebsolutions.com/shopify/" target="_blank" rel="noopener noreferrer" style={{ color: 'white' }}>Shopify</a>
                 </Text>
                 <Text style={{ ...linkStyle, color: 'white' }}>Web Developement</Text>
-                <Text style={{ ...linkStyle, color: 'white' }}>Logo desiging</Text>
+                <Text style={{ ...linkStyle, color: 'white' }}>Logo designing</Text>
                 <Text style={{ ...linkStyle, color: 'white' }}>IOS Developement</Text>
                 <Text style={{ ...linkStyle, color: 'white' }}>Android Developement</Text>
               </Space>
@@ -177,7 +177,7 @@ const FooterComponent = () => {
                       type="text"
                       shape="circle"
                       style={socialButtonStyle}
-                      href="https://www.whatsapp.com"
+                      href="https://wa.me/+916393733749"
                       target="_blank"
                       rel="noopener noreferrer"
                     >

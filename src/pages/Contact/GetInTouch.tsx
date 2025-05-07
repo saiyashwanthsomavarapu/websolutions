@@ -403,6 +403,8 @@ const GetInTouch: React.FC = () => {
                                 <Title level={3} style={{ fontWeight: 500 }}>Contact us</Title>
                                 <Text style={{ fontWeight: 400 }}>
                                     +1 (410) -334-3670
+                                    <br />
+                                    +91 (639)-373-3749
                                 </Text>
                             </Card>
                         </Col>

@@ -3,12 +3,12 @@ import { Card, Col, Grid, Row, Space, Typography } from "antd";
 import wordPress from '../../assets/service/Wordpress.svg';
 import shopify from '../../assets/service/shopify.svg';
 import woo from '../../assets/service/Woocommerce.svg';
-import Framer from '../../assets/service/Framer.svg';
+import Framer from '../../assets/service/Framer_white.svg';
 import react from "../../assets/service/ui.svg";
 import figam from "../../assets/service/figma.svg";
 import Magento from "../../assets/service/Magento.svg";
 import Wix from "../../assets/service/Wix.svg";
-import Big from "../../assets/service/Big.svg";
+import Big from "../../assets/service/colorkit.svg";
 
 const { Title, Paragraph } = Typography;
 
@@ -21,84 +21,84 @@ export const SupportedPlatforms = () => {
             icon: shopify,
             name: 'Shopify',
             link: {
-                href: 'https://aadhyawebsolutions.com/shopify/',
-                target: '_blank',
-                rel: 'noopener noreferrer'
+            href: 'https://aadhyawebsolutions.com/shopify/',
+            target: '_blank',
+            rel: 'noopener noreferrer'
             }
         },
         {
             icon: wordPress,
             name: 'WordPress',
             link: {
-                href: 'https://aadhyawebsolutions.com/wordpress/',
-                target: '_blank',
-                rel: 'noopener noreferrer'
+            href: 'https://aadhyawebsolutions.com/wordpress/',
+            target: '_blank',
+            rel: 'noopener noreferrer'
             }
         },
         {
             icon: react,
             name: 'React',
             link: {
-                href: 'https://reactjs.org',
-                target: '_blank',
-                rel: 'noopener noreferrer'
+            href: 'https://reactjs.org',
+            target: '_blank',
+            rel: 'noopener noreferrer'
             }
         },
         {
             icon: figam,
             name: 'figam',
             link: {
-                href: 'https://figam.io',
-                target: '_blank',
-                rel: 'noopener noreferrer'
+            href: 'https://figam.io',
+            target: '_blank',
+            rel: 'noopener noreferrer'
             }
         },
         {
             icon: Magento,
             name: 'Magento',
             link: {
-                href: 'https://reactjs.org',
-                target: '_blank',
-                rel: 'noopener noreferrer'
+            href: 'https://reactjs.org',
+            target: '_blank',
+            rel: 'noopener noreferrer'
             }
         },
         {
             icon: woo,
             name: 'WooCommerce',
             link: {
-                href: 'https://aadhyawebsolutions.com/wordpress/',
-                target: '_blank',
-                rel: 'noopener noreferrer'
+            href: 'https://aadhyawebsolutions.com/wordpress/',
+            target: '_blank',
+            rel: 'noopener noreferrer'
             }
         },
         {
             icon: Wix,
             name: 'Wix',
             link: {
-                href: 'https://figam.io',
-                target: '_blank',
-                rel: 'noopener noreferrer'
+            href: 'https://figam.io',
+            target: '_blank',
+            rel: 'noopener noreferrer'
             }
         },
         {
             icon: Framer,
             name: 'Framer',
             link: {
-                href: 'https://www.bigcommerce.com',
-                target: '_blank',
-                rel: 'noopener noreferrer'
+            href: 'https://www.bigcommerce.com',
+            target: '_blank',
+            rel: 'noopener noreferrer'
             }
         },
         {
             icon: Big,
             name: 'BigCommerce',
             link: {
-                href: 'https://figam.io',
-                target: '_blank',
-                rel: 'noopener noreferrer'
+            href: 'https://figam.io',
+            target: '_blank',
+            rel: 'noopener noreferrer'
             }
         }
-    ];
+        ];
 
     return (
         <Space

@@ -67,7 +67,7 @@ function Aboutus() {
     const items: TabsProps['items'] = [
         { key: '1', label: 'Why Need Consultation?', children: Tab1() },
         { key: '2', label: 'Why Choose Us', children: 'Content of Tab Pane 2' },
-        { key: '3', label: 'How It Works', children: 'Content of Tab Pane 3' },
+        // { key: '3', label: 'How It Works', children: 'Content of Tab Pane 3' },
     ];
     return (
         <Space style={{
