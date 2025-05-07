@@ -25,7 +25,7 @@ const ServicesSectionUI = () => {
                     lg={12}
                     style={{
                         position: screens.lg ? "sticky" : "relative",
-                        top: "72px",
+
                         height: "100%",
                         marginBottom: screens.xs || screens.sm ? "48px" : 0,
                     }}
@@ -62,7 +62,7 @@ const ServicesSectionUI = () => {
                                 textAlign: "justify",
                             }}
                         >
-                        At Aadhya Web Solution, we provide a powerful suite of digital services designed to accelerate growth, enhance brand presence, and deliver long-term business impact.
+                            At Aadhya Web Solution, we provide a powerful suite of digital services designed to accelerate growth, enhance brand presence, and deliver long-term business impact.
                         </Paragraph>
                     </div>
                     <Button

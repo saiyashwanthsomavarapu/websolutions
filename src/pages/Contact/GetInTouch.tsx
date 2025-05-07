@@ -254,7 +254,7 @@ const GetInTouch: React.FC = () => {
             flexDirection: 'column',
             overflow: 'hidden',
             backgroundColor: '#f1f6f6',
-            padding: (screen.lg || screen.md) ? '120px' : '100px 50px'
+            padding: (screen.lg || screen.md) ? '120px' : '50px'
         }}>
             <Toaster />
             <Row gutter={[48, 48]} style={{ justifyItems: 'start' }}>
@@ -271,7 +271,7 @@ const GetInTouch: React.FC = () => {
                     }}>
                         Get in touch
                     </Text>
-                    <Title level={1} style={{ marginTop: '8px', marginBottom: '40px', fontSize: '50px', fontWeight: 500, color: '#121212' }}>
+                    <Title level={1} style={{ marginTop: '8px', marginBottom: '40px', fontSize: screen.lg ? '2.5em' : '2em', fontWeight: 500, color: '#121212' }}>
                         Let us be your guide
                     </Title>
                     <Paragraph style={{ fontSize: '16px', lineHeight: '1.6', color: '#555' }}>

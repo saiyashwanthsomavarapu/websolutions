@@ -13,7 +13,7 @@ function OurHistory() {
             flexDirection: 'column',
             overflow: 'hidden',
             backgroundColor: '#fff',
-            padding: (screen.lg || screen.md) ? '120px' : '100px 50px',
+            padding: (screen.lg || screen.md) ? '120px' : '50px',
         }}>
             <Row gutter={[48, 48]} >
                 <Col xs={24} md={12}>

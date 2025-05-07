@@ -75,7 +75,7 @@ const FooterComponent = () => {
   const navigateTo = useNavigate();
 
   return (
-    <Footer style={{ ...footerStyle, padding: screen.lg ? '50px 120px' : screen.md ? '50px 80px' : '50px 20px' }}>
+    <Footer style={{ ...footerStyle, padding: screen.lg || screen.md ? "120px" : "50px", }}>
       <Row gutter={[24, 48]}>
 
         {/* Middle columns for navigation */}
