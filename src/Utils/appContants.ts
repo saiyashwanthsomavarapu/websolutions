@@ -155,7 +155,7 @@ export const cancellationRefundPolicyData = [
       },
       {
         bulletTitle: "Phone: ",
-        bulletContent: "+1 (443) -554‑7121",
+        bulletContent: "+1 (443) 554‑7121",
       },
     ],
   },
@@ -263,7 +263,7 @@ export const privacyPolicyData = [
       },
       {
         bulletTitle: "Phone: ",
-        bulletContent: "+1 (443) -554‑7121",
+        bulletContent: "+1 (443) 554‑7121",
       },
     ],
   },
@@ -337,7 +337,7 @@ export const TermsConditionsData = [
       },
       {
         bulletTitle: "Phone: ",
-        bulletContent: "+1 (443) -554‑7121",
+        bulletContent: "+1 (443) 554‑7121",
       },
     ],
   },
@@ -534,7 +534,7 @@ export const DeliveryProcessData = [
       },
       {
         bulletTitle: "Phone: ",
-        bulletContent: "+1 (443) -554‑7121",
+        bulletContent: "+1 (443) 554‑7121",
       },
     ],
   },
