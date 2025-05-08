@@ -5,7 +5,10 @@ import {
     PlusCircleOutlined,
     GlobalOutlined
 } from '@ant-design/icons';
-import smo from '../../assets/service/Magento.svg';
+import smo from '../../assets/service/Optimization.svg';
+import seo from '../../assets/service/SEO.svg'
+import smm from '../../assets/service/Marketing.svg'
+import speed from '../../assets/service/Speed.svg'
 
 const { Title, Text, Paragraph } = Typography;
 
@@ -22,19 +25,19 @@ const CustomComponent = () => {
             icon: <DatabaseOutlined style={{ fontSize: '32px', color: '#000' }} />,
             title: 'Social Media Marketing (SMM)',
             description: 'Engage your audience and drive conversions through strategic social media campaigns',
-            image: '/path/to/smm-image.jpg'
+            image: smm
         },
         {
             icon: <PlusCircleOutlined style={{ fontSize: '32px', color: '#000' }} />,
             title: 'Search Engine Optimisation (SEO)',
             description: 'Improve your website\'s search engine rankings and attract targeted traffic with our proven SEO techniques.',
-            image: '/path/to/seo-image.jpg'
+            image: seo
         },
         {
             icon: <GlobalOutlined style={{ fontSize: '32px', color: '#000' }} />,
             title: 'Website Speed Optimisation',
             description: 'Ensure a seamless user experience by enhancing your website\'s loading speed and performance.',
-            image: '/path/to/speed-image.jpg'
+            image: speed
         }
     ];
 
@@ -56,7 +59,7 @@ const CustomComponent = () => {
                             textDecoration: "underline",
                             textUnderlineOffset: "10px",
                         }}>
-                            Marketing 
+                            Marketing
                         </Text>
                         <Title level={2}
                             style={{
@@ -65,7 +68,7 @@ const CustomComponent = () => {
                                 lineHeight: "1.2",
                             }}>
                             We deliver comprehensive solutions to achieve your business objectives.
-                            
+
                         </Title>
                     </Space>
                 </Col>
@@ -87,7 +90,7 @@ const CustomComponent = () => {
                         {services.map((service, index) => (
                             <Col xs={24} sm={12} key={index}>
                                 <div style={{ marginBottom: '16px' }}>
-                                    {service.icon}
+                                    <img src={service.image} style={{ width: '50px', height: '50px' }} />
                                 </div>
                                 <Title level={4} style={{
                                     color: '#000',
