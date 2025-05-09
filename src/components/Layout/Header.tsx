@@ -13,8 +13,6 @@ import {
 } from '@ant-design/icons';
 import { Link } from 'react-router-dom';
 import logoImage from '../../assets/logo-removebg.png';
-// import logoWhite from '../../assets/New_project.png';
-
 
 const { Header } = Layout;
 
@@ -127,7 +125,10 @@ const ModernHeader: React.FC = () => {
           //backgroundColor: scrolled ? 'white' : 'transparent',
           backgroundColor: 'white',
           transition: 'all 0.3s ease',
-          boxShadow: scrolled ? '0 2px 8px rgba(0,0,0,0.06)' : 'none',
+          // boxShadow: 'rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px',
+
+          // boxShadow: 'rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px',
+          boxShadow: scrolled ? '0 2px 10px #F47F20' : 'none',
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'space-between',
@@ -154,13 +155,15 @@ const ModernHeader: React.FC = () => {
           )}
 
           {/* Mobile menu button */}
-          {isMobile && (
-            <Button size='large'
+            {isMobile && (
+            <Button
+              className="mobile-menu-button"
+              size="large"
               type="text"
               icon={<MenuOutlined />}
               onClick={() => setVisible(true)}
             />
-          )}
+            )}
         </div>
       </Header>
 

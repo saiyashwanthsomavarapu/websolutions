@@ -32,15 +32,17 @@ const OurServices = () => {
                         Our Services
                     </Title>
                 </Col>
-                {services.map(({ title, description, img, Icon }, index) => (
+                {services.map(({ title, description, img, Icon, link }, index) => (
                     <Col xs={24} md={12} lg={12} key={index} >
-                        <ServiceCard
-                            img={img}
-                            icon={<Icon />}
-                            title={title}
-                            color="#f1f6f6"
-                            description={description}
-                        />
+                        <a href={link?.href ? String(link.href) : '#'} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
+                            <ServiceCard
+                                img={img}
+                                icon={<Icon />}
+                                title={title}
+                                color="#f1f6f6"
+                                description={description}
+                            />
+                        </a>
                     </Col>
                 ))}
             </Row>

@@ -282,7 +282,7 @@ const GetInTouch: React.FC = () => {
                         <div style={{ marginBottom: '16px' }}>
                             <Input
                                 size='large'
-                                id="name"
+                                id="get-in-touch-name"
                                 name="name"
                                 placeholder="Name"
                                 prefix={<UserOutlined style={{ color: 'rgba(0,0,0,.25)' }} />}

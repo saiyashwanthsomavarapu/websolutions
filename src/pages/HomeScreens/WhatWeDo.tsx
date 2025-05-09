@@ -83,18 +83,21 @@ const ServicesSectionUI = () => {
                 {/* Right Side - Cards with Hover Effect */}
                 <Col xs={24} md={12} lg={12}>
                     <Space direction="vertical" size={24} style={{ width: "100%" }}>
-                        {services.slice(0, 4).map(({ title, img, description, Icon, href, target }, index) => (
-                            <ServiceCard
+                        {services.slice(0, 4).map(({ title, img, description, Icon, link }, index) => (
+                            <a
                                 key={index}
-                                img={img}
-                                icon={<Icon />}
-                                title={title}
-                                description={description}
-                                href={href}
-                                target={target || "_blank"}
-                                onClick={() => window.open(href, target || "_blank", "noopener,noreferrer")}
-                                rel="noopener noreferrer"
-                            />
+                                href={link?.href}
+                                target={link?.target}
+                                rel={link?.rel}
+                                style={{ textDecoration: "none" }}
+                            >
+                                <ServiceCard
+                                    img={img}
+                                    icon={<Icon />}
+                                    title={title}
+                                    description={description}
+                                />
+                            </a>
                         ))}
                     </Space>
                 </Col>
