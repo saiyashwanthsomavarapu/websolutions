@@ -28,10 +28,11 @@ function OurHistory() {
                         OUR HISTORY
                     </Text>
                     <Title level={1} style={{ marginTop: '8px', marginBottom: '40px', fontSize: screen.lg ? '2.5em' : '2em', fontWeight: 500, color: '#121212' }}>
-                        Empowering businesses with innovation
+                        Empowering Businesses Through Innovation & Results
                     </Title>
                     <Paragraph style={{ fontSize: '16px', lineHeight: '1.6', color: '#555', textAlign: 'justify' }}>
-                        At the core of every successful business lies the ability to adapt, innovate, and lead. We empower businesses by crafting transformative strategies that harness the latest technologies and insights, ensuring they stay ahead in a dynamic market. From streamlining operations to implementing groundbreaking solutions, our approach focuses on driving sustainable
+                    At the heart of every thriving eCommerce brand is a partner that understands how to adapt, innovate, and scale. At Adya Websolution, we don’t just build Shopify stores — we engineer digital success.
+                    <p>From custom development to growth-focused strategies, we help businesses streamline operations, enhance customer experience, and stay ahead in an ever-evolving digital landscape.</p>
                     </Paragraph>
                     <Button
                         type="primary"
@@ -64,10 +65,10 @@ function OurHistory() {
                                     }}
                                 >
 
-                                    <Title level={3} style={{ fontWeight: 500 }}>95%</Title>
+                                    <Title level={3} style={{ fontWeight: 500 }}>95% Customer Satisfaction</Title>
                                     <Divider type='horizontal' />
                                     <Text style={{ fontWeight: 400 }}>
-                                        Customer Satisfaction
+                                        We prioritize client success with personalized support and world-class solutions.
                                     </Text>
                                 </Card>
                             </Col>
@@ -84,10 +85,10 @@ function OurHistory() {
                                         height: '100%'
                                     }}
                                 >
-                                    <Title level={3} style={{ fontWeight: 500 }}>50%</Title>
+                                    <Title level={3} style={{ fontWeight: 500 }}>50% Global Clients Served</Title>
                                     <Divider type='horizontal' />
                                     <Text style={{ fontWeight: 400 }}>
-                                        Global Clients Served
+                                        Trusted by businesses worldwide to deliver performance-driven Shopify experiences.
                                     </Text>
                                 </Card>
                             </Col>
@@ -104,10 +105,10 @@ function OurHistory() {
                                         height: '100%'
                                     }}
                                 >
-                                    <Title level={3} style={{ fontWeight: 500 }}>90%</Title>
+                                    <Title level={3} style={{ fontWeight: 500 }}>90% Client Retention Rate</Title>
                                     <Divider type='horizontal' />
                                     <Text style={{ fontWeight: 400 }}>
-                                        Retention Rate
+                                    Our results speak for themselves — clients stay with us because we deliver.
                                     </Text>
                                 </Card>
                             </Col>

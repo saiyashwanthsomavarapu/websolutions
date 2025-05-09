@@ -6,7 +6,7 @@ import shopify from "../assets/service/shopify.svg";
 import word from "../assets/service/Wordpress.svg";
 import Optimization from "../assets/service/Optimization.svg";
 import graphic from "../assets/service/graphic.svg";
-import Saas from "../assets/saas.png";
+import Saas from "../assets/service/Mobile.svg";
 import react from "../assets/service/ui.svg";
 
 
@@ -323,7 +323,7 @@ export const TermsConditionsData = [
   },
   {
     subtitle: "Governing Law: ",
-    content: `These terms and conditions are governed by the laws of [Your Country/State], and any disputes will be handled in the appropriate jurisdiction within that area.
+    content: `These terms and conditions are governed by the laws of Baltimore/Maryland, and any disputes will be handled in the appropriate jurisdiction within that area.
 `,
   },
   {

@@ -136,8 +136,13 @@ const FooterComponent = () => {
                   <Image src={US} preview={false} style={{ width: '100%', height: 'auto' }} />
                 </Col>
                 <Col xs={24} style={{ marginTop: '1em' }}>
-                  <Text style={{ ...whiteTextStyle, ...textBlockStyle }}> US: +1 (443) 554‑7121 </Text>
-                  <Text style={{ ...whiteTextStyle, ...textBlockStyle }}> India: +91 (639) 373-3749 </Text>
+                <Text style={{ ...whiteTextStyle, ...textBlockStyle }}>
+                    <a href="tel:+14435547121" style={{ color: 'inherit', textDecoration: 'none' }}>+1 (443) 554‑7121</a>
+                </Text>
+                  {/* <Text style={{ ...whiteTextStyle, ...textBlockStyle }}> US: +1 (443) 554‑7121 </Text> */}
+                  <Text style={{ ...whiteTextStyle, ...textBlockStyle }}>
+                      <a href="tel:+916393733749" style={{ color: 'inherit', textDecoration: 'none' }}>+91 (639) 373-3749</a>
+                  </Text>
                   <Text style={{ ...whiteTextStyle, }}>Email: support@aadhyawebsolution.com</Text>
                 </Col>
                 <Col xs={24} >
