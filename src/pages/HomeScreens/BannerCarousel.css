@@ -17,7 +17,7 @@
 
 /* Style for all indicators - inactive (pure black) */
 .custom-carousel .slick-dots li button {
-  background: #000000; /* Pure black for inactive */
+  background: #F47F20; /* Pure black for inactive */
   width: 25px; /* Fixed width for all indicators */
   height: 3px; /* Thin line height */
   padding: 0;

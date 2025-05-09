@@ -15,13 +15,22 @@ function HomeScreen() {
   return (
     <Fragment>
       <Intro />
-      <Marquee 
+      {/* <Marquee 
     
         style={{ padding: "20px 0" , fontSize: "1.2em", backgroundColor: "#fff", }}
       >
         <strong>
         Client-Centric Excellence with 100% Satisfaction. Round-the-Clock Free Support You Can Rely On.  Strategic Solutions to Accelerate Sales Growth.  Turn Clicks into Customers with Conversion Optimization.   
         Empowering Digital Success – Let’s Grow Together.</strong>  
+      </Marquee> */}
+      <Marquee direction="left" style={{ padding: "20px 0" , fontSize: "1.2em", backgroundColor: "#fff", }}>
+        <strong>
+          🤝 Client-Centric Excellence with 100% Satisfaction &nbsp;&nbsp;&nbsp;
+          🕒 Round-the-Clock Free Support You Can Rely On &nbsp;&nbsp;&nbsp;
+          📈 Strategic Solutions to Accelerate Sales Growth &nbsp;&nbsp;&nbsp;
+          🛒 Turn Clicks into Customers with Conversion Optimization &nbsp;&nbsp;&nbsp;
+          🚀 Empowering Digital Success – Let’s Grow Together &nbsp;&nbsp;&nbsp;
+        </strong>
       </Marquee>
       <AboutUs />
       <ServicesSectionUI />

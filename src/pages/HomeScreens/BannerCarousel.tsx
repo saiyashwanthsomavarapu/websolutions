@@ -124,7 +124,7 @@ const BannersCarousel = () => {
                     justifyContent: "center",
                     padding: "30px 20px 60px",
                     textAlign: "center",
-                    backgroundColor: "#000",
+                    backgroundColor: "#ff8000",
                   }}
                 >
                   {/* Centered Image */}

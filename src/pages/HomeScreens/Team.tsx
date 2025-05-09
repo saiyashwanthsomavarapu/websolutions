@@ -1,6 +1,10 @@
 import { Row, Col, Typography, Button, Space, Grid } from 'antd';
 
-import person from "../../assets/person.jpeg";
+import person from "../../assets/team/laks.jpeg";
+// import person from "../../assets/team/laks.jpeg";
+import har from "../../assets/team/Harsh.jpg";
+import deep from "../../assets/team/Deepanshu.jpg";
+
 
 import { useNavigate } from "react-router-dom";
 
@@ -51,24 +55,24 @@ const TeamSection = () => {
 
     const teamMembers = [
         {
-            name: 'John Doe',
-            title: 'Chief Executive Officer',
+            name: 'Rajani S',
+            title: 'CEO & Founder',
             imageSrc: person  // Using placeholder as instructed
         },
         {
-            name: 'Jane Smith',
+            name: 'Laskshman',
             title: 'Chief Financial Officer',
             imageSrc: person
         },
         {
-            name: 'Michael Johnson',
-            title: 'Head of Risk Management',
-            imageSrc: person
+            name: 'Deepanshu Kumar',
+            title: 'Shopify Expert & Developer',
+            imageSrc: deep
         },
         {
-            name: 'Emily Carter',
-            title: 'Acquisitions Advisor',
-            imageSrc: person
+            name: 'Harsh Goyal',
+            title: 'UX Designer',
+            imageSrc: har
         }
     ];
 

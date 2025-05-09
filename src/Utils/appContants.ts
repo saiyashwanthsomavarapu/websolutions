@@ -15,6 +15,8 @@ export const services = [
     Icon: AimOutlined,
     img: shopify,
     title: "Shopify Store Setup, CRO & Speed Optimisation",
+    href: 'https://aadhyawebsolutions.com/shopify/',
+    target: '_blank',
     description:
       "Our Shopify store setup services are crafted to help you build high-performing eCommerce stores that convert visitors into loyal customers. We go beyond the basics by implementing conversion rate optimisation (CRO) strategies that increase your average order value and streamline the user journey. Combined with Shopify speed optimisation, we ensure fast-loading, mobile-responsive storefronts that offer a seamless shopping experience.",
   },
@@ -24,6 +26,8 @@ export const services = [
     title: "WordPress Development",
     description:
       "Whether you need a business website, blog, or custom solution, our WordPress development services offer flexibility, scalability, and full SEO compatibility. We create responsive websites with clean UI/UX, optimised for speed and performance. Our custom WordPress themes and plugins ensure your site reflects your brand and functions exactly as your business demands.",
+    href: 'https://aadhyawebsolutions.com/shopify/',
+    target: '_blank',
   },
   {
     img: Optimization,
@@ -31,6 +35,8 @@ export const services = [
     title: "Digital Marketing",
     description:
       "We deliver data-driven digital marketing services tailored to your business goals. From strategic search engine optimisation (SEO) to high-impact PPC campaigns and content-driven lead generation, we help brands grow their digital footprint. Our team works across multiple platforms to ensure maximum reach, better engagement, and measurable ROI.",
+    href: 'https://aadhyawebsolutions.com/shopify/',
+    target: '_blank',
   },
   {
     img: graphic,
@@ -38,18 +44,26 @@ export const services = [
     title: "Graphic Design",
     description:
       "Great design speaks volumes. Our graphic design services include everything from brand identity creation to digital and print creatives. We design visually appealing logos, marketing materials, and social media graphics that not only look great but also drive audience interaction and brand recognition.",
+    href: 'https://aadhyawebsolutions.com/shopify/',
+    target: '_blank',
   },
   {
     img: react,
     Icon: LineChartOutlined,
     title: "Web Development",
-    description:" Our web development services encompass everything from simple landing pages to complex web applications. We utilise the latest technologies and frameworks to build responsive, user-friendly websites that are optimised for performance and SEO. Whether you need a custom CMS, eCommerce platform, or a SaaS application, our team has the expertise to deliver high-quality solutions tailored to your business needs.",  
+    description:
+      "Our web development services encompass everything from simple landing pages to complex web applications. We utilise the latest technologies and frameworks to build responsive, user-friendly websites that are optimised for performance and SEO. Whether you need a custom CMS, eCommerce platform, or a SaaS application, our team has the expertise to deliver high-quality solutions tailored to your business needs.",
+    href: 'https://aadhyawebsolutions.com/shopify/',
+    target: '_blank',
   },
   {
     img: Saas,
     Icon: LineChartOutlined,
     title: "Mobile App Development",
-    description: "In today's mobile-first world, having a robust mobile app is essential for business growth. Our mobile app development services cover both iOS and Android platforms, ensuring your app is user-friendly, fast, and secure. We focus on creating intuitive interfaces and seamless user experiences, backed by powerful backend systems to support your app's functionality.",
+    description:
+      "In today's mobile-first world, having a robust mobile app is essential for business growth. Our mobile app development services cover both iOS and Android platforms, ensuring your app is user-friendly, fast, and secure. We focus on creating intuitive interfaces and seamless user experiences, backed by powerful backend systems to support your app's functionality.",
+    href: 'https://aadhyawebsolutions.com/shopify/',
+    target: '_blank',
   },
 ];
 

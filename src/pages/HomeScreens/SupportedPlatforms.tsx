@@ -3,12 +3,13 @@ import { Card, Col, Grid, Row, Space, Typography } from "antd";
 import wordPress from '../../assets/service/Wordpress.svg';
 import shopify from '../../assets/service/shopify.svg';
 import woo from '../../assets/service/Woocommerce.svg';
-import Framer from '../../assets/service/Framer_white.svg';
+// import Framer from '../../assets/service/Framer_white.svg';
 import react from "../../assets/service/ui.svg";
+import Next from "../../assets/service/nextjs.svg";
 import figam from "../../assets/service/figma.svg";
 import Magento from "../../assets/service/Magento.svg";
 import Wix from "../../assets/service/Wix.svg";
-import Big from "../../assets/service/colorkit.svg";
+import Ios from "../../assets/service/table.svg";
 
 const { Title, Paragraph } = Typography;
 
@@ -36,10 +37,38 @@ export const SupportedPlatforms = () => {
             }
         },
         {
+            icon: Magento,
+            name: 'Magento',
+            link: {
+            href: 'https://reactjs.org',
+            target: '_blank',
+            rel: 'noopener noreferrer'
+            }
+        },
+        {
             icon: react,
             name: 'React',
             link: {
             href: 'https://reactjs.org',
+            target: '_blank',
+            rel: 'noopener noreferrer'
+            }
+        }, 
+        {
+            icon: Next,
+            name: 'Next JS',
+            link: {
+            href: 'https://nextjs.org',
+            target: '_blank',
+            rel: 'noopener noreferrer'
+            }
+        },
+        
+        {
+            icon: Ios,
+            name: 'IOS',
+            link: {
+            href: 'https://www.apple.com/ios/ios-18/',
             target: '_blank',
             rel: 'noopener noreferrer'
             }
@@ -53,47 +82,20 @@ export const SupportedPlatforms = () => {
             rel: 'noopener noreferrer'
             }
         },
-        {
-            icon: Magento,
-            name: 'Magento',
+         {
+            icon: Wix,
+            name: 'Wix',
             link: {
-            href: 'https://reactjs.org',
+            href: 'https://www.wix.com/',
             target: '_blank',
             rel: 'noopener noreferrer'
             }
         },
-        {
+         {
             icon: woo,
             name: 'WooCommerce',
             link: {
             href: 'https://aadhyawebsolutions.com/wordpress/',
-            target: '_blank',
-            rel: 'noopener noreferrer'
-            }
-        },
-        {
-            icon: Wix,
-            name: 'Wix',
-            link: {
-            href: 'https://figam.io',
-            target: '_blank',
-            rel: 'noopener noreferrer'
-            }
-        },
-        {
-            icon: Framer,
-            name: 'Framer',
-            link: {
-            href: 'https://www.bigcommerce.com',
-            target: '_blank',
-            rel: 'noopener noreferrer'
-            }
-        },
-        {
-            icon: Big,
-            name: 'BigCommerce',
-            link: {
-            href: 'https://figam.io',
             target: '_blank',
             rel: 'noopener noreferrer'
             }

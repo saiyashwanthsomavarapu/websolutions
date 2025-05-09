@@ -63,7 +63,7 @@ const ContactUs = () => {
                                 padding: '0 24px'
                             }}
                             onClick={() => {
-                                const inputElement = document.getElementById('get-in-touch-name');
+                                const inputElement = document.getElementById('get-in-touch-name') as HTMLInputElement;
                                 if (inputElement) {
                                     inputElement.focus();
                                 }
