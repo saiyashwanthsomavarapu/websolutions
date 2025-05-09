@@ -13,7 +13,7 @@ const BannersCarousel = () => {
   const testimonialData = [
     {
       descriptions:
-        "Aadhya WebSolution and his team did a fantastic job on my WordPress website UI design. They worked with great care and professionalism, offering valuable insights throughout the project. The post-delivery support was excellent, including two days of dashboard training. I highly recommend Aadhya WebSolution for quality, reliable WordPress development services!",
+        "Aadhya Web Solution and his team did a fantastic job on my WordPress website UI design. They worked with great care and professionalism, offering valuable insights throughout the project. The post-delivery support was excellent, including two days of dashboard training. I highly recommend Aadhya Web Solution for quality, reliable WordPress development services!",
       name: "Raghvendra",
       designation: "Lawyer",
       img:  lawyer,

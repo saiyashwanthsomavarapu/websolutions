@@ -143,7 +143,7 @@ export const cancellationRefundPolicyData = [
   },
   {
     subtitle: "Refund Processing Time:",
-    content: `If your refund is approved, it will be processed within [Insert Time Frame] to the original payment method used during the transaction. Please note that the refund may take additional time depending on your payment provider or financial institution.`,
+    content: `If your refund is approved, it will be processed within 2-3 business days to the original payment method used during the transaction. Please note that the refund may take additional time depending on your payment provider or financial institution.`,
   },
   {
     subtitle: "Contact Us:",
@@ -189,7 +189,7 @@ export const privacyPolicyData = [
       },
       {
         bulletTitle: "",
-        bulletContent: "To improve and personalize your user experience",
+        bulletContent: "To improve and personalize your user experience.",
       },
       {
         bulletTitle: "",
@@ -204,7 +204,7 @@ export const privacyPolicyData = [
       {
         bulletTitle: "",
         bulletContent:
-          "To comply with legal obligations and protect our rights.`,",
+          "To comply with legal obligations and protect our rights.",
       },
     ],
   },
@@ -306,19 +306,19 @@ export const TermsConditionsData = [
   },
   {
     subtitle: "Limitations of Liability:",
-    content: `While we strive to provide the best services possible, Adya Websolution is not liable for any indirect, incidental, special, or consequential damages arising out of the use or inability to use our services. 
+    content: `While we strive to provide the best services possible, Aadhya Web Solution is not liable for any indirect, incidental, special, or consequential damages arising out of the use or inability to use our services. 
               In no event shall our total liability exceed the amount paid for the services rendered.`,
   },
   {
     subtitle: "Termination of Services:",
     content: `Either party may terminate the agreement at any time by providing written notice. 
               In case of termination, you will be responsible for paying for any work completed up to the date of termination. 
-              Adya Websolution reserves the right to terminate services if there is a breach of these terms or for any other reason deemed necessary.
+              Aadhya Web Solution reserves the right to terminate services if there is a breach of these terms or for any other reason deemed necessary.
             `,
   },
   {
     subtitle: "Changes to the Terms & Conditions:",
-    content: `Adya Websolution reserves the right to update or modify these Terms and Conditions at any time. Any changes will be posted on this page with an updated "Effective Date." We encourage you to review this page periodically for any updates.
+    content: `Aadhya Web Solution reserves the right to update or modify these Terms and Conditions at any time. Any changes will be posted on this page with an updated "Effective Date." We encourage you to review this page periodically for any updates.
 `,
   },
   {
@@ -441,7 +441,7 @@ export const DeliveryProcessData = [
   },
   {
     subtitle: "Launch & Delivery:",
-    content: `While we strive to provide the best services possible, Adya Websolution is not liable for any indirect, incidental, special, or consequential damages arising out of the use or inability to use our services. 
+    content: `While we strive to provide the best services possible, Aadhya Web Solution is not liable for any indirect, incidental, special, or consequential damages arising out of the use or inability to use our services. 
               In no event shall our total liability exceed the amount paid for the services rendered.`,
   },
   {
@@ -508,16 +508,16 @@ export const DeliveryProcessData = [
         bulletContent: "Clear communication at every stage of the process.",
       },
       {
-        bulletTitle: "On-Time Delivery:",
+        bulletTitle: "On-Time Delivery: ",
         bulletContent:
           "We adhere to the deadlines, ensuring timely completion.",
       },
       {
-        bulletTitle: "Quality Assurance:",
+        bulletTitle: "Quality Assurance: ",
         bulletContent: "We don’t deliver until everything is perfect",
       },
       {
-        bulletTitle: "Ongoing Support:",
+        bulletTitle: "Ongoing Support: ",
         bulletContent:
           "Post-launch services to ensure your project stays successful.",
       },
@@ -540,6 +540,6 @@ export const DeliveryProcessData = [
   },
   {
     subtitle: "",
-    content: `By choosing Adya Websolution, you are partnering with a team dedicated to delivering high-quality solutions that exceed expectations. We look forward to working with you!`,
+    content: `By choosing Aadhya Web Solution, you are partnering with a team dedicated to delivering high-quality solutions that exceed expectations. We look forward to working with you!`,
   },
 ];

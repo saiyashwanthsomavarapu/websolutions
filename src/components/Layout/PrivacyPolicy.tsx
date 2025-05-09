@@ -49,7 +49,7 @@ const PrivacyPolicy = () => {
               fontFamily: "Poppins', sans-serif !important",
             }}
           >
-            At Aadhya Websolution, we respect and protect your privacy. This
+            At Aadhya Web Solution, we respect and protect your privacy. This
             Privacy Policy outlines how we collect, use, and safeguard your
             personal information when you visit our website or use our services.
             By using our website and services, you agree to the collection and
@@ -62,7 +62,7 @@ const PrivacyPolicy = () => {
               color: "#555",
             }}
           >
-            The following Terms of Use apply to ALL Web Indore customers:
+            The following Terms of Use apply to ALL Aadhya Web Solution customers:
           </Paragraph>
           {privacyPolicyData.map((item, index) => (
             <Paragraph

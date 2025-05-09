@@ -56,7 +56,7 @@ const TermsConditions = () => {
               textAlign: "justify",
             }}
           >
-            Welcome to Aadhya Websolution! By accessing or using our website,
+            Welcome to Aadhya Web Solution! By accessing or using our website,
             services, or products, you agree to comply with and be bound by the
             following terms and conditions.
           </Paragraph>

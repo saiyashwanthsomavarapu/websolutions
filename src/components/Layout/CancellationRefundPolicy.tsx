@@ -49,7 +49,7 @@ const CancellationRefundPolicy = () => {
               textAlign: "justify",
             }}
           >
-            At Aadya Websolution, we strive to provide high-quality services to
+            At Aadhya Web Solution, we strive to provide high-quality services to
             our clients. However, if for any reason you are not satisfied with
             the services we provide, we want to make the cancellation and refund
             process as clear and easy as possible. Please read our Cancellation

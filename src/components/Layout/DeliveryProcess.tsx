@@ -56,7 +56,7 @@ const DeliveryProcess = () => {
               textAlign: "justify",
             }}
           >
-            At Aadya Websolution, we believe in transparency and communication
+            At Aadhya Web Solution, we believe in transparency and communication
             throughout the entire project journey. Our delivery process is
             designed to ensure that you receive high-quality services on time,
             every time. Here’s a breakdown of our streamlined process to give

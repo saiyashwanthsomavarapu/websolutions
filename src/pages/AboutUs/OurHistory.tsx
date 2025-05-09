@@ -31,7 +31,7 @@ function OurHistory() {
                         Empowering Businesses Through Innovation & Results
                     </Title>
                     <Paragraph style={{ fontSize: '16px', lineHeight: '1.6', color: '#555', textAlign: 'justify' }}>
-                    At the heart of every thriving eCommerce brand is a partner that understands how to adapt, innovate, and scale. At Adya Websolution, we don’t just build Shopify stores — we engineer digital success.
+                    At the heart of every thriving eCommerce brand is a partner that understands how to adapt, innovate, and scale. At Aadhya Web Solution, we don’t just build Shopify stores — we engineer digital success.
                     <p>From custom development to growth-focused strategies, we help businesses streamline operations, enhance customer experience, and stay ahead in an ever-evolving digital landscape.</p>
                     </Paragraph>
                     <Button
