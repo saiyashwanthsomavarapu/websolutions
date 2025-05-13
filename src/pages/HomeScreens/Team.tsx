@@ -1,7 +1,7 @@
 import { Row, Col, Typography, Button, Space, Grid } from 'antd';
 
 import person from "../../assets/team/laks.jpeg";
-// import person from "../../assets/team/laks.jpeg";
+import raj from "../../assets/team/raj.jpeg";
 import har from "../../assets/team/Harsh.jpg";
 import deep from "../../assets/team/Deepanshu.jpg";
 
@@ -57,7 +57,7 @@ const TeamSection = () => {
         {
             name: 'Rajani S',
             title: 'CEO & Founder',
-            imageSrc: person  // Using placeholder as instructed
+            imageSrc: raj  // Using placeholder as instructed
         },
         {
             name: 'Laskshman',

@@ -420,7 +420,9 @@ const GetInTouch: React.FC = () => {
                             >
                                 <Title level={3} style={{ fontWeight: 500 }}>Email</Title>
                                 <Text style={{ fontWeight: 400 }}>
-                                    support@aadhyawebsolution.com
+                                    <a href="mailto:support@aadhyawebsolution.com" style={{ color: 'inherit', textDecoration: 'none' }}>
+                                        support@aadhyawebsolution.com
+                                    </a>
                                 </Text>
                             </Card>
                         </Col>

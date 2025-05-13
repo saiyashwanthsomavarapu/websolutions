@@ -143,7 +143,9 @@ const FooterComponent = () => {
                   <Text style={{ ...whiteTextStyle, ...textBlockStyle }}>
                       <a href="tel:+916393733749" style={{ color: 'inherit', textDecoration: 'none' }}>+91 (639) 373-3749</a>
                   </Text>
-                  <Text style={{ ...whiteTextStyle, }}>Email: support@aadhyawebsolution.com</Text>
+                    <Text style={{ ...whiteTextStyle, }}>
+                    Email: <a href="mailto:support@aadhyawebsolution.com" style={{ color: 'inherit', textDecoration: 'none' }}>support@aadhyawebsolution.com</a>
+                    </Text>
                 </Col>
                 <Col xs={24} >
                   <Title level={5} style={{ ...linkStyle }}> Follow Us </Title>

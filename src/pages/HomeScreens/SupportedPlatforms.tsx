@@ -138,8 +138,8 @@ export const SupportedPlatforms = () => {
                                 <Card
                                     className="platform-card"
                                     style={{
-                                        background: 'rgba(48, 48, 79, 0.7)',
-                                        border: 'none',
+                                        background: 'rgb(18 18 22 / 70%)',
+                                        border: '1px solid #212121',
                                         borderRadius: '8px',
                                         height: '120px',
                                         display: 'flex',

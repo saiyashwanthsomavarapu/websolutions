@@ -27,16 +27,16 @@ const BannersCarousel = () => {
     },
     {
       descriptions:
-        "I recently worked with Aadhya and his team to set up my online store, and I’m extremely pleased with the results. Aadhya demonstrated excellent technical skills and a deep understanding of the Shopify platform. He was easy to collaborate with, communicated clearly throughout the process, and always kept me updated on the progress. His professionalism and dedication ensured that the project was completed on time and exactly how I envisioned. I highly recommend Harsh for anyone looking",
+        "I recently worked with Aadhya Web Solution team and his team to set up my Shopify online store, and I’m extremely pleased with the results. Aadhya Web Solution team demonstrated excellent technical skills and a deep understanding of the Shopify platform. Team was easy to collaborate with, communicated clearly throughout the process, and always kept me updated on the progress. His professionalism and dedication ensured that the project was completed on time and exactly how I envisioned. I highly recommend Harsh for anyone looking",
       name: "Grady",
-      designation: "Operating Partner Altitude Trampoline Park Kissimmee",
+      designation: "Founder of Baby Steps Products",
       img: Person,
     },
     {
       descriptions:
-        "Amazing designer. He created different variants for particular mockups. He was very prompt and quick in completing our requirements. I will surely recommend him for all your design related UI/UX work.",
+        "Amazing designer. They created different variants for particular mockups. Team was very prompt and quick in completing our requirements. I will surely recommend him for all your design related UI/UX work.",
       name: "Dustin",
-      designation: "Franchise Owner Big Air Trampoline Park Spartanburg",
+      designation: "Founder of Life Is Wonderful",
       img: Person1,
     },
   ];
