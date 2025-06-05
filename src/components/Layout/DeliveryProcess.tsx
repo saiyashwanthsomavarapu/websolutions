@@ -53,7 +53,7 @@ const DeliveryProcess = () => {
               fontSize: screen.lg || screen.md ? "16px" : "14px",
               lineHeight: "1.6",
               color: "#555",
-              textAlign: "justify",
+
             }}
           >
             At Aadhya Web Solution, we believe in transparency and communication
@@ -89,7 +89,7 @@ const DeliveryProcess = () => {
                 fontSize: screen.lg || screen.md ? "16px" : "14px",
                 lineHeight: "1.6",
                 color: "#555",
-                textAlign: "justify",
+
               }}
             >
               {item.subtitle && (
@@ -101,7 +101,7 @@ const DeliveryProcess = () => {
                   fontSize: screen.lg || screen.md ? "16px" : "14px",
                   lineHeight: "1.6",
                   color: "#555",
-                  textAlign: "justify",
+
                   marginTop: "5px",
                 }}
               >
@@ -118,7 +118,7 @@ const DeliveryProcess = () => {
                       fontSize: screen.lg || screen.md ? "16px" : "14px",
                       lineHeight: "1.6",
                       color: "#555",
-                      textAlign: "justify",
+
                       marginLeft: "20px",
                       marginTop: "10px",
                     }}
@@ -141,7 +141,7 @@ const DeliveryProcess = () => {
                                 fontSize: screen.lg || screen.md ? "16px" : "14px",
                                 lineHeight: "1.6",
                                 color: "#555",
-                                textAlign: 'justify'
+                                
                             }}
                         >
                             {item.subtitle && <strong style={{color: 'black'}}> {item.subtitle}</strong>}  {item.content}

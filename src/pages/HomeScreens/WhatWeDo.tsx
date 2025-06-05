@@ -59,7 +59,7 @@ const ServicesSectionUI = () => {
                                 fontWeight: "400",
                                 color: "#5c5c5c",
                                 marginBottom: "32px",
-                                textAlign: "justify",
+
                             }}
                         >
                             At Aadhya Web Solution, we provide a powerful suite of digital services designed to accelerate growth, enhance brand presence, and deliver long-term business impact.

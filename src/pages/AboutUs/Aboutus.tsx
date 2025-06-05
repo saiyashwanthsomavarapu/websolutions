@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import { Row, Col, Typography, Tabs, Space, TabsProps, Card, Grid, Image } from 'antd';
-import { AimOutlined, ShakeOutlined, RocketOutlined, FullscreenOutlined , TeamOutlined   } from '@ant-design/icons';
+import { AimOutlined, ShakeOutlined, RocketOutlined, FullscreenOutlined, TeamOutlined } from '@ant-design/icons';
 import './styles.css';
 const { Title, Text, Paragraph } = Typography;
 
@@ -26,8 +26,8 @@ const Tab1 = () => {
                         title="Our Mission"
                         description={
                             <>
-                                <Paragraph style={{ marginBottom: 0, color: '#555', textAlign: 'justify' }}>
-                                    We’re here to simplify technology for business owners. 
+                                <Paragraph style={{ marginBottom: 0, color: '#555' }}>
+                                    We’re here to simplify technology for business owners.
                                     Our mission is to empower entrepreneurs, startups, and D2C brands with powerful, scalable, and conversion-optimized Shopify solutions that drive long-term growth.
                                 </Paragraph>
                             </>
@@ -40,9 +40,9 @@ const Tab1 = () => {
                         title="What Drives Us"
                         description={
                             <>
-                                <Paragraph style={{ marginBottom: 0, color: '#555', textAlign: 'justify' }}>
-                                We believe in delivering measurable impact. 
-                                Our commitment to quality, innovation, and long-term partnerships ensures every client not only gets a great store—but also the tools and support to thrive in the competitive digital marketplace.
+                                <Paragraph style={{ marginBottom: 0, color: '#555' }}>
+                                    We believe in delivering measurable impact.
+                                    Our commitment to quality, innovation, and long-term partnerships ensures every client not only gets a great store—but also the tools and support to thrive in the competitive digital marketplace.
                                 </Paragraph>
                             </>
                         }
@@ -62,9 +62,9 @@ const Tab2 = () => {
 
     return (
         <Fragment>
-            <Paragraph style={{ fontSize: '16px', marginBottom: '40px', color: '#555', textAlign: 'justify' }}>
-                    At Aadhya Web Solution, we combine passion, precision, and performance to empower businesses through powerful Shopify solutions. 
-                    Whether you're just starting or scaling fast, our mission is to craft tailored e-commerce experiences that drive results. 
+            <Paragraph style={{ fontSize: '16px', marginBottom: '40px', color: '#555', }}>
+                At Aadhya Web Solution, we combine passion, precision, and performance to empower businesses through powerful Shopify solutions.
+                Whether you're just starting or scaling fast, our mission is to craft tailored e-commerce experiences that drive results.
             </Paragraph>
 
             <Space direction="vertical" size={32} style={{ width: '100%' }}>
@@ -74,8 +74,8 @@ const Tab2 = () => {
                         title="Tailored Solutions"
                         description={
                             <>
-                                <Paragraph style={{ marginBottom: 0, color: '#555', textAlign: 'justify' }}>
-                                     Every business is different—we build your store to fit your unique brand and goals.
+                                <Paragraph style={{ marginBottom: 0, color: '#555' }}>
+                                    Every business is different—we build your store to fit your unique brand and goals.
                                 </Paragraph>
                             </>
                         }
@@ -83,11 +83,11 @@ const Tab2 = () => {
                 </Card>
                 <Card style={{ minWidth: 300, padding: 24 }}>
                     <Card.Meta
-                        avatar={<RocketOutlined  style={iconStyle} src="https://api.dicebear.com/7.x/miniavs/svg?seed=1" />}
+                        avatar={<RocketOutlined style={iconStyle} src="https://api.dicebear.com/7.x/miniavs/svg?seed=1" />}
                         title="Performance-Driven Approach"
                         description={
                             <>
-                                <Paragraph style={{ marginBottom: 0, color: '#555', textAlign: 'justify' }}>
+                                <Paragraph style={{ marginBottom: 0, color: '#555' }}>
                                     Speed, UX, and conversion are at the core of every store we develop.
                                 </Paragraph>
                             </>
@@ -100,8 +100,8 @@ const Tab2 = () => {
                         title="Expert Team"
                         description={
                             <>
-                                <Paragraph style={{ marginBottom: 0, color: '#555', textAlign: 'justify' }}>
-                                    Certified Shopify developers with years of hands-on experience.                                
+                                <Paragraph style={{ marginBottom: 0, color: '#555' }}>
+                                    Certified Shopify developers with years of hands-on experience.
                                 </Paragraph>
                             </>
                         }
@@ -113,7 +113,7 @@ const Tab2 = () => {
                         title="Full Support"
                         description={
                             <>
-                                <Paragraph style={{ marginBottom: 0, color: '#555', textAlign: 'justify' }}>
+                                <Paragraph style={{ marginBottom: 0, color: '#555' }}>
                                     From launch to growth—we stay with you.
                                 </Paragraph>
                             </>

@@ -57,7 +57,7 @@ const BusinessSolutionsUI = () => {
                   fontWeight: "400",
                   color: "#5c5c5c",
                   marginBottom: "32px",
-                  textAlign: "justify",
+
                 }}
               >
                 Aadhya Web Solution, we specialize in crafting high-performance websites and digital solutions that drive real business results. From Shopify and WordPress development to custom design and marketing, our expert team is committed to delivering quality, innovation, and 100% client satisfaction. We don't just build websites — we build long-term partnerships for success.

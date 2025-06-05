@@ -22,85 +22,85 @@ export const SupportedPlatforms = () => {
             icon: shopify,
             name: 'Shopify',
             link: {
-            href: 'https://aadhyawebsolutions.com/shopify/',
-            target: '_blank',
-            rel: 'noopener noreferrer'
+                href: 'https://aadhyawebsolutions.com/shopify/',
+                target: '_blank',
+                rel: 'noopener noreferrer'
             }
         },
         {
             icon: wordPress,
             name: 'WordPress',
             link: {
-            href: 'https://aadhyawebsolutions.com/wordpress/',
-            target: '_blank',
-            rel: 'noopener noreferrer'
+                href: 'https://aadhyawebsolutions.com/wordpress/',
+                target: '_blank',
+                rel: 'noopener noreferrer'
             }
         },
         {
             icon: Magento,
             name: 'Magento',
             link: {
-            href: 'https://reactjs.org',
-            target: '_blank',
-            rel: 'noopener noreferrer'
+                href: 'https://reactjs.org',
+                target: '_blank',
+                rel: 'noopener noreferrer'
             }
         },
         {
             icon: react,
             name: 'React',
             link: {
-            href: 'https://reactjs.org',
-            target: '_blank',
-            rel: 'noopener noreferrer'
+                href: 'https://reactjs.org',
+                target: '_blank',
+                rel: 'noopener noreferrer'
             }
-        }, 
+        },
         {
             icon: Next,
             name: 'Next JS',
             link: {
-            href: 'https://nextjs.org',
-            target: '_blank',
-            rel: 'noopener noreferrer'
+                href: 'https://nextjs.org',
+                target: '_blank',
+                rel: 'noopener noreferrer'
             }
         },
-        
+
         {
             icon: Ios,
             name: 'IOS',
             link: {
-            href: 'https://www.apple.com/ios/ios-18/',
-            target: '_blank',
-            rel: 'noopener noreferrer'
+                href: 'https://www.apple.com/ios/ios-18/',
+                target: '_blank',
+                rel: 'noopener noreferrer'
             }
         },
         {
             icon: figam,
             name: 'figam',
             link: {
-            href: 'https://figam.io',
-            target: '_blank',
-            rel: 'noopener noreferrer'
+                href: 'https://figam.io',
+                target: '_blank',
+                rel: 'noopener noreferrer'
             }
         },
-         {
+        {
             icon: Wix,
             name: 'Wix',
             link: {
-            href: 'https://www.wix.com/',
-            target: '_blank',
-            rel: 'noopener noreferrer'
+                href: 'https://www.wix.com/',
+                target: '_blank',
+                rel: 'noopener noreferrer'
             }
         },
-         {
+        {
             icon: woo,
             name: 'WooCommerce',
             link: {
-            href: 'https://aadhyawebsolutions.com/wordpress/',
-            target: '_blank',
-            rel: 'noopener noreferrer'
+                href: 'https://aadhyawebsolutions.com/wordpress/',
+                target: '_blank',
+                rel: 'noopener noreferrer'
             }
         }
-        ];
+    ];
 
     return (
         <Space
@@ -126,7 +126,7 @@ export const SupportedPlatforms = () => {
                         color: '#fff',
                         marginBottom: '32px',
                         lineHeight: '1.6',
-                        textAlign: 'justify'
+
                     }}>
                         From Shopify store redesign, CRO, and migration from platforms like WordPress, Magento, Wix to Shopify, to listing your products on Amazon, Flipkart, and beyond — we specialize in scalable solutions, custom Android & iOS app development, graphic design, and more to boost your sales and drive business success.
                     </Paragraph>

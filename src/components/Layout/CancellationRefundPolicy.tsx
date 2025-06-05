@@ -46,7 +46,6 @@ const CancellationRefundPolicy = () => {
               fontSize: screen.lg || screen.md ? "16px" : "14px",
               lineHeight: "1.6",
               color: "#555",
-              textAlign: "justify",
             }}
           >
             At Aadhya Web Solution, we strive to provide high-quality services to
@@ -69,7 +68,6 @@ const CancellationRefundPolicy = () => {
                 fontSize: screen.lg || screen.md ? "16px" : "14px",
                 lineHeight: "1.6",
                 color: "#555",
-                textAlign: "justify",
               }}
             >
               {item.subtitle && (
@@ -84,7 +82,6 @@ const CancellationRefundPolicy = () => {
                       fontSize: screen.lg || screen.md ? "16px" : "14px",
                       lineHeight: "1.6",
                       color: "#555",
-                      textAlign: "justify",
                       marginLeft: "20px",
                       marginTop: "10px",
                     }}

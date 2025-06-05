@@ -71,7 +71,7 @@ const PrivacyPolicy = () => {
                 fontSize: screen.lg || screen.md ? "16px" : "14px",
                 lineHeight: "1.6",
                 color: "#555",
-                textAlign: "justify",
+
               }}
             >
               {item.subtitle && (
@@ -86,7 +86,7 @@ const PrivacyPolicy = () => {
                       fontSize: screen.lg || screen.md ? "16px" : "14px",
                       lineHeight: "1.6",
                       color: "#555",
-                      textAlign: "justify",
+
                       marginLeft: "20px",
                       marginTop: "10px",
                     }}

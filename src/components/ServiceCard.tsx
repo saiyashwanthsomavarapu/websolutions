@@ -22,7 +22,7 @@ const ServiceCard = (props: any) => {
                 <img src={img} style={{ width: '50px', height: '50px' }} />
             </div>
             <Title level={4} style={{ marginBottom: '12px', }}>{title}</Title>
-            <Paragraph style={{ color: '#555', marginBottom: 0, textAlign: 'justify' }}>
+            <Paragraph style={{ color: '#555', marginBottom: 0 }}>
                 {description}
             </Paragraph>
         </Card>

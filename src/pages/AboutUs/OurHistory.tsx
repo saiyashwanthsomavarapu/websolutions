@@ -30,9 +30,9 @@ function OurHistory() {
                     <Title level={1} style={{ marginTop: '8px', marginBottom: '40px', fontSize: screen.lg ? '2.5em' : '2em', fontWeight: 500, color: '#121212' }}>
                         Empowering Businesses Through Innovation & Results
                     </Title>
-                    <Paragraph style={{ fontSize: '16px', lineHeight: '1.6', color: '#555', textAlign: 'justify' }}>
-                    At the heart of every thriving eCommerce brand is a partner that understands how to adapt, innovate, and scale. At Aadhya Web Solution, we don’t just build Shopify stores — we engineer digital success.
-                    <p>From custom development to growth-focused strategies, we help businesses streamline operations, enhance customer experience, and stay ahead in an ever-evolving digital landscape.</p>
+                    <Paragraph style={{ fontSize: '16px', lineHeight: '1.6', color: '#555' }}>
+                        At the heart of every thriving eCommerce brand is a partner that understands how to adapt, innovate, and scale. At Aadhya Web Solution, we don’t just build Shopify stores — we engineer digital success.
+                        <p>From custom development to growth-focused strategies, we help businesses streamline operations, enhance customer experience, and stay ahead in an ever-evolving digital landscape.</p>
                     </Paragraph>
                     <Button
                         type="primary"
@@ -108,7 +108,7 @@ function OurHistory() {
                                     <Title level={3} style={{ fontWeight: 500 }}>90% Client Retention Rate</Title>
                                     <Divider type='horizontal' />
                                     <Text style={{ fontWeight: 400 }}>
-                                    Our results speak for themselves — clients stay with us because we deliver.
+                                        Our results speak for themselves — clients stay with us because we deliver.
                                     </Text>
                                 </Card>
                             </Col>
