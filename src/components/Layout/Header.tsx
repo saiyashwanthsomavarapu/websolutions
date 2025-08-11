@@ -1,18 +1,8 @@
-import React, { useState, useEffect } from 'react';
-import {
-  Layout,
-  Menu,
-  Button,
-  Drawer,
-  MenuProps,
-  Grid
-} from 'antd';
-import {
-  MenuOutlined,
-  DownOutlined,
-} from '@ant-design/icons';
-import { Link } from 'react-router-dom';
-import logoImage from '../../assets/logo-removebg.png';
+import React, { useState, useEffect } from "react";
+import { Layout, Menu, Button, Drawer, MenuProps, Grid } from "antd";
+import { MenuOutlined, DownOutlined } from "@ant-design/icons";
+import { Link } from "react-router-dom";
+import logoImage from "../../assets/logo-removebg.png";
 
 const { Header } = Layout;
 
@@ -36,7 +26,7 @@ const ModernHeader: React.FC = () => {
 
   // Navigation items
   const navItems: NavItem[] = [
-    { key: 'home', label: 'Home', path: '/' },
+    { key: "home", label: "Home", path: "/" },
     // {
     //   key: 'products',
     //   label: 'Products',
@@ -46,9 +36,10 @@ const ModernHeader: React.FC = () => {
     //     { key: 'sale', label: 'On Sale', path: '/products/sale' }
     //   ]
     // },
-    { key: 'services', label: 'Services', path: '/services' },
-    { key: 'about', label: 'About Us', path: '/aboutus' },
-    { key: 'contact', label: 'Contact', path: '/contact' },
+    { key: "services", label: "Services", path: "/services" },
+    { key: "casestudy", label: "Case Study", path: "/casestudy" },
+    { key: "about", label: "About Us", path: "/aboutus" },
+    { key: "contact", label: "Contact", path: "/contact" },
   ];
 
   // Handle scroll effect
@@ -61,8 +52,8 @@ const ModernHeader: React.FC = () => {
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   // Close drawer when switching to desktop view
@@ -76,39 +67,50 @@ const ModernHeader: React.FC = () => {
     // if (isHome) {
     //   return scrolled ? 'black' : 'white';
     // }
-    return 'black';; // Default for transparent header
+    return "black"; // Default for transparent header
   };
 
   const getLogo = () => {
     // if (isHome) {
     //   return scrolled ? logoImage : logoWhite;
     // }
-    return logoImage;; // Default for transparent header
+    return logoImage; // Default for transparent header
   };
 
   // Generate menu items for desktop navigation
-  const getNavItems = (): MenuProps['items'] => {
-    return navItems.map(item => {
+  const getNavItems = (): MenuProps["items"] => {
+    return navItems.map((item) => {
       if (item.children) {
         // For dropdown menus
         return {
           key: item.key,
           label: (
             <span>
-              {item.label}
-              <DownOutlined style={{ fontSize: '12px', marginLeft: '5px' }} />
+              {item.label + "kar"}
+              <DownOutlined style={{ fontSize: "12px", marginLeft: "5px" }} />
             </span>
           ),
-          children: item.children.map(child => ({
+          children: item.children.map((child) => ({
             key: child.key,
-            label: <Link style={{ color: getTextColor(), }} to={child.path || '/'}>{child.label}</Link>
-          }))
+            label: (
+              <Link style={{ color: getTextColor() }} to={child.path || "/"}>
+                {child.label}
+              </Link>
+            ),
+          })),
         };
       }
       // For regular menu items
       return {
         key: item.key,
-        label: <Link style={{ color: getTextColor(), textDecoration: 'none' }} to={item.path || '/'}>{item.label}</Link>
+        label: (
+          <Link
+            style={{ color: getTextColor(), textDecoration: "none" }}
+            to={item.path || "/"}
+          >
+            {item.label}
+          </Link>
+        ),
       };
     });
   };
@@ -117,45 +119,56 @@ const ModernHeader: React.FC = () => {
     <>
       <Header
         style={{
-          position: 'fixed',
+          position: "fixed",
           top: 0,
           zIndex: 1000,
-          width: '100%',
-          padding: '0 24px',
+          width: "100%",
+          padding: "0 24px",
           //backgroundColor: scrolled ? 'white' : 'transparent',
-          backgroundColor: 'white',
-          transition: 'all 0.3s ease',
+          backgroundColor: "white",
+          transition: "all 0.3s ease",
           // boxShadow: 'rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px',
 
           // boxShadow: 'rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px',
-          boxShadow: scrolled ? '0 2px 10px #F47F20' : 'none',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'space-between',
-          height: '100px',
+          boxShadow: scrolled ? "0 2px 10px #F47F20" : "none",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "space-between",
+          height: "100px",
         }}
       >
         {/* Logo */}
-        <div className="logo" style={{ fontSize: '24px', fontWeight: 'bold', color: '#1890ff' }}>
-          <Link className="responsive-logo" to="/">{<img style={{ height: '180px', marginTop: "20px" }} src={getLogo()} alt="Logo" />}</Link>
+        <div
+          className="logo"
+          style={{ fontSize: "24px", fontWeight: "bold", color: "#1890ff" }}
+        >
+          <Link className="responsive-logo" to="/">
+            {
+              <img
+                style={{ height: "180px", marginTop: "20px" }}
+                src={getLogo()}
+                alt="Logo"
+              />
+            }
+          </Link>
         </div>
 
         {/* Desktop Navigation */}
-        <div style={{ display: 'flex', alignItems: 'center' }}>
+        <div style={{ display: "flex", alignItems: "center" }}>
           {!isMobile && (
             <Menu
               mode="horizontal"
               style={{
-                border: 'none',
-                backgroundColor: 'transparent',
-                color: getTextColor()
+                border: "none",
+                backgroundColor: "transparent",
+                color: getTextColor(),
               }}
               items={getNavItems()}
             />
           )}
 
           {/* Mobile menu button */}
-            {isMobile && (
+          {isMobile && (
             <Button
               className="mobile-menu-button"
               size="large"
@@ -163,7 +176,7 @@ const ModernHeader: React.FC = () => {
               icon={<MenuOutlined />}
               onClick={() => setVisible(true)}
             />
-            )}
+          )}
         </div>
       </Header>
 
@@ -177,12 +190,12 @@ const ModernHeader: React.FC = () => {
       >
         <Menu
           mode="vertical"
-          style={{ border: 'none' }}
-          items={navItems.map(item => ({
+          style={{ border: "none" }}
+          items={navItems.map((item) => ({
             key: item.key,
             label: item.path ? (
               <Link
-                style={{ color: 'black' }}
+                style={{ color: "black" }}
                 to={item.path}
                 onClick={() => setVisible(false)} // Close drawer on click
               >
@@ -191,12 +204,12 @@ const ModernHeader: React.FC = () => {
             ) : (
               item.label
             ),
-            children: item.children?.map(child => ({
+            children: item.children?.map((child) => ({
               key: child.key,
               label: (
                 <Link
-                  style={{ color: 'black' }}
-                  to={child.path || '/'}
+                  style={{ color: "black" }}
+                  to={child.path || "/"}
                   onClick={() => setVisible(false)} // Close drawer on click
                 >
                   {child.label}

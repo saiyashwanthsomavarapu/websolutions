@@ -1,14 +1,15 @@
-import {
-  AimOutlined,
-  LineChartOutlined,
-} from "@ant-design/icons";
+import { AimOutlined, LineChartOutlined } from "@ant-design/icons";
 import shopify from "../assets/service/shopify.svg";
 import word from "../assets/service/Wordpress.svg";
 import Optimization from "../assets/service/Optimization.svg";
 import graphic from "../assets/service/graphic.svg";
 import Saas from "../assets/service/Mobile.svg";
 import react from "../assets/service/ui.svg";
-
+import req from "../assets/Group-discussion.mp4";
+import img from "../assets/Prototyping-process.mp4";
+import dev from "../assets/Development.mp4";
+import test from "../assets/Software-code-testing.mp4";
+import deploy from "../assets/deployment.mp4";
 
 export const services = [
   {
@@ -16,10 +17,10 @@ export const services = [
     img: shopify,
     title: "Shopify Store Setup, CRO & Speed Optimisation",
     link: {
-            href: 'https://aadhyawebsolutions.com/shopify/',
-            target: '_blank',
-            rel: 'noopener noreferrer'
-            },
+      href: "https://aadhyawebsolutions.com/shopify/",
+      target: "_blank",
+      rel: "noopener noreferrer",
+    },
     description:
       "Our Shopify store setup services are crafted to help you build high-performing eCommerce stores that convert visitors into loyal customers. We go beyond the basics by implementing conversion rate optimisation (CRO) strategies that increase your average order value and streamline the user journey. Combined with Shopify speed optimisation, we ensure fast-loading, mobile-responsive storefronts that offer a seamless shopping experience.",
   },
@@ -30,10 +31,10 @@ export const services = [
     description:
       "Whether you need a business website, blog, or custom solution, our WordPress development services offer flexibility, scalability, and full SEO compatibility. We create responsive websites with clean UI/UX, optimised for speed and performance. Our custom WordPress themes and plugins ensure your site reflects your brand and functions exactly as your business demands.",
     link: {
-            href: 'https://aadhyawebsolutions.com/wordpress/',
-            target: '_blank',
-            rel: 'noopener noreferrer'
-            },
+      href: "https://aadhyawebsolutions.com/wordpress/",
+      target: "_blank",
+      rel: "noopener noreferrer",
+    },
   },
   {
     img: Optimization,
@@ -42,10 +43,10 @@ export const services = [
     description:
       "We deliver data-driven digital marketing services tailored to your business goals. From strategic search engine optimisation (SEO) to high-impact PPC campaigns and content-driven lead generation, we help brands grow their digital footprint. Our team works across multiple platforms to ensure maximum reach, better engagement, and measurable ROI.",
     link: {
-            href: '',
-            target: '_blank',
-            rel: 'noopener noreferrer'
-            },
+      href: "",
+      target: "_blank",
+      rel: "noopener noreferrer",
+    },
   },
   {
     img: graphic,
@@ -54,10 +55,10 @@ export const services = [
     description:
       "Great design speaks volumes. Our graphic design services include everything from brand identity creation to digital and print creatives. We design visually appealing logos, marketing materials, and social media graphics that not only look great but also drive audience interaction and brand recognition.",
     link: {
-            href: '',
-            target: '_blank',
-            rel: 'noopener noreferrer'
-            },
+      href: "",
+      target: "_blank",
+      rel: "noopener noreferrer",
+    },
   },
   {
     img: react,
@@ -66,10 +67,10 @@ export const services = [
     description:
       "Our web development services encompass everything from simple landing pages to complex web applications. We utilise the latest technologies and frameworks to build responsive, user-friendly websites that are optimised for performance and SEO. Whether you need a custom CMS, eCommerce platform, or a SaaS application, our team has the expertise to deliver high-quality solutions tailored to your business needs.",
     link: {
-            href: '',
-            target: '_blank',
-            rel: 'noopener noreferrer'
-            },
+      href: "",
+      target: "_blank",
+      rel: "noopener noreferrer",
+    },
   },
   {
     img: Saas,
@@ -77,11 +78,11 @@ export const services = [
     title: "Mobile App Development",
     description:
       "In today's mobile-first world, having a robust mobile app is essential for business growth. Our mobile app development services cover both iOS and Android platforms, ensuring your app is user-friendly, fast, and secure. We focus on creating intuitive interfaces and seamless user experiences, backed by powerful backend systems to support your app's functionality.",
-   link: {
-            href: '',
-            target: '_blank',
-            rel: 'noopener noreferrer'
-            },
+    link: {
+      href: "",
+      target: "_blank",
+      rel: "noopener noreferrer",
+    },
   },
 ];
 
@@ -573,5 +574,458 @@ export const DeliveryProcessData = [
   {
     subtitle: "",
     content: `By choosing Aadhya Web Solution, you are partnering with a team dedicated to delivering high-quality solutions that exceed expectations. We look forward to working with you!`,
+  },
+];
+
+export const caseStudiesdata = [
+  {
+    projectName: "ecommerce",
+    title: "Building a Scalable and User-Friendly eCommerce Platform",
+    description:
+      "We developed a full-featured eCommerce platform that not only simplified the shopping experience but also empowered the business with real-time analytics, secure payment integration, and easy inventory management. This helped our client boost sales, improve user engagement, and scale effortlessly as their customer base grew.",
+    client: "ShopEase Pvt. Ltd.",
+    industry: "Retail / eCommerce",
+    location: "Bangalore, India",
+    duration: "3 Months",
+    path: "/pricing-ecommerce",
+    services: [
+      "eCommerce Web Development, UX/UI Design, Performance Optimization",
+    ],
+    platform: "Web",
+    technologyStack: ["React, Node.js, MongoDB, Stripe API, AWS"],
+    clientRequirements: [
+      "Design a user-centric shopping experience",
+      "Integrate secure payment gateway and cart functionality",
+      "Enable product search with filters and recommendations",
+      "Optimize for mobile responsiveness and speed",
+      "Implement user and admin dashboards",
+    ],
+    approach: [
+      {
+        title: "Requirement Gathering",
+        requirements: [
+          "Identified business goals and user personas",
+          "Researched competitors",
+          "Defined feature priorities",
+        ],
+        icon: req,
+      },
+      {
+        title: "Design and Prototyping",
+        requirements: [
+          "Built interactive wireframes and mockups",
+          "Created responsive design system",
+          "Focused on high-conversion layouts",
+        ],
+        icon: img,
+      },
+      {
+        title: "Development",
+        requirements: [
+          "Developed frontend using React",
+          "Implemented backend API using Node.js",
+          "Integrated Stripe for payments",
+        ],
+        icon: dev,
+      },
+      {
+        title: "Testing",
+        requirements: [
+          "Cross-browser and mobile testing",
+          "Security and payment validations",
+          "Load and speed testing",
+        ],
+        icon: test,
+      },
+      {
+        title: "Deployment",
+        requirements: [
+          "Hosted on AWS EC2 with auto-scaling",
+          "CI/CD via GitHub Actions",
+          "Enabled monitoring using CloudWatch",
+        ],
+        icon: deploy,
+      },
+    ],
+    challenges: [
+      {
+        title: "High Cart Abandonment",
+        description: "Users dropped off at checkout.",
+        solution:
+          "Streamlined checkout flow, added guest checkout, and exit-intent popups.",
+      },
+      {
+        title: "Scaling Product Catalog",
+        description: "Handling 10,000+ products smoothly.",
+        solution:
+          "Used dynamic pagination, lazy loading, and optimized DB queries.",
+      },
+    ],
+    results: {
+      conversionRateIncrease: "42%",
+      bounceRateDrop: "28%",
+      salesGrowth: "3.5x in 6 months",
+      userRetention: "80% returning customers",
+    },
+    testimonial: {
+      quote:
+        "The platform helped us reach new markets and significantly increased online revenue. Great job by the team!",
+      author: "Anjali Mehra",
+      position: "Co-Founder, ShopEase",
+    },
+  },
+  {
+    projectName: "mobile-apps",
+    title: "Cross-Platform Mobile App for On-Demand Services",
+    description:
+      "A logistics-focused mobile application built for both iOS and Android to help customers track shipments, manage orders, and receive push updates. We focused on seamless real-time tracking, offline capability, and intuitive user interfaces, resulting in improved user retention and enhanced delivery operations.",
+    client: "QuickFix Services",
+    industry: "Home Services",
+    location: "Mumbai, India",
+    duration: "4 Months",
+    path: "/pricing-mobile-apps",
+    services: ["Mobile App Development, UX/UI, Firebase Integration"],
+    platform: "iOS & Android",
+    technologyStack: ["Flutter, Firebase, Google Maps API, Stripe"],
+    clientRequirements: [
+      "Develop app for Android and iOS",
+      "Integrate GPS tracking and booking system",
+      "Enable real-time service updates and chat",
+      "Push notifications and rating system",
+    ],
+    approach: [
+      {
+        title: "Requirement Gathering",
+        requirements: [
+          "Interviewed service professionals and users",
+          "Analyzed similar apps",
+          "Defined app flow and architecture",
+        ],
+        icon: req,
+      },
+      {
+        title: "Design and Prototyping",
+        requirements: [
+          "Built wireframes and clickable app mockups",
+          "Used Material Design components",
+          "Created an intuitive navigation system",
+        ],
+        icon: img,
+      },
+      {
+        title: "Development",
+        requirements: [
+          "Developed in Flutter for cross-platform support",
+          "Used Firebase for backend and real-time updates",
+          "Integrated payment via Stripe",
+        ],
+        icon: dev,
+      },
+      {
+        title: "Testing",
+        requirements: [
+          "Tested on physical devices",
+          "Simulated low-network environments",
+          "Usability testing with real users",
+        ],
+        icon: test,
+      },
+      {
+        title: "Deployment",
+        requirements: [
+          "Deployed on Play Store and App Store",
+          "Enabled crash reporting and analytics",
+          "Ongoing updates through CI/CD",
+        ],
+        icon: deploy,
+      },
+    ],
+    challenges: [
+      {
+        title: "Real-Time Tracking Accuracy",
+        description: "Needed accurate GPS-based technician tracking.",
+        solution:
+          "Optimized Google Maps API integration with geofencing and device calibration.",
+      },
+      {
+        title: "User Onboarding Drop-off",
+        description: "Many users left during sign-up.",
+        solution:
+          "Simplified onboarding with social logins and walkthrough screens.",
+      },
+    ],
+    results: {
+      downloads: "100K+ in 90 days",
+      customerSatisfaction: "4.8/5 rating",
+      bookingsPerDay: "150+ avg",
+      operationalEfficiency: "Reduced scheduling issues by 40%",
+    },
+    testimonial: {
+      quote:
+        "The mobile app transformed our service operations. Customers love the ease and speed. Highly recommended team!",
+      author: "Ravi Sharma",
+      position: "Founder, QuickFix",
+    },
+  },
+  {
+    projectName: "product-development",
+    title: "End-to-End SaaS Product Development for HR Automation",
+    description:
+      "We created a robust SaaS product to automate internal workflows for a growing tech startup. The product featured custom dashboards, role-based access, workflow triggers, and analytics. This significantly reduced manual effort, improved task visibility, and accelerated the team's delivery pipeline.",
+    client: "TeamOrbit Solutions",
+    industry: "Human Resources",
+    location: "Pune, India",
+    duration: "6 Months",
+    path: "/pricing-product-development",
+    services: ["Product Design, SaaS Architecture, DevOps"],
+    platform: "Web App (SaaS)",
+    technologyStack: ["React, Node.js, PostgreSQL, AWS, Docker"],
+    clientRequirements: [
+      "HR dashboard with analytics and automation tools",
+      "Role-based user access (Admin, HR, Employee)",
+      "Attendance, payroll, and onboarding workflows",
+      "Multi-tenant architecture for SaaS delivery",
+    ],
+    approach: [
+      {
+        title: "Requirement Gathering",
+        requirements: [
+          "Workshops with HR professionals",
+          "Analyzed existing Excel-based processes",
+          "Mapped automation opportunities",
+        ],
+        icon: req,
+      },
+      {
+        title: "Design and Prototyping",
+        requirements: [
+          "Built UI prototypes using Figma",
+          "Created user journeys and data flows",
+          "Designed modular component library",
+        ],
+        icon: img,
+      },
+      {
+        title: "Development",
+        requirements: [
+          "Implemented REST APIs in Node.js",
+          "Used PostgreSQL for relational data",
+          "Containerized with Docker for scalability",
+        ],
+        icon: dev,
+      },
+      {
+        title: "Testing",
+        requirements: [
+          "Automated test suite using Jest",
+          "Stress testing for large datasets",
+          "Manual validation for all HR workflows",
+        ],
+        icon: test,
+      },
+      {
+        title: "Deployment",
+        requirements: [
+          "CI/CD on AWS ECS",
+          "Logging and monitoring with Datadog",
+          "Regular updates via feature flags",
+        ],
+        icon: deploy,
+      },
+    ],
+    challenges: [
+      {
+        title: "Handling Multi-Tenant Architecture",
+        description: "Needed dynamic data isolation per client.",
+        solution:
+          "Used PostgreSQL schema separation and tenant-based authorization.",
+      },
+      {
+        title: "Complex Workflow Automations",
+        description: "Automating varied HR policies was difficult.",
+        solution: "Created customizable rule engines for workflows.",
+      },
+    ],
+    results: {
+      productivityBoost: "2x faster HR task completion",
+      supportTicketsDrop: "70% fewer queries",
+      monthlyRecurringRevenue: "$40,000+ within 4 months",
+      employeeOnboardingSpeed: "Reduced onboarding time by 60%",
+    },
+    testimonial: {
+      quote:
+        "Their team delivered a flawless SaaS product that’s transforming our client's HR operations. Truly professional and scalable.",
+      author: "Sneha Kulkarni",
+      position: "CTO, TeamOrbit",
+    },
+  },
+  {
+    projectName: "shopify",
+    title: "Custom Shopify Store for Handmade Luxury Brand",
+    description:
+      "Our team delivered a high-converting Shopify storefront with a bespoke product configurator tailored to the client’s custom apparel business. Features included custom checkout logic, multilingual support, and third-party integrations. The project greatly improved conversion rates and simplified store operations.",
+    client: "Mystiq Handcrafts",
+    industry: "Fashion / Luxury Goods",
+    location: "Delhi, India",
+    duration: "1 Month",
+    path: "/pricing-shopify",
+    services: ["Shopify Theme Development, SEO, Custom App Integration"],
+    platform: "Shopify",
+    technologyStack: [
+      "Shopify Liquid, HTML/CSS, JavaScript, Klaviyo, Shopify Apps",
+    ],
+    clientRequirements: [
+      "Build a visually rich online store",
+      "Integrate email marketing and Instagram feed",
+      "Enable gift wrapping and custom order notes",
+      "Implement multi-language and currency support",
+    ],
+    approach: [
+      {
+        title: "Requirement Gathering",
+        requirements: [
+          "Understood brand aesthetics and customer journey",
+          "Defined product taxonomy and content blocks",
+        ],
+        icon: req,
+      },
+      {
+        title: "Design and Prototyping",
+        requirements: [
+          "Used custom Liquid theme",
+          "Designed mobile-first layout",
+          "Set up dynamic product carousels",
+        ],
+        icon: img,
+      },
+      {
+        title: "Development",
+        requirements: [
+          "Developed custom features in Liquid",
+          "Integrated Klaviyo for marketing",
+          "Connected apps for reviews, discounts, and analytics",
+        ],
+        icon: dev,
+      },
+      {
+        title: "Testing",
+        requirements: [
+          "Responsive testing",
+          "Conversion funnel testing",
+          "Third-party plugin validation",
+        ],
+        icon: test,
+      },
+      {
+        title: "Deployment",
+        requirements: [
+          "Live deployment with redirect setup",
+          "Connected Google Analytics and Facebook Pixel",
+          "Created admin training guides",
+        ],
+        icon: deploy,
+      },
+    ],
+    challenges: [
+      {
+        title: "Premium Look Without Slowing Speed",
+        description: "Heavy design impacted performance.",
+        solution: "Used image compression and lazy loading for optimal speed.",
+      },
+    ],
+    results: {
+      increaseInSales: "4x in first quarter",
+      customerEngagement: "45% higher session duration",
+      reducedAbandonment: "Checkout abandonment dropped by 33%",
+    },
+    testimonial: {
+      quote:
+        "We were amazed by how beautiful and fast our new Shopify store is. It feels like luxury in digital form.",
+      author: "Meghana Rao",
+      position: "Founder, Mystiq Handcrafts",
+    },
+  },
+  {
+    projectName: "graphic-design",
+    title: "Brand Identity & Graphic Design for Tech Startup",
+    description:
+      "We crafted a bold and consistent brand identity, complete with logo design, typography, color palettes, and a UI kit. Our graphic design work helped the startup establish a trustworthy digital presence, improving recognition and boosting investor confidence during early-stage fundraising.",
+    client: "InnoByte Technologies",
+    industry: "Technology / SaaS",
+    location: "Hyderabad, India",
+    duration: "3 Weeks",
+    path: "/pricing-graphic-design",
+    services: ["Logo Design, Branding, Marketing Collateral"],
+    platform: "Print & Digital",
+    technologyStack: ["Adobe Illustrator, Photoshop, Figma"],
+    clientRequirements: [
+      "Create a unique and scalable brand identity",
+      "Design pitch deck for investor meetings",
+      "Create social media templates and icons",
+      "Build design system for internal product",
+    ],
+    approach: [
+      {
+        title: "Requirement Gathering",
+        requirements: [
+          "Brand discovery workshops",
+          "Competitor analysis",
+          "Visual tone setting",
+        ],
+        icon: img,
+      },
+      {
+        title: "Design and Prototyping",
+        requirements: [
+          "Logo concepts and mood boards",
+          "Brand guidelines documentation",
+          "Sample application on packaging & web",
+        ],
+        icon: req,
+      },
+      {
+        title: "Development",
+        requirements: [
+          "Finalized vector logos and fonts",
+          "Created icons, banners, pitch decks",
+          "Delivered brand asset kits",
+        ],
+        icon: dev,
+      },
+      {
+        title: "Testing",
+        requirements: [
+          "Visual feedback from stakeholders",
+          "Color consistency on print and digital",
+        ],
+        icon: test,
+      },
+      {
+        title: "Deployment",
+        requirements: [
+          "Delivered assets in all formats",
+          "Uploaded to shared brand folder",
+        ],
+        icon: deploy,
+      },
+    ],
+    challenges: [
+      {
+        title: "Establishing a Unique Identity",
+        description: "Client wanted a modern but distinct brand look.",
+        solution: "Used iterative branding process with multiple review loops.",
+      },
+    ],
+    results: {
+      brandRecognition: "Featured in 3 startup showcases",
+      investorInterest: "Helped raise ₹2.4Cr seed round",
+      designSystem: "Accelerated internal UI mockups by 50%",
+    },
+    testimonial: {
+      quote:
+        "Their design brought our vision to life. The branding played a key role in our funding and launch success.",
+      author: "Rahul Menon",
+      position: "CEO, InnoByte",
+    },
   },
 ];

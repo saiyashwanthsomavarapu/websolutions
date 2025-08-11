@@ -1,10 +1,10 @@
 import { Grid, Space, Carousel, Typography, Row, Col, Avatar } from "antd";
 import "./BannerCarousel.css";
 import { AntDesignOutlined } from "@ant-design/icons";
-import lawyer from '../../assets/client/lawyer.webp' 
-import Person from '../../assets/client/person1.jpg';
-import Person1 from '../../assets/client/person.jpg';
-import naidvar from '../../assets/client/Naidvar.webp';
+import lawyer from "../../assets/client/lawyer.webp";
+import Person from "../../assets/client/person1.jpg";
+import Person1 from "../../assets/client/person.jpg";
+import naidvar from "../../assets/client/Naidvar.webp";
 
 const { Title, Paragraph, Text } = Typography;
 const BannersCarousel = () => {
@@ -16,7 +16,7 @@ const BannersCarousel = () => {
         "Aadhya Web Solution and his team did a fantastic job on my WordPress website UI design. They worked with great care and professionalism, offering valuable insights throughout the project. The post-delivery support was excellent, including two days of dashboard training. I highly recommend Aadhya Web Solution for quality, reliable WordPress development services!",
       name: "Raghvendra",
       designation: "Lawyer",
-      img:  lawyer,
+      img: lawyer,
     },
     {
       descriptions:
@@ -45,7 +45,7 @@ const BannersCarousel = () => {
   const getMaxWidth = () => {
     if (screens.xl) return "1140px";
     if (screens.lg) return "960px";
-    if (screens.md) return "720px";
+    if (screens.md) return "500px";
     if (screens.sm) return "400px";
     if (screens.xs) return "200px";
     return "100%";
@@ -138,11 +138,21 @@ const BannersCarousel = () => {
                     }}
                   >
                     <Avatar
-                      style={{ height: 200, width: 200, boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)" }}
-                      size={{ xs: 24, sm: 32, md: 40, lg: 64, xl: 80, xxl: 100 }}
+                      style={{
+                        height: 200,
+                        width: 200,
+                        boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
+                      }}
+                      size={{
+                        xs: 24,
+                        sm: 32,
+                        md: 40,
+                        lg: 64,
+                        xl: 80,
+                        xxl: 100,
+                      }}
                       icon={<AntDesignOutlined />}
                       src={item.img}
-
                     />
                     {/* <img
                       src={item.img}
@@ -167,9 +177,9 @@ const BannersCarousel = () => {
                     <Paragraph
                       style={{
                         fontSize: screens.lg ? "1.5em" : "1.2em",
-                        color: '#555',
-                        marginBottom: '32px',
-                        lineHeight: '1.6'
+                        color: "#555",
+                        marginBottom: "32px",
+                        lineHeight: "1.6",
                       }}
                     >
                       "{item.descriptions}"
@@ -177,7 +187,8 @@ const BannersCarousel = () => {
                   </div>
 
                   {/* Author Name */}
-                  <Title level={2}
+                  <Title
+                    level={2}
                     style={{
                       fontSize: screens.md ? "1.5rem" : "1.2rem",
                       fontWeight: 600,
@@ -205,8 +216,6 @@ const BannersCarousel = () => {
           </div>
         </Col>
       </Row>
-
-
     </Space>
   );
 };

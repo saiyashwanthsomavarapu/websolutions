@@ -1,18 +1,20 @@
-import ModernHeader from './components/Layout/Header';
-import FooterComponent from './components/Layout/Footer';
-import HomeScreen from './pages/HomeScreens';
-import { Layout } from 'antd';
-import { Routes, Route, BrowserRouter } from 'react-router-dom';
-import AboutUsSection from './pages/AboutUs';
-import Contact from './pages/Contact';
-import Services from './pages/Services';
-import ScrollToTop from './components/ScrollToTop';
-import NotFound from './pages/Unknown/NotFound';
-import TermsConditions from './components/Layout/TermsConditions';
-import PrivacyPolicy from './components/Layout/PrivacyPolicy';
-import CancellationRefundPolicy from './components/Layout/CancellationRefundPolicy';
-import DeliveryProcess from './components/Layout/DeliveryProcess';
-
+import ModernHeader from "./components/Layout/Header";
+import FooterComponent from "./components/Layout/Footer";
+import HomeScreen from "./pages/HomeScreens";
+import { Layout } from "antd";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
+import AboutUsSection from "./pages/AboutUs";
+import Contact from "./pages/Contact";
+import Services from "./pages/Services";
+import ScrollToTop from "./components/ScrollToTop";
+import NotFound from "./pages/Unknown/NotFound";
+import TermsConditions from "./components/Layout/TermsConditions";
+import PrivacyPolicy from "./components/Layout/PrivacyPolicy";
+import CancellationRefundPolicy from "./components/Layout/CancellationRefundPolicy";
+import DeliveryProcess from "./components/Layout/DeliveryProcess";
+import CaseStudy from "./pages/CaseStudy/Index";
+import CaseStudyOverview from "./pages/CaseStudy/CaseStudyOverView";
+import Pricing from "./pages/CaseStudy/Pricing";
 
 const { Content } = Layout;
 
@@ -22,7 +24,7 @@ const App = () => {
       <ScrollToTop />
       <Layout>
         <ModernHeader />
-        <Content >
+        <Content>
           <Routes>
             <Route path="/" element={<HomeScreen />} />
             <Route path="/aboutus" element={<AboutUsSection />} />
@@ -33,6 +35,9 @@ const App = () => {
             <Route path="/refund" element={<CancellationRefundPolicy />} />
             <Route path="/delivery_process" element={<DeliveryProcess />} />
             <Route path="*" element={<NotFound />} />
+            <Route path="/casestudy" element={<CaseStudy />} />
+            <Route path="/casestudy/:title" element={<CaseStudyOverview />} />
+            <Route path="/casestudy/:title/:pricing" element={<Pricing />} />
           </Routes>
         </Content>
         <FooterComponent />
