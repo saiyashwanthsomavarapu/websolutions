@@ -184,7 +184,7 @@ const FooterComponent = () => {
                       type="text"
                       shape="circle"
                       style={socialButtonStyle}
-                      href="https://wa.me/+916393733749"
+                      href="https://wa.me/+14435547121"
                       target="_blank"
                       rel="noopener noreferrer"
                     >

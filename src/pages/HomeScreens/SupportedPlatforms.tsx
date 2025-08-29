@@ -40,7 +40,7 @@ export const SupportedPlatforms = () => {
             icon: Magento,
             name: 'Magento',
             link: {
-                href: 'https://reactjs.org',
+                href: 'https://magento-opensource.com/',
                 target: '_blank',
                 rel: 'noopener noreferrer'
             }
@@ -77,7 +77,7 @@ export const SupportedPlatforms = () => {
             icon: figam,
             name: 'figam',
             link: {
-                href: 'https://figam.io',
+                href: 'https://www.figma.com/',
                 target: '_blank',
                 rel: 'noopener noreferrer'
             }

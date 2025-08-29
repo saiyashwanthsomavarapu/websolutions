@@ -14,6 +14,8 @@ import {
 import { Link } from 'react-router-dom';
 import logoImage from '../../assets/logo-removebg.png';
 
+import './Header.module.css';
+
 const { Header } = Layout;
 
 // Define types for navigation items
@@ -160,8 +162,19 @@ const ModernHeader: React.FC = () => {
               className="mobile-menu-button"
               size="large"
               type="text"
-              icon={<MenuOutlined />}
+              icon={<MenuOutlined className='ant-
+                
+                
+                -lg.ant-btn-icon-only' />}
+              // icon={<MenuOutlined style={{
+              // , width: '150px',
+              //  height: '150px'
+              // }} />}
               onClick={() => setVisible(true)}
+              // style={{
+              // width: '150px',
+              // height: '150px',
+              // }}
             />
             )}
         </div>

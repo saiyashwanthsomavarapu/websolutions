@@ -1,0 +1,20 @@
+/* .ant-btn-lg.ant-btn-icon-only  {
+    width: 25px !important;
+    height: 25px !important;
+
+} */
+.button.ant-btn svg {
+    width: 25px ;
+    height: 25px;
+}
+.ant-btn-lg.ant-btn-icon-only .anticon {
+    font-size: 25px;
+}
+.ant-btn-lg.ant-btn-icon-only .anticon svg {
+    width: 25px;
+    height: 25px;
+}
+.ant-btn-lg.ant-btn-icon-only .anticon svg {
+    width: 25px;
+    height: 25px;
+}

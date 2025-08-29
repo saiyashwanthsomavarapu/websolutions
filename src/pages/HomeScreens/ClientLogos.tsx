@@ -1,14 +1,18 @@
 import { Typography, Row, Col, Space, Grid } from 'antd';
-import BabyStep from '../../assets/Brand/Baby-Step-Products.jpg';
+// import BabyStep from '../../assets/Brand/Baby-Step-Products.jpg';
 import BasicHealth from '../../assets/Brand/Basic-Health-Care-Supplies.jpg';
-import FlightRisen from '../../assets/Brand/Flight_risen_travels.png';
+// import FlightRisen from '../../assets/Brand/Flight_risen_travels.png';
 import NaidvarTrust from '../../assets/Brand/Naidvar_Trust.png';
-import Sadhvi from '../../assets/Brand/Sadhvi.png';
-import Suger from '../../assets/Brand/Suger.png';
+// import Sadhvi from '../../assets/Brand/Sadhvi.png';
+// import Suger from '../../assets/Brand/Suger.png';
+import believers from '../../assets/Brand/believers.jpeg';
 import Alekhya from '../../assets/Brand/Alekhya.png';
 import AmantroAgro from '../../assets/Brand/AmantroAgro.jpg';
 import Lifewonderful from '../../assets/Brand/Lifewonderful.png';
 import cropped from '../../assets/Brand/cropped-Logo-Main.png';
+import ventures from '../../assets/Brand/ventures.jpg';
+import vireon from '../../assets/Brand/vireon.jpeg';
+
 import './ClientLogos.css';
 
 const { Title, Text, Paragraph } = Typography;
@@ -16,16 +20,19 @@ const { Title, Text, Paragraph } = Typography;
 const ClientLogos = () => {
     const screens = Grid.useBreakpoint();
     const clientRows = [
-        { name: 'Baby Step Products', logo: BabyStep },
+        // { name: 'Baby Step Products', logo: BabyStep },
+        { name: 'ventures', logo: ventures },
+        { name: 'vireon', logo: vireon },
         { name: 'Basic Health Care Supplies', logo: BasicHealth },
-        { name: 'Flight risen travels', logo: FlightRisen },
+        // { name: 'Flight risen travels', logo: FlightRisen },
         { name: 'Naidvar Trust', logo: NaidvarTrust },
-        { name: 'Sadhvi', logo: Sadhvi },
-        { name: 'Suger', logo: Suger },
+        // { name: 'Sadhvi', logo: Sadhvi },
+        // { name: 'Suger', logo: Suger },
         { name: 'Alekhya', logo: Alekhya },
         { name: 'Amantro Agro', logo: AmantroAgro },
         { name: 'Life wonderful', logo: Lifewonderful },
         { name: 'cropped', logo: cropped },
+        { name: 'believers', logo: believers },
         // { name: 'Tirubala Group', logo: logo1 },
         // { name: 'KC', logo: logo2 },
     ];
