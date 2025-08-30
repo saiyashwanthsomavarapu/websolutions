@@ -2,6 +2,7 @@ import React from 'react';
 import { Button, Typography, Layout } from 'antd';
 import { useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
+import SEO from '../../components/SEO';
 
 const { Content } = Layout;
 const { Title, Text } = Typography;
@@ -42,35 +43,43 @@ const NotFound: React.FC = () => {
   const navigateTo = useNavigate();
 
   return (
-    <NotFoundContainer>
+    <>
+      <SEO 
+        title="404 - Page Not Found | Aadhya Web Solution"
+        description="The page you are looking for does not exist. Please navigate back to our homepage or contact us for assistance with your web development needs."
+        keywords="404, page not found, aadhya web solution, website development, web design"
+        canonical="https://aadhyawebsolution.com/404"
+      />
+      <NotFoundContainer>
 
-      <ErrorCode>
-        <OutlinedText>404</OutlinedText>
-      </ErrorCode>
+        <ErrorCode>
+          <OutlinedText>404</OutlinedText>
+        </ErrorCode>
 
-      <Title level={2} style={{ margin: '10px 0', fontWeight: 500 }}>
-        Ooops! Page Not Found..
-      </Title>
+        <Title level={2} style={{ margin: '10px 0', fontWeight: 500 }}>
+          Ooops! Page Not Found..
+        </Title>
 
-      <Text style={{ fontSize: 16, color: '#666' }}>
-        Unfortunately, page you are looking for does not exitst
-      </Text>
+        <Text style={{ fontSize: 16, color: '#666' }}>
+          Unfortunately, page you are looking for does not exitst
+        </Text>
 
-      <Button
-        type="primary"
-        style={{
-          backgroundColor: '#1a1a1a',
-          border: 'none',
-          borderRadius: '4px',
-          height: '48px',
-          padding: '0 24px',
-          marginTop: '2em'
-        }}
-        onClick={() => navigateTo("/services")}
-      >
-        Back To Home
-      </Button>
-    </NotFoundContainer>
+        <Button
+          type="primary"
+          style={{
+            backgroundColor: '#1a1a1a',
+            border: 'none',
+            borderRadius: '4px',
+            height: '48px',
+            padding: '0 24px',
+            marginTop: '2em'
+          }}
+          onClick={() => navigateTo("/services")}
+        >
+          Back To Home
+        </Button>
+      </NotFoundContainer>
+    </>
   );
 };
 
