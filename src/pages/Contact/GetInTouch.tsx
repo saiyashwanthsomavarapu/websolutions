@@ -268,7 +268,7 @@ const GetInTouch: React.FC = () => {
                         textDecoration: 'underline',
                         textUnderlineOffset: '10px'
                     }}>
-                        Get in touch
+                        Get in Touch With Us
                     </Text>
                     <Title level={1} style={{ marginTop: '8px', marginBottom: '40px', fontSize: screen.lg ? '2.5em' : '2em', fontWeight: 500, color: '#121212' }}>
                         Let us be your guide

@@ -112,7 +112,7 @@ const TeamSection = () => {
                             marginTop: 10,
                             lineHeight: '1.2',
                         }}>
-                            Meet the consultation team
+                              Meet Our Expert Team
                         </Title>
                     </div>
                     <div style={{ paddingTop: '24px' }}>

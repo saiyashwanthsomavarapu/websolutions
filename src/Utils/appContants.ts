@@ -38,7 +38,7 @@ export const services = [
   {
     img: Optimization,
     Icon: Optimization,
-    title: "Digital Marketing",
+    title: "Digital Marketing Services",
     description:
       "We deliver data-driven digital marketing services tailored to your business goals. From strategic search engine optimisation (SEO) to high-impact PPC campaigns and content-driven lead generation, we help brands grow their digital footprint. Our team works across multiple platforms to ensure maximum reach, better engagement, and measurable ROI.",
     link: {
@@ -50,7 +50,7 @@ export const services = [
   {
     img: graphic,
     Icon: graphic,
-    title: "Graphic Design",
+    title: "Graphic Design & Branding",
     description:
       "Great design speaks volumes. Our graphic design services include everything from brand identity creation to digital and print creatives. We design visually appealing logos, marketing materials, and social media graphics that not only look great but also drive audience interaction and brand recognition.",
     link: {
@@ -62,7 +62,7 @@ export const services = [
   {
     img: react,
     Icon: LineChartOutlined,
-    title: "Web Development",
+    title: "Web Development Solutions",
     description:
       "Our web development services encompass everything from simple landing pages to complex web applications. We utilise the latest technologies and frameworks to build responsive, user-friendly websites that are optimised for performance and SEO. Whether you need a custom CMS, eCommerce platform, or a SaaS application, our team has the expertise to deliver high-quality solutions tailored to your business needs.",
     link: {

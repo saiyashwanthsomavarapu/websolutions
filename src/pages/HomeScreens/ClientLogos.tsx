@@ -53,7 +53,7 @@ const ClientLogos = () => {
                         textDecoration: "underline",
                         textUnderlineOffset: "10px",
                     }}>
-                        Our clients
+                       Client Success Stories
                     </Text>
                     <Title level={2}
                         style={{

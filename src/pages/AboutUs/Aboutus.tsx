@@ -23,7 +23,7 @@ const Tab1 = () => {
                 <Card style={{ minWidth: 300, padding: 24 }}>
                     <Card.Meta
                         avatar={<AimOutlined style={iconStyle} src="https://api.dicebear.com/7.x/miniavs/svg?seed=1" />}
-                        title="Our Mission"
+                        title="Our Mission & Vision"
                         description={
                             <>
                                 <Paragraph style={{ marginBottom: 0, color: '#555' }}>
@@ -134,7 +134,7 @@ function Aboutus() {
 
     const items: TabsProps['items'] = [
         { key: '1', label: 'Why Need Consultation?', children: Tab1() },
-        { key: '2', label: 'Why Choose Us', children: Tab2() },
+        { key: '2', label: 'Why Choose Us?', children: Tab2() },
         // { key: '3', label: 'How It Works', children: 'Content of Tab Pane 3' },
     ];
     return (

@@ -50,7 +50,7 @@ function WhyChooseUs() {
                             textUnderlineOffset: "10px",
                         }}
                     >
-                        WHy choose us
+                        Why Choose Aadhya Web Solution?
                     </Text>
                     <Row gutter={[24, 24]} style={{ marginTop: 50 }}>
                         {list.map((item, index) => (

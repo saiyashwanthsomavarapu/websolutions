@@ -29,7 +29,7 @@ const OurServices = () => {
                         What We Do
                     </Text>
                     <Title level={1} style={{ marginTop: '8px', marginBottom: '40px', fontSize: screen.lg ? "2.5em" : "2em", fontWeight: 500, color: '#121212' }}>
-                        Our Services
+                            Our Comprehensive Services
                     </Title>
                 </Col>
                 {services.map(({ title, description, img, Icon, link }, index) => (

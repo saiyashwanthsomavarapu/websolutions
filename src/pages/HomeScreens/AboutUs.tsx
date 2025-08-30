@@ -47,7 +47,7 @@ const BusinessSolutionsUI = () => {
               whiteSpace: "pre-line",
             }}
           >
-            {`Your Trusted Partner for Scalable Digital Growth`}
+            {`Your Trusted Website Development Partner in the USA`}
           </Title>
           <Row style={{ marginTop: "48px" }} gutter={[24, 24]}>
             <Col xs={24} md={24} lg={24}>
