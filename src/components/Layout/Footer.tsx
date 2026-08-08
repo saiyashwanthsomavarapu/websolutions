@@ -105,6 +105,7 @@ const FooterComponent = () => {
               <Space direction="vertical" style={{ display: 'flex', flexDirection: 'column', marginBottom: '24px' }}>
                 <RouterLink to="/aboutus" style={{ ...linkStyle, color: 'white' }}>About Us</RouterLink>
                 <RouterLink to="/services" style={{ ...linkStyle, color: 'white' }}>Services</RouterLink>
+                <RouterLink to="/price" style={{ ...linkStyle, color: 'white' }}>Pricing</RouterLink>
                 <RouterLink to="/terms_conditions" style={{ ...linkStyle, color: 'white' }}>Terms Conditions</RouterLink>
                 <RouterLink to="/privacy" style={{ ...linkStyle, color: 'white' }}>Privacy Policy</RouterLink>
                 <RouterLink to="/refund" style={{ ...linkStyle, color: 'white' }}>Cancellation & Refund Policy</RouterLink>
@@ -136,16 +137,16 @@ const FooterComponent = () => {
                   <Image src={US} preview={false} style={{ width: '100%', height: 'auto' }} />
                 </Col>
                 <Col xs={24} style={{ marginTop: '1em' }}>
-                <Text style={{ ...whiteTextStyle, ...textBlockStyle }}>
+                  <Text style={{ ...whiteTextStyle, ...textBlockStyle }}>
                     <a href="tel:+14435547121" style={{ color: 'inherit', textDecoration: 'none' }}>+1 (443) 554‑7121</a>
-                </Text>
+                  </Text>
                   {/* <Text style={{ ...whiteTextStyle, ...textBlockStyle }}> US: +1 (443) 554‑7121 </Text> */}
                   <Text style={{ ...whiteTextStyle, ...textBlockStyle }}>
-                      <a href="tel:+916393733749" style={{ color: 'inherit', textDecoration: 'none' }}>+91 (639) 373-3749</a>
+                    <a href="tel:+916393733749" style={{ color: 'inherit', textDecoration: 'none' }}>+91 (925) 085-3054</a>
                   </Text>
-                    <Text style={{ ...whiteTextStyle, }}>
+                  <Text style={{ ...whiteTextStyle, }}>
                     Email: <a href="mailto:support@aadhyawebsolution.com" style={{ color: 'inherit', textDecoration: 'none' }}>support@aadhyawebsolution.com</a>
-                    </Text>
+                  </Text>
                 </Col>
                 <Col xs={24} >
                   <Title level={5} style={{ ...linkStyle }}> Follow Us </Title>

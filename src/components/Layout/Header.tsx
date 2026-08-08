@@ -150,14 +150,16 @@ const ModernHeader: React.FC = () => {
               style={{
                 border: 'none',
                 backgroundColor: 'transparent',
-                color: getTextColor()
+                color: getTextColor(),
+                minWidth: 560,
+                justifyContent: 'flex-end'
               }}
               items={getNavItems()}
             />
           )}
 
           {/* Mobile menu button */}
-            {isMobile && (
+          {isMobile && (
             <Button
               className="mobile-menu-button"
               size="large"
@@ -171,12 +173,12 @@ const ModernHeader: React.FC = () => {
               //  height: '150px'
               // }} />}
               onClick={() => setVisible(true)}
-              // style={{
-              // width: '150px',
-              // height: '150px',
-              // }}
+            // style={{
+            // width: '150px',
+            // height: '150px',
+            // }}
             />
-            )}
+          )}
         </div>
       </Header>
 

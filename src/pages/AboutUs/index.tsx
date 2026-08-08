@@ -1,7 +1,7 @@
 import { Fragment } from "react";
 import OurHistory from "./OurHistory";
 import Aboutus from "./Aboutus";
-import TeamSection from "../HomeScreens/Team";
+// import TeamSection from "../HomeScreens/Team";
 // import TrustedClients from './Client';
 
 const AboutUsSection = () => {
@@ -18,7 +18,7 @@ const AboutUsSection = () => {
       <Aboutus />
       {/* <TrustedClients /> */}
       <OurHistory />
-      <TeamSection />
+      {/* <TeamSection /> */}
     </Fragment>
   );
 };

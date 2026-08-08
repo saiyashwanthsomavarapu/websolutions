@@ -6,6 +6,7 @@ import { Routes, Route, BrowserRouter } from 'react-router-dom';
 import AboutUsSection from './pages/AboutUs';
 import Contact from './pages/Contact';
 import Services from './pages/Services';
+import Price from './pages/Price';
 import ScrollToTop from './components/ScrollToTop';
 import NotFound from './pages/Unknown/NotFound';
 import TermsConditions from './components/Layout/TermsConditions';
@@ -27,6 +28,7 @@ const App = () => {
             <Route path="/" element={<HomeScreen />} />
             <Route path="/aboutus" element={<AboutUsSection />} />
             <Route path="/services" element={<Services />} />
+            <Route path="/price" element={<Price />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/terms_conditions" element={<TermsConditions />} />
             <Route path="/privacy" element={<PrivacyPolicy />} />

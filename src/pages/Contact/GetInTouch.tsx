@@ -403,7 +403,7 @@ const GetInTouch: React.FC = () => {
                                 <Text style={{ fontWeight: 400 }}>
                                     <a href="tel:+14435547121" style={{ color: 'inherit', textDecoration: 'none' }}>+1 (443) 554‑7121</a>
                                     <br />
-                                    <a href="tel:+916393733749" style={{ color: 'inherit', textDecoration: 'none' }}>+91 (639) 373-3749</a>
+                                    <a href="tel:+916393733749" style={{ color: 'inherit', textDecoration: 'none' }}>+91 (925) 085-3054</a>
                                 </Text>
                             </Card>
                         </Col>
